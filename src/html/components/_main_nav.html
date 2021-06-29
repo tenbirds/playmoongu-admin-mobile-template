@@ -1,0 +1,25 @@
+<nav id="main-navigation">
+    @@include('../components/_header_title.html', {
+        "title": "문구야놀자",
+        "link": "javascript:closeNav()"
+    })
+    <ul>
+        <li>
+            <a href="#">대시보드</a>
+        </li>
+        <li>
+            <a href="#">가맹점 관리</a>
+            <ul>
+                <li><a href="#">가맹점 관리</a></li>
+                <li><a href="#">키오스크 관리</a></li>
+            </ul>
+        </li>
+        <li class="open">
+            <a href="#">사용자 관리</a>
+            <ul>
+                <li><a href="#">가맹점 관리</a></li>
+                <li class="active"><a href="#">키오스크 관리</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
