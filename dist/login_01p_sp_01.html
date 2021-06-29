@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gulp</title>
+    <link rel="manifest" href="/manifest.json">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/style.min.css" media="screen">
+</head>
+<body class="login-01p-sp-01">
+
+<header>
+  <div class="logo-login"> 
+    <img class="img-login" src="../images/icons/login_logo.svg" alt="">
+  </div>
+</header>
+<main>
+  <div class="content-login">
+    <form action="">
+      <h1 class="login-name">
+        로그인
+      </h1>
+      <section class="content-form ">
+        <label class="label-input">
+            <span class="text-username">아이디</span>
+            <input class="form-control mb-3" value=""/>
+        </label>
+        <label class="label-input">
+            <span>비밀번호</span>
+            <input class="form-control"  value=""/>
+        </label>
+        <button type="button" 
+                class="btn btn-block btn-login btn__primary" 
+                onclick="login()"
+        >
+          로그인
+        </button>
+      </section>
+    </form>
+  </div>
+</main>
+
+  <!-- modal  validated required -->
+  <div class="modal popup" id="modalPopup1" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+          <div class="modal-body modal-body-without-title">
+              <p class="mb-0 text-center text-content-modal">아이디 혹은 비밀번호가 입력 되지 않았습니다.</p> 
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn-action">확인</button>
+          </div>
+      </div>
+    </div>
+  </div>
+  <!-- modal  validated unique -->
+  <div class="modal popup" id="modalPopup2" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+          <div class="modal-body modal-body-without-title">
+              <p class="mb-0 text-center text-content-modal">
+                아이디 혹은 비밀번호가 일치 하지 않습니다.
+                다시 확인해주세요.
+              </p> 
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn-action">확인</button>
+          </div>
+      </div>
+    </div>
+  </div>
+<footer>
+  <div class="row">
+    <p class="text-bottom">
+      계정에 대한 사항은 최고 관리자에게 문의해주세요.
+    </p>
+  </div>  
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/js/bootstrap.min.js" integrity="sha512-a6ctI6w1kg3J4dSjknHj3aWLEbjitAXAjLDRUxo2wyYmDFRcz2RJuQr5M3Kt8O/TtUSp8n2rAyaXYy1sjoKmrQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="/js/polyfill.js"></script>
+<script src="/js/script.min.js"></script>
+
+<script type="text/javascript">
+  function login() {
+    $('#modalPopup1').modal('show');
+    $('#modalPopup2').modal('show');
+  }
+</script>
+
+</body>
+</html>
+
