@@ -1,0 +1,257 @@
+.classification-management {
+  .main-page-classification-management {
+    min-height: 86vh;
+  }
+  .filter_dropdown {
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px;
+    .dropdown {
+      button {
+        outline: none;
+        box-shadow:none;
+        padding: 5px 0;
+        font-size: 11px;
+        &::after{
+          background-image: url(./../images/icons/icon_arrow_select.svg);
+          width: 10px;
+          height: 4px;
+          background-repeat: no-repeat;
+          border: none;
+      }
+        &:focus {
+          outline: none;
+        }
+      }
+      .dropdown-menu {
+        min-width: auto;
+        a {
+          font-size: 11px;
+          padding: 4px 10px;
+        }
+      }
+    }
+  }
+  .main-page-classification-management {
+    background: #f5f5f5;
+    //padding: 30px 15px;
+    padding: 15px;
+    .content-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .label-checkbox {
+        span {
+          font-family: NanumSquare;
+          font-size: 11px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          text-align: left;
+          color: #111111;
+          align-items: center;
+        }
+      }
+      .remove-item {
+        label {
+          font-family: NanumSquare;
+          font-size: 12px;
+          font-weight: 800;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          text-align: left;
+          color: #111111;
+        }
+      }
+    }
+    .main-item {
+      margin-top: 15px;
+      
+      .product-item{
+        background-color: #ffffff;
+        // min-height: 88px;
+        margin-bottom: 10px;
+        padding: 15px 10px;
+        &__colum{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            // width: calc(100%/3 - 5px);
+            padding: 0;
+        }
+        .product-item-info {
+          p {
+            margin-bottom: 0px;
+            text-align: center;
+          }
+          &__item {
+            margin-bottom: 7px;
+            text-align: center;
+            &:last-child {
+              margin-bottom: 0px;
+            }
+          }
+          &__no {
+            p {
+              font-family: Roboto;
+              font-size: 11px;
+              font-weight: 300;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: normal;
+              letter-spacing: normal;
+              text-align: left;
+              color: #111111;
+            }
+          }
+          &__primary-classification {
+            margin-bottom: 3px;
+            p {
+              font-family: NanumSquare;
+              font-size: 11px;
+              font-weight: normal;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: normal;
+              letter-spacing: normal;
+              text-align: left;
+              color: #111111;
+            }
+          }
+          &__category {
+            p {
+              font-family: NotoSansCJKKR;
+              font-size: 16px;
+              font-weight: bold;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: normal;
+              letter-spacing: normal;
+              text-align: left;
+              color: #111111;
+              white-space: nowrap;
+            }
+          }
+          &__secondary_classification {
+            margin-bottom: 3px;
+            p {
+              font-family: NanumSquare;
+              font-size: 11px;
+              font-weight: normal;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: normal;
+              letter-spacing: normal;
+              text-align: left;
+              color: #111111;
+            }
+          }
+          &__phrases {
+            p {
+              font-family: NotoSansCJKKR;
+              font-size: 16px;
+              font-weight: bold;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: normal;
+              letter-spacing: normal;
+              text-align: left;
+              color: #111111;
+              white-space: nowrap;
+            }
+          }
+          &__number-product {
+            p {
+              font-family: NotoSansCJKKR;
+              font-size: 16px;
+              font-weight: bold;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: normal;
+              letter-spacing: normal;
+              color: #111111;
+              white-space: nowrap;
+            }
+          }
+          &__text-product {
+            margin-bottom: 3px;
+            p {
+              font-family: NanumSquare;
+              font-size: 11px;
+              font-weight: normal;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: normal;
+              letter-spacing: normal;
+              color: #111111;
+            }
+          }
+          &__datetime {
+            p {
+              font-family: Roboto;
+              font-size: 11px;
+              font-weight: 300;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: normal;
+              letter-spacing: normal;
+              color: #111111;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.main-type {
+  padding-top: 10px;
+  .main-type-check {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .label-radio {
+      display: block;
+      width: 100%;
+      margin-bottom: 15px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+.main-type2 {
+  padding: 10px 20px 30px 20px;
+  .main-create-type2 {
+    .row_type {
+      display: flex;
+      align-items: center;
+    }
+    .title-type {
+      display: flex;
+      align-items: center;
+      padding-right: 0;
+      min-width: 74px;
+      padding-right: 7px;
+      label {
+        font-family: NanumSquare;
+        font-size: 14px;
+        font-weight: 800;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #111111;
+      }
+    }
+    .control-type {
+      padding-left: 0;
+      width: 100%;
+    }
+  }
+}
+

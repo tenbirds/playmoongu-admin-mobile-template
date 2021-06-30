@@ -209,6 +209,41 @@ header{
     }
 }
 
+.label-checkbox{
+    font-family: NanumSquare;
+    font-size: 14px;
+    font-weight: 800;
+    >input{
+        display: none;
+        &+span{
+            display: flex;
+            &::before{
+                content: '';
+                margin-right: 10px;
+                width: 20px;
+                height: 20px;
+                border: 1px solid #000000;
+
+            }
+        }
+    }
+    >input:checked{
+        display: none;
+        &+span{
+            display: flex;
+            &::before{
+                content: '';
+                margin-right: 10px;
+                width: 20px;
+                height: 20px;
+                border: 1px solid #000000;
+                background-image: url(./../images/icons/icon_check.svg);
+                background-size: contain;
+            }
+        }
+    }
+}
+
 input.form-control{
     border-radius: 5px;
     border: solid 1px #e6e6e6;
@@ -291,5 +326,21 @@ input.form-control{
         line-height: 16px;
         font-weight: 800;
         color: #111111;
+    }
+}
+.pr-15px {
+    padding-right: 15px;
+}
+.hidden-div {
+    visibility: hidden;
+}
+.select_custom {
+    position: relative;
+    img {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        pointer-events: none;
     }
 }
