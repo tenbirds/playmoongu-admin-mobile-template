@@ -1,0 +1,227 @@
+.sales-by-affiliate-store {
+  background-color: #f5f5f5;
+  main {
+    //background-color: #ffffff;
+    .header-search {
+      background-color: #ffffff;
+      &__name {
+        font-size: 23px;
+        font-weight: 800;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #000000;
+      }
+      &__icon_arrowBB {
+        width: 12px;
+        height: 7px;
+        //margin: 29px 234px 25px 5px;
+        object-fit: contain;
+      }
+      &__glance {
+        font-size: 11px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #111111;
+      }
+
+      &__input {
+        height: 33px;
+      }
+
+      .padding-right-0 {
+        padding-right: 0;
+      }
+    }
+
+    .content {
+      &__box {
+        height: 141px;
+        border-radius: 10px;
+        background-color: #5815a5;
+      }
+      &__total-sale {
+        opacity: 0.8;
+        font-size: 14px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #ffffff;
+      }
+      &__won {
+        font-size: 20px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #ffffff;
+      }
+      &__number-pay {
+        font-size: 11px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #ffffff;
+      }
+
+      &__number {
+        font-size: 18px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #ffffff;
+      }
+
+      &__detail-sale-history {
+        font-size: 14px;
+        font-weight: 800;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #111111;
+      }
+
+      &__sale-piriod {
+        font-size: 11px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #111111;
+      }
+
+      &__border-none {
+        border: none;
+      }
+
+      &__custom-border {
+        border-bottom: 1px solid  #f5f5f5;
+      }
+
+      &__box-content {
+        font-size: 11px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #111111;
+      }
+
+      &__box-content-time {
+        font-size: 14px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #111111;
+      }
+
+      &__box-number {
+        font-size: 20px;
+        font-weight: 999;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: right;
+        color: #111111;
+      }
+      &__box-content-mango {
+        font-size: 14px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #111111;
+      }
+      &__box-content-no {
+        font-size: 11px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #111111;
+      }
+
+      &__box-content-receipt-number {
+        opacity: 0.8;
+        font-size: 11px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #111111;
+      }
+
+      &__box-content-number {
+        //font-family: Roboto;
+        font-size: 23px;
+        font-weight: 900;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #111111;
+      }
+
+      &__box-content-receipt-number-border {
+        background-color: #56bf5c;
+        padding: 2px !important;
+        font-size: 11px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #ffffff;
+      }
+
+      &__box-content-number-text {
+        font-size: 14px;
+        font-weight: 800;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #111111;
+      }
+
+      &__box-content-receipt-number-color {
+        font-size: 20px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: right;
+        color: #c52321;
+      }
+    }
+  }
+
+}
