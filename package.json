@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "gulp run"
+    "start": "gulp run",
+    "build": "rm -rf dist & gulp run"
   },
   "author": "Kevin <thaitrandng@gmail.com>",
   "license": "ISC",
