@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+    <defs>
+        <style>
+            .cls-1{fill:#fff}
+        </style>
+    </defs>
+    <g id="icon_logout_w" transform="translate(-491 -192)">
+        <path id="패스_33048" d="M502.875 192h-11.25a.625.625 0 0 0-.625.625v18.75a.625.625 0 0 0 .625.625h11.25a.625.625 0 0 0 .625-.625v-18.75a.625.625 0 0 0-.625-.625zm-.625 18.75h-10v-17.5h10zm0 0" class="cls-1"/>
+        <path id="패스_33049" d="M660.067 372.183a.625.625 0 1 1-.884 0 .625.625 0 0 1 .884 0" class="cls-1" transform="translate(-159.25 -170.625)"/>
+        <path id="패스_33050" d="M761.25 338.5l-2.5-2.5v1.875H755v1.25h3.75V341zm0 0" class="cls-1" transform="translate(-250.25 -136.5)"/>
+    </g>
+</svg>
