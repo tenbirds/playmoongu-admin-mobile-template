@@ -9,7 +9,5 @@ deploy:
     - git status
     - git fetch
     - git checkout master
-    - git status
-    - git pull origin master
   only:
     - master
