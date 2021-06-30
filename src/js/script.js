@@ -15,3 +15,9 @@ function openNav(){
 function closeNav(){
     $('#main-navigation').removeClass('open')
 }
+function openPopupType () {
+    $('#createType').modal('toggle')
+}
+function openPopupType2 () {
+    $('#createType2').modal('toggle')
+}
