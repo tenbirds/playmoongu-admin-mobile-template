@@ -1,0 +1,200 @@
+@@include('components/head.html', {
+    "title": "Gulp",
+    "bodyClass": "classification-management"
+})
+
+@@include('components/header.html', {
+"title": "분류 관리",
+"bodyClass": "",
+"link": "javascript:openPopupType()"
+})
+
+<main>
+    <div class="main-classification-management">
+        <div class="filter_dropdown">
+            <div class="dropdown pr-15px">
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    1차 분류
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <a class="dropdown-item" href="#">1차 분류 1</a>
+                    <a class="dropdown-item" href="#">1차 분류 2</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    1차 분류
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <a class="dropdown-item" href="#">1차 분류 1</a>
+                    <a class="dropdown-item" href="#">1차 분류 2</a>
+                </div>
+            </div>
+        </div>
+        <div class="main-page-classification-management">
+            <div class="content-top">
+                <label class="label-checkbox">
+                    <input type="checkbox" name="ckbox"/>
+                    <span>전체 선택</span>
+                </label>
+                <div class="remove-item">
+                    <img src="/images/icons/icon_remove.svg">
+                    <label>삭제</label>
+                </div>
+            </div>
+            <div class="main-item">
+                <div class="product-item">
+                    <div class="row">
+                            <div class="col-5 product-item__colum">
+                                <label class="label-checkbox">
+                                    <input type="checkbox" name="ckbox"/>
+                                    <span></span>
+                                </label>
+                                <div class="product-item-info">
+                                    <div class="product-item-info__item product-item-info__no">
+                                        <p>No.10</p>
+                                    </div>
+                                    <div class="product-item-info__item product-item-info__primary-classification">
+                                        <p>1차 분류</p>
+                                    </div>
+                                    <div class="product-item-info__item product-item-info__category">
+                                        <p>아이스크림</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2 product-item__colum">
+                            
+                                <div class="product-item-info">
+                                    <div class="product-item-info__item product-item-info__no hidden-div">
+                                        <p>text</p>
+                                    </div>
+                                    <div class="product-item-info__item product-item-info__secondary_classification">
+                                        <p>2차 분류</p>
+                                    </div>
+                                    <div class="product-item-info__item product-item-info__phrases">
+                                        <p>문구</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-5 product-item__colum">
+                                <div class="product-item-info">
+                                    <div class="product-item-info__item product-item-info__datetime">
+                                        <p>등록일 :2021-03-09</p>
+                                    </div>
+                                    <div class="product-item-info__item product-item-info__text-product">
+                                        <p>상품 개수</p>
+                                    </div>
+                                    <div class="product-item-info__item product-item-info__number-product">
+                                        <p>123</p>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="row">
+                            <div class="col-5 product-item__colum">
+                                <label class="label-checkbox">
+                                    <input type="checkbox" name="ckbox"/>
+                                    <span></span>
+                                </label>
+                                <div class="product-item-info">
+                                    <div class="product-item-info__item product-item-info__no">
+                                        <p>No.10</p>
+                                    </div>
+                                    <div class="product-item-info__item product-item-info__primary-classification">
+                                        <p>1차 분류</p>
+                                    </div>
+                                    <div class="product-item-info__item product-item-info__category">
+                                        <p>아이스크림</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2 product-item__colum">
+                            
+                                
+                            </div>
+                            <div class="col-5 product-item__colum">
+                                <div class="product-item-info">
+                                    <div class="product-item-info__item product-item-info__datetime">
+                                        <p>등록일 :2021-03-09</p>
+                                    </div>
+                                    <div class="product-item-info__item product-item-info__text-product">
+                                        <p>상품 개수</p>
+                                    </div>
+                                    <div class="product-item-info__item product-item-info__number-product">
+                                        <p>123</p>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+<div class="modal popup" id="createType" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">분류 선택</h5>
+            </div>
+            <div class="modal-body main-type">
+                <div class="main-type-check">
+                    <label class="label-radio"><input type="radio" checked name="ckbox"/><span>1차 분류</span></label>
+                    <label class="label-radio"><input type="radio" name="ckbox"/><span>2차 분류</span></label>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn-dismiss" data-bs-dismiss="modal">닫기</button>
+                <button type="button" class="btn-action" onclick="openPopupType2()">다음</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal popup" id="createType2" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">2차 분류 등록하기</h5>
+            </div>
+            <div class="modal-body main-type2">
+                <div class="main-create-type2">
+                    <div class="row_type mb-3">
+                        <div class=" title-type">
+                            <label class="m-0">1차 분류 명</label>
+                        </div>
+                        <div class=" control-type">
+                            <div class="select_custom">
+                                <select class="form-control">
+                                    <option>1</option>
+                                    <option>2</option>
+                                </select>
+                                <img src="/images/icons/icon_arrow_select.svg" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row_type">
+                        <div class="title-type">
+                            <label class="m-0">2차 분류 명</label>
+                        </div>
+                        <div class="control-type">
+                            <input class="form-control"  value="분류 명을 입력하세요."/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn-dismiss" data-bs-dismiss="modal">닫기</button>
+                <button type="button" class="btn-action">다음</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer></footer>
+@@include('components/foot.html')
+@@include('./components/script.html')
+

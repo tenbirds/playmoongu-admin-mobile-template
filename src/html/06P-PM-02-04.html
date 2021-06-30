@@ -1,0 +1,199 @@
+@@include('components/head.html', {
+    "title": "Gulp",
+    "bodyClass": "product-management"
+})
+
+@@include('components/header.html', {
+"title": "전체 상품 관리",
+"bodyClass": "",
+"link": "06P-PM-02-03.html"
+})
+
+<main>
+    <div class="main-product-management">
+        
+        <div class="filter_search_page">
+            <div class="type-filter">
+                <button>
+                    <img src="/images/icons/icon_change.svg" />
+                    <label>바코드번호</label>
+                </button>
+                <div class="control-search">
+                    <input class="form-control" type="text" />
+                    <img class="search-form"  src="/images/icons/icon_search.svg" />
+                </div>
+            </div>
+        </div>
+        <div class="tab-product">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" 
+                  aria-selected="true">상품 등록 순</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" 
+                  aria-selected="false">낮은 가격 순</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" 
+                  aria-selected="false">높은 가격 순</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact1" role="tab" aria-controls="contact1" 
+                    aria-selected="false">즐겨 찾기 순</a>
+                  </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div class="filter_dropdown dropdown_favories">
+                    <div class="check-favories">
+                        <label class="label-checkbox">
+                            <input type="checkbox" name="ckbox"/>
+                            <span>전체 선택</span>
+                        </label>
+                    </div>
+                    <div class="content-dropdown">
+                        <div class="dropdown pr-15px">
+                            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                1차 분류
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <a class="dropdown-item" href="#">1차 분류 1</a>
+                                <a class="dropdown-item" href="#">1차 분류 2</a>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                1차 분류
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <a class="dropdown-item" href="#">1차 분류 1</a>
+                                <a class="dropdown-item" href="#">1차 분류 2</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <div class="product-info">
+                        <div class="product-info__img">
+                            <img  src="/images/photos/img04.png" />
+                        </div>
+                        <div class="product-info__data">
+                            <div class="product-info__data__no_like">
+                                <label class="text-no">No.10</label>
+                                <div class="item_like active">
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="product-info__data__status">
+                                <span class="status_sale">판매중</span>
+                                <span class="status_phrases">문구</span>
+                            </div>
+                            <div class="product-info__data__name">
+                                <span class="text-name">방탄소년단 캐릭터 지우개</span>
+                            </div>
+                            <div class="product-info__data__price">
+                                <span class="price-quantity">1,700원(소비자가)_10묶음</span>
+                            </div>
+                            <div class="product-info__data__total_price">
+                                <span class="number_price">1,500</span>
+                                <span class="text_price">(공급가)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-info__img">
+                            <img  src="/images/photos/img_03.png" />
+                        </div>
+                        <div class="product-info__data">
+                            <div class="product-info__data__no_like">
+                                <label class="text-no">No.10</label>
+                                <div class="item_like ">
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="product-info__data__status">
+                                <span class="status_sale">판매중</span>
+                                <span class="status_phrases">문구</span>
+                            </div>
+                            <div class="product-info__data__name">
+                                <span class="text-name">방탄소년단 캐릭터 지우개</span>
+                            </div>
+                            <div class="product-info__data__price">
+                                <span class="price-quantity">1,700원(소비자가)_10묶음</span>
+                            </div>
+                            <div class="product-info__data__total_price">
+                                <span class="number_price">1,500</span>
+                                <span class="text_price">(공급가)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-info__img">
+                            <img  src="/images/photos/img_03.png" />
+                        </div>
+                        <div class="product-info__data">
+                            <div class="product-info__data__no_like">
+                                <label class="text-no">No.10</label>
+                                <div class="item_like ">
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="product-info__data__status">
+                                <span class="status_unsold">미판매</span>
+                                <span class="status_sports">스포츠</span>
+                            </div>
+                            <div class="product-info__data__name">
+                                <span class="text-name">방탄소년단 캐릭터 지우개</span>
+                            </div>
+                            <div class="product-info__data__price">
+                                <span class="price-quantity">1,700원(소비자가)_10묶음</span>
+                            </div>
+                            <div class="product-info__data__total_price">
+                                <span class="number_price">1,500</span>
+                                <span class="text_price">(공급가)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-info__img">
+                            <img  src="/images/photos/img_03.png" />
+                        </div>
+                        <div class="product-info__data">
+                            <div class="product-info__data__no_like">
+                                <label class="text-no">No.10</label>
+                                <div class="item_like ">
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="product-info__data__status">
+                                <span class="status_accessory">액세서리</span>
+                                <span class="status_sports">스포츠</span>
+                            </div>
+                            <div class="product-info__data__name">
+                                <span class="text-name">방탄소년단 캐릭터 지우개</span>
+                            </div>
+                            <div class="product-info__data__price">
+                                <span class="price-quantity">1,700원(소비자가)_10묶음</span>
+                            </div>
+                            <div class="product-info__data__total_price">
+                                <span class="number_price">1,500</span>
+                                <span class="text_price">(공급가)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+                <div class="tab-pane fade" id="contact1" role="tabpanel" aria-labelledby="contact-tab">...</div>
+              </div>
+        </div>
+        
+    </div>
+</main>
+
+
+
+<footer></footer>
+@@include('components/foot.html')
+@@include('./components/script.html')
+
