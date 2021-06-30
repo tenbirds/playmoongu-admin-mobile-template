@@ -1,0 +1,66 @@
+.management-admin {
+  .filter-block {
+    padding-bottom: 20px;
+    .select-block {
+      padding-right: 0px;
+      select {
+        font-size: 14px;
+      }
+    }
+    .group-search {
+      input {
+        border-right: none;
+      }
+      span {
+        border-left: none;
+        background-color: #ffffff
+      };
+    }
+  }
+
+  .account-items{
+    background-color: #F5F5F5;
+    min-height: 85vh;
+    padding-top: 20px;
+    font-size: 14px;
+    // ul {
+      &__number {
+        span {
+          font-size: 11px;
+          color: #111111;
+          font-family: Roboto;
+        }
+      }
+      &__name {
+        color: #111111;
+        .col-left {
+          .icon-user {
+            img {
+              width: 20px;
+            }
+          }
+          .title {
+            font-size: 20px;
+            font-weight: bold;
+          }
+        }
+        .col-right {
+          .title {
+            font-size: 14px;
+            font-weight: bold;
+          }
+        }
+      }
+      &__desc {
+        span {
+          font-size: 11px;
+          color: #111111
+        }
+      }
+    // }
+  }
+}
+
+
+
+
