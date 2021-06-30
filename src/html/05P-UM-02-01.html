@@ -1,0 +1,233 @@
+@@include('components/head.html', {
+    "title": "Gulp",
+    "bodyClass": ""
+})
+
+@@include('components/header.html', {
+"title": "관리자 관리",
+"bodyClass": "management-user"
+})
+
+<main>
+    <div class="management-user">
+        <div class="container filter-block">
+            <div class="row align-items-center">
+                <div class="col-4 select-block">
+                    <select class="form-select" aria-label="" id="js_filter_select">
+                        <option selected>휴대전화</option>
+                        <option value="1">아이디</option>
+                        <option value="2">이름</option>
+                        <option value="3">.Net</option>
+                    </select>
+                </div>
+                <div class="col-8">
+                    <div class="input-group group-search">
+                        <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon2">
+                        <span class="input-group-text" id="basic-addon2">
+                            <i class="fas fa-search"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container account-items">
+            <ul class="list-group">
+                <li class="row align-items-center mb-2">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row account-items__number">
+                                    <div class="col-6">
+                                        <span>No.11</span>
+                                    </div>
+                                    <div class="col-6 text-end">
+                                        <span>2021.05.06</span>
+                                    </div>
+                                </div>
+                                <div class="row account-items__name">
+                                    <div class="col-6 col-left">
+                                        <span class="icon-user">
+                                            <img src="./../images/icons/icon_cart@3x.png" alt="">
+                                        </span>
+                                        <span class="title">
+                                            대전완구 
+                                        </span>
+                                    </div>
+                                    <div class="col-6 col-right text-end">
+                                        <span class="title">공급업체</span>
+                                    </div>
+                                </div>
+                                <div class="row account-items__desc">
+                                    <div class="col-12 text-end">
+                                        <span>대전완구공급자</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="row align-items-center mb-2">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row account-items__number">
+                                    <div class="col-6">
+                                        <span>No.11</span>
+                                    </div>
+                                    <div class="col-6 text-end">
+                                        <span>2021.05.06</span>
+                                    </div>
+                                </div>
+                                <div class="row account-items__name">
+                                    <div class="col-6 col-left">
+                                        <span class="icon-user">
+                                            <img src="./../images/icons/icon_franchise@3x.png" alt="">
+                                        </span>
+                                        <span class="title">
+                                            대전완구 
+                                        </span>
+                                    </div>
+                                    <div class="col-6 col-right text-end">
+                                        <span class="title">공급업체</span>
+                                    </div>
+                                </div>
+                                <div class="row account-items__desc">
+                                    <div class="col-12 text-end">
+                                        <span>스타빌리스(고덕점주)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="row align-items-center mb-2">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row account-items__number">
+                                    <div class="col-6">
+                                        <span>No.11</span>
+                                    </div>
+                                    <div class="col-6 text-end">
+                                        <span>2021.05.06</span>
+                                    </div>
+                                </div>
+                                <div class="row account-items__name">
+                                    <div class="col-6 col-left">
+                                        <span class="icon-user">
+                                            <img src="./../images/icons/icon_admin@3x.png" alt="">
+                                        </span>
+                                        <span class="title">
+                                            대전완구 
+                                        </span>
+                                    </div>
+                                    <div class="col-6 col-right text-end">
+                                        <span class="title">공급업체</span>
+                                    </div>
+                                </div>
+                                <div class="row account-items__desc">
+                                    <div class="col-12 text-end">
+                                        <span>대전완구공급자</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="row align-items-center mb-2">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row account-items__number">
+                                    <div class="col-6">
+                                        <span>No.11</span>
+                                    </div>
+                                    <div class="col-6 text-end">
+                                        <span>2021.05.06</span>
+                                    </div>
+                                </div>
+                                <div class="row account-items__name">
+                                    <div class="col-6 col-left">
+                                        <span class="icon-user">
+                                            <img src="./../images/icons/icon_owner@3x.png" alt="">
+                                        </span>
+                                        <span class="title">
+                                            대전완구 
+                                        </span>
+                                    </div>
+                                    <div class="col-6 col-right text-end">
+                                        <span class="title">공급업체</span>
+                                    </div>
+                                </div>
+                                <div class="row account-items__desc">
+                                    <div class="col-12 text-end">
+                                        <span>대전완구공급자</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</main>
+<footer></footer>
+@@include('components/foot.html')
+@@include('./components/script.html')
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/css/bscroll.min.css">
+<script src="https://unpkg.com/better-scroll@latest/dist/better-scroll.min.js"></script>
+<script type="text/javascript" src="/js/jquery.selectscroll.min.js"></script>
+<script type="text/javascript">
+   function init () {
+        $('#js_filter_select').selectScroll({
+            data: [
+                    [{
+                    text: '아이디',
+                    id: 1
+                    },{
+                    text: '이름',
+                    id: 2
+                    },{
+                    text: '.Net',
+                    id: 3
+                    }]
+            ],
+            title: '조회 기간',
+            selectedIndex: [0],
+            cancelTxt: 'cancel',
+            cancelClass: '',
+            confirmTxt: '선택',
+            confirmClass: '',
+            confirm: function(res) {
+                console.log(res, 'rest');
+                if (res?.length > 0) {
+                    let val = res?.[0]?.id || '';
+                    $("#js_filter_select").val(val);
+                }
+            },
+            cancel: function () {
+                console.log('Canceld')
+            }
+        })
+    }
+
+    $(document).on('click', '#js_filter_select', function(e) {
+        e.preventDefault();
+        this.blur();
+        window.focus();
+        init()
+    })
+
+    // function login() {
+    //   $('#modalPopup1').modal('show');
+    //   $('#modalPopup2').modal('show');
+    // }
+  </script>
+

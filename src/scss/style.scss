@@ -5,6 +5,9 @@
 @import "09P-MM-01-01";
 @import "08P-AM-01-01";
 
+@import "management-admin";
+@import "management-user";
+@import "detail-admin";
 body{
     background-color: #FFF;
 }
