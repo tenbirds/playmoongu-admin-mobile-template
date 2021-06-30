@@ -4,7 +4,7 @@ deploy:
     - eval $(ssh-agent -s)
     - whoami
   script:
-    - cd /app/www/html/admin_html
+    - cd /app/html/admin_html
     - pwd
     - git status
     - git fetch
