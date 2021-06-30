@@ -7,7 +7,7 @@ deploy:
     - cd /app/html/admin_html
     - pwd
     - git status
-    - git fetch
     - git checkout master
+    - git pull origin master
   only:
     - master
