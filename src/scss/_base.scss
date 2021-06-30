@@ -328,6 +328,7 @@ input.form-control{
         color: #111111;
     }
 }
+
 .pr-15px {
     padding-right: 15px;
 }
@@ -343,4 +344,10 @@ input.form-control{
         transform: translateY(-50%);
         pointer-events: none;
     }
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }

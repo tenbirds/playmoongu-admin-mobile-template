@@ -1,0 +1,31 @@
+@@include('components/head.html', {
+"title": "가맹점 별 매출 현황",
+"bodyClass": "deposit-management"
+})
+
+@@include('components/header.html', {
+"title": "가맹점 별 매출 현황",
+"bodyClass": ""
+})
+<main class="p-2">
+    <section class="header-search">
+        <div class="row">
+            <div class="col-4 text-center">
+                <button type="button" class="button-search">
+                    <img src="/images/icons/icon_change.svg" class="icon_change"/> Primary
+                </button>
+            </div>
+            <div class="col-8">
+                <label class="label-input">
+                    <input class="form-control mb-3" value="세종한솔점"/>
+                </label>
+            </div>
+        </div>
+    </section>
+</main>
+@@include('components/_main_nav.html')
+@@include('components/script.html')
+<link rel="stylesheet" href="/css/bscroll.min.css">
+<script src="https://unpkg.com/better-scroll@latest/dist/better-scroll.min.js"></script>
+<script type="text/javascript" src="/js/jquery.selectscroll.min.js"></script>
+@@include('components/foot.html')
