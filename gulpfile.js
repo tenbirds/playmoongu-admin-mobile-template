@@ -10,6 +10,7 @@ const javascriptObfuscator = require('gulp-javascript-obfuscator');
 const babel = require('gulp-babel');
 const buffer = require('vinyl-buffer');
 const uglify = require('gulp-uglify');
+const plumber = require('gulp-plumber');
 
 gulp.sources = {
     src: './src',
@@ -38,6 +39,7 @@ gulp.task('html', () => {
 // Sass
 gulp.task('sass', gulp.series(function () {
     return gulp.src(gulp.sources.src + '/scss/*.scss')
+        .pipe(plumber())
         .pipe(sourcemaps.init())
         .pipe(sass({
             errorLogToConsole: true,
@@ -65,6 +67,7 @@ gulp.task('js', function () {
             ], {
                 allowEmpty: true
             })
+            .pipe(plumber())
         .pipe(babel({
             presets: ['@babel/env']
         }))
@@ -91,10 +94,13 @@ gulp.task('js', function () {
 //Files
 gulp.task('files', () => {
     gulp.src(gulp.sources.src + '/manifest.json')
+        .pipe(plumber())
         .pipe(gulp.dest(gulp.sources.dist + '/'))
     gulp.src(gulp.sources.src + '/fonts/**/*')
+        .pipe(plumber())
         .pipe(gulp.dest(gulp.sources.dist + '/fonts'))
     return gulp.src(gulp.sources.src + '/images/**/*')
+        .pipe(plumber())
         .pipe(gulp.dest(gulp.sources.dist + '/images'))
         .pipe(browserSync.stream());
 });
@@ -130,3 +136,10 @@ gulp.task('run', gulp.parallel(gulp.series([
     'files',
     'watch'
 ]), 'serve'));
+
+gulp.task('build', gulp.parallel(gulp.series([
+    'html',
+    'sass',
+    'js',
+    'files'
+])));
