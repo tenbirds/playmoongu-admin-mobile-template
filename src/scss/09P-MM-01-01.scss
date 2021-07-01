@@ -1,3 +1,7 @@
+header {
+  background-color: #FFFFFF;
+}
+
 .deposit-management {
   main {
     overflow-x: hidden;
@@ -66,6 +70,15 @@
 
   &__button-p {
     font-size: 16px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    color: #111111;
+  }
+
+  &__label {
+    font-size: 14px;
     font-weight: 800;
     font-stretch: normal;
     font-style: normal;

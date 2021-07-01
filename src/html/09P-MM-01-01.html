@@ -36,7 +36,7 @@
             </div>
         </div>
 
-        <div class="row mt-2">
+        <div class="row mt-3">
             <div class="col-6 mt-1">
                 <h4 class="deposit-management__holding-deposit ">보유 예치금</h4>
             </div>
@@ -48,7 +48,7 @@
     </section>
 
 
-    <div class="m-3 content">
+    <div class="m-3 content mb-5">
         <ul class="list-group mt-2">
             <li class="list-group-item content__border-none">
                 <div class="row justify-content-center ">
@@ -192,7 +192,7 @@
 
     <div class="fixed-bottom">
         <div class="row">
-            <div class="col-6 deposit-management__button-fixed-left">
+            <div class="col-6 deposit-management__button-fixed-left" id="open-modal">
                 <p class="deposit-management__button-p">수동 출금</p>
             </div>
 
@@ -203,16 +203,66 @@
 
     </div>
 
+    <div class="modal popup" id="exampleModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">수동 입금 하기</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-1 row p-2">
+                        <div class="col-4 p-0 m-0">
+                            <label for="inputPassword" class="col-sm-2 col-form-label deposit-management__label">가맹점주</label>
+                        </div>
+                        <div class="col-8 col-4 p-0 m-0 ">
+                            <input type="text" class="form-control" id="inputPassword" value="이호택(다산지금점)" readonly>
+                        </div>
+                    </div>
 
-<!--    <div class="row deposit-management__fixed-button">-->
-<!--        <div class="col-6" style="background: red">-->
-<!--            dasdsa-->
-<!--        </div>-->
+                    <div class="mb-1 row p-2">
+                        <div class="col-4 p-0 m-0">
+                            <label for="inputPassword" class="col-sm-2 col-form-label deposit-management__label">거래일</label>
+                        </div>
+                        <div class="col-8 col-4 p-0 m-0 ">
+                            <input type="text" class="form-control" id="inputPassword">
+                        </div>
+                    </div>
 
-<!--        <div class="col-6" style="background: blue">-->
-<!--            dasdasd-->
-<!--        </div>-->
-<!--    </div>-->
+                    <div class="mb-1 row p-2">
+                        <div class="col-4 p-0 m-0">
+                            <label for="inputPassword" class="col-sm-2 col-form-label deposit-management__label">내용</label>
+                        </div>
+                        <div class="col-8 col-4 p-0 m-0 ">
+                            <input type="text" class="form-control" id="inputPassword">
+                        </div>
+                    </div>
+
+                    <div class="mb-1 row p-2">
+                        <div class="col-4 p-0 m-0">
+                            <label for="inputPassword" class="col-sm-2 col-form-label deposit-management__label">예금주</label>
+                        </div>
+                        <div class="col-8 col-4 p-0 m-0 ">
+                            <input type="text" class="form-control" id="inputPassword" >
+                        </div>
+                    </div>
+
+                    <div class="mb-1 row p-2">
+                        <div class="col-4 p-0 m-0">
+                            <label for="inputPassword" class="col-sm-2 col-form-label deposit-management__label">금액</label>
+                        </div>
+                        <div class="col-8 col-4 p-0 m-0 ">
+                            <input type="text" class="form-control" id="inputPassword" >
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn-dismiss" data-bs-dismiss="modal" id="hide-modal">취소</button>
+                    <button type="button" class="btn-action">선택</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </main>
 @@include('components/_main_nav.html')
@@ -220,4 +270,17 @@
 <link rel="stylesheet" href="/css/bscroll.min.css">
 <script src="https://unpkg.com/better-scroll@latest/dist/better-scroll.min.js"></script>
 <script type="text/javascript" src="/js/jquery.selectscroll.min.js"></script>
+
+<script>
+    $(document).ready(function (){
+        $("#open-modal").on('click',function (){
+            $('#exampleModal').show();
+        })
+
+        $("#hide-modal").on('click',function (){
+            $('#exampleModal').hide();
+        })
+    })
+</script>
+
 @@include('components/foot.html')
