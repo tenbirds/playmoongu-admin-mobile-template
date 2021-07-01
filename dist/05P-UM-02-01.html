@@ -115,12 +115,10 @@
         <div class="container filter-block">
             <div class="row align-items-center">
                 <div class="col-4 select-block">
-                    <select class="form-select" aria-label="" id="js_filter_select">
-                        <option selected>휴대전화</option>
-                        <option value="1">아이디</option>
-                        <option value="2">이름</option>
-                        <option value="3">.Net</option>
-                    </select>
+                    <button type="button" class="btn btn-success" id="js-switch-cond">
+                        <img src="./../images/icons/icon_change.svg" alt="">
+                        <span class="btn-label">전화번호</span>
+                    </button>
                 </div>
                 <div class="col-8">
                     <div class="input-group group-search">
@@ -148,21 +146,24 @@
                                     </div>
                                 </div>
                                 <div class="row account-items__name">
-                                    <div class="col-6 col-left">
+                                    <div class="col-7 col-left">
                                         <span class="icon-user">
-                                            <img src="./../images/icons/icon_cart@3x.png" alt="">
+                                            <img src="./../images/icons/icon_phone.svg" alt="">
                                         </span>
                                         <span class="title">
-                                            대전완구 
+                                            010-1234-5678 
                                         </span>
                                     </div>
-                                    <div class="col-6 col-right text-end">
-                                        <span class="title">공급업체</span>
+                                    <div class="col-5 col-right text-end">
+                                        <span class="title"></span>
                                     </div>
                                 </div>
                                 <div class="row account-items__desc">
-                                    <div class="col-12 text-end">
-                                        <span>대전완구공급자</span>
+                                    <div class="col-6">
+                                        <span>문구야랑같이놀자</span>
+                                    </div>
+                                    <div class="col-6 text-end">
+                                        <span>1110 POINT</span>
                                     </div>
                                 </div>
                             </div>
@@ -183,21 +184,24 @@
                                     </div>
                                 </div>
                                 <div class="row account-items__name">
-                                    <div class="col-6 col-left">
+                                    <div class="col-7 col-left">
                                         <span class="icon-user">
-                                            <img src="./../images/icons/icon_franchise@3x.png" alt="">
+                                            <img src="./../images/icons/icon_phone.svg" alt="">
                                         </span>
                                         <span class="title">
-                                            대전완구 
+                                            010-1234-5678 
                                         </span>
                                     </div>
-                                    <div class="col-6 col-right text-end">
-                                        <span class="title">공급업체</span>
+                                    <div class="col-5 col-right text-end">
+                                        <span class="title"></span>
                                     </div>
                                 </div>
                                 <div class="row account-items__desc">
-                                    <div class="col-12 text-end">
-                                        <span>스타빌리스(고덕점주)</span>
+                                    <div class="col-6">
+                                        <span>문구야랑같이놀자</span>
+                                    </div>
+                                    <div class="col-6 text-end">
+                                        <span>1110 POINT</span>
                                     </div>
                                 </div>
                             </div>
@@ -218,21 +222,24 @@
                                     </div>
                                 </div>
                                 <div class="row account-items__name">
-                                    <div class="col-6 col-left">
+                                    <div class="col-7 col-left">
                                         <span class="icon-user">
-                                            <img src="./../images/icons/icon_admin@3x.png" alt="">
+                                            <img src="./../images/icons/icon_phone.svg" alt="">
                                         </span>
                                         <span class="title">
-                                            대전완구 
+                                            010-1234-5678 
                                         </span>
                                     </div>
-                                    <div class="col-6 col-right text-end">
-                                        <span class="title">공급업체</span>
+                                    <div class="col-5 col-right text-end">
+                                        <span class="title"></span>
                                     </div>
                                 </div>
                                 <div class="row account-items__desc">
-                                    <div class="col-12 text-end">
-                                        <span>대전완구공급자</span>
+                                    <div class="col-6">
+                                        <span>문구야랑같이놀자</span>
+                                    </div>
+                                    <div class="col-6 text-end">
+                                        <span>1110 POINT</span>
                                     </div>
                                 </div>
                             </div>
@@ -253,21 +260,24 @@
                                     </div>
                                 </div>
                                 <div class="row account-items__name">
-                                    <div class="col-6 col-left">
+                                    <div class="col-7 col-left">
                                         <span class="icon-user">
-                                            <img src="./../images/icons/icon_owner@3x.png" alt="">
+                                            <img src="./../images/icons/icon_phone.svg" alt="">
                                         </span>
                                         <span class="title">
-                                            대전완구 
+                                            010-1234-5678 
                                         </span>
                                     </div>
-                                    <div class="col-6 col-right text-end">
-                                        <span class="title">공급업체</span>
+                                    <div class="col-5 col-right text-end">
+                                        <span class="title"></span>
                                     </div>
                                 </div>
                                 <div class="row account-items__desc">
-                                    <div class="col-12 text-end">
-                                        <span>대전완구공급자</span>
+                                    <div class="col-6">
+                                        <span>문구야랑같이놀자</span>
+                                    </div>
+                                    <div class="col-6 text-end">
+                                        <span>1110 POINT</span>
                                     </div>
                                 </div>
                             </div>
@@ -299,54 +309,17 @@
 <script src="/js/polyfill.js"></script>
 <script src="/js/script.min.js?v=2"></script>
 
-<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="/css/bscroll.min.css">
-<script src="https://unpkg.com/better-scroll@latest/dist/better-scroll.min.js"></script>
-<script type="text/javascript" src="/js/jquery.selectscroll.min.js"></script>
 <script type="text/javascript">
-   function init () {
-        $('#js_filter_select').selectScroll({
-            data: [
-                    [{
-                    text: '아이디',
-                    id: 1
-                    },{
-                    text: '이름',
-                    id: 2
-                    },{
-                    text: '.Net',
-                    id: 3
-                    }]
-            ],
-            title: '조회 기간',
-            selectedIndex: [0],
-            cancelTxt: 'cancel',
-            cancelClass: '',
-            confirmTxt: '선택',
-            confirmClass: '',
-            confirm: function(res) {
-                console.log(res, 'rest');
-                if (res?.length > 0) {
-                    let val = res?.[0]?.id || '';
-                    $("#js_filter_select").val(val);
-                }
-            },
-            cancel: function () {
-                console.log('Canceld')
-            }
-        })
-    }
-
-    $(document).on('click', '#js_filter_select', function(e) {
+    $(document).on('click', '#js-switch-cond', function(e) {
         e.preventDefault();
-        this.blur();
-        window.focus();
-        init()
+        let checker = $(this).find('span').html();
+        let label = '';
+        if (checker == '전화번호') {
+            label = 'otherCond';
+        } else {
+            label = '전화번호'
+        }
+        $(this).find('span').html(label);
     })
-
-    // function login() {
-    //   $('#modalPopup1').modal('show');
-    //   $('#modalPopup2').modal('show');
-    // }
   </script>
 
