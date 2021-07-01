@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" id="icon_qr02" width="40" height="40" viewBox="0 0 40 40">
-    <defs>
-        <style>
-            .cls-1{fill:#fed400}
-        </style>
-    </defs>
-    <path id="사각형_3537" d="M0 0H40V10H0z" class="cls-1"/>
-    <path id="사각형_3538" d="M0 0H40V10H0z" class="cls-1" transform="translate(40) rotate(90)"/>
-</svg>
