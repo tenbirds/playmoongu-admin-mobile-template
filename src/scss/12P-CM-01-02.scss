@@ -1,0 +1,61 @@
+.manager-money-kiosk {
+  .content-kiosk {
+    &__status {
+      font-size: 14px;
+      font-weight: 800;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #111111;
+    }
+
+    &__box {
+      height: 106px;
+      background-color: #ffffff;
+      background-clip: content-box;
+    }
+
+    &__box-number {
+      //margin-left: 20px;
+      //padding : 10px;
+      border-bottom: 1px solid #f5f5f5;;
+      margin-top: 12px;
+    }
+
+    &__box-number-money {
+      opacity: 0.8;
+      font-size: 11px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      letter-spacing: normal;
+      color: #111111;
+    }
+
+    &__box-number-money-one {
+      font-size: 14px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      letter-spacing: normal;
+      color: #111111;
+    }
+
+    &__around {
+      //padding: 5px 7px;
+      opacity: 0.5;
+      border-radius: 5px;
+      border: solid 1px #5815a5;
+      background-color: #f5ebf6;
+
+      font-size: 12px;
+      font-weight: 800;
+      font-stretch: normal;
+      font-style: normal;
+      letter-spacing: normal;
+      color: #5815a5;
+    }
+
+  }
+}
