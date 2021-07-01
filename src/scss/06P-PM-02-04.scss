@@ -57,4 +57,65 @@
             }
         }
     }
+    .main-body-add-cart {
+        padding-top: 10px;
+        .cart-name {
+            text-align: center;
+            &__text-name {
+                font-family: NanumSquare;
+                font-size: 14px;
+                font-weight: bold;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                text-align: left;
+                color: #5815a5;
+                padding: 10px 15px;
+                border-radius: 5px;
+                background-color: #f5f5f5;
+            }
+        }
+        .cart-quantity-price {
+            padding: 10px 0 20px 0;
+            label {
+                display: block;
+                opacity: 0.5;
+                font-family: NanumSquare;
+                font-size: 12px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.5;
+                letter-spacing: normal;
+                text-align: center;
+                color: #111111;
+            }
+            &__quantity {
+
+            }
+            &__price {
+
+            }
+        }
+        .main-form-popup_common {
+            padding-bottom: 5px;
+        }
+    }
+    .main-confirm-modal-add-cart {
+        padding-top: 5px;
+        .text-confirm {
+            font-family: NanumSquare;
+            font-size: 14px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.43;
+            letter-spacing: normal;
+            text-align: center;
+            color: #111111;
+            margin-bottom: 10px;
+        }
+    }
 }
+

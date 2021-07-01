@@ -26,3 +26,9 @@ function openPopupType () {
 function openPopupType2 () {
     $('#createType2').modal('toggle')
 }
+
+function openModalConfirmAddCart () {
+    $('#addCart').modal('toggle')
+    $('#confirmAddCart').modal('toggle')
+    
+}
