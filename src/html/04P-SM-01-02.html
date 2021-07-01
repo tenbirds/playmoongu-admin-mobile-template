@@ -8,7 +8,7 @@
     "bodyClass": "detail-store-page",
     "titleRight": "수정하기",
     "titleLeft": "/images/icons/icon_top_arrow_B.svg",
-    "undo": "undoModal"
+    "param": "undo_modal_store"
 })
 
 <main>
@@ -309,7 +309,7 @@
             </div>
         </div>
     </div>
-    <div class="modal popup" id="undoModal" tabindex="-1">
+    <div class="modal popup" id="undo_modal_store" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header">
@@ -340,8 +340,8 @@
         window.focus();
         init()
     })
-    function undo(value) {
-        $(`#${value}`).modal('show');
-    }
+    // function handleClick(value) {
+    //     $(`#${value}`).modal('show');
+    // }
   </script>
 

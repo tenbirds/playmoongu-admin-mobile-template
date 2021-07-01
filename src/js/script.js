@@ -9,8 +9,13 @@ $('#main-navigation>ul>li>ul>li').click(function(){
     $(this).addClass('active')
 })
 
-function openNav(){
-    $('#main-navigation').addClass('open')
+function handleClick(value){
+    if (value == 'open_nav') {
+        $(`#main-navigation`).addClass('open')
+    }
+    if (value == 'undo_modal_store') {
+        $(`#${value}`).modal('show');
+    }
 }
 function closeNav(){
     $('#main-navigation').removeClass('open')

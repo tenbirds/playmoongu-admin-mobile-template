@@ -20,7 +20,7 @@
     <div class="main-header">
         <div class="header">
             <div class="content-header">
-                <img src="/images/icons/icon_top_arrow_B.svg" class="@@iconLeft" onclick="undo('undoModal')" alt="">
+                <img src="/images/icons/icon_top_arrow_B.svg" class="@@iconLeft" onclick="handleClick('undo_modal_store')" alt="">
                 <h3 class="header_title">가맹점 상세 관리</h3>
                 <div class="header-right">
                     <a href="@@link" class="header-link">수정하기</a>
@@ -408,7 +408,7 @@
             </div>
         </div>
     </div>
-    <div class="modal popup" id="undoModal" tabindex="-1">
+    <div class="modal popup" id="undo_modal_store" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header">
@@ -456,8 +456,8 @@
         window.focus();
         init()
     })
-    function undo(value) {
-        $(`#${value}`).modal('show');
-    }
+    // function handleClick(value) {
+    //     $(`#${value}`).modal('show');
+    // }
   </script>
 
