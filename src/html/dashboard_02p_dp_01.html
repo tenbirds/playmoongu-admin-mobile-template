@@ -113,15 +113,16 @@
       <div id="chart"></div>
     </div>
     <div class="content-dashboard__hot-selling-items">
-      <div class="row">
+      <div class="row content-dashboard__hot-selling-items__reset">
         <div class="col-6 hot-selling-items-left">
           <label for="" class="title">인기 판매 상품</label>
         </div>
         <div class="col-6 hot-selling-items-right">
           <div class="filter_dropdown">
-            <div class="dropdown pr-15px">
-                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <div class="dropdown">
+                <button class="btn" type="button" id="dropdownMenuButton1">
                   일별
+                  <img src="../images/icons/icon_miniarrow.svg" alt="">
                 </button>
                 <!-- <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                     <a class="dropdown-item" href="#">일별 1</a>
@@ -129,8 +130,9 @@
                 </div> -->
             </div>
             <div class="dropdown">
-                <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <button class="btn" type="button" id="dropdownMenuButton2">
                   판매 전체
+                  <img src="../images/icons/icon_miniarrow.svg" alt="">
                 </button>
                 <!-- <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
                     <a class="dropdown-item" href="#">판매 전체 1</a>
@@ -140,66 +142,73 @@
         </div>
         </div>
       </div>
-      <div class="row selling-items-child">
-        <div class="col-1 number-selling">
-          <label>1</label>
+      <div class="selling-items-box">
+        <div class="row selling-items-child">
+          <div class="col-1 number-selling">
+            <label>1</label>
+          </div>
+          <div class="col-6">
+            <label class="title-items" for="">포켓몬 트레이닝게임</label> <br />
+            <span class="cases">(5건)</span>
+          </div>
+          <div class="col-5 box-price">
+            <label class="price-items"><span class="price-items__curency">\</span> 355,000</label>
+          </div>
         </div>
-        <div class="col-6">
-          <label class="title-items" for="">포켓몬 트레이닝게임</label> <br />
-          <span class="cases">(5건)</span>
+        <label class="line-selling"></label>
+        <div class="row selling-items-child">
+          <div class="col-1 number-selling">
+            <label>2</label>
+          </div>
+          <div class="col-6">
+            <label for="">계란말랑이</label> <br />
+            <span class="cases">(4건)</span>
+          </div>
+          <div class="col-5 box-price">
+            <span class="price-items"><span class="price-items__curency">\</span> 300,000</span>
+          </div>
         </div>
-        <div class="col-5 box-price">
-          <label class="price-items">\ 355,000</label>
+        <label class="line-selling"></label>
+        <div class="row selling-items-child">
+          <div class="col-1 number-selling">
+            <label>3</label>
+          </div>
+          <div class="col-6">
+            <label for="">톡젤리청포도</label> <br />
+            <span class="cases">(3건)</span>
+          </div>
+          <div class="col-5 box-price">
+            <span class="price-items"><span class="price-items__curency">\</span> 100,000</span>
+          </div>
+        </div>
+        <label class="line-selling"></label>
+        <div class="row selling-items-child">
+          <div class="col-1 number-selling">
+            <label>4</label>
+          </div>
+          <div class="col-6">
+            <label for="">톡젤리딸기</label> <br />
+            <span class="cases">(3건)</span>
+          </div>
+          <div class="col-5 box-price">
+            <span class="price-items"><span class="price-items__curency">\</span> 100,000</span>
+          </div>
+        </div>
+        <label class="line-selling"></label>
+        <div class="row selling-items-child">
+          <div class="col-1 number-selling">
+            <label>5</label>
+          </div>
+          <div class="col-6">
+            <label for="">경찰수갑놀이</label> <br />
+            <span class="cases">(2건)</span>
+          </div>
+          <div class="col-5 box-price">
+            <span class="price-items"><span class="price-items__curency">\</span> 5.000,000</span>
+          </div>
         </div>
       </div>
-      <div class="row selling-items-child">
-        <div class="col-1 number-selling">
-          <label>2</label>
-        </div>
-        <div class="col-6">
-          <label for="">계란말랑이</label> <br />
-          <span class="cases">(4건)</span>
-        </div>
-        <div class="col-5 box-price">
-          <span class="price-items">\ 300,000</span>
-        </div>
-      </div>
-      <div class="row selling-items-child">
-        <div class="col-1 number-selling">
-          <label>3</label>
-        </div>
-        <div class="col-6">
-          <label for="">톡젤리청포도</label> <br />
-          <span class="cases">(3건)</span>
-        </div>
-        <div class="col-5 box-price">
-          <span class="price-items">\ 100,000</span>
-        </div>
-      </div>
-      <div class="row selling-items-child">
-        <div class="col-1 number-selling">
-          <label>4</label>
-        </div>
-        <div class="col-6">
-          <label for="">톡젤리딸기</label> <br />
-          <span class="cases">(3건)</span>
-        </div>
-        <div class="col-5 box-price">
-          <span class="price-items">\ 100,000</span>
-        </div>
-      </div>
-      <div class="row selling-items-child">
-        <div class="col-1 number-selling">
-          <label>5</label>
-        </div>
-        <div class="col-6">
-          <label for="">경찰수갑놀이</label> <br />
-          <span class="cases">(2건)</span>
-        </div>
-        <div class="col-5 box-price">
-          <span class="price-items">\ 5.000,000</span>
-        </div>
-      </div>
+      
     </div>
     <div class="product-preference-chart">
       <label for="" class="title-preference-chart">인기 판매 상품</label>

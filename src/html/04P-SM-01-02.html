@@ -1,0 +1,347 @@
+@@include('components/head.html', {
+    "title": "Gulp",
+    "bodyClass": ""
+})
+
+@@include('components/header.html', {
+    "title": "가맹점 상세 관리",
+    "bodyClass": "detail-store-page",
+    "titleRight": "수정하기",
+    "titleLeft": "/images/icons/icon_top_arrow_B.svg",
+    "param": "undo_modal_store"
+})
+
+<main>
+   
+    <div class="detail-store-page">
+        <div class="container">
+            <div class="box-detail">
+                <!-- INFO store -->
+                <div class="box-detail__title_box">
+                    <h3 class="box-detail__title_box__main-title">가맹점 정보</h3>
+                    <label class="box-detail__title_box__border-title"></label>
+                </div>
+                <div class="mb-0 box-input">
+                    <label class="label-input">
+                        <span class="required">가맹점명</span>
+                        <input class="form-control mb-3" value="세종한솔점" readonly>
+                    </label>
+                </div>
+                <div class="mb-0 box-input">
+                    <label class="label-input">
+                        <span class="">사업자등록번호</span>
+                        <input class="form-control mb-3" value="123-07-12533" >
+                    </label>
+                </div>
+                <div class="mb-0 box-input">
+                    <label class="label-input">
+                        <span class="">가맹점주소</span>
+                        <input class="form-control mb-3" value="세종특별자치시 누리로">
+                    </label>
+                </div>
+                <div class="mb-0 box-input">
+                    <label class="label-input">
+                        <span class="">등록일</span>
+                        <input class="form-control mb-3" value="2021-03-21">
+                    </label>
+                </div>
+                <div class="mb-0 box-input">
+                    <label class="label-input">
+                        <span class="">면적</span>
+                        <input class="form-control mb-3" value="198mm">
+                    </label>
+                </div>
+            </div>
+            <div class="box-detail">
+                <!-- INFO store -->
+                <div class="row box-detail__owner-information">
+                    <div class="col-6 box-detail__title_box">
+                        <h3 class="box-detail__title_box__main-title">가맹점주 정보</h3>
+                        <label class="box-detail__title_box__border-title__owner-information"></label>
+                    </div>
+                    <div class="col-6 text-end">
+                        <button type="button" class="btn box-detail__add-more">
+                            <img class="search-form"  src="/images/icons/icon_search.svg" />
+                            <span>검색</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="mb-0 box-input">
+                    <label class="label-input">
+                        <span class="">가맹점주</span>
+                        <input class="form-control mb-3" value="방수진(세종한솔점)" readonly>
+                    </label>
+                </div>
+                <div class="mb-0 box-input">
+                    <label class="label-input">
+                        <span class="">주민등록번호</span>
+                        <input class="form-control mb-3" value="951114-1234567" >
+                    </label>
+                </div>
+                <div class="mb-0 box-input">
+                    <label class="label-input">
+                        <span class="">전화번호</span>
+                        <input class="form-control mb-3" value="010-8746-1234">
+                    </label>
+                </div>
+                <div class="mb-0 box-input">
+                    <label class="label-input">
+                        <span class="">이메일</span>
+                        <input class="form-control mb-3" value="sue@hanmail.net">
+                    </label>
+                </div>
+                <div class="mb-0 box-input">
+                    <label class="label-input">
+                        <span class="">사업자등록증</span>
+                        
+                    </label>
+                    <div class="row">
+                        <div class="col-8 pr-0 inp-pr-0">
+                            <input class="form-control mb-3" value="선택된 파일 없읍니다.">
+                        </div>
+                        <div class="col-4 text-end inp-pl-0">
+                            <button type="file" class="btn select-file">파일 선택</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box-detail ">
+                <!-- INFO store -->
+                <div class="box-detail__title_box">
+                    <h3 class="box-detail__title_box__main-title">가맹점 계약 정보</h3>
+                    <label class="box-detail__title_box__border-title__agreement-information"></label>
+                </div>
+                <div class="mb-0 box-input">
+                    <label class="label-input">
+                        <span class="">가맹비</span>
+                        <input class="form-control mb-3" value="4,000,000" readonly>
+                    </label>
+                </div>
+                <div class="mb-0 box-input">
+                    <label class="label-input">
+                        <span class="">로열티</span>
+                    </label>
+                    <div class="row royalty">
+                        <div class="col-8 pr-0 inp-pr-0">
+                            <input class="form-control mb-3" value="22,000" readonly>
+                        </div>
+                        <div class="col-4 text-end select-inp-par">
+                            <select class="form-select select-inp" aria-label="" id="js_choose_role">
+                                <option value="">원</option>
+                                <option value="1">원</option>
+                                <option value="2">원</option>
+                                <option value="3">원</option>
+                                <option value="3">원</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-0 box-input">
+                    <label class="label-input">
+                        <span class="">계약이행보증금</span>
+                        <input class="form-control mb-3" value="10,000" >
+                    </label>
+                </div>
+                <div class="mb-0 box-input">
+                    <label class="label-input">
+                        <span class="">인테리어(평당)</span>
+                        <input class="form-control mb-3" value="250,000">
+                    </label>
+                </div>
+                <div class="mb-0 box-input">
+                    <label class="label-input">
+                        <span class="">선반</span>
+                        <input class="form-control mb-3" value="3,000,000">
+                    </label>
+                </div>
+                <div class="mb-0 box-input">
+                    <label class="label-input">
+                        <span class="">키오스크 구매</span>
+                    </label>
+                    <div class="row main-check box-input__main-check">
+                        <div class="col-6 box-input__main-check__radio-box">
+                            <label class="label-radio">
+                                <input type="radio" checked name="purchase"/><span>구매</span>
+                            </label>
+                        </div>
+                        <div class="col-6 box-input__main-check__radio-box">
+                            <label class="label-radio">
+                                <input type="radio" checked name="purchase"/><span>렌트</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-0 box-input">
+                    <label class="label-input">
+                        <span class="">개인 상품 가능</span>
+                    </label>
+                    <div class="row main-check box-input__main-check">
+                        <div class="col-6 box-input__main-check__radio-box">
+                            <label class="label-radio">
+                                <input type="radio" checked name="possible"/><span>가능</span>
+                            </label>
+                        </div>
+                        <div class="col-6 box-input__main-check__radio-box">
+                            <label class="label-radio">
+                                <input type="radio" checked name="possible"/><span>불가</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-0 box-input">
+                    <label class="label-input">
+                        <span class="">기존 문방구 여부</span>
+                    </label>
+                    <div class="row main-check box-input__main-check">
+                        <div class="col-6 box-input__main-check__radio-box">
+                            <label class="label-radio">
+                                <input type="radio" checked name="stationery"/><span>Y</span>
+                            </label>
+                        </div>
+                        <div class="col-6 box-input__main-check__radio-box">
+                            <label class="label-radio">
+                                <input type="radio" checked name="stationery"/><span>N</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box-detail">
+                <!-- INFO store -->
+                <div class="box-detail__title_box">
+                    <h3 class="box-detail__title_box__main-title">가맹점 매출 및 주문 정보</h3>
+                    <label class="box-detail__title_box__border-title__sales"></label>
+                </div>
+                <div class="mb-0  box-detail__sales">
+                    <div class="row">
+                        <div class="col-6">
+                            <label class="label-input">
+                                <span class="span-text">총 매출 금액</span>
+                            </label>
+                        </div>
+                        <div class="col-6 text-end">
+                            <label class="label-input">
+                                <span class="span-price-sales">3,000,000</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-0  box-detail__sales">
+                    <div class="row">
+                        <div class="col-6">
+                            <label class="label-input">
+                                <span class="span-text">총 주문 금액</span>
+                            </label>
+                        </div>
+                        <div class="col-6 text-end">
+                            <label class="label-input">
+                                <span class="span-price-sales">3,000,000</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-0  box-detail__sales">
+                    <div class="row">
+                        <div class="col-6">
+                            <label class="label-input">
+                                <span class="span-text">총 주문 금액</span>
+                            </label>
+                        </div>
+                        <div class="col-6 text-end">
+                            <label class="label-input">
+                                <span class="span-price-sales">3,000,000</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-0 box-detail__sales">
+                    <div class="row">
+                        <div class="col-6">
+                            <label class="label-input">
+                                <span class="span-text">총 주문 금액</span>
+                            </label>
+                        </div>
+                        <div class="col-6 text-end">
+                            <label class="label-input">
+                                <span class="span-price-sales">39</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box-detail">
+                <!-- INFO store -->
+                <div class="row box-detail__owner-information">
+                    <div class="col-6 box-detail__title_box">
+                        <h3 class="box-detail__title_box__main-title">가맹점 Kiosk</h3>
+                        <label class="box-detail__title_box__border-title__owner-information"></label>
+                    </div>
+                    <div class="col-6 text-end">
+                        <button type="button" class="btn box-detail__add-more">
+                            <img class="search-form"  src="/images/icons/icon_search.svg" />
+                            <span>검색</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="mb-0 box-input">
+                    <div class="kiosk-info">
+                        <div class="kiosk-info__data">
+                            <div class="kiosk-info__data__no_like">
+                                <label class="text-no">No.11</label>
+                                <label class="text-no">
+                                    <span>2021.05.06</span>
+                                    <img class="remove-box"  src="/images/icons/pop_X.svg" />
+                                </label>
+                            </div>
+                            <div class="row kiosk-info__data__detail">
+                                <div class="col-6 box-content">
+                                    <label for="" class="box-content__text">일련번호</label> <br />
+                                    <label for="" class="box-content__number">A0006</label>
+                                </div>
+                                <div class="col-6 box-content">
+                                    <label for="" class="box-content__text">모델명</label><br />
+                                    <label for="" class="box-content__number">kiosk5</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal popup" id="undo_modal_store" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">알림</h5>
+                </div>
+                <div class="modal-body">
+                    <p>수정을 취소 하시겠습니까?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn-dismiss" data-bs-dismiss="modal">아니요</button>
+                    <button type="button" class="btn-action">예</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer></footer>
+@@include('components/foot.html')
+@@include('./components/script.html')
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/css/bscroll.min.css">
+<script src="https://unpkg.com/better-scroll@latest/dist/better-scroll.min.js"></script>
+<script type="text/javascript" src="/js/jquery.selectscroll.min.js"></script>
+<script type="text/javascript">
+    $(document).on('click', '#js_filter_select', function(e) {
+        e.preventDefault();
+        this.blur();
+        window.focus();
+        init()
+    })
+    // function handleClick(value) {
+    //     $(`#${value}`).modal('show');
+    // }
+  </script>
+

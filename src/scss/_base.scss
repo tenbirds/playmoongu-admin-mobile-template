@@ -76,13 +76,20 @@ header{
         padding: 0;
         >li{
             list-style: none;
-            padding: 20px;
+            padding: 18px;
             position: relative;
+            display: flex;
+            justify-content: space-between;
             >a{
                 font-family: NanumSquare;
                 font-size: 18px;
                 font-weight: bold;
                 color: $colorText;
+                
+            }
+            .icon-right-nav{
+                transform: rotate(-90deg);
+                margin-left: 35px;
             }
             >ul{
                 display: none;
@@ -351,4 +358,51 @@ footer{
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+.main-form-popup_common {
+    .main-form-popup {
+      .row-group-form {
+        display: flex;
+        align-items: center;
+        &__title {
+            display: flex;
+            align-items: center;
+            padding-right: 0;
+            min-width: 74px;
+            padding-right: 7px;
+            label {
+                font-family: NanumSquare;
+                font-size: 14px;
+                font-weight: 800;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                text-align: left;
+                color: #111111;
+            }
+          }
+      }
+      .control-type {
+        padding-left: 0;
+        width: 100%;
+        input {
+            &.custom-value-right {
+                text-align: right;
+                color: #000000;
+                font-weight: bold;
+                font-family: Roboto;
+                font-size: 14px;
+                font-weight: bold;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                text-align: right;
+                color: #111111;
+            }
+        }
+      }
+    }
 }

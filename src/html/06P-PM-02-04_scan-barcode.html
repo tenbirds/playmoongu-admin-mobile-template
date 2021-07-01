@@ -1,0 +1,43 @@
+@@include('components/head.html', {
+    "title": "Gulp",
+    "bodyClass": "scan-barcode"
+})
+
+
+<main>
+    <div class="main-scan-barcode">
+        
+        <div class="scan-barcode-head">
+
+            <div class="main-scan-barcode-head">
+                <img class="main-scan-barcode-head__close" src="/images/icons/icon_close_w.svg" />
+                <h1 class="main-scan-barcode-head__title">바코드 상품 검색</h1>
+            </div>
+            
+        </div>
+        <div class="main-scan-barcode-camera">
+            <div class="main-scan-barcode-camera__camera">
+
+            </div>
+            <div class="main-scan-barcode-camera__note">
+                <label class="main-scan-barcode-camera__note__text">바코드를 촬영해 주세요.</label>
+            </div>
+        </div>
+        <div class="main-scan-barcode-button">
+            <div class="main-barcode-button">
+                <img class="main-barcode-button__camera" src="/images/icons/icon_camera.svg" />
+            </div>
+        </div>
+        
+    </div>
+</main>
+
+
+
+
+
+
+<footer></footer>
+@@include('components/foot.html')
+@@include('./components/script.html')
+

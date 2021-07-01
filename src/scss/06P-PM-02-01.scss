@@ -127,11 +127,19 @@
         align-items: center;
         flex-wrap: wrap;
         margin-bottom: 10px;
+        
         &__img {
-            img {
+            position: relative;
+            &__product {
                 width: 120px;
                 height: 120px;
                 object-fit: cover;
+            }
+            &__add-cart-owner {
+                position: absolute;
+                right: 10px;
+                bottom: 10px;
+                cursor: pointer;
             }
         }
         &__data {
