@@ -62,6 +62,7 @@ header{
     right: 100vw;
     bottom: 0;
     background-color: #FFF;
+    z-index: 99999999;
     &.open{
         top: 0;
         left: 0;

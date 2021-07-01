@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "gulp run",
-    "build": "rm -rf dist & gulp run"
+    "build": "rm -rf dist & gulp build"
   },
   "author": "Kevin <thaitrandng@gmail.com>",
   "license": "ISC",
@@ -23,6 +23,7 @@
     "gulp-connect": "^5.7.0",
     "gulp-file-include": "^2.3.0",
     "gulp-javascript-obfuscator": "^1.1.6",
+    "gulp-plumber": "^1.2.1",
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^5.0.0",
     "gulp-sourcemaps": "^3.0.0",
