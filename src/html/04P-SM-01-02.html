@@ -6,10 +6,13 @@
 @@include('components/header.html', {
     "title": "가맹점 상세 관리",
     "bodyClass": "detail-store-page",
-    "titleRight": "수정하기"
+    "titleRight": "수정하기",
+    "titleLeft": "/images/icons/icon_top_arrow_B.svg",
+    "undo": "undoModal"
 })
 
 <main>
+   
     <div class="detail-store-page">
         <div class="container">
             <div class="box-detail">
@@ -306,6 +309,22 @@
             </div>
         </div>
     </div>
+    <div class="modal popup" id="undoModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">알림</h5>
+                </div>
+                <div class="modal-body">
+                    <p>수정을 취소 하시겠습니까?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn-dismiss" data-bs-dismiss="modal">아니요</button>
+                    <button type="button" class="btn-action">예</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </main>
 <footer></footer>
 @@include('components/foot.html')
@@ -321,5 +340,8 @@
         window.focus();
         init()
     })
+    function undo(value) {
+        $(`#${value}`).modal('show');
+    }
   </script>
 
