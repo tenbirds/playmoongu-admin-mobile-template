@@ -76,13 +76,20 @@ header{
         padding: 0;
         >li{
             list-style: none;
-            padding: 20px;
+            padding: 18px;
             position: relative;
+            display: flex;
+            justify-content: space-between;
             >a{
                 font-family: NanumSquare;
                 font-size: 18px;
                 font-weight: bold;
                 color: $colorText;
+                
+            }
+            .icon-right-nav{
+                transform: rotate(-90deg);
+                margin-left: 35px;
             }
             >ul{
                 display: none;
