@@ -1,5 +1,5 @@
-.register-admin-page {
-  .form-register{
+.detail-admin-page {
+  .form-detail{
     padding-top: 20px;
     padding-bottom: 30px;
     font-family: NanumSquare;
@@ -7,6 +7,11 @@
       font-weight: bold;
       font-size: 20px;
       font-family: NanumSquare;
+      text-decoration: underline;
+      text-decoration-color: #FED400;
+      text-underline-offset: 2px;
+      text-underline-offset: 2px;
+      text-decoration-thickness: 3px;
       &.store-owner {
         margin-top: 40px;
         margin-bottom: 20px;
