@@ -1,5 +1,5 @@
-.detail-admin-page {
-  .form-detail{
+.detail-user-page {
+  .form-detail {
     padding-top: 20px;
     padding-bottom: 30px;
     font-family: NanumSquare;
@@ -7,7 +7,12 @@
       font-weight: bold;
       font-size: 20px;
       font-family: NanumSquare;
-      &.store-owner {
+      text-decoration: underline;
+      text-decoration-color: #FED400;
+      text-underline-offset: 2px;
+      text-underline-offset: 2px;
+      text-decoration-thickness: 3px;
+      &.history-point {
         margin-top: 40px;
         margin-bottom: 20px;
       } 
@@ -16,12 +21,12 @@
         margin-bottom: 20px;
       } 
       &.memo {
-        margin-top: 40px;
+        margin-top: 45px;
         margin-bottom: 25px;
       } 
     }
 
-    .store-owner {
+    .history-point {
       &__number {
         span {
           font-size: 11px;
@@ -30,14 +35,46 @@
         }
       }
       &__name {
-        font-size: 11px;
         color: #111111;
+        .col-left {
+          .icon-user {
+            img {
+              width: 20px;
+            }
+          }
+          .title {
+            font-size: 20px;
+            font-weight: bold;
+            font-family: NanumSquare;
+          }
+        }
+        .col-right {
+          .title {
+            font-size: 11px;
+            font-weight: bold;
+          }
+        }
       }
       &__desc {
-        font-size: 14px;
+        padding-top: 5px;
         color: #111111;
-        font-weight: bold;
         font-family: NanumSquare;
+        font-size: 11px;
+        .col-left {
+          .title {
+          }
+        }
+        .col-right {
+          .title {
+          }
+        }
+      }
+      &__qty {
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: bold;
+        text-align: left;
+        color: #111111;
         .col-left {
           .title {
           }
@@ -104,6 +141,20 @@
       height: 33px;
       padding: 5px 5px;
       font-size: 12px;
+    }
+  }
+
+  .modal-add-point {
+    &__label-point {
+      font-family: NanumSquare;
+      font-size: 14px;
+      font-weight: 800;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      color: #111111;
+      text-align: right;
+      padding-top: 10px;
     }
   }
 }

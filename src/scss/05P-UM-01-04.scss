@@ -1,0 +1,24 @@
+.register-admin-page {
+  .form-register{
+    padding-top: 20px;
+    padding-bottom: 30px;
+    font-family: NanumSquare;
+    &__main-title {
+      font-weight: bold;
+      font-size: 20px;
+      font-family: NanumSquare;
+      &.store-owner {
+        margin-top: 40px;
+        margin-bottom: 20px;
+      } 
+      &.history-deposit {
+        margin-top: 40px;
+        margin-bottom: 20px;
+      } 
+      &.memo {
+        margin-top: 40px;
+        margin-bottom: 25px;
+      } 
+    }
+  }
+}

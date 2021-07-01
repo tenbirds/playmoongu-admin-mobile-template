@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gulp</title>
+    <link rel="manifest" href="/manifest.json">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/style.min.css" media="screen">
+</head>
+<body class="">
+
+
+<header>
+    <div class="main-header">
+        <div class="header">
+            <div class="content-header">
+                <div class="menu-toggle" onclick="openNav()">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                <h3 class="header_title">Title Page</h3>
+                <div class="header-right">
+                    <a href="#" class="header-link">등록하기</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<nav id="main-navigation">
+    <header class="header__title">
+    <a href="javascript:closeNav()" class="left-button">
+        <img absalign="middle" src="/images/icons/icon_top_arrow_B.svg"/>
+    </a>
+    <h1>문구야놀자</h1>
+</header>
+
+    <ul>
+        <li>
+            <a href="#">대시보드</a>
+        </li>
+        <li>
+            <a href="#">가맹점 관리</a>
+            <ul>
+                <li><a href="#">가맹점 관리</a></li>
+                <li><a href="#">키오스크 관리</a></li>
+            </ul>
+        </li>
+        <li class="open">
+            <a href="#">사용자 관리</a>
+            <ul>
+                <li><a href="#">가맹점 관리</a></li>
+                <li class="active"><a href="#">키오스크 관리</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+
+
+
+
+<main>
+    <div class="management-admin">
+        <div class="container-fluid mt-3">
+            <div class="row align-items-center">
+                <div class="col-4">
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>휴대전화</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                    </select>
+                </div>
+                <div class="col-8 pl-0">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon2">
+                        <span class="input-group-text" id="basic-addon2">
+                            <i class="fas fa-search"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mt-4">
+            <ul class="list-group">
+                <div class="row align-items-center mb-2">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <span>No.11</span>
+                                    </div>
+                                    <div class="col-6 text-end">
+                                        <span>2021.05.06</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <span><i class="fas fa-shopping-cart"></i></span>
+                                        <span>
+                                            대전완구 
+                                        </span>
+                                    </div>
+                                    <div class="col-6 text-end">
+                                        <span>공급업체</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 text-end">
+                                        <span>대전완구공급자</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row align-items-center mb-2">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <span>No.11</span>
+                                    </div>
+                                    <div class="col-6 text-end">
+                                        <span>2021.05.06</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <span><i class="fas fa-shopping-cart"></i></span>
+                                        <span>
+                                            대전완구 
+                                        </span>
+                                    </div>
+                                    <div class="col-6 text-end">
+                                        <span>공급업체</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 text-end">
+                                        <span>대전완구공급자</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </div>
+</main>
+<footer></footer>
+
+</body>
+</html>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/js/bootstrap.min.js" integrity="sha512-a6ctI6w1kg3J4dSjknHj3aWLEbjitAXAjLDRUxo2wyYmDFRcz2RJuQr5M3Kt8O/TtUSp8n2rAyaXYy1sjoKmrQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="/js/polyfill.js"></script>
+<script src="/js/script.min.js"></script>
+
+
