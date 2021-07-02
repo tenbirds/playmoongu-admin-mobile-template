@@ -68,18 +68,32 @@ header{
         left: 0;
         right: 0;
         bottom: 0;
+        > header{
+            display: block;
+        }
+    }
+    > header{
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: #FFF;
+        z-index: 999999999999;
     }
     >ul{
         width: 50vw;
-        height: calc(100% - 50px);
+        min-height: 100%;
         background-color: $colorBg;
         padding: 0;
+        padding-top: 50px;
         >li{
             list-style: none;
             padding: 18px;
             position: relative;
             display: flex;
             justify-content: space-between;
+
             >a{
                 font-family: NanumSquare;
                 font-size: 18px;

@@ -18,7 +18,7 @@ function handleClick(value){
     }
 }
 
-function openNav() {
+function openNav(){
     $(`#main-navigation`).addClass('open')
 }
 
