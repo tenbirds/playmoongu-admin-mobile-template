@@ -189,7 +189,7 @@ ul, li {
             text-overflow: ellipsis;
             white-space: nowrap;
             font-family: NanumSquare;
-            font-size: 20px;
+            font-size: 18px;
             font-weight: 800;
             color: #111111;
             &.active{
@@ -200,6 +200,7 @@ ul, li {
                 text-align: center;
                 color: #5815a5;
                 opacity: 1;
+                font-size: 20px;
                 border-radius: 10px;
                 background-color: #f5ebf680;
             }
