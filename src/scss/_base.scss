@@ -68,18 +68,32 @@ header{
         left: 0;
         right: 0;
         bottom: 0;
+        > header{
+            display: block;
+        }
+    }
+    > header{
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: #FFF;
+        z-index: 999999999999;
     }
     >ul{
         width: 50vw;
-        height: calc(100% - 50px);
+        min-height: 100%;
         background-color: $colorBg;
         padding: 0;
+        padding-top: 50px;
         >li{
             list-style: none;
             padding: 18px;
             position: relative;
             display: flex;
             justify-content: space-between;
+
             >a{
                 font-family: NanumSquare;
                 font-size: 18px;
@@ -323,6 +337,8 @@ input.form-control{
 .btn{
     border-radius: 5px;
     padding: 15px 15px;
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0),0 2px 10px 0 rgba(0,0,0,0);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0),0 2px 10px 0 rgba(0,0,0,0);
     &.btn-block{
         display: block;
         width: 100%;
@@ -404,5 +420,22 @@ footer{
             }
         }
       }
+    }
+}
+.fixed-header {
+    header {
+        position: fixed;
+        width: 100%;
+        z-index: 999;
+        height: 50px;
+        .main-header {
+            height: 100%;
+            .header {
+                height: 100%;
+            }
+        }
+    }
+    main {
+        padding-top: 50px;
     }
 }
