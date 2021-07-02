@@ -60,7 +60,7 @@
             position: fixed;
             width: 100%;
             bottom: 0;
-            &__text-add-cart {
+            .text-add-cart {
                 font-family: NanumSquare;
                 font-size: 16px;
                 font-weight: 800;
@@ -86,13 +86,12 @@
                     padding-bottom: 5px;
                     span {
                         font-family: NanumSquare;
-                        font-size: 9px;
-                        font-weight: normal;
+                        font-size: 11px;
+                        font-weight: bold;
                         font-stretch: normal;
                         font-style: normal;
                         line-height: normal;
                         letter-spacing: normal;
-                        text-align: left;
                         padding: 3px 7px;
                         border-radius: 2px;
                         margin-right: 5px;
@@ -140,8 +139,11 @@
                     letter-spacing: normal;
                     text-align: left;
                     color: #111111;
+                    padding-bottom: 7px;
                 }
                 &__total_price {
+                    display: flex;
+                    align-items: center;
                     .number_price {
                         font-family: Roboto;
                         font-size: 23px;
@@ -152,6 +154,8 @@
                         letter-spacing: normal;
                         text-align: left;
                         color: #c52321;
+                        display: flex;
+                        align-items: center;
                         &::after{
                             content: "원";
                             font-family: NanumSquare;
@@ -163,6 +167,7 @@
                             letter-spacing: normal;
                             text-align: left;
                             color: #c52321;
+                            padding:0 5px;
                         }
                     }
                     .text_price {
@@ -193,10 +198,32 @@
                         display: flex;
                         align-items: center;
                         padding-right: 20px;
+                        .value-barcode {
+                            font-family: Roboto;
+                            font-size: 12px;
+                            font-weight: normal;
+                            font-stretch: normal;
+                            font-style: normal;
+                            line-height: normal;
+                            letter-spacing: normal;
+                            text-align: left;
+                            color: #111111;
+                        }
                     }
                     .data-box {
                         display: flex;
                         align-items: center;
+                        .value-box {
+                            font-family: Roboto;
+                            font-size: 12px;
+                            font-weight: normal;
+                            font-stretch: normal;
+                            font-style: normal;
+                            line-height: normal;
+                            letter-spacing: normal;
+                            text-align: left;
+                            color: #111111;
+                        }
                     }
                 }
             }
