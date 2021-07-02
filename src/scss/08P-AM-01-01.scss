@@ -1,8 +1,7 @@
-header {
-   background-color: #FFFFFF;
-}
-
 .sales-by-affiliate-store {
+  header {
+    background-color: #FFFFFF;
+ }
   background-color: #f5f5f5;
   main {
     //background-color: #ffffff;
@@ -228,7 +227,7 @@ header {
 
       &__box-content-receipt-number-border-organ {
         background-color:  #ff8534;
-        padding: 2px !important;
+        padding: 4px 6px !important;
         font-size: 11px;
         font-weight: bold;
         font-stretch: normal;
