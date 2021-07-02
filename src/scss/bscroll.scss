@@ -79,7 +79,7 @@ ul, li {
             background-color:#fed400;
             color: #111111 !important;
             font-family: NanumSquare;
-            font-size: 16px;
+            font-size: 18px;
             font-weight: 800;
         }
         .cancel {
@@ -128,12 +128,12 @@ ul, li {
             position: absolute;
             top: 0;
             height: 30px !important;
-            background: linear-gradient(to top, rgba(255,255,255,0.4), rgba(255,255,255,0.8));
+            background: linear-gradient(to top, rgba(255,255,255,.3), rgba(255,255,255,1));
         }
         .mask-bottom {
             position: absolute;
             bottom: 1px;
-            background: linear-gradient(to bottom, rgba(255,255,255,0.4), rgba(255,255,255,0.8));
+            background: linear-gradient(to bottom, rgba(255,255,255,.3), rgba(255,255,255,1));
         }
 
         .border-top-1px:before,
@@ -191,6 +191,7 @@ ul, li {
             font-family: NanumSquare;
             font-size: 20px;
             font-weight: 800;
+            color: #111111;
             &.active{
                 font-stretch: normal;
                 font-style: normal;
