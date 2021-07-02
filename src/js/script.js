@@ -17,6 +17,9 @@ function handleClick(value){
         $(`#${value}`).modal('show');
     }
 }
+function openNav(){
+    $(`#main-navigation`).addClass('open')
+}
 function closeNav(){
     $('#main-navigation').removeClass('open')
 }
