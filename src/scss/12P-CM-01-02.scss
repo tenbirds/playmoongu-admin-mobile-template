@@ -16,11 +16,36 @@
       background-clip: content-box;
     }
 
+    &__box-second {
+      height: 124px;
+      background-color: #ffffff;
+      background-clip: content-box;
+    }
+
+    &__no-time {
+      font-family: Roboto;
+      font-size: 11px;
+      font-weight: 300;
+      font-stretch: normal;
+      font-style: normal;
+      letter-spacing: normal;
+      color: #111111;
+    }
+
     &__box-number {
       //margin-left: 20px;
       //padding : 10px;
       border-bottom: 1px solid #f5f5f5;;
-      margin-top: 12px;
+      margin-top: 4px;
+    }
+
+    &__money-won {
+      font-size: 14px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      letter-spacing: normal;
+      color: #c52321;
     }
 
     &__box-number-money {
@@ -68,5 +93,100 @@
       //text-align: right;
       color: #c52321;
     }
+
+    &__money-span-red{
+      font-family: Roboto;
+      font-size: 11px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      letter-spacing: normal;
+      color: #c52321;
+    }
+
+    &__money-span-blue {
+      font-family: NanumSquare;
+      font-size: 11px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      letter-spacing: normal;
+      color: #2181ff;
+    }
+
+    &__text-money{
+      font-family: NanumSquare;
+      font-size: 12px;
+      font-weight: 800;
+      font-stretch: normal;
+      font-style: normal;
+      letter-spacing: normal;
+      color: #111111;
+    }
+
+    &__text-one {
+      font-family: NanumSquare;
+      font-size: 14px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      letter-spacing: normal;
+      color: #111111;
+    }
+
+    &__text-second {
+      font-family: NanumSquare;
+      font-size: 12px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      letter-spacing: normal;
+      color: #c52321;
+    }
+
+    &__title-h4 {
+      font-family: NanumSquare;
+      font-size: 23px;
+      font-weight: 800;
+      font-stretch: normal;
+      font-style: normal;
+      letter-spacing: normal;
+      color: #000000;
+    }
+
+    &__title-span {
+      font-family: NanumSquare;
+      font-size: 14px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      letter-spacing: normal;
+      color: #111111;
+    }
+
+    &__title-h6 {
+      font-family: NanumSquare;
+      font-size: 14px;
+      font-weight: 800;
+      font-stretch: normal;
+      font-style: normal;
+      letter-spacing: normal;
+      color: #111111;
+    }
+
+    &__box-modal {
+      height: 106px;
+      background-clip: content-box;
+      border-radius: 5px;
+      background-color: #f5f5f5;
+    }
+
+    &__box-boder{
+      border-bottom: 1px solid #ffffff;
+      margin-top: 4px;
+    }
   }
 }
+
+
+
