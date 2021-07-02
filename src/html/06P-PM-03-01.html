@@ -1,10 +1,10 @@
 @@include('components/head.html', 
 { "title": "Gulp", 
 "bodyClass":
-"product-detail-scan-barcode fixed-header" 
+"shopping-cart-management fixed-header" 
 }) 
 @@include('components/header.html', { 
-    "title":"상품 상세 관리", 
+    "title":"장바구니 관리", 
     "link": "#" ,
     "leftIcon": "",
     "rightTitle": "",
@@ -13,43 +13,31 @@
 })
 
 <main>
-  <div class="main-product-detail">
-    <div class="product-img">
-      <div class="img-product-detail">
-        <img class="img-detail" src="/images/photos/img04_1.png" />
-      </div>
+  <div class="main-shopping-cart-management">
+    <div class="cart-management-filter">
+        <div class="cart-management-filter__choose-store choose-store-select-common">
+            <label class="choose-store-select-common__text">전체 매장</label>
+            <img class="choose-store-select-common__icon" src="/images/icons/icon_arrow_down.svg" />
+        </div>
+        <div class="cart-management-filter__input-search input-search-common">
+          <input placeholder="매장 명을 검색해 주세요." class="form-control input-search-common__input-form" />
+          <img class="input-search-common__icon-search" src="/images/icons/icon_search.svg" />
+        </div>
+    </div>
+    <div class="cart-management-store">
+        <div class="cart-management-store__item">
+            <div class="cart-management-store__item__no-time">
+                <label class="cart-management-store__item__no-time__no">
+                  No.11
+                </div>
+                <label class="cart-management-store__item__no-time__time">
+                  No.11
+                </div>
+            </div>
+        </div>
     </div>
   </div>
-  <div class="main-product-detail__info-data">
-        <div class="main-product-detail__info-data__product">
-            <div class="main-product-detail__info-data__product__status">
-                <span class="status_sale">판매중</span>
-                <span class="status_phrases">문구</span>
-            </div>
-            <label class="main-product-detail__info-data__product__name">방탄소년단 캐릭터 지우개</label>
-            <label class="main-product-detail__info-data__product__quantity-price">1,700원(소비자가) / 1,500원(공급가)</label>
-            <div class="main-product-detail__info-data__product__total_price">
-                <span class="number_price">1,500</span>
-                <span class="text_price">(공급가)</span>
-            </div>
-        </div>
-        <div class="main-product-detail__info-data__barcode">
-            <label class="main-product-detail__info-data__barcode__no">No.10</label>
-            <div class="main-product-detail__info-data__barcode__data-quantity">
-                    <div class="data-barcode">
-                        <img class="icon-barcode" src="/images/icons/icon_bacode.svg" />
-                        <label class="value-barcode">801541354431</label>
-                    </div>
-                    <div class="data-box">
-                        <img class="icon-box" src="/images/icons/icon_box.svg" />
-                        <label class="value-box">12</label>
-                    </div>
-            </div>
-        </div>
-  </div>
-  <div class="main-product-detail__add-to-cart">
-        <span class="text-add-cart">장바구니 추가</span>
-  </div>
+  
 </main>
 
 <footer></footer>
