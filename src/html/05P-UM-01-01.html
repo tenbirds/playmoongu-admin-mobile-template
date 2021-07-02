@@ -182,7 +182,6 @@
     </div>
 </main>
 <footer></footer>
-@@include('components/foot.html')
 @@include('./components/script.html')
 <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="/css/bscroll.min.css">
@@ -222,16 +221,12 @@
         })
     }
 
-    $(document).on('click', '#js_filter_select', function(e) {
+    $(document).on('click mousedown', '#js_filter_select', function(e) {
         e.preventDefault();
         this.blur();
         window.focus();
         init()
     })
-
-    // function login() {
-    //   $('#modalPopup1').modal('show');
-    //   $('#modalPopup2').modal('show');
-    // }
   </script>
+@@include('components/foot.html')
 

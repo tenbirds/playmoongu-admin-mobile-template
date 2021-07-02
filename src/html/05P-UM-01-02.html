@@ -19,77 +19,85 @@
             <form class="form-detail">
 
                 <!-- INFO ADMIN -->
-                <h3 class="form-detail__main-title">관리자 정보</h3>
-                <div class="mb-2">
+                <h3 class="form-detail__main-title form-title">
+                    <span>관리자 정보</span>
+                </h3>
+                <div class="mb-3">
                     <label class="label-input">
                         <span class="required">아이디</span>
-                        <input class="form-control mb-3" value="세종한솔점" readonly>
+                        <input class="form-control base-input" value="세종한솔점" readonly>
                     </label>
                 </div>
-                <div class="mb-2">
+                <div class="mb-3">
                     <label class="label-input">
                         <span class="required">이름</span>
-                        <input class="form-control mb-3" value="이름">
+                        <input class="form-control base-input" value="스타빌리스(고덕점주)">
                     </label>
                 </div>
-                <div class="mb-2">
+                <div class="mb-3">
                     <label class="label-input">
                         <span class="required">전화번호</span>
-                        <input class="form-control mb-3" value="951114-1234567">
+                        <input class="form-control base-input" value="951114-1234567">
                     </label>
                 </div>
-                <div class="mb-2">
+                <div class="mb-3">
                     <label class="label-input">
                         <span class="">이메일</span>
-                        <input class="form-control mb-3" value="abc@gmail.com">
+                        <input class="form-control base-input" value="abc@gmail.com">
                     </label>
                 </div>
-                <div class="mb-2">
+                <div class="mb-3">
                     <label class="label-input">
                         <span class="">주민등록번호</span>
-                        <input class="form-control mb-3" value="951114-1234567">
+                        <input class="form-control base-input" value="951114-1234567">
                     </label>
                 </div>
-                <div class="mb-2">
+                <div class="mb-3">
                     <label class="label-input">
                         <span class="required">비밀번호</span>
-                        <input type="password" class="form-control" value="Password">
+                        <input type="password" class="form-control base-input" value="Password">
                     </label>
                 </div>            
-                <div class="mb-2">
+                <div class="mb-3">
                     <label class="label-input">
-                        <span class="required">등급</span>
-                        <select class="form-select" aria-label="" id="js_choose_role">
-                            <option value="">등급을 선택하세요.</option>
-                            <option value="1">최고 관리자</option>
-                            <option value="2">일반 관리자</option>
-                            <option value="3">최고 관리자</option>
-                            <option value="3">일반 관리자</option>
-                        </select>
+                        <span class="required">등급1</span>
+                        <div class="dropdown dropdown-custom">
+                            <button class="btn btn-secondary dropdown-toggle dropdown-custom__button" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                                등급을 선택하세요.
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                              <li><button class="dropdown-item" type="button">최고 관리자</button></li>
+                              <li><button class="dropdown-item" type="button">일반 관리자</button></li>
+                              <li><button class="dropdown-item" type="button">최고 관리자</button></li>
+                              <li><button class="dropdown-item" type="button">일반 관리자</button></li>
+                            </ul>
+                          </div>
                     </label>
                 </div>
-                <div class="mb-2">
+                <div class="mb-3">
                     <label class="label-input">
                         <span class="">은행 정보</span>
-                        <input type="text" class="form-control" value="" readonly>
+                        <input type="text" class="form-control base-input" value="" readonly>
                     </label>
                 </div>
-                <div class="mb-2">
+                <div class="mb-3">
                     <label class="label-input">
                         <span class="">가상계좌정보</span>
-                        <input type="text" class="form-control" value="" readonly>
+                        <input type="text" class="form-control base-input" value="" readonly>
                     </label>
                 </div>
-                <div class="mb-2">
+                <div class="mb-3">
                     <label class="label-input">
                         <span class="">보유 예수금</span>
-                        <input type="text" class="form-control" value="" readonly>
+                        <input type="text" class="form-control base-input" value="" readonly>
                     </label>
                 </div>
 
 
                 <!-- STORE OWNER BLOCK -->
-                <h3 class="form-detail__main-title store-owner">보유 가맹점</h3>
+                <h3 class="form-detail__main-title form-title store-owner">
+                    <span>보유 가맹점</span>
+                </h3>
                 <div class="store-owner">
                     <ul class="list-group">
                         <li class="row align-items-center">
@@ -212,7 +220,9 @@
                 </div>
 
                 <!-- HISTORY DEPOSIT -->
-                <h3 class="form-detail__main-title history-deposit">입금 내역</h3>
+                <h3 class="form-detail__main-title form-title history-deposit">
+                    <span>입금 내역</span>
+                </h3>
                 <div class="history-deposit">
                     <ul class="list-group">
                         <li class="row align-items-center">
@@ -259,7 +269,9 @@
                 <!-- MEMO -->
                 <div class="row">
                     <div class="col-6">
-                        <h3 class="form-detail__main-title memo">메모</h3>
+                        <h3 class="form-detail__main-title form-title memo">
+                            <span>메모</span>
+                        </h3>
                     </div>
                     <div class="col-6 text-end">
                         <button type="button" class="btn form-detail__add-more">추가</button>
@@ -314,7 +326,6 @@
     </div>
 </main>
 <footer></footer>
-@@include('components/foot.html')
 @@include('./components/script.html')
 <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="/css/bscroll.min.css">
@@ -328,4 +339,4 @@
         init()
     })
   </script>
-
+@@include('components/foot.html')
