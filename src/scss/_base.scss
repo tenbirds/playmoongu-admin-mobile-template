@@ -439,3 +439,35 @@ footer{
         padding-top: 50px;
     }
 }
+
+.choose-store-select-common {
+    display: flex;
+    align-items: center;
+    &__text {
+        font-family: NanumSquare;
+        font-size: 23px;
+        font-weight: 800;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #000000;
+        padding-right: 5px;
+    }
+    &__icon {
+        
+    }
+}
+.input-search-common {
+    position: relative;
+    &__input-form {
+
+    }
+    &__icon-search {
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
