@@ -24,7 +24,9 @@
     min-height: 85vh;
     padding-top: 20px;
     font-size: 14px;
-    // ul {
+      .card {
+        border: 1px solid #f5f5f5;
+      }
       &__number {
         span {
           font-size: 11px;
@@ -58,7 +60,6 @@
           color: #111111
         }
       }
-    // }
   }
 }
 
