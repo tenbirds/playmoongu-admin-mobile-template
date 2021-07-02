@@ -1,0 +1,242 @@
+@@include('components/head.html', {
+    "title": "Gulp",
+    "bodyClass": "cart-detail"
+})
+
+@@include('components/header.html', {
+"title": "장바구니 상세",
+"link": "06P-PM-02-03.html",
+"leftIcon": "",
+"rightTitle": "",
+"leftTitle": "/images/icons/icon_top_arrow_B.svg",
+'param': "open_nav"
+})
+
+<main>
+    <div class="main-cart-detail">
+        
+        <div class="filter_search_page">
+            <div class="choose-store-select-common filter_search_page__title">
+                <label class="choose-store-select-common__text">인천서구가정점</label>
+              </div>
+            <div class="switch-form-search-common filter_search_page__form-search">
+                <button>
+                    <img src="/images/icons/icon_change.svg" />
+                    <label>바코드번호</label>
+                </button>
+                <div class="control-search">
+                    <input class="form-control" type="text" />
+                    <img class="search-form"  src="/images/icons/icon_search.svg" />
+                </div>
+            </div>
+        </div>
+        <div class="main-cart-detail__content-center">
+            <div class="main-cart-detail__content-center__item">
+                <img class="main-cart-detail__content-center__item__remove"  src="/images/icons/pop_X.svg" />
+                <div class="main-cart-detail__content-center__item__time">
+                    <label class="content-center__item__time__text">마지막 업데이트 :</label>
+                    <label class="content-center__item__time__value">2021.05.06 21:08:15</label>
+                </div>
+                <div class="main-cart-detail__content-center__item__info-product">
+                    <img class="content-center__item__info-product__img"  src="/images/photos/img04_mini.png" />
+                    <div class="content-center__item__info-product__info-data">
+                        <div class="info-product__info-data__status-no">
+                            <span class="status_sale">문구</span>
+                            <label class="info-product__info-data__status-no__no">No.2</label>
+                        </div>
+                        <label class="content-center__item__info-product__info-data__name">방탄소년단 캐릭터 지우개</label>
+                        <div class="barcode-price">
+                            <div class="info-data__barcode-price__barcode">
+                                <img class="barcode-price__barcode__img"  src="/images/icons/icon_bacode_s.svg" />
+                                <label class="barcode-price__barcode__value">801541354431</label>
+                            </div>
+                            <label class="info-data__barcode-price__price">1,700원(소비자가)</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-cart-detail__content-center__item__pack">
+                    <div class="item__pack__price">
+                        <label class="item__pack__price__number">1,500</label>
+                        <label class="item__pack__price__text">원(공급가)_10묶음</label>
+                    </div>
+                    <div class="item__pack__quantity">
+                        <label class="item__pack__quantity__text">묶음 수량</label>
+                        <div class="item__pack__quantity__value-select">
+                            <label class="item__pack__quantity__value-select__number">10</label>
+                            <img class="item__pack__quantity__value-select__icon"  src="/images/icons/icon_mini_arrow_down.svg" />
+                        </div>
+                    </div>
+                </div>
+                <div class="main-cart-detail__content-center__item__border-line">
+                    <img src="/images/icons/icon_line.svg" />
+                </div>
+                <div class="main-cart-detail__content-center__item__total-pack-price">
+                    <div class="total-pack-price__pack">
+                        <label class="total-pack-price__pack__gun">총</label>
+                        <label class="total-pack-price__pack__number">100</label>
+                        <label class="total-pack-price__pack__dog">개</label>
+                    </div>
+                    <div class="total-pack-price__price">
+                        <label class="total-pack-price__price__number">150,000</label>
+                        <label class="total-pack-price__price__text">(공급가)</label>
+                    </div>
+                </div>
+
+            </div>
+            <div class="main-cart-detail__content-center__item">
+                <img class="main-cart-detail__content-center__item__remove"  src="/images/icons/pop_X.svg" />
+                <div class="main-cart-detail__content-center__item__time">
+                    <label class="content-center__item__time__text">마지막 업데이트 :</label>
+                    <label class="content-center__item__time__value">2021.05.06 21:08:15</label>
+                </div>
+                <div class="main-cart-detail__content-center__item__info-product">
+                    <img class="content-center__item__info-product__img"  src="/images/photos/img04_mini.png" />
+                    <div class="content-center__item__info-product__info-data">
+                        <div class="info-product__info-data__status-no">
+                            <span class="status_sale">문구</span>
+                            <label class="info-product__info-data__status-no__no">No.2</label>
+                        </div>
+                        <label class="content-center__item__info-product__info-data__name">방탄소년단 캐릭터 지우개</label>
+                        <div class="barcode-price">
+                            <div class="info-data__barcode-price__barcode">
+                                <img class="barcode-price__barcode__img"  src="/images/icons/icon_bacode_s.svg" />
+                                <label class="barcode-price__barcode__value">801541354431</label>
+                            </div>
+                            <label class="info-data__barcode-price__price">1,700원(소비자가)</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-cart-detail__content-center__item__pack">
+                    <div class="item__pack__price">
+                        <label class="item__pack__price__number">1,500</label>
+                        <label class="item__pack__price__text">원(공급가)_10묶음</label>
+                    </div>
+                    <div class="item__pack__quantity">
+                        <label class="item__pack__quantity__text">묶음 수량</label>
+                        <div class="item__pack__quantity__value-select">
+                            <label class="item__pack__quantity__value-select__number">10</label>
+                            <img class="item__pack__quantity__value-select__icon"  src="/images/icons/icon_mini_arrow_down.svg" />
+                        </div>
+                    </div>
+                </div>
+                <div class="main-cart-detail__content-center__item__border-line">
+                    <img src="/images/icons/icon_line.svg" />
+                </div>
+                <div class="main-cart-detail__content-center__item__total-pack-price">
+                    <div class="total-pack-price__pack">
+                        <label class="total-pack-price__pack__gun">총</label>
+                        <label class="total-pack-price__pack__number">100</label>
+                        <label class="total-pack-price__pack__dog">개</label>
+                    </div>
+                    <div class="total-pack-price__price">
+                        <label class="total-pack-price__price__number">150,000</label>
+                        <label class="total-pack-price__price__text">(공급가)</label>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="main-cart-detail__foot-page">
+            <div class="main-cart-detail__foot-page__total-price">
+                <label class="main-cart-detail__foot-page__total-price__text">품목 2건</label>
+                <label class="main-cart-detail__foot-page__total-price__price">270,000</label>
+            </div>
+            <div class="main-cart-detail__foot-page__button-submit button-bottom-page-common">
+                <label class="button-bottom-page-common__text">주문 하기</label>
+            </div>
+        </div>
+        
+    </div>
+</main>
+
+
+<div class="modal popup" id="addCart" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">장바구니 추가</h5>
+            </div>
+            <div class="modal-body main-body-add-cart">
+                
+                <div class="cart-name">
+                    <label class="cart-name__text-name">더블클립특소형(100개입)</label>
+                </div>
+                <div class="cart-quantity-price">
+                    <label class="cart-quantity-price__price">공급가: 1,200원</label>
+                    <label class="cart-quantity-price__quantity">박스 및 묶음 수량: 2</label>
+                </div>
+                <div class="main-form-popup_common">
+                    <div class="main-form-popup">
+                        <div class="row-group-form mb-3">
+                            <div class=" row-group-form__title">
+                                <label class="m-0">주문 수량</label>
+                            </div>
+                            <div class=" control-type">
+                                <div class="select_custom">
+                                    <select class="form-control">
+                                        <option>1</option>
+                                        <option>2</option>
+                                    </select>
+                                    <img src="/images/icons/icon_arrow_select.svg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row-group-form mb-3">
+                            <div class="row-group-form__title">
+                                <label class="m-0">가맹점</label>
+                            </div>
+                            <div class="control-type">
+                                <input class="form-control" value="분류 명을 입력하세요.">
+                            </div>
+                        </div>
+                        <div class="row-group-form mb-3">
+                            <div class="row-group-form__title">
+                                <label class="m-0">총 금액(원)</label>
+                            </div>
+                            <div class="control-type">
+                                <input class="form-control custom-value-right" readonly value="4,800">
+                            </div>
+                        </div>
+                        <div class="row-group-form mb-3">
+                            <div class="row-group-form__title">
+                                <label class="m-0">총 수량</label>
+                            </div>
+                            <div class="control-type">
+                                <input class="form-control custom-value-right" readonly value="분류 명을 입력하세요.">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn-dismiss" data-bs-dismiss="modal">취소</button>
+                <button type="button" class="btn-action" onclick="openModalConfirmAddCart()">추가</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal popup" id="confirmAddCart" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">알림</h5>
+            </div>
+            <div class="modal-body main-confirm-modal-add-cart">
+                <p class="text-confirm">장바구니로 이동 하시겠습니까?</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn-dismiss" data-bs-dismiss="modal">아니요</button>
+                <button type="button" class="btn-action">예</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<footer></footer>
+@@include('components/script.html')
+@@include('components/foot.html') 
+

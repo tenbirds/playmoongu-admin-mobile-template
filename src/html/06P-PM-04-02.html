@@ -1,0 +1,119 @@
+@@include('components/head.html',
+{ "title": "Gulp",
+"bodyClass":
+"shopping-cart-management fixed-header order-history-management"
+})
+@@include('components/header.html', {
+"title":"주문 내역 관리",
+"link": "#" ,
+"leftIcon": "",
+"rightTitle": "",
+"leftTitle": "/images/icons/m_menu.svg",
+'param': "open_nav",
+'iconRight':'/images/icons/icon_calender.svg',
+'eventIconRight':'openCaledar()'
+})
+
+<main>
+  <div class="main-shopping-cart-management">
+    <div class="cart-management-filter">
+      <div class="cart-management-filter__choose-store choose-store-select-common">
+        <label class="choose-store-select-common__text">전체 매장</label>
+        <img class="choose-store-select-common__icon" src="/images/icons/icon_arrow_down.svg" />
+      </div>
+      <div class="cart-management-filter__input-search input-search-common">
+        <input placeholder="매장 명을 검색해 주세요." class="form-control input-search-common__input-form" />
+        <img class="input-search-common__icon-search" src="/images/icons/icon_search.svg" />
+      </div>
+    </div>
+    <div class="cart-management-store">
+      <div class="cart-management-store__item">
+        <div class="cart-management-store__item__no-time">
+          <label class="cart-management-store__item__no-time__no">
+            No.11
+          </label>
+          <label class="cart-management-store__item__no-time__time">
+            2021.05.06 21:08:15
+          </label>
+        </div>
+        <div class="cart-management-store__item__status-order">
+          <div class="cart-management-store__item__store-data">
+            <img class="cart-management-store__item__store-data__icon" src="/images/icons/icon_shop.svg" />
+            <label class="cart-management-store__item__store-data__name">중곡시장점</label>
+          </div>
+          <div class="item__status-order order-reception">
+            <img class="item__status-order__status" src="/images/icons/icon_p01.svg" />
+            <label class="item__status-order__text">주문접수</label>
+          </div>
+        </div>
+        <div class="cart-management-store__item__total">
+          <label class="cart-management-store__item__total__text">총 품목(개수) :</label>
+          <strong>3</strong>
+        </div>
+        <div class="cart-management-store__item__price">
+          <label class="cart-management-store__item__price__value">111,540</label>
+        </div>
+      </div>
+      <div class="cart-management-store__item">
+        <div class="cart-management-store__item__no-time">
+          <label class="cart-management-store__item__no-time__no">
+            No.11
+          </label>
+          <label class="cart-management-store__item__no-time__time">
+            2021.05.06 21:08:15
+          </label>
+        </div>
+        <div class="cart-management-store__item__status-order">
+          <div class="cart-management-store__item__store-data">
+            <img class="cart-management-store__item__store-data__icon" src="/images/icons/icon_shop.svg" />
+            <label class="cart-management-store__item__store-data__name">중곡시장점</label>
+          </div>
+          <div class="item__status-order shipping">
+            <img class="item__status-order__status" src="/images/icons/icon_p02.svg" />
+            <label class="item__status-order__text">배송중</label>
+          </div>
+        </div>
+        <div class="cart-management-store__item__total">
+          <label class="cart-management-store__item__total__text">총 품목(개수) :</label>
+          <strong>3</strong>
+        </div>
+        <div class="cart-management-store__item__price">
+          <label class="cart-management-store__item__price__value">111,540</label>
+        </div>
+      </div>
+      <div class="cart-management-store__item">
+        <div class="cart-management-store__item__no-time">
+          <label class="cart-management-store__item__no-time__no">
+            No.11
+          </label>
+          <label class="cart-management-store__item__no-time__time">
+            2021.05.06 21:08:15
+          </label>
+        </div>
+        <div class="cart-management-store__item__status-order">
+          <div class="cart-management-store__item__store-data">
+            <img class="cart-management-store__item__store-data__icon" src="/images/icons/icon_shop.svg" />
+            <label class="cart-management-store__item__store-data__name">중곡시장점</label>
+          </div>
+          <div class="item__status-order receipt-completed">
+            <img class="item__status-order__status" src="/images/icons/icon_p02.svg" />
+            <label class="item__status-order__text">배송중</label>
+          </div>
+        </div>
+        <div class="cart-management-store__item__total">
+          <label class="cart-management-store__item__total__text">총 품목(개수) :</label>
+          <strong>3</strong>
+        </div>
+        <div class="cart-management-store__item__price">
+          <label class="cart-management-store__item__price__value">111,540</label>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+</main>
+
+<footer></footer>
+@@include('components/script.html')
+@@include('components/foot.html')
