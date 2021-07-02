@@ -48,7 +48,9 @@
   }
 
   .main-scan-barcode-camera {
-      padding:70px 25px 25px 25px;
+      padding:0;
+      background-color: #000;
+      height: calc(100vh - 168px);
       &__camera {
           min-height: 308px;
           border:1px solid yellow;
