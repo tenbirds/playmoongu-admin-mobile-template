@@ -161,12 +161,12 @@
                         <span class="">키오스크 구매</span>
                     </label>
                     <div class="row main-check box-input__main-check">
-                        <div class="col-6 box-input__main-check__radio-box">
+                        <div class="col-7 box-input__main-check__radio-box">
                             <label class="label-radio">
                                 <input type="radio" checked name="purchase"/><span>구매</span>
                             </label>
                         </div>
-                        <div class="col-6 box-input__main-check__radio-box">
+                        <div class="col-7 box-input__main-check__radio-box">
                             <label class="label-radio">
                                 <input type="radio" checked name="purchase"/><span>렌트</span>
                             </label>
@@ -178,12 +178,12 @@
                         <span class="">개인 상품 가능</span>
                     </label>
                     <div class="row main-check box-input__main-check">
-                        <div class="col-6 box-input__main-check__radio-box">
+                        <div class="col-7 box-input__main-check__radio-box">
                             <label class="label-radio">
                                 <input type="radio" checked name="possible"/><span>가능</span>
                             </label>
                         </div>
-                        <div class="col-6 box-input__main-check__radio-box">
+                        <div class="col-7 box-input__main-check__radio-box">
                             <label class="label-radio">
                                 <input type="radio" checked name="possible"/><span>불가</span>
                             </label>
@@ -195,12 +195,12 @@
                         <span class="">기존 문방구 여부</span>
                     </label>
                     <div class="row main-check box-input__main-check">
-                        <div class="col-6 box-input__main-check__radio-box">
+                        <div class="col-7 box-input__main-check__radio-box">
                             <label class="label-radio">
                                 <input type="radio" checked name="stationery"/><span>Y</span>
                             </label>
                         </div>
-                        <div class="col-6 box-input__main-check__radio-box">
+                        <div class="col-7 box-input__main-check__radio-box">
                             <label class="label-radio">
                                 <input type="radio" checked name="stationery"/><span>N</span>
                             </label>
@@ -313,7 +313,7 @@
     </div>
 
     <!-- modal undo page register -->
-    <div class="modal popup" id="undo_modal_store" tabindex="-1">
+    <div class="modal popup modal-register-store" id="undo_modal_store" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header">
@@ -330,23 +330,102 @@
         </div>
     </div>
     <!-- modal completed register -->
-    <div class="modal popup" id="register_modal_store" tabindex="-1">
+    <div class="modal popup modal-register-store" id="register_modal_store" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title">알림</h5>
                 </div>
                 <div class="modal-body">
-                    <p>수정을 취소 하시겠습니까?</p>
+                    <p>수정이 완료 되었습니다.</p>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn-dismiss" data-bs-dismiss="modal" onclick="closeUndoModal('register_modal_store')">아니요</button>
-                    <button type="button" class="btn-action">예</button>
+                    <button type="button" class="btn-action" onclick="completedRegister()">확인</button>
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- modal required register -->
+    <div class="modal popup modal-register-store" id="required_modal_store" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">가맹점주 정보 검색</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="filter_search_page">
+                        <div class="type-filter">
+                            <button>
+                                <img src="/images/icons/icon_change.svg" />
+                                <label>가맹점주</label>
+                            </button>
+                            <div class="control-search">
+                                <input class="form-control" type="text" value="o" />
+                            </div>
+                        </div>
+                        <div class="box-radio">
+                            <div class="row main-check box-input__main-check">
+                                <div class="col-7 box-input__main-check__radio-box">
+                                    <label class="label-radio">
+                                        <input type="radio" checked name="purchase"/><span>이호택</span>
+                                    </label>
+                                </div>
+                                <div class="col-5 text-end box-input__main-check__radio-box">
+                                    <label class="label-number">
+                                        010-8546-1216
+                                    </label>
+                                </div>
+                            </div>
+                            <hr for="" class="line-modal"></hr>
+                            <div class="row main-check box-input__main-check">
+                                <div class="col-7 box-input__main-check__radio-box">
+                                    <label class="label-radio">
+                                        <input type="radio" checked name="purchase"/><span>문구야</span>
+                                    </label>
+                                </div>
+                                <div class="col-5 text-end box-input__main-check__radio-box">
+                                    <label class="label-number">
+                                        010-8546-1216
+                                    </label>
+                                </div>
+                            </div>
+                            <hr for="" class="line-modal"></hr>
+                            <div class="row main-check box-input__main-check">
+                                <div class="col-7 box-input__main-check__radio-box">
+                                    <label class="label-radio">
+                                        <input type="radio" checked name="purchase"/><span>방수진</span>
+                                    </label>
+                                </div>
+                                <div class="col-5 text-end box-input__main-check__radio-box">
+                                    <label class="label-number">
+                                        010-8546-1216
+                                    </label>
+                                </div>
+                            </div>
+                            <hr for="" class="line-modal"></hr>
+                            <div class="row main-check box-input__main-check">
+                                <div class="col-7 box-input__main-check__radio-box">
+                                    <label class="label-radio">
+                                        <input type="radio" checked name="purchase"/><span>어플이야다산가이</span>
+                                    </label>
+                                </div>
+                                <div class="col-5 text-end box-input__main-check__radio-box">
+                                    <label class="label-number">
+                                        010-8546-1216
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" onclick="requiredRegister()">취소</button>
+                    <button type="button" class="btn-action">선택</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </main>
 <footer></footer>
 @@include('components/foot.html')
@@ -360,6 +439,15 @@
     })
     function closeUndoModal(value) {
         $(`#${value}`).modal('hide');
+        $('#register_modal_store').modal('show');
+    }
+
+    function completedRegister() {
+        $('#register_modal_store').modal('hide');
+        $('#required_modal_store').modal('show');
+    }
+    function requiredRegister() {
+        $('#required_modal_store').modal('hide');
     }
   </script>
 
