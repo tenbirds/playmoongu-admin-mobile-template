@@ -408,3 +408,13 @@ footer{
       }
     }
 }
+.fixed-header {
+    header {
+        position: fixed;
+        width: 100%;
+        z-index: 999;
+    }
+    main {
+        padding-top: 61px;
+    }
+}
