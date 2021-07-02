@@ -437,6 +437,7 @@ footer{
     }
     main {
         padding-top: 50px;
+        height: 100vh;
     }
 }
 
@@ -462,7 +463,15 @@ footer{
 .input-search-common {
     position: relative;
     &__input-form {
-
+        font-family: NanumSquare;
+        font-size: 14px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #111;
     }
     &__icon-search {
         position: absolute;
