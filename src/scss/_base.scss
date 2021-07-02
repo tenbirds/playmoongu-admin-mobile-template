@@ -422,3 +422,20 @@ footer{
       }
     }
 }
+.fixed-header {
+    header {
+        position: fixed;
+        width: 100%;
+        z-index: 999;
+        height: 50px;
+        .main-header {
+            height: 100%;
+            .header {
+                height: 100%;
+            }
+        }
+    }
+    main {
+        padding-top: 50px;
+    }
+}
