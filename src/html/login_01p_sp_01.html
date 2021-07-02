@@ -1,11 +1,11 @@
 
 @@include('components/head.html', {
-  "title": "Gulp",
+  "title": "로그인",
   "bodyClass": "login-01p-sp-01"
 })
 <header>
   <div class="logo-login"> 
-    <img class="img-login" src="../images/icons/login_logo.svg" alt="">
+    <img class="img-login" src="/images/icons/login_logo.svg" alt="">
   </div>
 </header>
 <main>
@@ -42,7 +42,7 @@
               <p class="mb-0 text-center text-content-modal">아이디 혹은 비밀번호가 입력 되지 않았습니다.</p> 
           </div>
           <div class="modal-footer">
-              <button type="button" class="btn-action">확인</button>
+              <button type="button" class="btn-action" onclick="submitModalRequired()">확인</button>
           </div>
       </div>
     </div>
@@ -58,7 +58,7 @@
               </p> 
           </div>
           <div class="modal-footer">
-              <button type="button" class="btn-action">확인</button>
+              <button type="button" class="btn-action" onclick="submitModalUnique()">확인</button>
           </div>
       </div>
     </div>
@@ -74,7 +74,18 @@
 <script type="text/javascript">
   function login() {
     $('#modalPopup1').modal('show');
-    $('#modalPopup2').modal('show');
+    $('#modalPopup2').modal('hide');
   }
+
+  function submitModalRequired() {
+    $('#modalPopup2').modal('show');
+    $('#modalPopup1').modal('hide');
+  }
+
+  function submitModalUnique(params) {
+    $('#modalPopup2').modal('hide');
+  }
+
 </script>
 @@include('components/foot.html')
+
