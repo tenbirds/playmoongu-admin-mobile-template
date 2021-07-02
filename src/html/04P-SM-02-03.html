@@ -1,0 +1,89 @@
+@@include('components/head.html', {
+    "title": "키오스크 등록하기",
+    "bodyClass": "detail-kiosk-page",
+})
+
+@@include('components/header.html', {
+    "title": "키오스크 등록하기",
+    "bodyClass": "",
+    "rightTitle": "등록하기",
+    "leftTitle": "/images/icons/icon_top_arrow_B.svg",
+    "param": "undo_modal_store",
+    "value": "register_modal_store",
+    "link": "#",
+})
+
+<main>
+   
+    <div class="detail-kiosk-page">
+        <div class="container">
+            <div class="box-detail">
+                <!-- INFO store -->
+                <div class="box-detail__title_box">
+                    <h3 class="box-detail__title_box__main-title">키오스크 정보</h3>
+                    <label class="box-detail__title_box__border-title"></label>
+                </div>
+                <div class="mb-0 box-input">
+                    <label class="label-input">
+                        <span class="required">키오스크 일련번호</span>
+                        <input class="form-control mb-3" value="A0005" >
+                    </label>
+                </div>
+                <div class="mb-0 box-input">
+                    <label class="label-input">
+                        <span class="required">키오스크 모델명</span>
+                        <input class="form-control mb-3" value="kiosk5" >
+                    </label>
+                </div>
+                <div class="mb-0 box-input">
+                    <label class="label-input">
+                        <span class="">가맹점명</span>
+                        <input class="form-control mb-3" value="세종한솔점">
+                    </label>
+                </div>
+                <div class="mb-0 box-input">
+                    <label class="label-input">
+                        <span class="">등록일</span>
+                        <input class="form-control mb-3" value="2021-04-05" readonly>
+                    </label>
+                </div>
+                <div class="mb-0 box-input">
+                    <label class="label-input">
+                        <span class="">카드 단말기 번호</span>
+                        <input class="form-control mb-3" value="123">
+                    </label>
+                </div>
+                <div class="mb-0 box-input">
+                    <label class="label-input">
+                        <span class="">카드 시리얼 번호</span>
+                        <input class="form-control mb-3" value="78965461">
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer></footer>
+@@include('components/foot.html')
+@@include('components/script.html')
+<script type="text/javascript">
+    $(document).on('click', '#js_filter_select', function(e) {
+        e.preventDefault();
+        this.blur();
+        window.focus();
+        init()
+    })
+    function closeUndoModal(value) {
+        $(`#${value}`).modal('hide');
+        $('#register_modal_store').modal('show');
+    }
+
+    function completedRegister() {
+        $('#register_modal_store').modal('hide');
+        $('#required_modal_store').modal('show');
+    }
+    function requiredRegister() {
+        $('#required_modal_store').modal('hide');
+    }
+  </script>
+
