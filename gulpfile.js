@@ -57,6 +57,23 @@ gulp.task('sass', gulp.series(function () {
         .pipe(gulp.dest(gulp.sources.dist + '/css'))
         .pipe(browserSync.stream());
 }));
+gulp.task('sass_build', gulp.series(function () {
+    return gulp.src(gulp.sources.src + '/scss/*.scss')
+        .pipe(plumber())
+        .pipe(sass({
+            errorLogToConsole: true,
+            outputStyle: 'compressed'
+        }))
+        .on('error', console.error.bind(console))
+        .pipe(autoprefixer({
+            browsers: ['last 2 versions'],
+            cascade: false
+        }))
+        .pipe(rename({
+            suffix: '.min'
+        }))
+        .pipe(gulp.dest(gulp.sources.dist + '/css'))
+}));
 
 //JS
 gulp.task('js', function () {
@@ -139,7 +156,7 @@ gulp.task('run', gulp.parallel(gulp.series([
 
 gulp.task('build', gulp.parallel(gulp.series([
     'html',
-    'sass',
+    'sass_build',
     'js',
     'files'
 ])));
