@@ -12,6 +12,8 @@
         box-shadow:none;
         padding: 5px 0;
         font-size: 11px;
+        display: flex;
+        align-items: center;
         &::after{
           background-image: url(./../images/icons/icon_arrow_select.svg);
           width: 10px;

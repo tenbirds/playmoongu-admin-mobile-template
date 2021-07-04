@@ -610,3 +610,35 @@ footer {
         color: #111111;
     }
 }
+.main-status-order-common {
+    padding: 8px 7px 7px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    &.stt-shipping {
+        background-color: #56bf5c;
+    }
+    &__icon {
+
+    }
+    &__text {
+        font-family: NanumSquare;
+        font-size: 11px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #ffffff;
+        padding-left: 5px;
+    }
+}
+.border-line-common {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+    img {
+        width: 100%;
+    }
+}
