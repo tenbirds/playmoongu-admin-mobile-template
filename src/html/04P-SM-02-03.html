@@ -8,13 +8,12 @@
     "bodyClass": "",
     "rightTitle": "등록하기",
     "leftTitle": "/images/icons/icon_top_arrow_B.svg",
-    "param": "undo_modal_store",
-    "value": "register_modal_store",
+    "param": "undo_modal_kiosk",
+    "value": "register_modal_kiosk",
     "link": "#",
 })
 
 <main>
-   
     <div class="detail-kiosk-page">
         <div class="container">
             <div class="box-detail">
@@ -62,6 +61,57 @@
             </div>
         </div>
     </div>
+    <!-- modal undo page register -->
+    <div class="modal popup modal-register-store" id="undo_modal_kiosk" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">알림</h5>
+                </div>
+                <div class="modal-body">
+                    <p class="decription-body">수정을 취소 하시겠습니까?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn-dismiss" data-bs-dismiss="modal" onclick="closeUndoModal('undo_modal_kiosk')">아니요</button>
+                    <button type="button" class="btn-action">예</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal completed register -->
+    <div class="modal popup modal-register-store" id="register_modal_kiosk" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">알림</h5>
+                </div>
+                <div class="modal-body">
+                    <p>수정이 완료 되었습니다.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn-action" onclick="completedRegister()">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- modal required register -->
+    <div class="modal popup modal-register-store" id="required_modal_kiosk" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">가맹점주 정보 검색</h5>
+                </div>
+                <div class="modal-body">
+                    <p>필수 항목을 입력해주세요</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" onclick="requiredRegister()">취소</button>
+                    <button type="button" class="btn-action">선택</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </main>
 <footer></footer>
 @@include('components/foot.html')
@@ -75,15 +125,15 @@
     })
     function closeUndoModal(value) {
         $(`#${value}`).modal('hide');
-        $('#register_modal_store').modal('show');
+        $('#register_modal_kiosk').modal('show');
     }
 
     function completedRegister() {
-        $('#register_modal_store').modal('hide');
-        $('#required_modal_store').modal('show');
+        $('#register_modal_kiosk').modal('hide');
+        $('#required_modal_kiosk').modal('show');
     }
     function requiredRegister() {
-        $('#required_modal_store').modal('hide');
+        $('#required_modal_kiosk').modal('hide');
     }
   </script>
 

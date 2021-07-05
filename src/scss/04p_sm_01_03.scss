@@ -1,7 +1,7 @@
-.detail-store-page {
+.detail-kiosk-page {
     .container {
         margin: 0px;
-        padding: 0 0 20px;
+        padding: 0px;
     }
 
     .box-detail {
@@ -49,25 +49,6 @@
                     color: #111111;
                 }
             }
-            .box-input__main-check{
-                &__radio-box{
-                    // padding-right: 0px;
-                    
-                    .label-radio{
-                        // opacity: 0.5;
-                        font-family: NanumSquare;
-                        font-size: 14px;
-                        font-weight: bold;
-                        font-stretch: normal;
-                        font-style: normal;
-                        line-height: normal;
-                        letter-spacing: normal;
-                        text-align: left;
-                        color: #111111;
-                    }
-                }
-                
-            }
 
             &__main-check {
                 margin-top: 10px;
@@ -92,22 +73,23 @@
                     }
                 }
             }
+
             .kiosk-info {
                 background: #ffffff;
                 display: flex;
                 align-items: center;
                 flex-wrap: wrap;
-                border-radius: 10px;
-                border: solid 1px #f5f5f5;
-                background-color: #ffffff;
+
                 &__data {
+                    padding: 6px 10px 6px 10px;
                     width: 100%;
-                    margin: 15px;
+                    margin: 10px 0px;
+
                     &__no_like {
                         display: flex;
                         align-items: center;
                         justify-content: space-between;
-        
+
                         .text-no {
                             font-family: Roboto;
                             font-size: 11px;
@@ -118,18 +100,19 @@
                             letter-spacing: normal;
                             text-align: left;
                             color: #111111;
-                            .remove-box{
+
+                            .remove-box {
                                 margin-left: 10px;
                                 width: 12px;
                                 height: 12px;
                             }
                         }
                     }
-        
+
                     &__detail {
-                        margin-top: 10px;
                         .box-content {
-                            
+                            margin-top: 2px;
+
                             &__text {
                                 opacity: 0.8;
                                 font-family: NanumSquare;
@@ -142,13 +125,14 @@
                                 text-align: left;
                                 color: #111111;
                             }
-        
+
                             &__number {
                                 font-family: Roboto;
                                 font-size: 20px;
                                 font-weight: bold;
                                 font-stretch: normal;
                                 font-style: normal;
+                                line-height: normal;
                                 letter-spacing: normal;
                                 text-align: left;
                                 color: #111111;
@@ -347,7 +331,7 @@
             opacity: 0.8;
             border-radius: 5px;
             border: solid 1px #5815a5;
-            background-color: #f5ebf6;
+
             .search-form {
                 width: 16px;
                 height: 16px;
@@ -369,11 +353,12 @@
         }
     }
 }
+
 .modal-register-store {
-    .modal-dialog{
-        .modal-content{
-            .modal-body{
-                p{
+    .modal-dialog {
+        .modal-content {
+            .modal-body {
+                p {
                     text-align: center;
                     font-family: NanumSquare;
                     font-size: 14px;
@@ -384,96 +369,118 @@
                     letter-spacing: normal;
                     color: #111111;
                 }
+
                 padding: 0px 20px 15px 20px;
+
                 .filter_search_page {
                     .type-filter {
                         display: flex;
                         align-items: center;
                         justify-content: space-between;
-            
-                        button {
-                            background: #5815a5;
-                            border: none;
-                            padding: 12px 15px 11px;
-                            border-radius: 18px;
-                            display: flex;
-                            align-items: center;
-            
-                            label {
-                                padding-left: 5px;
-                                color: #ffffff;
-                                font-family: NanumSquare;
-                                font-size: 12px;
-                                font-weight: normal;
-                                font-stretch: normal;
-                                font-style: normal;
-                                line-height: normal;
-                                letter-spacing: normal;
-                                text-align: left;
-                                color: #ffffff;
-                                white-space: nowrap;
-                            }
+
+                        .search-text {
+                            font-family: NanumSquare;
+                            font-size: 14px;
+                            font-weight: 800;
+                            font-stretch: normal;
+                            font-style: normal;
+                            line-height: normal;
+                            letter-spacing: normal;
+                            text-align: left;
+                            color: #111111;
                         }
-            
+
                         .control-search {
                             position: relative;
-                            width: 70%;
+                            width: 80%;
                             padding-left: 10px;
-            
+
                             img {
                                 position: absolute;
                                 right: 15px;
                                 top: 50%;
                                 transform: translateY(-50%);
-            
+
                             }
                         }
                     }
-                    .box-radio{
+
+                    .box-radio {
                         border-radius: 10px;
                         border: solid 1px #f5f5f5;
                         margin: 15px 0px;
                         padding: 22px 10px 10px;
-                        .box-input__main-check{
-                            &__radio-box{
+
+                        .box-input__main-check {
+                            &__radio-box {
                                 // padding-right: 0px;
-                                .label-radio{
+                                .label-radio {
                                     font-family: NanumSquare;
                                     font-size: 14px;
-                                    font-weight: bold;
-                                    font-stretch: normal;
-                                    font-style: normal;
-                                    line-height: normal;
-                                    letter-spacing: normal;
-                                    text-align: left;
-                                    color: red;
-                                }
-                                .label-number{
-                                    font-family: Roboto;
-                                    font-size: 14px;
-                                    font-weight: normal;
-                                    font-stretch: normal;
-                                    font-style: normal;
-                                    line-height: normal;
-                                    letter-spacing: normal;
                                     text-align: left;
                                     color: #111111;
+
+                                    .title-top {
+                                        font-family: NanumSquare;
+                                        font-size: 11px;
+                                        font-weight: normal;
+                                        font-stretch: normal;
+                                        font-style: normal;
+                                        line-height: normal;
+                                        letter-spacing: normal;
+                                        text-align: left;
+                                        color: #111111;
+                                    }
+
+                                    .title-bottom {
+                                        font-family: NanumSquare;
+                                        font-size: 14px;
+                                        font-stretch: normal;
+                                        font-style: normal;
+                                        line-height: normal;
+                                        letter-spacing: normal;
+                                        text-align: left;
+                                        color: #111111;
+                                    }
                                 }
-                                
+                                .label-number {
+                                    .title-top {
+                                        font-family: NanumSquare;
+                                        font-size: 11px;
+                                        font-stretch: normal;
+                                        font-style: normal;
+                                        line-height: normal;
+                                        letter-spacing: normal;
+                                        text-align: left;
+                                        color: #111111;
+                                    }
+    
+                                    .title-bottom {
+                                        font-family: Roboto;
+                                        font-size: 14px;
+                                        font-weight: 500;
+                                        font-stretch: normal;
+                                        font-style: normal;
+                                        line-height: normal;
+                                        letter-spacing: normal;
+                                        text-align: left;
+                                        color: #111111;
+                                    }
+                                }
                             }
-                            
                         }
-                        hr.line-modal{
+
+                        hr.line-modal {
                             background-color: #e0dcdc;
                             display: block;
                             height: 1px;
                             margin: 5px 0 10px 0;
                         }
-                        
+
                     }
                 }
             }
         }
     }
-    
+
 }

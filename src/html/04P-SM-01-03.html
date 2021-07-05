@@ -1,6 +1,6 @@
 @@include('components/head.html', {
     "title": "가맹점 정보",
-    "bodyClass": "detail-store-page",
+    "bodyClass": "detail-kiosk-page",
 })
 
 @@include('components/header.html', {
@@ -17,96 +17,6 @@
    
     <div class="detail-store-page">
         <div class="container">
-            <div class="box-detail">
-                <!-- INFO store -->
-                <div class="box-detail__title_box">
-                    <h3 class="box-detail__title_box__main-title">가맹점 정보</h3>
-                    <label class="box-detail__title_box__border-title"></label>
-                </div>
-                <div class="mb-0 box-input">
-                    <label class="label-input">
-                        <span class="required">가맹점명</span>
-                        <input class="form-control mb-3" value="세종한솔점" >
-                    </label>
-                </div>
-                <div class="mb-0 box-input">
-                    <label class="label-input">
-                        <span class="">사업자등록번호</span>
-                        <input class="form-control mb-3" value="123-07-12533" >
-                    </label>
-                </div>
-                <div class="mb-0 box-input">
-                    <label class="label-input">
-                        <span class="">가맹점주소</span>
-                        <input class="form-control mb-3" value="세종특별자치시 누리로">
-                    </label>
-                </div>
-                <div class="mb-0 box-input">
-                    <label class="label-input">
-                        <span class="">등록일</span>
-                        <input class="form-control mb-3" value="2021-03-21" readonly>
-                    </label>
-                </div>
-                <div class="mb-0 box-input">
-                    <label class="label-input">
-                        <span class="">면적</span>
-                        <input class="form-control mb-3" value="198mm">
-                    </label>
-                </div>
-            </div>
-            <div class="box-detail">
-                <!-- INFO store -->
-                <div class="row box-detail__owner-information">
-                    <div class="col-6 box-detail__title_box">
-                        <h3 class="box-detail__title_box__main-title">가맹점주 정보</h3>
-                        <label class="box-detail__title_box__border-title__owner-information"></label>
-                    </div>
-                    <div class="col-6 text-end">
-                        <button type="button" class="btn box-detail__add-more" onclick="showInfoStorePopup()">
-                            <img class="search-form"  src="/images/icons/icon_search.svg" />
-                            <span>검색</span>
-                        </button>
-                    </div>
-                </div>
-                <div class="mb-0 box-input">
-                    <label class="label-input">
-                        <span class="">가맹점주</span>
-                        <input class="form-control mb-3" value="방수진(세종한솔점)" >
-                    </label>
-                </div>
-                <div class="mb-0 box-input">
-                    <label class="label-input">
-                        <span class="">주민등록번호</span>
-                        <input class="form-control mb-3" value="951114-1234567" >
-                    </label>
-                </div>
-                <div class="mb-0 box-input">
-                    <label class="label-input">
-                        <span class="">전화번호</span>
-                        <input class="form-control mb-3" value="010-8746-1234">
-                    </label>
-                </div>
-                <div class="mb-0 box-input">
-                    <label class="label-input">
-                        <span class="">이메일</span>
-                        <input class="form-control mb-3" value="sue@hanmail.net">
-                    </label>
-                </div>
-                <div class="mb-0 box-input">
-                    <label class="label-input">
-                        <span class="">사업자등록증</span>
-                        
-                    </label>
-                    <div class="row">
-                        <div class="col-8 pr-0 inp-pr-0">
-                            <input class="form-control mb-3" value="선택된 파일 없읍니다.">
-                        </div>
-                        <div class="col-4 text-end inp-pl-0">
-                            <button type="file" class="btn select-file">파일 선택</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <div class="box-detail ">
                 <!-- INFO store -->
                 <div class="box-detail__title_box">
@@ -162,15 +72,13 @@
                     </label>
                     <div class="row main-check box-input__main-check">
                         <div class="col-6 box-input__main-check__radio-box">
-                            <label class="label-radio active">
-                                <input  type="radio" checked name="purchase1"/>
-                                <span class="">구매</span>
+                            <label class="label-radio">
+                                <input type="radio" checked name="purchase2"/><span>구매</span>
                             </label>
                         </div>
                         <div class="col-6 box-input__main-check__radio-box">
                             <label class="label-radio">
-                                <input class="" type="radio" name="purchase1"/>
-                                <span>렌트</span>
+                                <input type="radio" name="purchase2"/><span>렌트</span>
                             </label>
                         </div>
                     </div>
@@ -181,15 +89,13 @@
                     </label>
                     <div class="row main-check box-input__main-check">
                         <div class="col-6 box-input__main-check__radio-box">
-                            <label class="label-radio active">
-                                <input  type="radio" checked name="possible"/>
-                                <span >가능</span>
+                            <label class="label-radio">
+                                <input type="radio" checked name="possible"/><span>가능</span>
                             </label>
                         </div>
                         <div class="col-6 box-input__main-check__radio-box">
                             <label class="label-radio">
-                                <input type="radio"  name="possible"/>
-                                <span>불가</span>
+                                <input type="radio"  name="possible"/><span>불가</span>
                             </label>
                         </div>
                     </div>
@@ -200,8 +106,8 @@
                     </label>
                     <div class="row main-check box-input__main-check">
                         <div class="col-6 box-input__main-check__radio-box">
-                            <label class="label-radio active">
-                                <input type="radio" checked name="stationery"/><span class="active" >Y</span>
+                            <label class="label-radio">
+                                <input type="radio" checked name="stationery"/><span>Y</span>
                             </label>
                         </div>
                         <div class="col-6 box-input__main-check__radio-box">
@@ -283,7 +189,7 @@
                         <label class="box-detail__title_box__border-title__owner-information"></label>
                     </div>
                     <div class="col-6 text-end">
-                        <button type="button" class="btn box-detail__add-more" onclick="showInfoKiosk()">
+                        <button type="button" class="btn box-detail__add-more" onclick="showKioskModal()">
                             <img class="search-form"  src="/images/icons/icon_search.svg" />
                             <span>검색</span>
                         </button>
@@ -350,87 +256,7 @@
         </div>
     </div>
 
-    <!-- modal required register -->
-    <div class="modal popup modal-register-store" id="required_modal_store" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">가맹점주 정보 검색</h5>
-                </div>
-                <div class="modal-body">
-                    <div class="filter_search_page">
-                        <div class="type-filter">
-                            <button>
-                                <img src="/images/icons/icon_change.svg" />
-                                <label>가맹점주</label>
-                            </button>
-                            <div class="control-search">
-                                <input class="form-control" type="text" value="o" />
-                            </div>
-                        </div>
-                        <div class="box-radio">
-                            <div class="row main-check box-input__main-check">
-                                <div class="col-7 box-input__main-check__radio-box">
-                                    <label class="label-radio">
-                                        <input type="radio" checked name="purchase"/><span>이호택</span>
-                                    </label>
-                                </div>
-                                <div class="col-5 text-end box-input__main-check__radio-box">
-                                    <label class="label-number">
-                                        010-8546-1216
-                                    </label>
-                                </div>
-                            </div>
-                            <hr for="" class="line-modal"></hr>
-                            <div class="row main-check box-input__main-check">
-                                <div class="col-7 box-input__main-check__radio-box">
-                                    <label class="label-radio">
-                                        <input type="radio" checked name="purchase"/><span>문구야</span>
-                                    </label>
-                                </div>
-                                <div class="col-5 text-end box-input__main-check__radio-box">
-                                    <label class="label-number">
-                                        010-8546-1216
-                                    </label>
-                                </div>
-                            </div>
-                            <hr for="" class="line-modal"></hr>
-                            <div class="row main-check box-input__main-check">
-                                <div class="col-7 box-input__main-check__radio-box">
-                                    <label class="label-radio">
-                                        <input type="radio" checked name="purchase"/><span>방수진</span>
-                                    </label>
-                                </div>
-                                <div class="col-5 text-end box-input__main-check__radio-box">
-                                    <label class="label-number">
-                                        010-8546-1216
-                                    </label>
-                                </div>
-                            </div>
-                            <hr for="" class="line-modal"></hr>
-                            <div class="row main-check box-input__main-check">
-                                <div class="col-7 box-input__main-check__radio-box">
-                                    <label class="label-radio">
-                                        <input type="radio" checked name="purchase"/><span>어플이야다산가이</span>
-                                    </label>
-                                </div>
-                                <div class="col-5 text-end box-input__main-check__radio-box">
-                                    <label class="label-number">
-                                        010-8546-1216
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" onclick="requiredRegister()">취소</button>
-                    <button type="button" class="btn-action">선택</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- modal show info kiosk -->
+    <!-- modal show infor kiosk -->
     <div class="modal popup modal-register-store" id="show_info_kiosk" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
@@ -523,25 +349,19 @@
         window.focus();
         init()
     })
+    // $('#show_info_kiosk').modal('show');
     function closeUndoModal(value) {
         $(`#${value}`).modal('hide');
         $('#register_modal_store').modal('show');
     }
-
     function completedRegister() {
         $('#register_modal_store').modal('hide');
     }
-    function requiredRegister() {
-        $('#required_modal_store').modal('hide');
-    }
-    function showInfoStorePopup() {
-        $('#required_modal_store').modal('show');
-    }
-    function showInfoKiosk() {
-        $('#show_info_kiosk').modal('show');
-    }
     function closeInfoKioskModal() {
         $('#show_info_kiosk').modal('hide');
+    }
+    function showKioskModal() {
+        $('#show_info_kiosk').modal('show');
     }
   </script>
 
