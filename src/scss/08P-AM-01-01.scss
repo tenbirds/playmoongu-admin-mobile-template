@@ -3,6 +3,14 @@
     background-color: #FFFFFF;
  }
   background-color: #f5f5f5;
+
+  section {
+    position: fixed;
+    /* top: 65px; */
+    width: 100%;
+    z-index: 666;
+  }
+
   main {
     //background-color: #ffffff;
     .header-search {
@@ -40,6 +48,30 @@
       .padding-right-0 {
         padding-right: 0;
       }
+    }
+
+    .content-01 {
+      margin-top: 125px !important;
+    }
+
+    .content-02 {
+      margin-top: 175px !important;
+    }
+
+    .content-03 {
+      margin-top: 120px !important;
+    }
+
+    .content-04 {
+      margin-top: 180px !important;
+    }
+
+    .content-05 {
+      margin-top: 180px !important;
+    }
+
+    .content-06 {
+      margin-top: 75px !important;
     }
 
     .content {
