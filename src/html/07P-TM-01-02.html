@@ -1,0 +1,275 @@
+@@include('components/head.html', {
+    "title": "Gulp",
+    "bodyClass": "detail-stock-page fixed-header"
+})
+
+@@include('components/header.html', {
+    "title": "재고 상세 관리",
+    "rightTitle": "",
+    "leftIcon": "",
+    "link": "",
+    "leftTitle": "/images/icons/icon_top_arrow_B.svg",
+    'param': "open_nav"
+})
+
+<main>
+    <div class="detail-stock-page">
+        <div class="container">
+            <form class="form-detail">
+                
+                <!-- INFO STOCK -->
+                <h3 class="form-detail__main-title form-title">
+                    <span>상품 정보</span>
+                </h3>
+                <div class="product-info">
+                    <div class="product-item">
+                        <div class="product-item__title">
+                            <span>상품명</span>
+                        </div>
+                        <div class="product-item__value">
+                            <span>어몽어스 열쇠고리 1</span>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-item__title">
+                            <span>재고</span>
+                        </div>
+                        <div class="product-item__value">
+                            <span>11</span>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-item__title">
+                            <span>공급가(\)</span>
+                        </div>
+                        <div class="product-item__value">
+                            <span>1,200</span>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-item__title">
+                            <span>소비자가(\)</span>
+                        </div>
+                        <div class="product-item__value">
+                            <span>1,200</span>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-item__title">
+                            <span>할인가(\)</span>
+                        </div>
+                        <div class="product-item__value">
+                            <span>2,000</span>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-item__title">
+                            <span>바코드 번호</span>
+                        </div>
+                        <div class="product-item__value">
+                            <span>8809656421021</span>
+                        </div>
+                    </div>
+                    
+                </div>
+           
+                <!-- HISTORY CHANGE-->
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="form-detail__main-title form-title history-change">
+                            <span>재고 변경 사항 내역</span>
+                        </h3>
+                    </div>
+                </div>
+                <div class="history-change">
+                    <ul class="list-group">
+                        <li class="row align-items-center">
+                            <div class="col-12">
+                                <div class="card card__top">
+                                    <div class="card-body">
+                                        <div class="row history-change__number">
+                                            <div class="col-12 text-end">
+                                                <span>변경일 : 2021.05.06 21:08:15</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="row history-change__desc">
+                                            <div class="col-4 col-left">
+                                                <span class="title">
+                                                    변경 전 
+                                                </span>
+                                            </div>
+                                            <div class="col-4 col-mid text-center">
+                                                <span class="title">
+                                                    변경 후 
+                                                </span>
+                                            </div>
+                                            <div class="col-4 col-right text-end">
+                                                <span class="title js-edit-content">
+                                                    비고 보기
+                                                    <img src="./../images//icons/icon_bluearrow.svg" alt="">
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                        <div class="row history-change__qty">
+                                            <div class="col-4 col-left">
+                                                <span class="title">
+                                                    10
+                                                </span>
+                                            </div>
+                                            <div class="col-4 col-mid text-center">
+                                                <span class="title">
+                                                    50
+                                                </span>
+                                            </div>
+                                            <div class="col-4 col-right text-end">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="row align-items-center">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="row history-change__number">
+                                            <div class="col-12 text-end">
+                                                <span>변경일 : 2021.05.06 21:08:15</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="row history-change__desc">
+                                            <div class="col-4 col-left">
+                                                <span class="title">
+                                                    변경 전 
+                                                </span>
+                                            </div>
+                                            <div class="col-4 col-mid text-center">
+                                                <span class="title">
+                                                    변경 후 
+                                                </span>
+                                            </div>
+                                            <div class="col-4 col-right text-end">
+                                                <span class="title js-edit-content">
+                                                    비고 보기
+                                                    <img src="./../images//icons/icon_bluearrow.svg" alt="">
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                        <div class="row history-change__qty">
+                                            <div class="col-4 col-left">
+                                                <span class="title">
+                                                    10
+                                                </span>
+                                            </div>
+                                            <div class="col-4 col-mid text-center">
+                                                <span class="title">
+                                                    50
+                                                </span>
+                                            </div>
+                                            <div class="col-4 col-right text-end">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="row align-items-center">
+                            <div class="col-12">
+                                <div class="card card__bottom">
+                                    <div class="card-body">
+                                        <div class="row history-change__number">
+                                            <div class="col-12 text-end">
+                                                <span>변경일 : 2021.05.06 21:08:15</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="row history-change__desc">
+                                            <div class="col-4 col-left">
+                                                <span class="title">
+                                                    변경 전 
+                                                </span>
+                                            </div>
+                                            <div class="col-4 col-mid text-center">
+                                                <span class="title">
+                                                    변경 후 
+                                                </span>
+                                            </div>
+                                            <div class="col-4 col-right text-end">
+                                                <span class="title js-edit-content">
+                                                    비고 보기
+                                                    <img src="./../images//icons/icon_bluearrow.svg" alt="">
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                        <div class="row history-change__qty">
+                                            <div class="col-4 col-left">
+                                                <span class="title">
+                                                    10
+                                                </span>
+                                            </div>
+                                            <div class="col-4 col-mid text-center">
+                                                <span class="title">
+                                                    50
+                                                </span>
+                                            </div>
+                                            <div class="col-4 col-right text-end">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </form>
+        </div>
+
+
+
+        <!-- MODAL HTML -->
+        <div class="modal popup modal-edit-remark" id="editRemarkModal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">비고</h5>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row remark-item">
+                            <label for="" class="col-4 col-form-label remark-item__label">비고</label>
+                            <div class="col-12">
+                                <textarea class=" remark-item__value note" name="" id="" rows="3">상품 손실로 인한 변경</textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn-dismiss" data-bs-dismiss="modal">닫기</button>
+                        <button type="button" class="btn-action">수정</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</main>
+<footer></footer>
+@@include('./components/script.html')
+<link rel="stylesheet" href="/css/bscroll.min.css">
+<script src="https://unpkg.com/better-scroll@latest/dist/better-scroll.min.js"></script>
+<script type="text/javascript" src="/js/jquery.selectscroll.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+<script type="text/javascript">
+    $(document).on('click', '.js-edit-content', function(e) {
+        e.preventDefault();
+        $("#editRemarkModal").modal('show');
+    })
+</script>
+@@include('components/foot.html')

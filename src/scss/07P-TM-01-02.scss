@@ -1,0 +1,181 @@
+.detail-stock-page {
+  .form-detail {
+    padding-top: 0px;
+    padding-bottom: 30px;
+    font-family: NanumSquare;
+    &__main-title {
+      font-family: NanumSquare;
+      font-size: 20px;
+      font-weight: 800;
+      font-stretch: normal;
+      font-style: normal;
+      text-align: left;
+      color: #111111;
+      margin-bottom: 14px;
+      &.history-change {
+        margin-top: 35px;
+        margin-bottom: 20px;
+      } 
+    }
+    .product-info {
+      .product-item {
+        display: flex;
+        &__title {
+          width: 24%;
+          span {
+            opacity: 0.8;
+            font-family: NanumSquare;
+            font-size: 14px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            text-align: left;
+            color: #111111;
+          }
+        }
+        &__value {
+          span {
+            font-family: NanumSquare;
+            font-size: 14px;
+            font-weight: 800;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #111111;
+          }
+        }
+      }
+    }
+    .history-change {
+      .card {
+        border: solid 1px #f5f5f5;
+        border-bottom: none;
+        &__top {
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+        }
+        &__bottom {
+          border-end-start-radius: 10px;
+          border-end-end-radius: 10px;
+          border-bottom: solid 1px #f5f5f5;
+        }
+      }
+      &__number {
+        margin-bottom: 6px;
+        span {
+          font-size: 11px;
+          color: #111111;
+          font-family: Roboto;
+        }
+      }
+      &__desc {
+        font-family: NanumSquare;
+        font-size: 11px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #111111;
+        .col-left {
+          .title {
+            opacity: 0.8;
+          }
+        }
+        .col-mid {
+          .title {
+            opacity: 0.8;
+          }
+        }
+        .col-right {
+          .title {
+            font-family: NanumSquare;
+            font-size: 11px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: left;
+            color: #5815a5;
+            cursor: pointer;
+            position: relative;
+            top: 10px;
+          }
+        }
+      }
+      &__qty {
+        margin-top: 5px;
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #111111;
+        .col-left {
+          .title {  
+          }
+        }
+        .col-right {
+          .title {
+          }
+        }
+      }
+    }
+  }
+
+  .modal-edit-remark {
+    .modal-body {
+      padding-top: 0px;
+      .remark-item {
+        margin-bottom: 7px;
+        &__label {
+          font-family: NanumSquare;
+          font-size: 14px;
+          font-weight: 800;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          text-align: left;
+          color: #111111;
+          margin-bottom: 4px;
+        }
+        &__value {
+          justify-content: flex-end;
+          display: flex;
+          font-family: NanumSquare;
+          font-size: 14px;
+          font-weight: 800;
+          font-stretch: normal;
+          font-style: normal;
+          letter-spacing: normal;
+          text-align: right;
+          color: #111;
+          &.note {
+            padding: 10px;
+            border-left: 6px solid;
+            border-radius: 5px;
+            width: 100%;
+            border-radius: 5px;
+            border: solid 1px #e6e6e6;
+            font-family: NanumSquare;
+            font-size: 14px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.43;
+            letter-spacing: normal;
+            text-align: left;
+            color: #111111;
+          }
+        }
+      }
+    }
+  }
+}
