@@ -6,6 +6,7 @@
     display: flex;
     justify-content: flex-end;
     padding: 10px 15px 15px;
+    background: #ffffff;
     .dropdown {
       button {
         outline: none;
@@ -208,6 +209,18 @@
       }
     }
   }
+  &.fixed-header {
+    .filter_search_page {
+        position: fixed;
+        top: 50px;
+        width: 100%;
+        z-index: 666;
+    }
+    .main_center_content {
+        margin-top: 57px;
+    }
+    
+}
 }
 .main-type {
   padding-top: 10px;
