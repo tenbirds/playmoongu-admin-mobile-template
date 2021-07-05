@@ -1,5 +1,5 @@
-.shop-management {
-    .main-shop-management {}
+.kiosk-lisk-management {
+    .main-kiosk-lisk-management {}
 
     .filter_dropdown {
         display: flex;
@@ -39,7 +39,10 @@
 
     .filter_search_page {
         padding: 20px;
-
+        position: fixed;
+        width: 100%;
+        background: #fff;
+        z-index: 9999;
         .type-filter {
             display: flex;
             align-items: center;
@@ -90,7 +93,8 @@
         min-height: 83vh;
         clear: both;
         height: 100%;
-
+        background-color: #f5f5f5;
+        padding: 103px 15px 25px 15px;
         ul {
             padding: 0px 15px;
             display: flex;
@@ -136,12 +140,10 @@
     }
 
     .shop-info {
-        background: #ffffff;
+        
         display: flex;
         align-items: center;
         flex-wrap: wrap;
-        margin: 30px 20px;
-
         &__img {
             img {
                 width: 120px;
@@ -151,10 +153,15 @@
         }
 
         &__data {
-            padding: 6px 10px 6px 10px;
+            background: #ffffff;
+            padding: 15px;
             width: 100%;
-            margin: 10px 0px;
-
+            margin-bottom: 10px;
+            .line-kiosk-content{
+                height: 1px;
+                background-color: #f5f5f5;
+                margin: 10px 0 0 0;
+            }
             &__no_like {
                 display: flex;
                 align-items: center;

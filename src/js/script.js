@@ -10,10 +10,13 @@ $('#main-navigation>ul>li>ul>li').click(function(){
 })
 
 function handleClick(value){
+    console.log(value);
+
     if (value == 'open_nav') {
         $(`#main-navigation`).addClass('open')
     }
-    if (value == 'undo_modal_store') {
+    if (value == 'undo_modal_store' || value == 'undo_modal_kiosk') {
+        console.log(value);
         $(`#${value}`).modal('show');
     }
 }

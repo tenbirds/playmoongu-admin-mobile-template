@@ -3,6 +3,14 @@
     background-color: #FFFFFF;
  }
   background-color: #f5f5f5;
+
+  section {
+    position: fixed;
+    /* top: 65px; */
+    width: 100%;
+    z-index: 666;
+  }
+
   main {
     //background-color: #ffffff;
     .header-search {
@@ -42,7 +50,38 @@
       }
     }
 
+    .content-01 {
+      margin-top: 125px !important;
+    }
+
+    .content-02 {
+      margin-top: 175px !important;
+    }
+
+    .content-03 {
+      margin-top: 120px !important;
+    }
+
+    .content-04 {
+      margin-top: 180px !important;
+    }
+
+    .content-05 {
+      margin-top: 180px !important;
+    }
+
+    .content-06 {
+      margin-top: 75px !important;
+    }
+
     .content {
+
+      &__box-price {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+      }
+
       &__box {
         height: 141px;
         border-radius: 10px;
@@ -94,6 +133,7 @@
         letter-spacing: normal;
         //text-align: left;
         color: #111111;
+        padding-right: 3px;
       }
       &__number-pay {
         font-size: 11px;
@@ -111,7 +151,7 @@
         font-weight: 500;
         font-stretch: normal;
         font-style: normal;
-        line-height: normal;
+        //line-height: normal;
         letter-spacing: normal;
         //text-align: left;
         color: #ffffff;
@@ -127,6 +167,7 @@
         letter-spacing: normal;
         //text-align: left;
         color: #ffffff;
+        line-height: 30px;
       }
 
       &__detail-sale-history {
@@ -381,11 +422,119 @@
         span {}
       }
 
+
+
     }
   }
 
   .list-group {
     border-radius: 10px;
   }
+
+  .modal-complete-payment {
+    // .stock-item {
+    //   margin-bottom: 7px;
+    //   &__label {
+    //     opacity: 0.8;
+    //     font-family: NanumSquare;
+    //     font-size: 14px;
+    //     font-weight: normal;
+    //     font-stretch: normal;
+    //     font-style: normal;
+    //     line-height: normal;
+    //     letter-spacing: -0.7px;
+    //     text-align: left;
+    //     color: #111111;
+    //   }
+    //   &__label_dark {
+    //     font-family: NanumSquare;
+    //     font-size: 14px;
+    //     font-weight: 800;
+    //     font-stretch: normal;
+    //     font-style: normal;
+    //     color: #111111;
+    //   }
+    //   &__value {
+    //     justify-content: flex-end;
+    //     display: flex;
+    //     font-family: NanumSquare;
+    //     font-size: 14px;
+    //     font-weight: 800;
+    //     font-stretch: normal;
+    //     font-style: normal;
+    //     letter-spacing: normal;
+    //     text-align: right;
+    //     color: #111;
+    //     &.quantity {
+    //       font-family: Roboto;
+    //       font-size: 17px;
+    //       font-weight: bold;
+    //       color: #111111;
+    //       padding: 5px 3px;
+    //     }
+    //     &.old-quantity {
+    //       font-family: Roboto;
+    //       padding: 7px 5px;
+    //     }
+    //     &.note {
+    //       width: 100%;
+    //       border-radius: 5px;
+    //       border: solid 1px #e6e6e6;
+    //       opacity: 0.5;
+    //       font-family: NanumSquare;
+    //       font-size: 14px;
+    //       font-weight: normal;
+    //       font-stretch: normal;
+    //       font-style: normal;
+    //       line-height: 1.43;
+    //       letter-spacing: normal;
+    //       text-align: left;
+    //       color: #111111;
+    //       margin-bottom: 10px;
+    //     }
+    //   }
+    //   &__old-label {
+    //     opacity: 0.5;
+    //     font-family: NanumSquare;
+    //     font-size: 14px;
+    //     font-weight: bold;
+    //     font-stretch: normal;
+    //     font-style: normal;
+    //     letter-spacing: normal;
+    //     text-align: left;
+    //     color: #111111;
+    //     padding-bottom: 0px;
+    //   }
+    //   &__old-value {
+    //     justify-content: flex-end;
+    //     display: flex;
+    //     opacity: 0.5;
+    //     font-family: Roboto;
+    //     font-size: 14px;
+    //     font-weight: 500;
+    //     font-stretch: normal;
+    //     font-style: normal;
+    //     color:#111111;
+    //   }
+    //   &__currency {
+    //     font-family: NanumSquare;
+    //     color: #111;
+    //   }
+    // }
+    // .description {
+    //   font-family: NanumSquare;
+    //   font-size: 14px;
+    //   font-weight: bold;
+    //   font-stretch: normal;
+    //   font-style: normal;
+    //   line-height: 1.43;
+    //   letter-spacing: normal;
+    //   text-align: center;
+    //   color: #111;
+    //   padding: 10px 23px 11px;
+    //   margin-bottom: 0px;
+    // }
+  }
+
 
 }

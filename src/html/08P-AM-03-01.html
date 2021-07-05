@@ -1,6 +1,6 @@
 @@include('components/head.html', {
 "title": "결제 내역",
-"bodyClass": "sales-by-affiliate-store"
+"bodyClass": "sales-by-affiliate-store fixed-header"
 })
 
 @@include('components/header.html', {
@@ -22,7 +22,7 @@
         </div>
     </section>
 
-    <div class="m-3 content">
+    <div class="m-3 content content-03">
 <!--        <div class="p-3 content__box">-->
 <!--            <h6 class="content__total-sale p-0 m-0">총 매출</h6>-->
 
@@ -45,15 +45,15 @@
 <!--        </div>-->
 
 
-        <div class="row justify-content-between mt-3">
-            <div class="col-4">
-                <h5 class="content__detail-sale-history">상세 매출 내역</h5>
+<!--        <div class="row justify-content-between mt-3">-->
+<!--            <div class="col-4">-->
+<!--                <h5 class="content__detail-sale-history">상세 매출 내역</h5>-->
 
-            </div>
-            <div class="col-4 text-end">
-                <p class="content__sale-piriod">기간 별 매출 <img src="/images/icons/icon_miniarrow.svg" /> </p>
-            </div>
-        </div>
+<!--            </div>-->
+<!--            <div class="col-4 text-end">-->
+<!--                <p class="content__sale-piriod">기간 별 매출 <img src="/images/icons/icon_miniarrow.svg" /> </p>-->
+<!--            </div>-->
+<!--        </div>-->
 
         <ul class="list-group mt-4">
             <li class="list-group-item content__border-none">
@@ -78,6 +78,7 @@
                             <p class="content__box-content-receipt-number-08 p-0 m-1">결제 취소</p>
                             <p class="content__box-content-receipt-number-color p-0 m-1 ">50,540</p>
                         </div>
+                        <!-- <button class="btn btn-sm btn-primary p-0 js-complete-payment">complete pay</button> -->
                     </div>
                 </div>
             </li>
@@ -107,10 +108,70 @@
                             <p class="content__box-content-receipt-number-08 p-0 m-1">결제 취소</p>
                             <p class="content__box-content-receipt-number-color p-0 m-1 ">50,540</p>
                         </div>
+                        <!-- <button class="btn btn-sm btn-primary p-0 js-cancel-payment">cancel pay</button> -->
                     </div>
                 </div>
             </li>
         </ul>
+
+
+        <!-- MODAL HTML -->
+        <!-- complete payment modal -->
+        <div class="modal popup modal-complete-payment" id="completePaymentModal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">결제 내역 상세(현금)</h5>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row stock-item">
+                            <label for="" class="col-4 col-form-label stock-item__label">영수증 번호</label>
+                            <div class="col-8">
+                                <span class="stock-item__value">어몽어스 열쇠고리 1</span>
+                            </div>
+                        </div>
+                        <div class="row stock-item">
+                            <label for="" class="col-4 col-form-label stock-item__label">바코드 번호</label>
+                            <div class="col-8">
+                                <span class="stock-item__value">812454412448</span>
+                            </div>
+                        </div>
+                        <div class="row stock-item">
+                            <label for="" class="col-4 col-form-label stock-item__label">공급가</label>
+                            <div class="col-8">
+                                <span class="stock-item__value">
+                                    <span class="stock-item__currency">\</span>
+                                    1.400
+                                </span>
+                            </div>
+                        </div>
+                        <div class="row stock-item">
+                            <label for="" class="col-4 col-form-label stock-item__old-label">판매 가격</label>
+                            <div class="col-8">
+                                <span class="stock-item__old-value">
+                                    <span class="stock-item__currency">\</span>
+                                    <del>1.400</del>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="row stock-item">
+                            <label for="" class="col-4 col-form-label stock-item__label_dark">할인가</label>
+                            <div class="col-8">
+                                <input type="text" class="form-control stock-item__value" id="" value="3,000">
+                            </div>
+                        </div>
+                        <p class="description">
+                            할인가를 적용할 경우 KIOSK에서 할인가로
+                            판매됩니다.  
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn-dismiss" data-bs-dismiss="modal">취소</button>
+                        <button type="button" class="btn-action">확인</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </div>
 
@@ -136,6 +197,14 @@
         }, function(start, end, label) {
             console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
         });
+
+        $(document).on('click', '.js-complete-payment', function() {
+            $("#completePaymentModal").modal('show');
+        })
+
+        $(document).on('click', '.js-cancel-payment', function() {
+            debugger
+        })
     });
 </script>
 

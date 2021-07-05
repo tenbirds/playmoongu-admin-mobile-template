@@ -1,6 +1,11 @@
 .management-user {
   .filter-block {
     padding-bottom: 20px;
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    background: #ffffff;
+    padding: 15px 10px 20px;
     .select-block {
       padding-right: 0px;
       button {
@@ -30,7 +35,7 @@
   .account-items {
     background-color: #F5F5F5;
     min-height: 85vh;
-    padding-top: 20px;
+    padding-top: 95px;
     font-size: 14px;
       &__number {
         span {

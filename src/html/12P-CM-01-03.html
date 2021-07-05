@@ -1,11 +1,11 @@
 @@include('components/head.html', {
 "title": "가맹점 별 매출 현황",
-"bodyClass": "manager-money-kiosk sales-by-affiliate-store"
+"bodyClass": "manager-money-kiosk sales-by-affiliate-store fixed-header"
 })
 <!-- extend class sales-by-affiliate-store -->
 @@include('components/header.html', {
 "title": "시재 관리",
-"rightTitle": "등록하기",
+"rightTitle": "",
 "leftIcon": "",
 "link": "04-SM-01-01.html",
 "leftTitle": "/images/icons/m_menu.svg",
@@ -17,12 +17,12 @@
         <h3 class="header-search__name">중곡점 <img src="/images/icons/icon_arrowBB.svg" class="header-search__icon_arrowBB"></h3>
     </section>
 
-    <div class="content-kiosk p-3">
+    <div class="content-kiosk p-3 content-06">
         <div class="row">
             <div class="col-12">
                 <div class="d-flex justify-content-between">
                     <p class="content-kiosk__status">실시간 시재 현황</p>
-                    <p class="content-kiosk__status" id="modal2"><i class="fas fa-sync" style="font-size: 10px" ></i> 시재 초기화</p>
+                    <p class="content-kiosk__status" id="modal2"><img src="/images/icons/icon-reset.svg" class="header-search__icon_miniarrow"/> 시재 초기화</p>
                 </div>
             </div>
         </div>
@@ -77,7 +77,7 @@
                 <div class="row ">
                     <div class="d-flex justify-content-between">
                         <span class="content-kiosk__money-number">50,540 <span class="content-kiosk__money-won">원</span></span>
-                        <p class="p-0 m-0 content-kiosk__text-money mt-auto bd-highlight"><i class="fas fa-sync" style="font-size: 10px"></i> 관리자변경</p>
+                        <p class="p-0 m-0 content-kiosk__text-money mt-auto bd-highlight"><img src="/images/icons/icon-reset.svg" class="header-search__icon_miniarrow"/> 관리자변경</p>
                     </div>
                 </div>
 
