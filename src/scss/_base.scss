@@ -657,6 +657,18 @@ footer {
     &.receipt-completed {
         background-color: #5815a5;
     }
+    &.return-request {
+        background: #fed400;
+        .main-status-order-common__text {
+            color: #111111;
+        }
+    }
+    &.return-complete {
+        background: #5815a5;
+    }
+    &.return-refusal {
+        background: #c52321;
+    }
 }
 .border-line-common {
     display: flex;

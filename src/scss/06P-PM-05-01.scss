@@ -1,7 +1,93 @@
 
-.order-history-management {
+.history-return-management {
     background-color: #f5f5f5;
-    .cart-management-store {
+    .main-history-return-management {
+        height: 100%;
+        background-color: #f5f5f5;
+    }
+    .history-return-filter {
+        padding: 20px;
+        background-color:#ffffff;
+        &__choose-store {
+            padding-bottom: 15px;
+            
+        }
+        &__input-search {
+            input {
+                font-family: NanumSquare;
+                font-size: 14px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                text-align: left;
+                color: #111111;
+            }
+        }
+    }
+    .history-return-store {
+        background-color: #f5f5f5;
+        clear: both;
+        padding: 25px 15px;
+        width: 100%;
+        
+        &__message-order {
+            font-family: NanumSquare;
+            font-size: 14px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: left;
+            color: #c52321;
+            text-align: center;
+            display: block;
+            padding-bottom: 15px;
+        }
+        &__item {
+            margin-bottom: 10px;
+            padding: 15px;
+            background-color: #ffffff;
+            &__number-time {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding-bottom: 10px;
+                &__number {
+                    font-family: NanumSquare;
+                    font-size: 11px;
+                    font-weight: 300;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    text-align: left;
+                    color: #111111;
+                    strong {
+                        font-family: Roboto;
+                    }
+                }
+                &__time {
+                    font-family: NanumSquare;
+                    font-size: 11px;
+                    font-weight: 300;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    text-align: center;
+                    color: #111111;
+                    strong {
+                        font-family: Roboto;
+                    }
+                }
+            }
+            
+        }
+    }
+    .history-return-store {
         background-color: #f5f5f5;
         clear: both;
         padding: 25px 15px;
@@ -12,7 +98,8 @@
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                padding-bottom: 5px;
+                padding-bottom: 10px;
+                border-bottom: 1px solid #f5f5f5;
                 .item__status-order {
                     padding: 3px 7px;
                     border-radius: 3px;
@@ -68,7 +155,78 @@
                     padding-left: 5px;
                 }
             }
-    
+            &__total-amount-quantity {
+                display: flex;
+                align-items: center;
+               .total-amount-quantity__item {
+                   width: calc(100%/2);
+                   padding-top: 10px;
+                   &.total-amount {
+                        label {
+                            display: block;
+                        }
+                        .total-amount__text {
+                            opacity: 0.8;
+                            font-family: NanumSquare;
+                            font-size: 11px;
+                            font-weight: normal;
+                            font-stretch: normal;
+                            font-style: normal;
+                            line-height: normal;
+                            letter-spacing: normal;
+                            text-align: left;
+                            color: #111111;
+                            padding-bottom: 2px;
+                        }
+                        .total-amount__value {
+                            font-family: Roboto;
+                            font-size: 14px;
+                            font-weight: 500;
+                            font-stretch: normal;
+                            font-style: normal;
+                            line-height: normal;
+                            letter-spacing: normal;
+                            text-align: left;
+                            color: #111111; 
+                            &::before {
+                                content: "W";
+                                text-decoration: line-through;
+                                padding-right: 5px;
+                            }
+                        }
+                   }
+                   &.total-quantity {
+                       padding-left: 10px;
+                        label {
+                            display: block;
+                        }
+                        .total-quantity__text {
+                            opacity: 0.8;
+                            font-family: NanumSquare;
+                            font-size: 11px;
+                            font-weight: normal;
+                            font-stretch: normal;
+                            font-style: normal;
+                            line-height: normal;
+                            letter-spacing: normal;
+                            text-align: left;
+                            color: #111111;
+                            padding-bottom: 2px;
+                        }
+                        .total-quantity__value {
+                            font-family: Roboto;
+                            font-size: 14px;
+                            font-weight: 500;
+                            font-stretch: normal;
+                            font-style: normal;
+                            line-height: normal;
+                            letter-spacing: normal;
+                            text-align: left;
+                            color: #111111; 
+                        }
+                   }
+               } 
+            }
         }
     }
     &.fixed-header {
