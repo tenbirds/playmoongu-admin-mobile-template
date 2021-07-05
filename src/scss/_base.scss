@@ -496,7 +496,7 @@ footer {
 
     main {
         padding-top: 50px;
-        height     : 100vh;
+        // height     : 100vh;
     }
 }
 
@@ -600,6 +600,7 @@ footer {
     bottom: 0;
     left: 0;
     &__text {
+        font-family: NanumSquare;
         font-size: 16px;
         font-weight: 800;
         font-stretch: normal;
@@ -609,19 +610,29 @@ footer {
         text-align: center;
         color: #111111;
     }
+    &.bg-purple {
+        background-color: #5815a5;
+        .button-bottom-page-common__text {
+            color: #ffffff;
+        }
+    }
+    &.delivery-completed {
+        background-color: #e6e6e6;
+    }
 }
 .main-status-order-common {
     padding: 8px 7px 7px;
     border-radius: 3px;
     display: flex;
     align-items: center;
+    height: 27px;
     &.stt-shipping {
         background-color: #56bf5c;
     }
     &__icon {
 
     }
-    &__text {
+    .main-status-order-common__text {
         font-family: NanumSquare;
         font-size: 11px;
         font-weight: bold;
@@ -632,6 +643,19 @@ footer {
         text-align: left;
         color: #ffffff;
         padding-left: 5px;
+        white-space: nowrap;
+    }
+    &.order-reception {
+        background-color: #fed400;
+        .main-status-order-common__text {
+            color: #111111;
+        }
+    }
+    &.shipping {
+        background-color: #56bf5c;
+    }
+    &.receipt-completed {
+        background-color: #5815a5;
     }
 }
 .border-line-common {
@@ -641,4 +665,62 @@ footer {
     img {
         width: 100%;
     }
+}
+.item-total-price-common {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    background-color: #fff;
+    &__total-price {
+        font-family: Roboto;
+        font-size: 23px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: right;
+        color: #c52321;
+        display: flex;
+        align-items: center;
+        &::before {
+            content: "총";
+            opacity: .8;
+            font-family: NanumSquare;
+            font-size: 11px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: left;
+            color: #c52321;
+            padding-right: 5px;
+        }
+        &::after {
+            content: "원";
+            font-family: NanumSquare;
+            font-size: 14px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: left;
+            color: #c52321;
+            padding-left: 5px;
+        }
+    } 
+    &__text {
+        font-family: NanumSquare;
+        font-size: 14px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #111111;
+    } 
 }

@@ -16,13 +16,14 @@
             background-color: #ffffff;
             margin:25px 15px;
             padding-top: 15px;
+            margin-bottom: 150px;
             &__item {
                 padding: 0 15px 5px 15px;
                 
                 
                 &__info-order {
                     display: flex;
-                    align-items: center;
+                    // align-items: center;
                     &__img {
                         width: 60px;
                         height: 60px;
@@ -159,6 +160,74 @@
                     }
                 }
             }
+        }
+        &__foot-page {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            left: 0;
+            .total-price-quantity-order {
+                padding: 15px 20px;
+                background: white;
+                &__order-number-date {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    border-bottom: 1px solid #f5f5f5;
+                    padding: 0 3px 5px 3px;
+                    margin-bottom: 7px;
+                    .order-number-date__number-text {
+                        font-family: NanumSquare;
+                        font-size: 11px;
+                        font-weight: 300;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: normal;
+                        letter-spacing: normal;
+                        text-align: left;
+                        color: #111111;
+                        .order-number-date__number-value {
+                            font-family: Roboto;
+                        }
+                    }
+                    .order-number-date__date-text {
+                        font-family: NanumSquare;
+                        font-size: 11px;
+                        font-weight: 300;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: normal;
+                        letter-spacing: normal;
+                        text-align: left;
+                        color: #111111;
+                        .order-number-date__date-value {
+                            font-family: Roboto;
+                        }
+                    }
+                }
+            }
+            
+            &__button-submit{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .foot-page__button-submit__item {
+                    width: calc(100%/2);
+                    position: static;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    &.fixed-header {
+        .filter_search_page {
+            position: fixed;
+            top: 50px;
+            width: 100%;
+            z-index: 666;
+        }
+        .main_center_content {
+            margin-top: 145px;
         }
     }
 }

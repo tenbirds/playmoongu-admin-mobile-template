@@ -1,19 +1,18 @@
 @@include('components/head.html', {
-"title": "가맹점 별 매출 현황",
-"bodyClass": "deposit-management sales-by-affiliate-store"
+"title": "예치금 관리",
+"bodyClass": "deposit-management sales-by-affiliate-store fixed-header"
 })
 <!-- extend class sales-by-affiliate-store -->
 @@include('components/header.html', {
-"title": "가맹점 별 매출 현황",
-"rightTitle": "등록하기",
+"title": "예치금 관리",
+"rightTitle": "",
 "leftIcon": "",
 "link": "04-SM-01-01.html",
 "leftTitle": "/images/icons/m_menu.svg",
 'param': "open_nav"
 })
 <main>
-
-    <section class="p-2 header-search">
+    <section class="p-3 header-search">
         <div class="row">
             <div class="col-4 text-center">
                 <button type="button" class="button-search">
@@ -27,16 +26,15 @@
             </div>
         </div>
 
-
         <div class="row p-2 pb-0 pt-0">
             <div class="col">
-                <label class="label-radio"><input type="radio" name="ckbox"/><span>이호택</span></label>
+                <label class="label-radio"><input checked type="radio" name="ckbox"/><span>이호택</span></label>
             </div>
             <div class="col">
-                <label class="label-radio"><input type="radio" name="ckbox"/><span>이호택</span></label>
+                <label class="label-radio"><input type="radio" name="ckbox"/><span class="deposit-management__no-checked">이호택</span></label>
             </div>
             <div class="col">
-                <label class="label-radio"><input type="radio" name="ckbox"/><span>이호택</span></label>
+                <label class="label-radio"><input type="radio" name="ckbox"/><span class="deposit-management__no-checked">이호택</span></label>
             </div>
         </div>
 
@@ -45,14 +43,14 @@
                 <h4 class="deposit-management__holding-deposit ">보유 예치금</h4>
             </div>
             <div class="col-6 text-end ">
-                <p class="deposit-management__holding-money p-0 m-0">&#8361; 533,578,500</p>
+                <p class="deposit-management__holding-money p-0 m-0 "><span class="deposit-management__character-won align-middle">&#8361;</span> 533,578,500</p>
             </div>
         </div>
 
     </section>
 
 
-    <div class="m-3 content mb-5">
+    <div class="m-3 content mb-5 content-05">
         <ul class="list-group mt-2">
             <li class="list-group-item content__border-none">
                 <div class="row justify-content-center ">
@@ -207,54 +205,54 @@
 
     </div>
 
-    <div class="modal popup" id="exampleModal" tabindex="-1" aria-hidden="true">
+    <div class="modal popup" id="exampleModal" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content">
+            <div class="modal-content ">
                 <div class="modal-header">
                     <h5 class="modal-title">수동 입금 하기</h5>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body p-4">
                     <div class="mb-1 row p-2">
-                        <div class="col-4 p-0 m-0">
+                        <div class="col-3 p-0 m-0">
                             <label for="inputPassword" class="col-sm-2 col-form-label deposit-management__label">가맹점주</label>
                         </div>
-                        <div class="col-8 col-4 p-0 m-0 ">
+                        <div class="col-9 col-4 p-0 m-0 ">
                             <input type="text" class="form-control" id="inputPassword" value="이호택(다산지금점)" readonly>
                         </div>
                     </div>
 
                     <div class="mb-1 row p-2">
-                        <div class="col-4 p-0 m-0">
+                        <div class="col-3 p-0 m-0">
                             <label for="inputPassword" class="col-sm-2 col-form-label deposit-management__label">거래일</label>
                         </div>
-                        <div class="col-8 col-4 p-0 m-0 ">
+                        <div class="col-9 col-4 p-0 m-0 ">
                             <input type="text" class="form-control" id="inputPassword">
                         </div>
                     </div>
 
                     <div class="mb-1 row p-2">
-                        <div class="col-4 p-0 m-0">
+                        <div class="col-3 p-0 m-0">
                             <label for="inputPassword" class="col-sm-2 col-form-label deposit-management__label">내용</label>
                         </div>
-                        <div class="col-8 col-4 p-0 m-0 ">
+                        <div class="col-9 col-4 p-0 m-0 ">
                             <input type="text" class="form-control" id="inputPassword">
                         </div>
                     </div>
 
                     <div class="mb-1 row p-2">
-                        <div class="col-4 p-0 m-0">
+                        <div class="col-3 p-0 m-0">
                             <label for="inputPassword" class="col-sm-2 col-form-label deposit-management__label">예금주</label>
                         </div>
-                        <div class="col-8 col-4 p-0 m-0 ">
+                        <div class="col-9 col-4 p-0 m-0 ">
                             <input type="text" class="form-control" id="inputPassword" >
                         </div>
                     </div>
 
                     <div class="mb-1 row p-2">
-                        <div class="col-4 p-0 m-0">
+                        <div class="col-3 p-0 m-0">
                             <label for="inputPassword" class="col-sm-2 col-form-label deposit-management__label">금액</label>
                         </div>
-                        <div class="col-8 col-4 p-0 m-0 ">
+                        <div class="col-9 col-4 p-0 m-0 ">
                             <input type="text" class="form-control" id="inputPassword" >
                         </div>
                     </div>
@@ -278,11 +276,11 @@
 <script>
     $(document).ready(function (){
         $("#open-modal").on('click',function (){
-            $('#exampleModal').show();
+            $('#exampleModal').modal('show');
         })
 
         $("#hide-modal").on('click',function (){
-            $('#exampleModal').hide();
+            $('#exampleModal').modal('hide');
         })
     })
 </script>
