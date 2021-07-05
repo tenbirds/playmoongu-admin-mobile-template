@@ -60,13 +60,40 @@
         color: #ffffff;
       }
       &__won {
+        font-family: Roboto;
+        font-size: 25px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        //line-height: normal;
+        letter-spacing: normal;
+        //text-align: left;
+        color: #ffffff;
+      }
+
+      &__won-character {
+        font-family: NanumSquare;
         font-size: 20px;
         font-weight: bold;
         font-stretch: normal;
         font-style: normal;
-        line-height: normal;
+        //line-height: normal;
         letter-spacing: normal;
+        //text-align: left;
         color: #ffffff;
+        line-height: 40px;
+      }
+
+      &__won-character-1 {
+        font-family: NanumSquare;
+        font-size: 16px;
+        font-weight: 800;
+        font-stretch: normal;
+        font-style: normal;
+        //line-height: 40px;
+        letter-spacing: normal;
+        //text-align: left;
+        color: #111111;
       }
       &__number-pay {
         font-size: 11px;
@@ -79,12 +106,26 @@
       }
 
       &__number {
+        font-family: Roboto;
         font-size: 18px;
         font-weight: 500;
         font-stretch: normal;
         font-style: normal;
         line-height: normal;
         letter-spacing: normal;
+        //text-align: left;
+        color: #ffffff;
+      }
+
+      &__number-character-won {
+        font-family: NanumSquare;
+        font-size: 14px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        //line-height: normal;
+        letter-spacing: normal;
+        //text-align: left;
         color: #ffffff;
       }
 
@@ -117,12 +158,28 @@
       }
 
       &__box-content {
+        opacity: 0.8;
+        font-family: NanumSquare;
         font-size: 11px;
         font-weight: normal;
         font-stretch: normal;
         font-style: normal;
-        line-height: normal;
+        //line-height: normal;
         letter-spacing: normal;
+        //text-align: left;
+        color: #111111;
+      }
+
+      &__box-content-right {
+        opacity: 0.8;
+        font-family: NanumSquare;
+        font-size: 11px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        //line-height: normal;
+        letter-spacing: normal;
+        //text-align: left;
         color: #111111;
       }
 
@@ -137,13 +194,14 @@
       }
 
       &__box-number {
+        font-family: Roboto;
         font-size: 20px;
-        font-weight: 999;
+        font-weight: bold;
         font-stretch: normal;
         font-style: normal;
-        line-height: normal;
+        //line-height: normal;
         letter-spacing: normal;
-        text-align: right;
+        //text-align: right;
         color: #111111;
       }
       &__box-content-mango {
@@ -167,14 +225,27 @@
       }
 
       &__box-content-receipt-number {
-        opacity: 0.8;
-        font-size: 11px;
-        font-weight: normal;
+        font-family: NanumSquare;
+        font-size: 14px;
+        font-weight: bold;
         font-stretch: normal;
         font-style: normal;
         line-height: normal;
         letter-spacing: normal;
         text-align: left;
+        color: #111111;
+      }
+
+      &__box-content-receipt-number-08 {
+        opacity: 0.8;
+        font-family: NanumSquare;
+        font-size: 11px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        //line-height: normal;
+        letter-spacing: normal;
+        //text-align: left;
         color: #111111;
       }
 
@@ -204,17 +275,18 @@
       }
 
       &__box-content-number-text {
-        font-size: 14px;
-        font-weight: 800;
+        opacity: 0.99;
+        font-family: NanumSquare;
+        font-size: 11px;
+        font-weight: bold;
         font-stretch: normal;
         font-style: normal;
-        line-height: normal;
         letter-spacing: normal;
-        text-align: left;
         color: #111111;
       }
 
       &__box-content-receipt-number-color {
+        font-family: Roboto;
         font-size: 20px;
         font-weight: bold;
         font-stretch: normal;
@@ -225,19 +297,95 @@
         color: #c52321;
       }
 
-      &__box-content-receipt-number-border-organ {
-        background-color:  #ff8534;
-        padding: 4px 6px !important;
-        font-size: 11px;
+      &__box-content-receipt-number-color-blue {
+        font-family: Roboto;
+        font-size: 20px;
         font-weight: bold;
         font-stretch: normal;
         font-style: normal;
         line-height: normal;
         letter-spacing: normal;
-        text-align: left;
-        color: #ffffff;
+        color: #2181ff;
       }
+
+      &__box-content-receipt-number-border-organ {
+        background-color:  #ff8534;
+        padding: 1px 5px !important;
+        font-size: 11px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: normal;
+        color: #ffffff;
+        height: 18px;
+        line-height: 18px;
+      }
+
+      &__box-content-receipt-number-border-red {
+        background-color:  #c52321;;
+        padding: 1px 6px !important;
+        font-size: 11px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: normal;
+        color: #ffffff;
+        height: 18px;
+        line-height: 18px;
+      }
+
+      &__box-content-receipt-number-border-pink {
+        background-color:  #f981aa;;
+        padding: 1px 6px !important;
+        font-size: 11px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: normal;
+        color: #ffffff;
+        height: 18px;
+        line-height: 18px;
+      }
+
+      &__box-content-receipt-number-border-yellow{
+        background-color: #fed400;
+        padding: 1px 6px !important;
+        font-size: 11px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: normal;
+        color: #ffffff;
+        height: 18px;
+        line-height: 18px;
+      }
+
+      &__box-link {
+        font-family: NanumSquare;
+        font-size: 11px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: normal;
+        color: #2181ff;
+      }
+
+      &__box-link-red {
+        font-family: NanumSquare;
+        font-size: 11px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: normal;
+        color: #c52321;
+        span {}
+      }
+
     }
+  }
+
+  .list-group {
+    border-radius: 10px;
   }
 
 }
