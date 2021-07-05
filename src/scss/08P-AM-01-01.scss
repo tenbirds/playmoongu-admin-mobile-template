@@ -75,6 +75,13 @@
     }
 
     .content {
+
+      &__box-price {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+      }
+
       &__box {
         height: 141px;
         border-radius: 10px;
@@ -126,6 +133,7 @@
         letter-spacing: normal;
         //text-align: left;
         color: #111111;
+        padding-right: 3px;
       }
       &__number-pay {
         font-size: 11px;
@@ -143,7 +151,7 @@
         font-weight: 500;
         font-stretch: normal;
         font-style: normal;
-        line-height: normal;
+        //line-height: normal;
         letter-spacing: normal;
         //text-align: left;
         color: #ffffff;
@@ -159,6 +167,7 @@
         letter-spacing: normal;
         //text-align: left;
         color: #ffffff;
+        line-height: 30px;
       }
 
       &__detail-sale-history {
@@ -412,6 +421,8 @@
         color: #c52321;
         span {}
       }
+
+
 
     }
   }
