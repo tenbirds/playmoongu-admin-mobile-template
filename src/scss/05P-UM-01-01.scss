@@ -1,6 +1,11 @@
 .management-admin {
   .filter-block {
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    background: #ffffff;
     padding-bottom: 20px;
+
     .select-block {
       padding-right: 0px;
       select {
@@ -20,11 +25,13 @@
   }
 
   .account-items{
-    background-color: #F5F5F5;
+    background-color: #f5f5f5;
     min-height: 85vh;
-    padding-top: 20px;
+    padding-top: 80px;
     font-size: 14px;
-    // ul {
+      .card {
+        border: 1px solid #f5f5f5;
+      }
       &__number {
         span {
           font-size: 11px;
@@ -58,7 +65,6 @@
           color: #111111
         }
       }
-    // }
   }
 }
 

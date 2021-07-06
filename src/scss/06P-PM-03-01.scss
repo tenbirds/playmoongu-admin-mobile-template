@@ -1,7 +1,13 @@
 
 .shopping-cart-management {
+    background-color: #f5f5f5;
+    .main-shopping-cart-management {
+        height: 100%;
+        background-color: #f5f5f5;
+    }
     .cart-management-filter {
         padding: 20px;
+        background-color:#ffffff;
         &__choose-store {
             padding-bottom: 15px;
             
@@ -21,12 +27,147 @@
         }
     }
     .cart-management-store {
-        background-color: #f5f5f5;
+        // background-color: #f5f5f5;
         clear: both;
         padding: 25px 15px;
+        width: 100%;
+        
+        &__message-order {
+            font-family: NanumSquare;
+            font-size: 14px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: left;
+            color: #c52321;
+            text-align: center;
+            display: block;
+            padding-bottom: 15px;
+        }
         &__item {
             margin-bottom: 10px;
             padding: 15px;
+            background-color: #ffffff;
+            &__no-time {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding-bottom: 7px;
+                &__no {
+                    font-family: Roboto;
+                    font-size: 11px;
+                    font-weight: 300;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    text-align: left;
+                    color: #111111;
+                }
+                &__time {
+                    font-family: Roboto;
+                    font-size: 11px;
+                    font-weight: 300;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    text-align: left;
+                    color: #111111;
+                }
+            }
+            &__store-data {
+                display: flex;
+                align-items: center;
+                padding-bottom: 5px;
+                &__icon {
+
+                }
+                &__name {
+                    font-family: NanumSquare;
+                    font-size: 20px;
+                    font-weight: 800;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    text-align: left;
+                    color: #111111;
+                    padding-left: 5px;
+                }
+            }
+            &__total {
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                padding-bottom: 3px;
+                &__text {
+                    opacity: 0.8;
+                    font-family: NanumSquare;
+                    font-size: 11px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    text-align: left;
+                    color: #111111;
+                }
+                strong {
+                    font-family: Roboto;
+                    font-size: 18px;
+                    font-weight: 500;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    text-align: left;
+                    color: #111111;
+                }
+            }
+            &__price {
+                display: flex;
+                justify-content: flex-end;
+                &__value {
+                    font-family: Roboto;
+                    font-size: 20px;
+                    font-weight: bold;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    text-align: right;
+                    color: #c52321;
+                    display: flex;
+                    align-items: center;
+                    &::after {
+                        content: "원";
+                        font-family: NanumSquare;
+                        font-size: 14px;
+                        font-weight: bold;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: normal;
+                        letter-spacing: normal;
+                        text-align: left;
+                        color: #c52321;
+                        padding-left: 5px;
+                    }
+                }
+            }
+        }
+    }
+    &.fixed-header {
+        .filter_search_page {
+            position: fixed;
+            top: 50px;
+            width: 100%;
+            z-index: 666;
+        }
+        .main_center_content {
+            margin-top: 120px;
         }
     }
 }

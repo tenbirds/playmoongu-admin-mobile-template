@@ -1,10 +1,10 @@
 @@include('components/head.html', {
     "title": "Gulp",
-    "bodyClass": "detail-admin-page"
+    "bodyClass": "detail-user-page fixed-header"
 })
 
 @@include('components/header.html', {
-    "title": "관리자 상세 관리",
+    "title": "사용자 상세 관리",
     "rightTitle": "수정완료",
     "leftIcon": "",
     "link": "",
@@ -18,29 +18,31 @@
             <form class="form-detail">
 
                 <!-- INFO USER -->
-                <h3 class="form-detail__main-title">사용자 정보</h3>
-                <div class="mb-2">
+                <h3 class="form-detail__main-title form-title">
+                    <span>사용자 정보</span>
+                </h3>
+                <div class="mb-3">
                     <label class="label-input">
                         <span class="required">닉네임</span>
-                        <input class="form-control mb-3" value="세종한솔점">
+                        <input class="form-control base-input" value="세종한솔점">
                     </label>
                 </div>
-                <div class="mb-2">
+                <div class="mb-3">
                     <label class="label-input">
                         <span class="required">전화번호</span>
-                        <input class="form-control mb-3" value="951114-1234567">
+                        <input class="form-control base-input" value="951114-1234567">
                     </label>
                 </div>
-                <div class="mb-2">
+                <div class="mb-3">
                     <label class="label-input">
                         <span class="">보유 포인트</span>
-                        <input class="form-control mb-3" value="123">
+                        <input class="form-control base-input" value="123">
                     </label>
                 </div>
-                <div class="mb-2">
+                <div class="mb-3">
                     <label class="label-input">
                         <span class="required">회원 등록일</span>
-                        <input class="form-control mb-3" value="2019-12-07" name="reg_date">
+                        <input class="form-control base-input" value="2019-12-07" name="reg_date">
                     </label>
                 </div>
 
@@ -48,10 +50,12 @@
                 <!-- HISTORY POINT-->
                 <div class="row">
                     <div class="col-6">
-                        <h3 class="form-detail__main-title history-point">포인트 내역</h3>
+                        <h3 class="form-detail__main-title form-title history-point">
+                            <span>포인트 내역</span>
+                        </h3>
                     </div>
                     <div class="col-6 text-end">
-                        <button type="button" class="btn form-detail__add-more" id="js-add-point">추가</button>
+                        <button type="button" class="btn form-detail__add-more-point" id="js-add-point">추가</button>
                     </div>
                 </div>
                 <div class="history-point">
@@ -168,10 +172,12 @@
                 <!-- MEMO -->
                 <div class="row">
                     <div class="col-6">
-                        <h3 class="form-detail__main-title memo">메모</h3>
+                        <h3 class="form-detail__main-title form-title memo">
+                            <span>메모</span>
+                        </h3>
                     </div>
                     <div class="col-6 text-end">
-                        <button type="button" class="btn form-detail__add-more">추가</button>
+                        <button type="button" class="btn form-detail__add-more-memo">추가</button>
                     </div>
                 </div>
                 <div class="memo">
@@ -252,7 +258,6 @@
     </div>
 </main>
 <footer></footer>
-@@include('components/foot.html')
 @@include('./components/script.html')
 <link rel="stylesheet" href="/css/bscroll.min.css">
 <script src="https://unpkg.com/better-scroll@latest/dist/better-scroll.min.js"></script>
@@ -278,5 +283,4 @@
         $("#addPointModal").modal('show');
     })
 </script>
-
-
+@@include('components/foot.html')

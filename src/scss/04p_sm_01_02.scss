@@ -1,7 +1,7 @@
 .detail-store-page {
     .container {
         margin: 0px;
-        padding: 0px;
+        padding: 0 0 20px;
     }
 
     .box-detail {
@@ -49,6 +49,25 @@
                     color: #111111;
                 }
             }
+            .box-input__main-check{
+                &__radio-box{
+                    // padding-right: 0px;
+                    
+                    .label-radio{
+                        // opacity: 0.5;
+                        font-family: NanumSquare;
+                        font-size: 14px;
+                        font-weight: bold;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: normal;
+                        letter-spacing: normal;
+                        text-align: left;
+                        color: #111111;
+                    }
+                }
+                
+            }
 
             &__main-check {
                 margin-top: 10px;
@@ -78,11 +97,12 @@
                 display: flex;
                 align-items: center;
                 flex-wrap: wrap;
+                border-radius: 10px;
+                border: solid 1px #f5f5f5;
+                background-color: #ffffff;
                 &__data {
-                    padding: 6px 10px 6px 10px;
                     width: 100%;
-                    margin: 10px 0px;
-        
+                    margin: 15px;
                     &__no_like {
                         display: flex;
                         align-items: center;
@@ -107,8 +127,9 @@
                     }
         
                     &__detail {
+                        margin-top: 10px;
                         .box-content {
-                            margin-top: 2px;
+                            
                             &__text {
                                 opacity: 0.8;
                                 font-family: NanumSquare;
@@ -128,7 +149,6 @@
                                 font-weight: bold;
                                 font-stretch: normal;
                                 font-style: normal;
-                                line-height: normal;
                                 letter-spacing: normal;
                                 text-align: left;
                                 color: #111111;
@@ -327,6 +347,7 @@
             opacity: 0.8;
             border-radius: 5px;
             border: solid 1px #5815a5;
+            background-color: #f5ebf6;
             .search-form {
                 width: 16px;
                 height: 16px;
@@ -348,12 +369,108 @@
         }
     }
 }
-#undo_modal_store{
+.modal-register-store {
     .modal-dialog{
         .modal-content{
             .modal-body{
                 p{
                     text-align: center;
+                    font-family: NanumSquare;
+                    font-size: 14px;
+                    font-weight: bold;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.43;
+                    letter-spacing: normal;
+                    color: #111111;
+                }
+                padding: 0px 20px 15px 20px;
+                .filter_search_page {
+                    .type-filter {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+            
+                        button {
+                            background: #5815a5;
+                            border: none;
+                            padding: 12px 15px 11px;
+                            border-radius: 18px;
+                            display: flex;
+                            align-items: center;
+            
+                            label {
+                                padding-left: 5px;
+                                color: #ffffff;
+                                font-family: NanumSquare;
+                                font-size: 12px;
+                                font-weight: normal;
+                                font-stretch: normal;
+                                font-style: normal;
+                                line-height: normal;
+                                letter-spacing: normal;
+                                text-align: left;
+                                color: #ffffff;
+                                white-space: nowrap;
+                            }
+                        }
+            
+                        .control-search {
+                            position: relative;
+                            width: 70%;
+                            padding-left: 10px;
+            
+                            img {
+                                position: absolute;
+                                right: 15px;
+                                top: 50%;
+                                transform: translateY(-50%);
+            
+                            }
+                        }
+                    }
+                    .box-radio{
+                        border-radius: 10px;
+                        border: solid 1px #f5f5f5;
+                        margin: 15px 0px;
+                        padding: 22px 10px 10px;
+                        .box-input__main-check{
+                            &__radio-box{
+                                // padding-right: 0px;
+                                .label-radio{
+                                    font-family: NanumSquare;
+                                    font-size: 14px;
+                                    font-weight: bold;
+                                    font-stretch: normal;
+                                    font-style: normal;
+                                    line-height: normal;
+                                    letter-spacing: normal;
+                                    text-align: left;
+                                    color: red;
+                                }
+                                .label-number{
+                                    font-family: Roboto;
+                                    font-size: 14px;
+                                    font-weight: normal;
+                                    font-stretch: normal;
+                                    font-style: normal;
+                                    line-height: normal;
+                                    letter-spacing: normal;
+                                    text-align: left;
+                                    color: #111111;
+                                }
+                                
+                            }
+                            
+                        }
+                        hr.line-modal{
+                            background-color: #e0dcdc;
+                            display: block;
+                            height: 1px;
+                            margin: 5px 0 10px 0;
+                        }
+                        
+                    }
                 }
             }
         }

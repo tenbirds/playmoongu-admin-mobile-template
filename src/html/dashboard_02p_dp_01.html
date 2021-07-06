@@ -1,7 +1,7 @@
 
 @@include('components/head.html', {
   "title": "대시보드",
-  "bodyClass": "dashboard-02p-dp-01"
+  "bodyClass": "dashboard-02p-dp-01 fixed-header"
 })
 @@include('components/header_dashboard.html', {
   "title": "대시보드",
@@ -154,7 +154,7 @@
             <label class="price-items"><span class="price-items__curency">\</span> 355,000</label>
           </div>
         </div>
-        <label class="line-selling"></label>
+        <hr class="line-selling">
         <div class="row selling-items-child">
           <div class="col-1 number-selling">
             <label>2</label>
@@ -167,7 +167,7 @@
             <span class="price-items"><span class="price-items__curency">\</span> 300,000</span>
           </div>
         </div>
-        <label class="line-selling"></label>
+        <hr class="line-selling">
         <div class="row selling-items-child">
           <div class="col-1 number-selling">
             <label>3</label>
@@ -180,7 +180,7 @@
             <span class="price-items"><span class="price-items__curency">\</span> 100,000</span>
           </div>
         </div>
-        <label class="line-selling"></label>
+        <hr class="line-selling">
         <div class="row selling-items-child">
           <div class="col-1 number-selling">
             <label>4</label>
@@ -193,7 +193,7 @@
             <span class="price-items"><span class="price-items__curency">\</span> 100,000</span>
           </div>
         </div>
-        <label class="line-selling"></label>
+        <hr class="line-selling">
         <div class="row selling-items-child">
           <div class="col-1 number-selling">
             <label>5</label>
@@ -322,42 +322,41 @@ var optionChart2s = {
     chart.render();
 
 $(function () {
-      function init () {
-          $('#dropdownMenuButton1').selectScroll({
-              data: [
-                    [{
-                      text: '일별',
-                      id: 1
-                    },{
-                      text: '주별',
-                      id: 2
-                    },{
-                      text: '주별',
-                      id: 3
-                    },{
-                      text: '주별',
-                      id: 4
-                    }]
-              ],
-              title: '조회 기간',
-              selectedIndex: [0],
-              cancelTxt: 'cancel',
-              cancelClass: '',
-              confirmTxt: '선택',
-              confirmClass: '',
-              confirm: function(e){
-                  console.log(e)
-              },
-              cancel: function () {
-                  console.log('Canceld')
-              }
-          })
-      }
-      var $doc = $(document)
-      $doc.on('click', '#dropdownMenuButton1', init)
-
-  });
-  $(function () {
+    function init () {
+        $('#dropdownMenuButton1').selectScroll({
+            data: [
+                  [{
+                    text: '일별',
+                    id: 1
+                  },{
+                    text: '주별',
+                    id: 2
+                  },{
+                    text: '주별',
+                    id: 3
+                  },{
+                    text: '주별',
+                    id: 4
+                  }]
+            ],
+            title: '조회 기간',
+            selectedIndex: [0],
+            cancelTxt: 'cancel',
+            cancelClass: '',
+            confirmTxt: '선택',
+            confirmClass: '',
+            confirm: function(e){
+                console.log(e)
+            },
+            cancel: function () {
+                console.log('Canceld')
+            }
+        })
+    }
+    var $doc = $(document)
+    $doc.on('click', '#dropdownMenuButton1', init)
+});
+$(function () {
       function init () {
           $('#dropdownMenuButton2').selectScroll({
               data: [

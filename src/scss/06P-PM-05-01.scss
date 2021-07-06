@@ -1,0 +1,243 @@
+
+.history-return-management {
+    background-color: #f5f5f5;
+    .main-history-return-management {
+        height: 100%;
+        background-color: #f5f5f5;
+    }
+    .history-return-filter {
+        padding: 20px;
+        background-color:#ffffff;
+        &__choose-store {
+            padding-bottom: 15px;
+            
+        }
+        &__input-search {
+            input {
+                font-family: NanumSquare;
+                font-size: 14px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                text-align: left;
+                color: #111111;
+            }
+        }
+    }
+    .history-return-store {
+        background-color: #f5f5f5;
+        clear: both;
+        padding: 25px 15px;
+        width: 100%;
+        
+        &__message-order {
+            font-family: NanumSquare;
+            font-size: 14px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: left;
+            color: #c52321;
+            text-align: center;
+            display: block;
+            padding-bottom: 15px;
+        }
+        &__item {
+            margin-bottom: 10px;
+            padding: 15px;
+            background-color: #ffffff;
+            &__number-time {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding-bottom: 10px;
+                &__number {
+                    font-family: NanumSquare;
+                    font-size: 11px;
+                    font-weight: 300;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    text-align: left;
+                    color: #111111;
+                    strong {
+                        font-family: Roboto;
+                    }
+                }
+                &__time {
+                    font-family: NanumSquare;
+                    font-size: 11px;
+                    font-weight: 300;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    text-align: center;
+                    color: #111111;
+                    strong {
+                        font-family: Roboto;
+                    }
+                }
+            }
+            
+        }
+    }
+    .history-return-store {
+        background-color: #f5f5f5;
+        clear: both;
+        padding: 25px 15px;
+        width: 100%;
+        
+        &__item {
+            &__status-order {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding-bottom: 10px;
+                border-bottom: 1px solid #f5f5f5;
+                .item__status-order {
+                    padding: 3px 7px;
+                    border-radius: 3px;
+                    
+                    &.order-reception {
+                        background-color: #fed400;
+                    }
+                    &.shipping {
+                        background-color: #56bf5c;
+                        label {
+                            color: #ffffff;
+                        }
+                    }
+                    &.receipt-completed {
+                        background-color: #5815a5;
+                        label {
+                            color: #ffffff;
+                        }
+                    }
+                    &__status {
+
+                    }
+                    &__text {
+                        font-family: NanumSquare;
+                        font-size: 11px;
+                        font-weight: bold;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: normal;
+                        letter-spacing: normal;
+                        text-align: left;
+                        color: #111111;
+                    }
+                }
+            }
+            &__store-data {
+                display: flex;
+                align-items: center;
+                padding-bottom: 5px;
+                &__icon {
+
+                }
+                &__name {
+                    font-family: NanumSquare;
+                    font-size: 20px;
+                    font-weight: 800;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    text-align: left;
+                    color: #111111;
+                    padding-left: 5px;
+                }
+            }
+            &__total-amount-quantity {
+                display: flex;
+                align-items: center;
+               .total-amount-quantity__item {
+                   width: calc(100%/2);
+                   padding-top: 10px;
+                   &.total-amount {
+                        label {
+                            display: block;
+                        }
+                        .total-amount__text {
+                            opacity: 0.8;
+                            font-family: NanumSquare;
+                            font-size: 11px;
+                            font-weight: normal;
+                            font-stretch: normal;
+                            font-style: normal;
+                            line-height: normal;
+                            letter-spacing: normal;
+                            text-align: left;
+                            color: #111111;
+                            padding-bottom: 2px;
+                        }
+                        .total-amount__value {
+                            font-family: Roboto;
+                            font-size: 14px;
+                            font-weight: 500;
+                            font-stretch: normal;
+                            font-style: normal;
+                            line-height: normal;
+                            letter-spacing: normal;
+                            text-align: left;
+                            color: #111111; 
+                            &::before {
+                                content: "W";
+                                text-decoration: line-through;
+                                padding-right: 5px;
+                            }
+                        }
+                   }
+                   &.total-quantity {
+                       padding-left: 10px;
+                        label {
+                            display: block;
+                        }
+                        .total-quantity__text {
+                            opacity: 0.8;
+                            font-family: NanumSquare;
+                            font-size: 11px;
+                            font-weight: normal;
+                            font-stretch: normal;
+                            font-style: normal;
+                            line-height: normal;
+                            letter-spacing: normal;
+                            text-align: left;
+                            color: #111111;
+                            padding-bottom: 2px;
+                        }
+                        .total-quantity__value {
+                            font-family: Roboto;
+                            font-size: 14px;
+                            font-weight: 500;
+                            font-stretch: normal;
+                            font-style: normal;
+                            line-height: normal;
+                            letter-spacing: normal;
+                            text-align: left;
+                            color: #111111; 
+                        }
+                   }
+               } 
+            }
+        }
+    }
+    &.fixed-header {
+        .filter_search_page {
+            position: fixed;
+            top: 50px;
+            width: 100%;
+            z-index: 666;
+        }
+        .main_center_content {
+            margin-top: 115px;
+        }
+    }
+}

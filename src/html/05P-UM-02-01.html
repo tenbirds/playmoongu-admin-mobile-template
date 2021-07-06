@@ -1,6 +1,6 @@
 @@include('components/head.html', {
     "title": "Gulp",
-    "bodyClass": "management-user"
+    "bodyClass": "management-user fixed-header"
 })
 
 @@include('components/header.html', {
@@ -23,11 +23,9 @@
                     </button>
                 </div>
                 <div class="col-8">
-                    <div class="input-group group-search">
-                        <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon2">
-                        <span class="input-group-text" id="basic-addon2">
-                            <i class="fas fa-search"></i>
-                        </span>
+                    <div class="input-search-common">
+                        <input placeholder="매장 명을 검색해 주세요." class="form-control input-search-common__input-form" />
+                        <img class="input-search-common__icon-search" src="/images/icons/icon_search.svg" />
                     </div>
                 </div>
             </div>
@@ -192,7 +190,6 @@
     </div>
 </main>
 <footer></footer>
-@@include('components/foot.html')
 @@include('./components/script.html')
 <script type="text/javascript">
     $(document).on('click', '#js-switch-cond', function(e) {
@@ -206,5 +203,5 @@
         }
         $(this).find('span').html(label);
     })
-  </script>
-
+</script>
+@@include('components/foot.html')

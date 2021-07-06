@@ -1,50 +1,48 @@
 @@include('components/head.html', {
-    "title": "Gulp",
-    "bodyClass": ""
+    "title": "관리자 관리",
+    "bodyClass": "management-stock fixed-header"
 })
 
-@@include('components/header.html', {
-"title": "관리자 관리",
-"bodyClass": "management-stock"
+@@include('components/header.html', { 
+    "title": "관리자 관리",
+    "rightTitle": "",
+    "leftIcon": "",
+    "link": "",
+    "leftTitle": "/images/icons/m_menu.svg",
+    'param': "open_nav"
 })
 
 <main>
     <div class="management-stock">
-        <div class="container filter-block">
-            <div class="row align-items-center">
-                <div class="col-4">
-                    <select class="form-select border-0" aria-label="" id="js_filter_select">
-                        <option selected>휴대전화</option>
-                        <option value="1">아이디</option>
-                        <option value="2">이름</option>
-                        <option value="3">.Net</option>
-                    </select>
-                </div>            
+        <div class="stock-search">
+            <div class="box-select choose-store-select-common">
+                <label class="box-select__label choose-store-select-common__text">전체 매장</label>
+                <img class="box-select__img choose-store-select-common__icon" src="/images/icons/icon_arrow_down.svg" />
             </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="input-group group-search">
-                        <input type="text" class="form-control" placeholder="매장 명을 검색해 주세요." aria-label="" aria-describedby="basic-addon2">
-                        <span class="input-group-text" id="basic-addon2">
-                            <i class="fas fa-search"></i>
-                        </span>
-                    </div>
-                </div>
+            <div class="input-search-common">
+                <input placeholder="매장 명을 검색해 주세요." class="form-control input-search-common__input-form" />
+                <img class="input-search-common__icon-search" src="/images/icons/icon_search.svg" />
             </div>
         </div>
 
-        <div class="container stock-items">
+        <div class="container wrap-stock">
             <div class="row">
                 <div class="col-3 offset-9">
-                    <select class="form-select filter-category" aria-label="" id="">
-                        <option selected>문구</option>
-                        <option value="1">아이디</option>
-                        <option value="2">이름</option>
-                        <option value="3">.Net</option>
-                    </select>
+                    <div class="filter_category">
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                문구
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <a class="dropdown-item" href="#">1차 분류 1</a>
+                                <a class="dropdown-item" href="#">1차 분류 2</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <ul class="list-group">
+
+            <ul class="list-group stock-items">
                 <li class="row align-items-center mb-2 stock-item">
                     <div class="col-12">
                         <div class="card">
@@ -54,7 +52,7 @@
                                         <span>No.11</span>
                                     </div>
                                     <div class="col-6 text-end">
-                                        <span class="badge bg-warning p-1">문구</span>
+                                        <span class="badge box-number__edit js-edit-price">문구</span>
                                     </div>
                                 </div>
                                 <div class="row box-name">
@@ -95,7 +93,7 @@
                                                 <span class="col-form-label box-main-price__stock-label">재고</span>
                                             </div>
                                             <div class="col-6 pl-0 box-stock">
-                                                <input type="text" id="" class="form-control box-stock__input" value="-9">
+                                                <input type="text" id="" class="form-control box-stock__input negative js-edit-stock" value="-9">
                                             </div>
                                         </div>
                                     </div>
@@ -114,7 +112,7 @@
                                         <span>No.11</span>
                                     </div>
                                     <div class="col-6 text-end">
-                                        <span class="badge bg-warning">문구</span>
+                                        <span class="badge box-number__edit js-edit-price">문구</span>
                                     </div>
                                 </div>
                                 <div class="row box-name">
@@ -155,7 +153,244 @@
                                                 <span class="col-form-label box-main-price__stock-label">재고</span>
                                             </div>
                                             <div class="col-6 pl-0 box-stock">
-                                                <input type="text" id="" class="form-control box-stock__input" value="-9">
+                                                <input type="text" id="" class="form-control box-stock__input js-edit-stock" value="2,000" >
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="row align-items-center mb-2 stock-item">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row box-number">
+                                    <div class="col-6">
+                                        <span>No.11</span>
+                                    </div>
+                                    <div class="col-6 text-end">
+                                        <span class="badge box-number__edit js-edit-price">문구</span>
+                                    </div>
+                                </div>
+                                <div class="row box-name">
+                                    <div class="col-8 col-left">
+                                        <span class="title">
+                                            반짝반짝 슬라임 8 
+                                        </span>
+                                    </div>
+                                    <div class="col-4 col-right text-end">
+                                        <span class="title"></span>
+                                    </div>
+                                </div>
+                                <div class="row box-desc">
+                                    <div class="col-12">
+                                        <img class="box-desc_icon-barcode" src="./../images/icons/icon_bacode_s.svg" alt="">
+                                        <span class="box-desc__barcode">801541354431</span>
+                                        <span class="box-desc__price">1,500</span>
+                                        <span class="box-desc__price-sub">원(공급가)</span>
+                                    </div>
+                                </div>
+                                <hr>
+
+                                <div class="row box-main-price">
+                                    <div class="col-6">
+                                        <div class="row align-items-center">
+                                            <div class="col-4 text-end">
+                                                <span class="col-form-label box-main-price__sell-price-label">판매가</span>
+                                            </div>
+                                            <div class="col-6 pl-0 box-sell-price">
+                                                <input type="text" id="" class="form-control box-sell-price__input" value="1,000">
+                                                <span class="box-sell-price__label">원</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="row align-items-center">
+                                            <div class="col-6 text-end">
+                                                <span class="col-form-label box-main-price__stock-label">재고</span>
+                                            </div>
+                                            <div class="col-6 pl-0 box-stock">
+                                                <input type="text" id="" class="form-control box-stock__input js-edit-stock" value="2,000" >
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="row align-items-center mb-2 stock-item">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row box-number">
+                                    <div class="col-6">
+                                        <span>No.11</span>
+                                    </div>
+                                    <div class="col-6 text-end">
+                                        <span class="badge box-number__edit js-edit-price">문구</span>
+                                    </div>
+                                </div>
+                                <div class="row box-name">
+                                    <div class="col-8 col-left">
+                                        <span class="title">
+                                            반짝반짝 슬라임 8 
+                                        </span>
+                                    </div>
+                                    <div class="col-4 col-right text-end">
+                                        <span class="title"></span>
+                                    </div>
+                                </div>
+                                <div class="row box-desc">
+                                    <div class="col-12">
+                                        <img class="box-desc_icon-barcode" src="./../images/icons/icon_bacode_s.svg" alt="">
+                                        <span class="box-desc__barcode">801541354431</span>
+                                        <span class="box-desc__price">1,500</span>
+                                        <span class="box-desc__price-sub">원(공급가)</span>
+                                    </div>
+                                </div>
+                                <hr>
+
+                                <div class="row box-main-price">
+                                    <div class="col-6">
+                                        <div class="row align-items-center">
+                                            <div class="col-4 text-end">
+                                                <span class="col-form-label box-main-price__sell-price-label">판매가</span>
+                                            </div>
+                                            <div class="col-6 pl-0 box-sell-price">
+                                                <input type="text" id="" class="form-control box-sell-price__input" value="1,000">
+                                                <span class="box-sell-price__label">원</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="row align-items-center">
+                                            <div class="col-6 text-end">
+                                                <span class="col-form-label box-main-price__stock-label">재고</span>
+                                            </div>
+                                            <div class="col-6 pl-0 box-stock">
+                                                <input type="text" id="" class="form-control box-stock__input js-edit-stock" value="2,000" >
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="row align-items-center mb-2 stock-item">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row box-number">
+                                    <div class="col-6">
+                                        <span>No.11</span>
+                                    </div>
+                                    <div class="col-6 text-end">
+                                        <span class="badge box-number__edit js-edit-price">문구</span>
+                                    </div>
+                                </div>
+                                <div class="row box-name">
+                                    <div class="col-8 col-left">
+                                        <span class="title">
+                                            반짝반짝 슬라임 8 
+                                        </span>
+                                    </div>
+                                    <div class="col-4 col-right text-end">
+                                        <span class="title"></span>
+                                    </div>
+                                </div>
+                                <div class="row box-desc">
+                                    <div class="col-12">
+                                        <img class="box-desc_icon-barcode" src="./../images/icons/icon_bacode_s.svg" alt="">
+                                        <span class="box-desc__barcode">801541354431</span>
+                                        <span class="box-desc__price">1,500</span>
+                                        <span class="box-desc__price-sub">원(공급가)</span>
+                                    </div>
+                                </div>
+                                <hr>
+
+                                <div class="row box-main-price">
+                                    <div class="col-6">
+                                        <div class="row align-items-center">
+                                            <div class="col-4 text-end">
+                                                <span class="col-form-label box-main-price__sell-price-label">판매가</span>
+                                            </div>
+                                            <div class="col-6 pl-0 box-sell-price">
+                                                <input type="text" id="" class="form-control box-sell-price__input" value="1,000">
+                                                <span class="box-sell-price__label">원</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="row align-items-center">
+                                            <div class="col-6 text-end">
+                                                <span class="col-form-label box-main-price__stock-label">재고</span>
+                                            </div>
+                                            <div class="col-6 pl-0 box-stock">
+                                                <input type="text" id="" class="form-control box-stock__input js-edit-stock" value="2,000" >
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="row align-items-center mb-2 stock-item">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row box-number">
+                                    <div class="col-6">
+                                        <span>No.11</span>
+                                    </div>
+                                    <div class="col-6 text-end">
+                                        <span class="badge box-number__edit js-edit-price">문구</span>
+                                    </div>
+                                </div>
+                                <div class="row box-name">
+                                    <div class="col-8 col-left">
+                                        <span class="title">
+                                            반짝반짝 슬라임 8 
+                                        </span>
+                                    </div>
+                                    <div class="col-4 col-right text-end">
+                                        <span class="title"></span>
+                                    </div>
+                                </div>
+                                <div class="row box-desc">
+                                    <div class="col-12">
+                                        <img class="box-desc_icon-barcode" src="./../images/icons/icon_bacode_s.svg" alt="">
+                                        <span class="box-desc__barcode">801541354431</span>
+                                        <span class="box-desc__price">1,500</span>
+                                        <span class="box-desc__price-sub">원(공급가)</span>
+                                    </div>
+                                </div>
+                                <hr>
+
+                                <div class="row box-main-price">
+                                    <div class="col-6">
+                                        <div class="row align-items-center">
+                                            <div class="col-4 text-end">
+                                                <span class="col-form-label box-main-price__sell-price-label">판매가</span>
+                                            </div>
+                                            <div class="col-6 pl-0 box-sell-price">
+                                                <input type="text" id="" class="form-control box-sell-price__input" value="1,000">
+                                                <span class="box-sell-price__label">원</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="row align-items-center">
+                                            <div class="col-6 text-end">
+                                                <span class="col-form-label box-main-price__stock-label">재고</span>
+                                            </div>
+                                            <div class="col-6 pl-0 box-stock">
+                                                <input type="text" id="" class="form-control box-stock__input js-edit-stock" value="2,000" >
                                             </div>
                                         </div>
                                     </div>
@@ -165,56 +400,154 @@
                     </div>
                 </li>
             </ul>
+        </div>
 
+        <!-- MODAL HTML -->
+        <!-- edit price modal -->
+        <div class="modal popup modal-edit-price" id="editPriceModal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">판매가 수정</h5>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row stock-item">
+                            <label for="" class="col-4 col-form-label stock-item__label">상품명</label>
+                            <div class="col-8">
+                                <span class="stock-item__value">어몽어스 열쇠고리 1</span>
+                            </div>
+                        </div>
+                        <div class="row stock-item">
+                            <label for="" class="col-4 col-form-label stock-item__label">바코드 번호</label>
+                            <div class="col-8">
+                                <span class="stock-item__value">812454412448</span>
+                            </div>
+                        </div>
+                        <div class="row stock-item">
+                            <label for="" class="col-4 col-form-label stock-item__label">공급가</label>
+                            <div class="col-8">
+                                <span class="stock-item__value">
+                                    <span class="stock-item__currency">\</span>
+                                    1.400
+                                </span>
+                            </div>
+                        </div>
+                        <div class="row stock-item">
+                            <label for="" class="col-4 col-form-label stock-item__old-label">판매 가격</label>
+                            <div class="col-8">
+                                <span class="stock-item__old-value">
+                                    <span class="stock-item__currency">\</span>
+                                    <del>1.400</del>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="row stock-item">
+                            <label for="" class="col-4 col-form-label stock-item__label_dark">할인가</label>
+                            <div class="col-8">
+                                <input type="text" class="form-control stock-item__value" id="" value="3,000">
+                            </div>
+                        </div>
+                        <p class="description">
+                            할인가를 적용할 경우 KIOSK에서 할인가로
+                            판매됩니다.  
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn-dismiss" data-bs-dismiss="modal">취소</button>
+                        <button type="button" class="btn-action">확인</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- edit stock modal -->
+        <div class="modal popup modal-edit-stock" id="editStockModal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">재고 수정</h5>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row stock-item">
+                            <label for="" class="col-4 col-form-label stock-item__label">상품명</label>
+                            <div class="col-8">
+                                <span class="stock-item__value">어몽어스 열쇠고리 1</span>
+                            </div>
+                        </div>
+                        <div class="row stock-item">
+                            <label for="" class="col-4 col-form-label stock-item__label">바코드 번호</label>
+                            <div class="col-8">
+                                <span class="stock-item__value">812454412448</span>
+                            </div>
+                        </div>
+                        <div class="row stock-item">
+                            <label for="" class="col-4 col-form-label stock-item__label">판매가</label>
+                            <div class="col-8">
+                                <span class="stock-item__value">
+                                    <span class="stock-item__currency">\</span>
+                                    1.400
+                                </span>
+                            </div>
+                        </div>
+                        <div class="row stock-item">
+                            <label for="" class="col-4 col-form-label stock-item__old-label">현재 재고</label>
+                            <div class="col-8">
+                                <span class="stock-item__old-value">
+                                    <span class="stock-item__currency">\</span>
+                                    <del>1.400</del>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="row stock-item">
+                            <label for="" class="col-4 col-form-label stock-item__label_dark">변경 재고</label>
+                            <div class="col-4 offset-4">
+                                <input type="text" class="form-control stock-item__value old-quantity" id="" value="4,000" readonly>
+                            </div>
+                        </div>
+                        <div class="row stock-item">
+                            <label for="" class="col-4 col-form-label stock-item__label_dark">수량</label>
+                            <div class="col-4 offset-4">
+                                <input type="text" class="form-control stock-item__value quantity" id="" value="2,000">
+                            </div>
+                        </div>
+                        <div class="row stock-item">
+                            <div class="col-6">
+                                <label class="label-radio stock-item__value float-start"><input checked type="radio" name="ckbox"><span>재고 증가</span></label>
+                            </div>
+                            <div class="col-6">
+                                <label class="label-radio stock-item__value float-start"><input type="radio" name="ckbox"><span>재고 감소</span></label>
+                            </div>
+                        </div>
+                        <div class="row stock-item">
+                            <label for="" class="col-4 col-form-label stock-item__label_dark">비고</label>
+                            <div class="col-12">
+                                <textarea class=" stock-item__value note" name="" id="" rows="2">변경 내용을 입력해주세요.</textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn-dismiss" data-bs-dismiss="modal">취소</button>
+                        <button type="button" class="btn-action">확인</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </main>
 <footer></footer>
-@@include('components/foot.html')
 @@include('./components/script.html')
-<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="/css/bscroll.min.css">
 <script src="https://unpkg.com/better-scroll@latest/dist/better-scroll.min.js"></script>
 <script type="text/javascript" src="/js/jquery.selectscroll.min.js"></script>
 <script type="text/javascript">
-   function init () {
-        $('#js_filter_select').selectScroll({
-            data: [
-                    [{
-                    text: '아이디',
-                    id: 1
-                    },{
-                    text: '이름',
-                    id: 2
-                    },{
-                    text: '.Net',
-                    id: 3
-                    }]
-            ],
-            title: '조회 기간',
-            selectedIndex: [0],
-            cancelTxt: 'cancel',
-            cancelClass: '',
-            confirmTxt: '선택',
-            confirmClass: '',
-            confirm: function(res) {
-                console.log(res, 'rest');
-                if (res?.length > 0) {
-                    let val = res?.[0]?.id || '';
-                    $("#js_filter_select").val(val);
-                }
-            },
-            cancel: function () {
-                console.log('Canceld')
-            }
-        })
-    }
+    $(document).on('click', '.js-edit-price', function(e) {
+        e.preventDefault();
+        $("#editPriceModal").modal('show');
+    })
 
-    // $(document).on('click', '#js_filter_select', function(e) {
-    //     e.preventDefault();
-    //     this.blur();
-    //     window.focus();
-    //     init()
-    // })
-  </script>
-
+    $(document).on('click', '.js-edit-stock', function(e) {
+        e.preventDefault();
+        $("#editStockModal").modal('show');
+    })
+</script>
+@@include('components/foot.html')

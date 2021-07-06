@@ -1,4 +1,8 @@
 .product-management {
+    .filter_search_page {
+        padding: 20px;
+        background: #ffffff;
+    }
     .main-product-management {
         
     }
@@ -115,6 +119,20 @@
             text-align: center;
             color: #111111;
             margin-bottom: 10px;
+        }
+    }
+    &.fixed-header {
+        .filter_search_page {
+            position: fixed;
+            top: 50px;
+            width: 100%;
+            z-index: 666;
+        }
+        .main_center_content {
+            margin-top: 120px;
+        }
+        .tab-product  {
+            padding-top: 78px;
         }
     }
 }

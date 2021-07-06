@@ -1,0 +1,202 @@
+@@include('components/head.html',
+{ "title": "Gulp",
+"bodyClass":
+" fixed-header history-return-management"
+})
+@@include('components/header.html', {
+"title":"반품 내역 관리",
+"link": "#" ,
+"leftIcon": "",
+"rightTitle": "",
+"leftTitle": "/images/icons/m_menu.svg",
+'param': "open_nav",
+'iconRight':'/images/icons/icon_calender.svg',
+'eventIconRight':'openCaledar()'
+})
+
+<main>
+  <div class="main-history-return-management">
+    <div class="history-return-filter filter_search_page">
+      <div class="history-return-filter__choose-store choose-store-select-common">
+        <label class="choose-store-select-common__text">전체 매장</label>
+        <img class="choose-store-select-common__icon" src="/images/icons/icon_arrow_down.svg" />
+      </div>
+      <div class="history-return-filter__input-search input-search-common">
+        <input placeholder="매장 명을 검색해 주세요." class="form-control input-search-common__input-form" />
+        <img class="input-search-common__icon-search" src="/images/icons/icon_search.svg" />
+      </div>
+    </div>
+    <div class="history-return-store main_center_content">
+      <div class="history-return-store__item">
+        <div class="history-return-store__item__number-time">
+          <label class="history-return-store__item__number-time__number">
+            반품 번호 :
+            <strong>65441154</strong>
+          </label>
+          <label class="history-return-store__item__number-time__time">
+            등록일 :
+            <strong>2021.05.06</strong>
+          </label>
+        </div>
+        <div class="history-return-store__item__status-order">
+          <div class="history-return-store__item__store-data">
+            <img class="history-return-store__item__store-data__icon" src="/images/icons/icon_shop.svg" />
+            <label class="history-return-store__item__store-data__name">중곡시장점</label>
+          </div>
+          <div class="main-status-order-common return-request">
+            <img class="main-status-order-common__icon" src="/images/icons/icon_return_reqquest.svg">
+            <label class="main-status-order-common__text">반품신청</label>
+          </div>
+          
+        </div>
+        <div class="history-return-store__item__total-amount-quantity">
+            <div class="total-amount-quantity__item total-amount">
+                <label class="total-amount__text">총 금액</label>
+                <label class="total-amount__value">2,000</label>
+            </div>
+            <div class="total-amount-quantity__item total-quantity">
+              <label class="total-quantity__text">총 품목 개수</label>
+              <label class="total-quantity__value">100</label>
+            </div>
+        </div>
+      </div>
+      <div class="history-return-store__item">
+        <div class="history-return-store__item__number-time">
+          <label class="history-return-store__item__number-time__number">
+            반품 번호 :
+            <strong>65441154</strong>
+          </label>
+          <label class="history-return-store__item__number-time__time">
+            등록일 :
+            <strong>2021.05.06</strong>
+          </label>
+        </div>
+        <div class="history-return-store__item__status-order">
+          <div class="history-return-store__item__store-data">
+            <img class="history-return-store__item__store-data__icon" src="/images/icons/icon_shop.svg" />
+            <label class="history-return-store__item__store-data__name">중곡시장점</label>
+          </div>
+          <div class="main-status-order-common return-complete">
+            <img class="main-status-order-common__icon" src="/images/icons/icon_return_complete.svg">
+            <label class="main-status-order-common__text">반품완료</label>
+          </div>
+          
+        </div>
+        <div class="history-return-store__item__total-amount-quantity">
+            <div class="total-amount-quantity__item total-amount">
+                <label class="total-amount__text">총 금액</label>
+                <label class="total-amount__value">2,000</label>
+            </div>
+            <div class="total-amount-quantity__item total-quantity">
+              <label class="total-quantity__text">총 품목 개수</label>
+              <label class="total-quantity__value">100</label>
+            </div>
+        </div>
+      </div>
+      <div class="history-return-store__item">
+        <div class="history-return-store__item__number-time">
+          <label class="history-return-store__item__number-time__number">
+            반품 번호 :
+            <strong>65441154</strong>
+          </label>
+          <label class="history-return-store__item__number-time__time">
+            등록일 :
+            <strong>2021.05.06</strong>
+          </label>
+        </div>
+        <div class="history-return-store__item__status-order">
+          <div class="history-return-store__item__store-data">
+            <img class="history-return-store__item__store-data__icon" src="/images/icons/icon_shop.svg" />
+            <label class="history-return-store__item__store-data__name">중곡시장점</label>
+          </div>
+          <div class="main-status-order-common return-refusal">
+            <img class="main-status-order-common__icon" src="/images/icons/icon_return_refusal.svg">
+            <label class="main-status-order-common__text">반품거절</label>
+          </div>
+          
+        </div>
+        <div class="history-return-store__item__total-amount-quantity">
+            <div class="total-amount-quantity__item total-amount">
+                <label class="total-amount__text">총 금액</label>
+                <label class="total-amount__value">2,000</label>
+            </div>
+            <div class="total-amount-quantity__item total-quantity">
+              <label class="total-quantity__text">총 품목 개수</label>
+              <label class="total-quantity__value">100</label>
+            </div>
+        </div>
+      </div>
+      <div class="history-return-store__item">
+        <div class="history-return-store__item__number-time">
+          <label class="history-return-store__item__number-time__number">
+            반품 번호 :
+            <strong>65441154</strong>
+          </label>
+          <label class="history-return-store__item__number-time__time">
+            등록일 :
+            <strong>2021.05.06</strong>
+          </label>
+        </div>
+        <div class="history-return-store__item__status-order">
+          <div class="history-return-store__item__store-data">
+            <img class="history-return-store__item__store-data__icon" src="/images/icons/icon_shop.svg" />
+            <label class="history-return-store__item__store-data__name">중곡시장점</label>
+          </div>
+          <div class="main-status-order-common return-refusal">
+            <img class="main-status-order-common__icon" src="/images/icons/icon_return_refusal.svg">
+            <label class="main-status-order-common__text">반품거절</label>
+          </div>
+          
+        </div>
+        <div class="history-return-store__item__total-amount-quantity">
+            <div class="total-amount-quantity__item total-amount">
+                <label class="total-amount__text">총 금액</label>
+                <label class="total-amount__value">2,000</label>
+            </div>
+            <div class="total-amount-quantity__item total-quantity">
+              <label class="total-quantity__text">총 품목 개수</label>
+              <label class="total-quantity__value">100</label>
+            </div>
+        </div>
+      </div>
+      <div class="history-return-store__item">
+        <div class="history-return-store__item__number-time">
+          <label class="history-return-store__item__number-time__number">
+            반품 번호 :
+            <strong>65441154</strong>
+          </label>
+          <label class="history-return-store__item__number-time__time">
+            등록일 :
+            <strong>2021.05.06</strong>
+          </label>
+        </div>
+        <div class="history-return-store__item__status-order">
+          <div class="history-return-store__item__store-data">
+            <img class="history-return-store__item__store-data__icon" src="/images/icons/icon_shop.svg" />
+            <label class="history-return-store__item__store-data__name">중곡시장점</label>
+          </div>
+          <div class="main-status-order-common return-refusal">
+            <img class="main-status-order-common__icon" src="/images/icons/icon_return_refusal.svg">
+            <label class="main-status-order-common__text">반품거절</label>
+          </div>
+          
+        </div>
+        <div class="history-return-store__item__total-amount-quantity">
+            <div class="total-amount-quantity__item total-amount">
+                <label class="total-amount__text">총 금액</label>
+                <label class="total-amount__value">2,000</label>
+            </div>
+            <div class="total-amount-quantity__item total-quantity">
+              <label class="total-quantity__text">총 품목 개수</label>
+              <label class="total-quantity__value">100</label>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer></footer>
+@@include('components/script.html')
+@@include('components/foot.html')

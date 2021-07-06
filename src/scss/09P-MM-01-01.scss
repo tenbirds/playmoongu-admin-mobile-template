@@ -32,7 +32,16 @@
     }
   }
 
-
+  &__no-checked {
+    opacity: 0.5;
+    font-family: NanumSquare;
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    color: #111111;
+  }
 
   &__holding-deposit {
     opacity: 0.8;
@@ -46,8 +55,20 @@
   }
 
   &__holding-money {
+    font-family: Roboto;
     font-size: 20px;
-    font-weight: 900;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #111111;
+  }
+
+  &__character-won {
+    font-family: NanumSquare;
+    font-size: 15px;
+    font-weight: bold;
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
