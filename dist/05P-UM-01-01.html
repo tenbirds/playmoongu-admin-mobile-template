@@ -15,9 +15,9 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
-    <link rel="stylesheet" href="/css/style.min.css?v=2021070202" media="screen">
+    <link rel="stylesheet" href="/css/style.min.css?v=2021070601" media="screen">
 </head>
-<body class="management-admin">
+<body class="management-admin fixed-header">
 
 
 <header>
@@ -26,8 +26,14 @@
             <div class="content-header">
                 <img src="/images/icons/m_menu.svg" class="" onclick="handleClick('open_nav')" alt="">
                 <h3 class="header_title">관리자 관리</h3>
+               
                 <div class="header-right">
-                    <a href="" class="header-link">등록하기</a>
+                    
+                    
+                        <a href="" class="header-link">등록하기</a>
+                    
+                    
+
                 </div>
             </div>
         </div>
@@ -141,11 +147,9 @@
                     </select>
                 </div>
                 <div class="col-8">
-                    <div class="input-group group-search">
-                        <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon2">
-                        <span class="input-group-text" id="basic-addon2">
-                            <i class="fas fa-search"></i>
-                        </span>
+                    <div class="input-search-common">
+                        <input placeholder="매장 명을 검색해 주세요." class="form-control input-search-common__input-form" />
+                        <img class="input-search-common__icon-search" src="/images/icons/icon_search.svg" />
                     </div>
                 </div>
             </div>
@@ -292,16 +296,11 @@
                         </div>
                     </div>
                 </li>
-
             </ul>
         </div>
     </div>
 </main>
 <footer></footer>
-
-</body>
-</html>
-
 <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>-->
 <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/js/bootstrap.min.js" integrity="sha512-a6ctI6w1kg3J4dSjknHj3aWLEbjitAXAjLDRUxo2wyYmDFRcz2RJuQr5M3Kt8O/TtUSp8n2rAyaXYy1sjoKmrQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>-->
 
@@ -328,7 +327,7 @@
 <script src="https://unpkg.com/better-scroll@latest/dist/better-scroll.min.js"></script>
 <script type="text/javascript" src="/js/jquery.selectscroll.min.js"></script>
 
-<script src="/js/script.min.js?v=2021070202"></script>
+<script src="/js/script.min.js?v=2021070601"></script>
 
 <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="/css/bscroll.min.css">
@@ -368,16 +367,15 @@
         })
     }
 
-    $(document).on('click', '#js_filter_select', function(e) {
+    $(document).on('click mousedown', '#js_filter_select', function(e) {
         e.preventDefault();
         this.blur();
         window.focus();
         init()
     })
-
-    // function login() {
-    //   $('#modalPopup1').modal('show');
-    //   $('#modalPopup2').modal('show');
-    // }
   </script>
+
+</body>
+</html>
+
 

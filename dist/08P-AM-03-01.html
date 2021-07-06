@@ -15,9 +15,9 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
-    <link rel="stylesheet" href="/css/style.min.css?v=2021070202" media="screen">
+    <link rel="stylesheet" href="/css/style.min.css?v=2021070601" media="screen">
 </head>
-<body class="sales-by-affiliate-store">
+<body class="sales-by-affiliate-store fixed-header">
 
 
 <header>
@@ -26,8 +26,14 @@
             <div class="content-header">
                 <img src="/images/icons/m_menu.svg" class="" onclick="handleClick('open_nav')" alt="">
                 <h3 class="header_title">결제 내역</h3>
+               
                 <div class="header-right">
-                    <a href="04-SM-01-01.html" class="header-link">등록하기</a>
+                    
+                    
+                        <a href="04-SM-01-01.html" class="header-link"></a>
+                    
+                    
+
                 </div>
             </div>
         </div>
@@ -138,61 +144,38 @@
         </div>
     </section>
 
-    <div class="m-3 content">
-        <div class="p-3 content__box">
-            <h6 class="content__total-sale">총 매출</h6>
-            <span class="content__won">&#8361; 533,578,500</span>
-            <div class="row mt-3">
-                <div class="col-6 ">
-                    <h6 class="content__number-pay">결제 건수</h6>
-                    <span class="content__number">90</span>
-                </div>
+    <div class="m-3 content content-03">
+<!--        <div class="p-3 content__box">-->
+<!--            <h6 class="content__total-sale p-0 m-0">총 매출</h6>-->
 
-                <!--                <div class="col-6">-->
-                <!--                    <h6 class="content__number-pay">결제 건수</h6>-->
-                <!--                    <span class="content__number">&#8361; 90</span>-->
-                <!--                </div>-->
-            </div>
-        </div>
+<!--            <div class="row">-->
+<!--                <div class="col-12 d-flex m-0">-->
+<!--                    <span class="content__won-character align-middle">&#8361;</span><span class="content__won"> 533,578,500</span>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="row mt-3 ">-->
+<!--                <div class="col-6 ">-->
+<!--                    <h6 class="content__number-pay p-0 m-0">결제 건수</h6>-->
+<!--                    <span class="content__number">90</span>-->
+<!--                </div>-->
+
+<!--                <div class="col-6">-->
+<!--                    <h6 class="content__number-pay p-0 m-0">결제 건수</h6>-->
+<!--                    <span class="content__number-character-won">&#8361;</span><span class="content__number"> 90</span>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
 
 
-        <div class="row justify-content-between mt-3">
-            <div class="col-4">
-                <h5 class="content__detail-sale-history">상세 매출 내역</h5>
+<!--        <div class="row justify-content-between mt-3">-->
+<!--            <div class="col-4">-->
+<!--                <h5 class="content__detail-sale-history">상세 매출 내역</h5>-->
 
-            </div>
-            <div class="col-4 text-end">
-                <p class="content__sale-piriod">기간 별 매출 <img src="/images/icons/icon_miniarrow.svg" /> </p>
-            </div>
-        </div>
-
-        <ul class="list-group mt-4">
-                    <li class="list-group-item content__border-none">
-                        <div class="row justify-content-center ">
-                            <div class="col-11   p-0 pt-2">
-                                <div class="d-flex justify-content-between">
-                                    <p class="content__box-content-no p-0 m-1">No.10</p>
-                                    <p class="content__box-content-no p-0 m-1">2021.05.06 21:08:15</p>
-                                </div>
-
-                                <div class="d-flex justify-content-between">
-                                    <p class="content__box-content-receipt-number p-0 m-1">영수증 번호</p>
-                                    <p class="content__box-content-receipt-number-border  p-0 m-1 ">영수증 번호</p>
-                                </div>
-
-                                <div class="d-flex justify-content-between">
-                                    <p class="content__box-content-number p-0 m-1">89730</p>
-                                    <p class="content__box-content-number-text p-0 m-1 ">중곡시장점</p>
-                                </div>
-
-                                <div class="d-flex justify-content-between">
-                                    <p class="content__box-content-receipt-number p-0 m-1">결제 취소</p>
-                                    <p class="content__box-content-receipt-number-color p-0 m-1 ">50,540</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
+<!--            </div>-->
+<!--            <div class="col-4 text-end">-->
+<!--                <p class="content__sale-piriod">기간 별 매출 <img src="/images/icons/icon_miniarrow.svg" /> </p>-->
+<!--            </div>-->
+<!--        </div>-->
 
         <ul class="list-group mt-4">
             <li class="list-group-item content__border-none">
@@ -204,7 +187,37 @@
                         </div>
 
                         <div class="d-flex justify-content-between">
-                            <p class="content__box-content-receipt-number p-0 m-1">영수증 번호</p>
+                            <p class="content__box-content-receipt-number-08 p-0 m-1">영수증 번호</p>
+                            <p class="content__box-content-receipt-number-border  p-0 m-1 ">영수증 번호</p>
+                        </div>
+
+                        <div class="d-flex justify-content-between">
+                            <p class="content__box-content-number p-0 m-1">89730</p>
+                            <p class="content__box-content-number-text p-0 m-1 ">중곡시장점</p>
+                        </div>
+
+                        <div class="d-flex justify-content-between">
+                            <p class="content__box-content-receipt-number-08 p-0 m-1">결제 취소</p>
+                            <p class="content__box-content-receipt-number-color p-0 m-1 ">50,540</p>
+                        </div>
+                        <!-- <button class="btn btn-sm btn-primary p-0 js-complete-payment">complete pay</button> -->
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+
+        <ul class="list-group mt-4">
+            <li class="list-group-item content__border-none">
+                <div class="row justify-content-center ">
+                    <div class="col-11   p-0 pt-2">
+                        <div class="d-flex justify-content-between">
+                            <p class="content__box-content-no p-0 m-1">No.10</p>
+                            <p class="content__box-content-no p-0 m-1">2021.05.06 21:08:15</p>
+                        </div>
+
+                        <div class="d-flex justify-content-between">
+                            <p class="content__box-content-receipt-number-08 p-0 m-1">영수증 번호</p>
                             <p class="content__box-content-receipt-number-border-organ  p-0 m-1 ">영수증 번호</p>
                         </div>
 
@@ -214,13 +227,73 @@
                         </div>
 
                         <div class="d-flex justify-content-between">
-                            <p class="content__box-content-receipt-number p-0 m-1">결제 취소</p>
+                            <p class="content__box-content-receipt-number-08 p-0 m-1">결제 취소</p>
                             <p class="content__box-content-receipt-number-color p-0 m-1 ">50,540</p>
                         </div>
+                        <!-- <button class="btn btn-sm btn-primary p-0 js-cancel-payment">cancel pay</button> -->
                     </div>
                 </div>
             </li>
         </ul>
+
+
+        <!-- MODAL HTML -->
+        <!-- complete payment modal -->
+        <div class="modal popup modal-complete-payment" id="completePaymentModal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">결제 내역 상세(현금)</h5>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row stock-item">
+                            <label for="" class="col-4 col-form-label stock-item__label">영수증 번호</label>
+                            <div class="col-8">
+                                <span class="stock-item__value">어몽어스 열쇠고리 1</span>
+                            </div>
+                        </div>
+                        <div class="row stock-item">
+                            <label for="" class="col-4 col-form-label stock-item__label">바코드 번호</label>
+                            <div class="col-8">
+                                <span class="stock-item__value">812454412448</span>
+                            </div>
+                        </div>
+                        <div class="row stock-item">
+                            <label for="" class="col-4 col-form-label stock-item__label">공급가</label>
+                            <div class="col-8">
+                                <span class="stock-item__value">
+                                    <span class="stock-item__currency">\</span>
+                                    1.400
+                                </span>
+                            </div>
+                        </div>
+                        <div class="row stock-item">
+                            <label for="" class="col-4 col-form-label stock-item__old-label">판매 가격</label>
+                            <div class="col-8">
+                                <span class="stock-item__old-value">
+                                    <span class="stock-item__currency">\</span>
+                                    <del>1.400</del>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="row stock-item">
+                            <label for="" class="col-4 col-form-label stock-item__label_dark">할인가</label>
+                            <div class="col-8">
+                                <input type="text" class="form-control stock-item__value" id="" value="3,000">
+                            </div>
+                        </div>
+                        <p class="description">
+                            할인가를 적용할 경우 KIOSK에서 할인가로
+                            판매됩니다.  
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn-dismiss" data-bs-dismiss="modal">취소</button>
+                        <button type="button" class="btn-action">확인</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </div>
 
@@ -343,7 +416,7 @@
 <script src="https://unpkg.com/better-scroll@latest/dist/better-scroll.min.js"></script>
 <script type="text/javascript" src="/js/jquery.selectscroll.min.js"></script>
 
-<script src="/js/script.min.js?v=2021070202"></script>
+<script src="/js/script.min.js?v=2021070601"></script>
 
 <link rel="stylesheet" href="/css/bscroll.min.css">
 <script src="https://unpkg.com/better-scroll@latest/dist/better-scroll.min.js"></script>
@@ -364,6 +437,14 @@
         }, function(start, end, label) {
             console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
         });
+
+        $(document).on('click', '.js-complete-payment', function() {
+            $("#completePaymentModal").modal('show');
+        })
+
+        $(document).on('click', '.js-cancel-payment', function() {
+            debugger
+        })
     });
 </script>
 

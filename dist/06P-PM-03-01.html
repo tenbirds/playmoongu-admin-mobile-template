@@ -15,18 +15,24 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
-    <link rel="stylesheet" href="/css/style.min.css?v=2021070202" media="screen">
+    <link rel="stylesheet" href="/css/style.min.css?v=2021070601" media="screen">
 </head>
 <body class="shopping-cart-management fixed-header">
- 
+
 <header>
     <div class="main-header">
         <div class="header">
             <div class="content-header">
                 <img src="/images/icons/m_menu.svg" class="" onclick="handleClick('open_nav')" alt="">
                 <h3 class="header_title">장바구니 관리</h3>
+               
                 <div class="header-right">
-                    <a href="#" class="header-link"></a>
+                    
+                    
+                        <a href="#" class="header-link"></a>
+                    
+                    
+
                 </div>
             </div>
         </div>
@@ -129,30 +135,125 @@
 
 <main>
   <div class="main-shopping-cart-management">
-    <div class="cart-management-filter">
-        <div class="cart-management-filter__choose-store choose-store-select-common">
-            <label class="choose-store-select-common__text">전체 매장</label>
-            <img class="choose-store-select-common__icon" src="/images/icons/icon_arrow_down.svg" />
-        </div>
-        <div class="cart-management-filter__input-search input-search-common">
-          <input placeholder="매장 명을 검색해 주세요." class="form-control input-search-common__input-form" />
-          <img class="input-search-common__icon-search" src="/images/icons/icon_search.svg" />
-        </div>
+    <div class="cart-management-filter filter_search_page">
+      <div class="cart-management-filter__choose-store choose-store-select-common">
+        <label class="choose-store-select-common__text">전체 매장</label>
+        <img class="choose-store-select-common__icon" src="/images/icons/icon_arrow_down.svg" />
+      </div>
+      <div class="cart-management-filter__input-search input-search-common">
+        <input placeholder="매장 명을 검색해 주세요." class="form-control input-search-common__input-form" />
+        <img class="input-search-common__icon-search" src="/images/icons/icon_search.svg" />
+      </div>
     </div>
-    <div class="cart-management-store">
-        <div class="cart-management-store__item">
-            <div class="cart-management-store__item__no-time">
-                <label class="cart-management-store__item__no-time__no">
-                  No.11
-                </div>
-                <label class="cart-management-store__item__no-time__time">
-                  No.11
-                </div>
-            </div>
+    <div class="cart-management-store main_center_content">
+      <div class="cart-management-store__item">
+        <div class="cart-management-store__item__no-time">
+          <label class="cart-management-store__item__no-time__no">
+            No.11
+          </label>
+          <label class="cart-management-store__item__no-time__time">
+            2021.05.06 21:08:15
+          </label>
         </div>
+        <div class="cart-management-store__item__store-data">
+          <img class="cart-management-store__item__store-data__icon" src="/images/icons/icon_shop.svg" />
+          <label class="cart-management-store__item__store-data__name">중곡시장점</label>
+        </div>
+        <div class="cart-management-store__item__total">
+          <label class="cart-management-store__item__total__text">총 품목(개수) :</label>
+          <strong>3</strong>
+        </div>
+        <div class="cart-management-store__item__price">
+          <label class="cart-management-store__item__price__value">111,540</label>
+        </div>
+      </div>
+      <div class="cart-management-store__item">
+        <div class="cart-management-store__item__no-time">
+          <label class="cart-management-store__item__no-time__no">
+            No.11
+          </label>
+          <label class="cart-management-store__item__no-time__time">
+            2021.05.06 21:08:15
+          </label>
+        </div>
+        <div class="cart-management-store__item__store-data">
+          <img class="cart-management-store__item__store-data__icon" src="/images/icons/icon_shop.svg" />
+          <label class="cart-management-store__item__store-data__name">중곡시장점</label>
+        </div>
+        <div class="cart-management-store__item__total">
+          <label class="cart-management-store__item__total__text">총 품목(개수) :</label>
+          <strong>3</strong>
+        </div>
+        <div class="cart-management-store__item__price">
+          <label class="cart-management-store__item__price__value">111,540</label>
+        </div>
+      </div>
+      <div class="cart-management-store__item">
+        <div class="cart-management-store__item__no-time">
+          <label class="cart-management-store__item__no-time__no">
+            No.11
+          </label>
+          <label class="cart-management-store__item__no-time__time">
+            2021.05.06 21:08:15
+          </label>
+        </div>
+        <div class="cart-management-store__item__store-data">
+          <img class="cart-management-store__item__store-data__icon" src="/images/icons/icon_shop.svg" />
+          <label class="cart-management-store__item__store-data__name">중곡시장점</label>
+        </div>
+        <div class="cart-management-store__item__total">
+          <label class="cart-management-store__item__total__text">총 품목(개수) :</label>
+          <strong>3</strong>
+        </div>
+        <div class="cart-management-store__item__price">
+          <label class="cart-management-store__item__price__value">111,540</label>
+        </div>
+      </div>
+      <div class="cart-management-store__item">
+        <div class="cart-management-store__item__no-time">
+          <label class="cart-management-store__item__no-time__no">
+            No.11
+          </label>
+          <label class="cart-management-store__item__no-time__time">
+            2021.05.06 21:08:15
+          </label>
+        </div>
+        <div class="cart-management-store__item__store-data">
+          <img class="cart-management-store__item__store-data__icon" src="/images/icons/icon_shop.svg" />
+          <label class="cart-management-store__item__store-data__name">중곡시장점</label>
+        </div>
+        <div class="cart-management-store__item__total">
+          <label class="cart-management-store__item__total__text">총 품목(개수) :</label>
+          <strong>3</strong>
+        </div>
+        <div class="cart-management-store__item__price">
+          <label class="cart-management-store__item__price__value">111,540</label>
+        </div>
+      </div>
+      <div class="cart-management-store__item">
+        <div class="cart-management-store__item__no-time">
+          <label class="cart-management-store__item__no-time__no">
+            No.11
+          </label>
+          <label class="cart-management-store__item__no-time__time">
+            2021.05.06 21:08:15
+          </label>
+        </div>
+        <div class="cart-management-store__item__store-data">
+          <img class="cart-management-store__item__store-data__icon" src="/images/icons/icon_shop.svg" />
+          <label class="cart-management-store__item__store-data__name">중곡시장점</label>
+        </div>
+        <div class="cart-management-store__item__total">
+          <label class="cart-management-store__item__total__text">총 품목(개수) :</label>
+          <strong>3</strong>
+        </div>
+        <div class="cart-management-store__item__price">
+          <label class="cart-management-store__item__price__value">111,540</label>
+        </div>
+      </div>
     </div>
   </div>
-  
+
 </main>
 
 <footer></footer>
@@ -182,10 +283,8 @@
 <script src="https://unpkg.com/better-scroll@latest/dist/better-scroll.min.js"></script>
 <script type="text/javascript" src="/js/jquery.selectscroll.min.js"></script>
 
-<script src="/js/script.min.js?v=2021070202"></script>
+<script src="/js/script.min.js?v=2021070601"></script>
 
 
 </body>
 </html>
- 
-

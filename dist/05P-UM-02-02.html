@@ -15,9 +15,9 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
-    <link rel="stylesheet" href="/css/style.min.css?v=2021070202" media="screen">
+    <link rel="stylesheet" href="/css/style.min.css?v=2021070601" media="screen">
 </head>
-<body class="detail-admin-page">
+<body class="detail-user-page fixed-header">
 
 
 <header>
@@ -25,9 +25,15 @@
         <div class="header">
             <div class="content-header">
                 <img src="/images/icons/icon_top_arrow_B.svg" class="" onclick="handleClick('open_nav')" alt="">
-                <h3 class="header_title">관리자 상세 관리</h3>
+                <h3 class="header_title">사용자 상세 관리</h3>
+               
                 <div class="header-right">
-                    <a href="" class="header-link">수정완료</a>
+                    
+                    
+                        <a href="" class="header-link">수정완료</a>
+                    
+                    
+
                 </div>
             </div>
         </div>
@@ -134,29 +140,31 @@
             <form class="form-detail">
 
                 <!-- INFO USER -->
-                <h3 class="form-detail__main-title">사용자 정보</h3>
-                <div class="mb-2">
+                <h3 class="form-detail__main-title form-title">
+                    <span>사용자 정보</span>
+                </h3>
+                <div class="mb-3">
                     <label class="label-input">
                         <span class="required">닉네임</span>
-                        <input class="form-control mb-3" value="세종한솔점">
+                        <input class="form-control base-input" value="세종한솔점">
                     </label>
                 </div>
-                <div class="mb-2">
+                <div class="mb-3">
                     <label class="label-input">
                         <span class="required">전화번호</span>
-                        <input class="form-control mb-3" value="951114-1234567">
+                        <input class="form-control base-input" value="951114-1234567">
                     </label>
                 </div>
-                <div class="mb-2">
+                <div class="mb-3">
                     <label class="label-input">
                         <span class="">보유 포인트</span>
-                        <input class="form-control mb-3" value="123">
+                        <input class="form-control base-input" value="123">
                     </label>
                 </div>
-                <div class="mb-2">
+                <div class="mb-3">
                     <label class="label-input">
                         <span class="required">회원 등록일</span>
-                        <input class="form-control mb-3" value="2019-12-07" name="reg_date">
+                        <input class="form-control base-input" value="2019-12-07" name="reg_date">
                     </label>
                 </div>
 
@@ -164,10 +172,12 @@
                 <!-- HISTORY POINT-->
                 <div class="row">
                     <div class="col-6">
-                        <h3 class="form-detail__main-title history-point">포인트 내역</h3>
+                        <h3 class="form-detail__main-title form-title history-point">
+                            <span>포인트 내역</span>
+                        </h3>
                     </div>
                     <div class="col-6 text-end">
-                        <button type="button" class="btn form-detail__add-more" id="js-add-point">추가</button>
+                        <button type="button" class="btn form-detail__add-more-point" id="js-add-point">추가</button>
                     </div>
                 </div>
                 <div class="history-point">
@@ -284,10 +294,12 @@
                 <!-- MEMO -->
                 <div class="row">
                     <div class="col-6">
-                        <h3 class="form-detail__main-title memo">메모</h3>
+                        <h3 class="form-detail__main-title form-title memo">
+                            <span>메모</span>
+                        </h3>
                     </div>
                     <div class="col-6 text-end">
-                        <button type="button" class="btn form-detail__add-more">추가</button>
+                        <button type="button" class="btn form-detail__add-more-memo">추가</button>
                     </div>
                 </div>
                 <div class="memo">
@@ -368,10 +380,6 @@
     </div>
 </main>
 <footer></footer>
-
-</body>
-</html>
-
 <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>-->
 <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/js/bootstrap.min.js" integrity="sha512-a6ctI6w1kg3J4dSjknHj3aWLEbjitAXAjLDRUxo2wyYmDFRcz2RJuQr5M3Kt8O/TtUSp8n2rAyaXYy1sjoKmrQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>-->
 
@@ -398,7 +406,7 @@
 <script src="https://unpkg.com/better-scroll@latest/dist/better-scroll.min.js"></script>
 <script type="text/javascript" src="/js/jquery.selectscroll.min.js"></script>
 
-<script src="/js/script.min.js?v=2021070202"></script>
+<script src="/js/script.min.js?v=2021070601"></script>
 
 <link rel="stylesheet" href="/css/bscroll.min.css">
 <script src="https://unpkg.com/better-scroll@latest/dist/better-scroll.min.js"></script>
@@ -425,4 +433,6 @@
     })
 </script>
 
+</body>
+</html>
 
