@@ -184,6 +184,13 @@ $colorViolet: #5815a5;
   }
 
   &__chart-real-time {
+    .chart-real-time-sales {
+      margin: 15px 20px 20px 20px !important;
+      padding: 15px 10px;
+      border-radius: 10px;
+      background-color: #ffffff;
+    }
+
     .chart-real-time-title {
       margin: 20px 0px 0px 20px;
       font-family: NanumSquare;
@@ -263,10 +270,11 @@ $colorViolet: #5815a5;
     }
 
     .selling-items-box {
-      margin: 20px;
-
+      margin: 15px 20px 40px 20px;
+      border-radius: 10px;
+      background-color: #ffffff;
+      padding: 20px 15px;
       .selling-items-child {
-
         .number-selling {
           label {
             margin: 13px 10px 13px 5px;
@@ -332,11 +340,9 @@ $colorViolet: #5815a5;
       }
 
       .selling-items-child-no-data {
-        margin: 15px 0px;
-        padding: 30px;
+        padding: 10px 0px;
         border-radius: 10px;
         background-color: #ffffff;
-
         .no-data-text {
           opacity: 0.5;
           padding: 0px;
@@ -357,9 +363,17 @@ $colorViolet: #5815a5;
 
   }
 
-  .product-preference-chart {
-    margin: 40px 20px 20px 20px;
-
+  .product-preference-chart-parent {
+    margin: 40px 20px 0px 20px;
+    .chart-product-preference{
+      margin-top: 15px;
+      padding: 5px;
+      border-radius: 10px;
+      background-color: #ffffff;
+      #chartPreference{
+        width: 100%;
+      }
+    }
     .title-preference-chart {
       margin: p40px 0px 0px 20px;
       font-family: NanumSquare;
@@ -401,7 +415,7 @@ $colorViolet: #5815a5;
     margin: 0px 0px 0px 20px;
 
     .slide-box {
-      width: 273px !important;
+      // width: 273px !important;
       height: 104px;
       margin: 15px 10px 20px 0;
       padding: 20px 15px;
@@ -484,10 +498,4 @@ $colorViolet: #5815a5;
       }
     }
   }
-}
-
-#chartPreference {
-  width: 100%;
-  height: 200px;
-  // padding-bottom: 20px;
 }

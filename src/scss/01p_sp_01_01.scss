@@ -1,5 +1,6 @@
 $colorViolet: #5815a5;
 $colorText: #111111;
+
 .login-01p-sp-01 {
   background-color: $colorViolet;
 
@@ -11,6 +12,7 @@ $colorText: #111111;
     width: 100%;
     padding-top: 50px;
     margin-top: 60px;
+
     .login-name {
       text-align: center;
       font-family: NanumSquare;
@@ -22,6 +24,30 @@ $colorText: #111111;
     .content-form {
       margin: 50px 20px 50px 20px;
       font-family: NanumSquare;
+
+      .username {
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #111111;
+      }
+
+      .password {
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #111111;
+      }
 
       .text-username {
         font-size: 14px;
@@ -38,7 +64,9 @@ $colorText: #111111;
 }
 
 .logo-login {
-  margin: 60px 120px;
+  margin: 60px auto;
+  display: flex;
+  justify-content: center;
 
   .img-login {
     width: 120px;
