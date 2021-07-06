@@ -1,4 +1,4 @@
-<header>
+<!-- <header>
     <div class="main-header">
         <div class="header">
             <div class="content-header">
@@ -13,10 +13,28 @@
                     @@if (context.iconRight) {
                         <img src="@@iconRight" onclick="@@eventIconRight" alt="" >
                     }
-
                 </div>
             </div>
         </div>
+    </div>
+</header> -->
+<header class="main-header">
+    <div class="header-left">
+        <a href="#">
+            <img src="@@leftTitle" class="@@leftIcon" onclick="handleClick('@@param')">
+            <h3></h3>
+        </a>
+    </div>
+    <h1 class="header-title">@@title</h1>
+    <div class="header-right">
+        <a href="@@link">
+             @@if (context.iconRight) {
+                <img src="@@iconRight" onclick="@@eventIconRight" alt="" >
+            }
+            @@if (!context.iconRight) {
+                <h3 class="header-link">@@rightTitle</h3>
+            }
+        </a>
     </div>
 </header>
 @@include('_main_nav.html')
