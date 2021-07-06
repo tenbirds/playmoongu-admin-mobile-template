@@ -17,15 +17,19 @@
         <div class="container filter-block">
             <div class="row align-items-center">
                 <div class="col-4 select-block">
-                    <select class="form-select" aria-label="" id="js_filter_select">
+                    <h5 class="" id="js_filter_select">
+                        휴대전화
+                        <span><img src="./../images/icons/icon_miniarrow.svg" alt=""></span>
+                    </h5>
+                    <!-- <select class="form-select" aria-label="" id="js_filter_select">
                         <option selected>휴대전화</option>
                         <option value="1">아이디</option>
                         <option value="2">이름</option>
                         <option value="3">.Net</option>
-                    </select>
+                    </select> -->
                 </div>
                 <div class="col-8">
-                    <div class="input-search-common">
+                    <div class="input-search-common seach-top">
                         <input placeholder="매장 명을 검색해 주세요." class="form-control input-search-common__input-form" />
                         <img class="input-search-common__icon-search" src="/images/icons/icon_search.svg" />
                     </div>
@@ -174,6 +178,7 @@
                         </div>
                     </div>
                 </li>
+                
             </ul>
         </div>
     </div>
@@ -188,18 +193,29 @@
    function init () {
         $('#js_filter_select').selectScroll({
             data: [
-                    [{
+                    [
+                    {
                     text: '아이디',
                     id: 1
                     },{
-                    text: '이름',
+                    text: '등급',
                     id: 2
-                    },{
-                    text: '.Net',
+                    },
+                    {
+                    text: '이름',
                     id: 3
-                    }]
+                    },
+                    {
+                    text: '휴대전화',
+                    id: 4
+                    },
+                    {
+                    text: '이메일',
+                    id: 5
+                    },
+                ]
             ],
-            title: '조회 기간',
+            title: '필터 선택',
             selectedIndex: [0],
             cancelTxt: 'cancel',
             cancelClass: '',

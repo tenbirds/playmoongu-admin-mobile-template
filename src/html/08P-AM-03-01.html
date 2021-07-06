@@ -78,7 +78,6 @@
                             <p class="content__box-content-receipt-number-08 p-0 m-1">결제 취소</p>
                             <p class="content__box-content-receipt-number-color p-0 m-1 ">50,540</p>
                         </div>
-                        <!-- <button class="btn btn-sm btn-primary p-0 js-complete-payment">complete pay</button> -->
                     </div>
                 </div>
             </li>
@@ -108,62 +107,269 @@
                             <p class="content__box-content-receipt-number-08 p-0 m-1">결제 취소</p>
                             <p class="content__box-content-receipt-number-color p-0 m-1 ">50,540</p>
                         </div>
-                        <!-- <button class="btn btn-sm btn-primary p-0 js-cancel-payment">cancel pay</button> -->
                     </div>
                 </div>
             </li>
         </ul>
+        <button class="btn btn-sm btn-primary p-1 js-complete-payment">complete pay</button>
+        <button class="btn btn-sm btn-danger p-1 js-cancel-payment">cancel pay</button>
 
 
         <!-- MODAL HTML -->
         <!-- complete payment modal -->
-        <div class="modal popup modal-complete-payment" id="completePaymentModal" tabindex="-1">
+        <div class="modal popup modal-payment" id="completePaymentModal" tabindex="-1">
             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title">결제 내역 상세(현금)</h5>
                     </div>
                     <div class="modal-body">
-                        <div class="row stock-item">
-                            <label for="" class="col-4 col-form-label stock-item__label">영수증 번호</label>
-                            <div class="col-8">
-                                <span class="stock-item__value">어몽어스 열쇠고리 1</span>
+                        <div class="payment-infos">
+                            <div class="row payment-info">
+                                <label for="" class="col-4 col-form-label payment-info__label">영수증 번호</label>
+                                <div class="col-8">
+                                    <span class="payment-info__value">89730</span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row stock-item">
-                            <label for="" class="col-4 col-form-label stock-item__label">바코드 번호</label>
-                            <div class="col-8">
-                                <span class="stock-item__value">812454412448</span>
+                            <div class="row payment-info">
+                                <label for="" class="col-4 col-form-label payment-info__label">가맹점 명</label>
+                                <div class="col-8">
+                                    <span class="payment-info__value">중곡점</span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row stock-item">
-                            <label for="" class="col-4 col-form-label stock-item__label">공급가</label>
-                            <div class="col-8">
-                                <span class="stock-item__value">
-                                    <span class="stock-item__currency">\</span>
-                                    1.400
-                                </span>
+                            <div class="row payment-info">
+                                <label for="" class="col-4 col-form-label payment-info__label">총 결제 금액</label>
+                                <div class="col-8">
+                                    <span class="payment-info__value">
+                                        <span class="payment-info__currency">\</span>
+                                        4,800
+                                    </span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row stock-item">
-                            <label for="" class="col-4 col-form-label stock-item__old-label">판매 가격</label>
-                            <div class="col-8">
-                                <span class="stock-item__old-value">
-                                    <span class="stock-item__currency">\</span>
-                                    <del>1.400</del>
-                                </span>
+                            <div class="row payment-info">
+                                <label for="" class="col-4 col-form-label payment-info__label">판매 가격</label>
+                                <div class="col-8">
+                                    <span class="payment-info__value">
+                                        <span class="payment-info__currency">\</span>
+                                        1,400
+                                    </span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row stock-item">
-                            <label for="" class="col-4 col-form-label stock-item__label_dark">할인가</label>
-                            <div class="col-8">
-                                <input type="text" class="form-control stock-item__value" id="" value="3,000">
+                            <div class="row payment-info">
+                                <label for="" class="col-4 col-form-label payment-info__label">입수 금액</label>
+                                <div class="col-8">
+                                    <span class="payment-info__value">
+                                        <span class="payment-info__currency">\</span>
+                                        10,800
+                                    </span>
+                                </div>
                             </div>
+                            <div class="row payment-info">
+                                <label for="" class="col-4 col-form-label payment-info__label">결제 일시</label>
+                                <div class="col-8">
+                                    <span class="payment-info__value">2021-04-08 20:11:53</span>
+                                </div>
+                            </div>   
                         </div>
-                        <p class="description">
-                            할인가를 적용할 경우 KIOSK에서 할인가로
-                            판매됩니다.  
-                        </p>
+
+                        <div class="payment-list">
+                            <label class="label-checkbox payment-list__all">
+                                <input type="checkbox" name="ckbox">
+                                <span>전체 선택</span>
+                            </label>
+
+                            <ul class="list-group">
+                                <li class="list-group-item payment-item">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <label class="label-checkbox payment-item__checkbox">
+                                                <input type="checkbox" name="ckbox" checked>
+                                                <span></span>
+                                            </label>
+                                            <div class="box-left">
+                                                <p class="payment-item__title">쥬씨코코망고</p>
+                                                <p class="payment-item__qty">(5개)</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 text-end">
+                                            <p class="payment-item__desc">결제 금액</p>
+                                            <p class="payment-item__price">
+                                                <span class="">\</span>
+                                                100,055,000
+                                            </p>
+                                        </div>
+                                        <hr>
+                                    </div>
+                                </li>
+                                <li class="list-group-item payment-item">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <label class="label-checkbox payment-item__checkbox">
+                                                <input type="checkbox" name="ckbox">
+                                                <span></span>
+                                            </label>
+                                            <div class="box-left">
+                                                <p class="payment-item__title">쥬씨코코망고</p>
+                                                <p class="payment-item__qty">(5개)</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 text-end">
+                                            <p class="payment-item__desc">결제 금액</p>
+                                            <p class="payment-item__price">
+                                                <span class="">\</span>
+                                                55,000
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <h5 class="payment-list__total-label">총 합계</h5>
+                            <h5 class="payment-list__total-price">
+                                <span class="">1개</span>
+
+                                <span class="">\</span>
+                                100,055,000
+                            </h5>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn-dismiss" data-bs-dismiss="modal">취소</button>
+                        <button type="button" class="btn-action">확인</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- cancel payment modal -->
+        <div class="modal popup modal-payment" id="cancelPaymentModal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">결제 내역 상세(현금)</h5>
+                    </div>
+                    <div class="modal-body">
+                        <div class="payment-infos">
+                            <div class="row payment-info">
+                                <label for="" class="col-4 col-form-label payment-info__label">영수증 번호</label>
+                                <div class="col-8">
+                                    <span class="payment-info__value">89730</span>
+                                </div>
+                            </div>
+                            <div class="row payment-info">
+                                <label for="" class="col-4 col-form-label payment-info__label">가맹점 명</label>
+                                <div class="col-8">
+                                    <span class="payment-info__value">중곡점</span>
+                                </div>
+                            </div>
+                            <div class="row payment-info">
+                                <label for="" class="col-4 col-form-label payment-info__label">총 결제 금액</label>
+                                <div class="col-8">
+                                    <span class="payment-info__value">
+                                        <span class="payment-info__currency">\</span>
+                                        4,800
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="row payment-info">
+                                <label for="" class="col-4 col-form-label payment-info__label">입수 금액</label>
+                                <div class="col-8">
+                                    <span class="payment-info__value">
+                                        <span class="payment-info__currency">\</span>
+                                        10,800
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="row payment-info">
+                                <label for="" class="col-4 col-form-label payment-info__label">방출 금액</label>
+                                <div class="col-8">
+                                    <span class="payment-info__value">
+                                        <span class="payment-info__currency">\</span>
+                                        5,200
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="row payment-info">
+                                <label for="" class="col-4 col-form-label payment-info__label">결제 일시</label>
+                                <div class="col-8">
+                                    <span class="payment-info__value">2021-04-08 20:11:53</span>
+                                </div>
+                            </div>   
+                            <div class="row payment-info">
+                                <label for="" class="col-4 col-form-label payment-info__label">결제 취소 일시</label>
+                                <div class="col-8">
+                                    <span class="payment-info__value">부분 취소</span>
+                                </div>
+                            </div>
+                            <div class="row payment-info">
+                                <div class="col-12">
+                                    <span class="payment-info__value">(2021-04-08 20:11:53)</span>
+                                </div>
+                            </div> 
+                        </div>
+
+                        <div class="payment-list">
+                            <label class="label-checkbox payment-list__all">
+                                <input type="checkbox" name="ckbox">
+                                <span>전체 선택</span>
+                            </label>
+
+                            <ul class="list-group">
+                                <li class="list-group-item payment-item">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <label class="label-checkbox payment-item__checkbox">
+                                                <input type="checkbox" name="ckbox" checked>
+                                                <span></span>
+                                            </label>
+                                            <div class="box-left">
+                                                <p class="payment-item__title">쥬씨코코망고</p>
+                                                <p class="payment-item__qty">(5개)</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 text-end">
+                                            <p class="payment-item__desc">결제 금액</p>
+                                            <p class="payment-item__price">
+                                                <span class="">\</span>
+                                                100,055,000
+                                            </p>
+                                        </div>
+                                        <hr>
+                                    </div>
+                                </li>
+                                <li class="list-group-item payment-item">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <label class="label-checkbox payment-item__checkbox">
+                                                <input type="checkbox" name="ckbox" disabled>
+                                                <span></span>
+                                            </label>
+                                            <div class="box-left line-del">
+                                                <p class="payment-item__title">쥬씨코코망고</p>
+                                                <p class="payment-item__qty">(5개)</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 text-end">
+                                            <p class="payment-item__desc">결제 금액</p>
+                                            <p class="payment-item__price">
+                                                <span class="">\</span>
+                                                55,000
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <h5 class="payment-list__total-label">총 합계</h5>
+                            <h5 class="payment-list__total-price">
+                                <span class="">1개</span>
+
+                                <span class="">\</span>
+                                100,055,000
+                            </h5>
+                        </div>
+
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn-dismiss" data-bs-dismiss="modal">취소</button>
@@ -203,7 +409,7 @@
         })
 
         $(document).on('click', '.js-cancel-payment', function() {
-            debugger
+            $("#cancelPaymentModal").modal('show');
         })
     });
 </script>
