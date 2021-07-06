@@ -160,7 +160,9 @@
     <div class="content-dashboard__chart-real-time">
       <label class="chart-real-time-title" for="">실시간 매출</label>
       <span>(2021-04-14)</span>
-      <div id="chart"></div>
+      <div  class="chart-real-time-sales">
+        <div id="chart"></div>
+      </div>
     </div>
     <div class="content-dashboard__hot-selling-items">
       <div class="row content-dashboard__hot-selling-items__reset">
@@ -260,9 +262,11 @@
       </div>
       
     </div>
-    <div class="product-preference-chart">
-      <label for="" class="title-preference-chart">인기 판매 상품</label>
-      <div id="chartPreference"></div>
+    <div class="product-preference-chart-parent">
+      <label for="" class="title-preference-chart">상품 선호도</label>
+      <div class="chart-product-preference">
+        <div id="chartPreference"></div>
+      </div>
     </div>
   </div>
 </main>
@@ -348,14 +352,14 @@ var optionChart2s = {
       // height: data.length > 0 ? 275 : 0
     },
     legend: {
-      position: 'right'
+      position: 'right',
     },
     labels: lable,
     responsive: [{
       breakpoint: 480,
       options: {
         chart: {
-          width: 350
+          width: 320
         }
       }
     }]

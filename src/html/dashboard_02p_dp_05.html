@@ -147,7 +147,7 @@
         </div>
       </div>
     </div>
-    <div class="product-preference-chart">
+    <div class="product-preference-chart-parent">
       <label for="" class="title-preference-chart">인기 판매 상품</label>
       <div class="row selling-items-child selling-items-child-no-data">
         <p class="no-data-text">아직 판매된 상품이 없습니다.</p>
@@ -163,23 +163,14 @@
 
 <script type="text/javascript">
   const swiper = new Swiper('.swiper-container', {
-    slidesPerView: 5,
+    slidesPerView: 2,
     loop: true,
-    spaceBetween: 20,
+    spaceBetween: 10,
     autoplay: {
         delay: 3000,
         disableOnInteraction: false,
     },
-    // direction: getDirection(),
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-    // on: {
-    //     resize: function () {
-    //         swiper.changeDirection(getDirection());
-    //     }
-    // }
+    width: 556, //set with of swiper because with html not work
   });
 
   var options = {
@@ -253,7 +244,7 @@ var optionChart2s = {
       breakpoint: 480,
       options: {
         chart: {
-          width: 350
+          width: 320
         }
       }
     }]
