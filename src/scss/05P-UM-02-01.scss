@@ -50,6 +50,9 @@
           .icon-user {
             img {
               width: 20px;
+              height: 20px;
+              vertical-align: sub;
+              object-fit: contain;
             }
           }
           .title {
