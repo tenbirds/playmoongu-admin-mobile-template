@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>키오스크 등록하기</title>
+    <link rel="manifest" href="/manifest.json">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css" /> -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="/css/style.min.css?v=2021070601" media="screen">
+</head>
+<body class="detail-kiosk-page fixed-header">
+
+
+<header>
+    <div class="main-header">
+        <div class="header">
+            <div class="content-header">
+                <img src="/images/icons/icon_top_arrow_B.svg" class="@@leftIcon" onclick="handleClick('undo_modal_kiosk')" alt="">
+                <h3 class="header_title">키오스크 등록하기</h3>
+               
+                <div class="header-right">
+                    
+                    
+                        <a href="#" class="header-link">등록하기</a>
+                    
+                    
+
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<nav id="main-navigation">
+    <header class="header__title">
+    <a href="javascript:closeNav()" class="left-button">
+        <img absalign="middle" src="/images/icons/icon_top_arrow_B.svg"/>
+    </a>
+    <h1>문구야놀자</h1>
+</header>
+
+    <ul>
+        <li>
+            <a href="#">대시보드 
+                
+            </a>
+        </li>
+        <li class="open">
+            <a href="#">가맹점 관리</a>
+            <img class="icon-right-nav" src="/images/icons/icon_arrowBB.svg" alt="">
+            <ul>
+                <li><a href="#">가맹점 관리</a></li>
+                <li class="active"><a href="#">키오스크 관리</a></li>
+            </ul>
+        </li>
+        <li class="">
+            <a href="#">사용자 관리
+            </a>
+            <img class="icon-right-nav" src="/images/icons/icon_arrowBB.svg" alt="">
+        </li>
+        <li>
+            <a href="#">
+                상품 관리
+            </a>
+            <img class="icon-right-nav" src="/images/icons/icon_arrowBB.svg" alt="">
+        </li>
+        <li>
+            <a href="#">
+                재고 관리
+            </a>
+            <img class="icon-right-nav" src="/images/icons/icon_arrowBB.svg" alt="">
+        </li>
+        <li>
+            <a href="#">가맹점 관리
+            </a>
+            <img class="icon-right-nav" src="/images/icons/icon_arrowBB.svg" alt="">
+        </li>
+        <li>
+            <a href="#">매출 관리
+            </a>
+            <img class="icon-right-nav" src="/images/icons/icon_arrowBB.svg" alt="">
+        </li>
+        <li>
+            <a href="#">예치금 관리
+            </a>
+            <img class="icon-right-nav" src="/images/icons/icon_arrowBB.svg" alt="">
+        </li>
+        <li>
+            <a href="#">거래처 관리
+            </a>
+            <img class="icon-right-nav" src="/images/icons/icon_arrowBB.svg" alt="">
+        </li>
+        <li>
+            <a href="#">홈페이지 관리
+            </a>
+            <img class="icon-right-nav" src="/images/icons/icon_arrowBB.svg" alt="">
+        </li>
+        <li>
+            <a href="#">시재 관리
+            </a>
+            <img class="icon-right-nav" src="/images/icons/icon_arrowBB.svg" alt="">
+        </li>
+        <li>
+            <a href="#">라벨 출력
+            </a>
+            <img class="icon-right-nav" src="/images/icons/icon_arrowBB.svg" alt="">
+        </li>
+        <li>
+            <a href="#">라벨 출력
+            </a>
+            <img class="icon-right-nav" src="/images/icons/icon_arrowBB.svg" alt="">
+        </li>
+        <li>
+            <a href="#">라벨 출력
+            </a>
+            <img class="icon-right-nav" src="/images/icons/icon_arrowBB.svg" alt="">
+        </li>
+        <li>
+            <a href="#">라벨 출력
+            </a>
+            <img class="icon-right-nav" src="/images/icons/icon_arrowBB.svg" alt="">
+        </li>
+    </ul>
+</nav>
+
+
+
+
+<main>
+    <div class="detail-kiosk-page">
+        <div class="container">
+            <div class="box-detail">
+                <!-- INFO store -->
+                <div class="box-detail__title_box">
+                    <h3 class="box-detail__title_box__main-title">키오스크 정보</h3>
+                    <label class="box-detail__title_box__border-title"></label>
+                </div>
+                <div class="mb-0 box-input">
+                    <label class="label-input">
+                        <span class="required">키오스크 일련번호</span>
+                        <input class="form-control mb-3" value="A0005" >
+                    </label>
+                </div>
+                <div class="mb-0 box-input">
+                    <label class="label-input">
+                        <span class="required">키오스크 모델명</span>
+                        <input class="form-control mb-3" value="kiosk5" >
+                    </label>
+                </div>
+                <div class="mb-0 box-input">
+                    <label class="label-input">
+                        <span class="">가맹점명</span>
+                        <input class="form-control mb-3" value="세종한솔점">
+                    </label>
+                </div>
+                <div class="mb-0 box-input">
+                    <label class="label-input">
+                        <span class="">등록일</span>
+                        <input class="form-control mb-3" value="2021-04-05" readonly>
+                    </label>
+                </div>
+                <div class="mb-0 box-input">
+                    <label class="label-input">
+                        <span class="">카드 단말기 번호</span>
+                        <input class="form-control mb-3" value="123">
+                    </label>
+                </div>
+                <div class="mb-0 box-input">
+                    <label class="label-input">
+                        <span class="">카드 시리얼 번호</span>
+                        <input class="form-control mb-3" value="78965461">
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal undo page register -->
+    <div class="modal popup modal-register-store" id="undo_modal_kiosk" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">알림</h5>
+                </div>
+                <div class="modal-body">
+                    <p class="decription-body">수정을 취소 하시겠습니까?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn-dismiss" data-bs-dismiss="modal" onclick="closeUndoModal('undo_modal_kiosk')">아니요</button>
+                    <button type="button" class="btn-action">예</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal completed register -->
+    <div class="modal popup modal-register-store" id="register_modal_kiosk" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">알림</h5>
+                </div>
+                <div class="modal-body">
+                    <p>수정이 완료 되었습니다.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn-action" onclick="completedRegister()">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- modal required register -->
+    <div class="modal popup modal-register-store" id="required_modal_kiosk" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">가맹점주 정보 검색</h5>
+                </div>
+                <div class="modal-body">
+                    <p>필수 항목을 입력해주세요</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" onclick="requiredRegister()">취소</button>
+                    <button type="button" class="btn-action">선택</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer></footer>
+
+</body>
+</html>
+
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>-->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/js/bootstrap.min.js" integrity="sha512-a6ctI6w1kg3J4dSjknHj3aWLEbjitAXAjLDRUxo2wyYmDFRcz2RJuQr5M3Kt8O/TtUSp8n2rAyaXYy1sjoKmrQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>-->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js "
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous "></script>
+        <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script> -->
+
+<script src="/js/polyfill.js"></script>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+<script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+<script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
+<script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+
+<link rel="stylesheet" href="/css/bscroll.min.css">
+<script src="https://unpkg.com/better-scroll@latest/dist/better-scroll.min.js"></script>
+<script type="text/javascript" src="/js/jquery.selectscroll.min.js"></script>
+
+<script src="/js/script.min.js?v=2021070601"></script>
+
+<script type="text/javascript">
+    $(document).on('click', '#js_filter_select', function(e) {
+        e.preventDefault();
+        this.blur();
+        window.focus();
+        init()
+    })
+    function closeUndoModal(value) {
+        $(`#${value}`).modal('hide');
+        $('#register_modal_kiosk').modal('show');
+    }
+
+    function completedRegister() {
+        $('#register_modal_kiosk').modal('hide');
+        $('#required_modal_kiosk').modal('show');
+    }
+    function requiredRegister() {
+        $('#required_modal_kiosk').modal('hide');
+    }
+  </script>
+
