@@ -22,7 +22,28 @@ $colorText: #111111;
     .content-form {
       margin: 50px 20px 50px 20px;
       font-family: NanumSquare;
-
+      .username{
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #111111;
+      }
+      .password{
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #111111;
+      }
       .text-username {
         font-size: 14px;
         font-weight: 800;
