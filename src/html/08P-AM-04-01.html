@@ -66,7 +66,7 @@
             </div>
         
             <ul class="list-group history-list" >
-                <li class="list-group-item history-item">
+                <li class="list-group-item history-item js-history-item">
                     <div class="row">
                         <div class="col-6">
                             <span class="history-item__no">No.11</span>
@@ -216,6 +216,177 @@
                     </div>
                 </li>
             </ul>
+
+            
+            <!-- MODAL HTML -->
+            <!-- complete payment modal -->
+            <div class="modal popup modal-payment-detail" id="detailPaymentModal" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">결제 내역 상세(현금)</h5>
+                        </div>
+                        <div class="modal-body">
+                            <div class="payment-detail-wrap">
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="headingOne1">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne1" aria-expanded="true" aria-controls="collapseOne1">
+                                            총 입수 금액
+                                        </button>
+                                      </h2>
+                                      <div id="collapseOne1" class="accordion-collapse collapse show" aria-labelledby="headingOne1" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <div class="payment-detail">
+                                                <div class="row payment-detail-item">
+                                                    <label for="" class="col-5 col-form-label payment-detail-item__label">
+                                                        100원
+                                                        <span>(111개)</span>
+                                                    </label>
+                                                    <div class="col-7">
+                                                        <span class="payment-detail-item__value">
+                                                            <span class="payment-detail-item__currency">\</span>
+                                                            4,800
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="row payment-detail-item">
+                                                    <label for="" class="col-5 col-form-label payment-detail-item__label">
+                                                        100원
+                                                        <span>(111개)</span>
+                                                    </label>
+                                                    <div class="col-7">
+                                                        <span class="payment-detail-item__value">
+                                                            <span class="payment-detail-item__currency">\</span>
+                                                            4,800
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="row payment-detail-item">
+                                                    <label for="" class="col-5 col-form-label payment-detail-item__label">
+                                                        100원
+                                                        <span>(111개)</span>
+                                                    </label>
+                                                    <div class="col-7">
+                                                        <span class="payment-detail-item__value">
+                                                            <span class="payment-detail-item__currency">\</span>
+                                                            4,800
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="row payment-detail-item">
+                                                    <label for="" class="col-5 col-form-label payment-detail-item__label">
+                                                        100원
+                                                        <span>(111개)</span>
+                                                    </label>
+                                                    <div class="col-7">
+                                                        <span class="payment-detail-item__value">
+                                                            <span class="payment-detail-item__currency">\</span>
+                                                            114,800
+                                                        </span>
+                                                    </div>
+                                                </div>
+
+                                                <hr>
+                                                <div class="row payment-detail-item">
+                                                    <label for="" class="col-5 col-form-label payment-detail-item__label">
+                                                        총 금액
+                                                    </label>
+                                                    <div class="col-7">
+                                                        <span class="payment-detail-item__value">
+                                                            <span class="payment-detail-item__currency">\</span>
+                                                            1,481,600
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                      </div>
+                                    </div>       
+                                    
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingOne2">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne2" aria-expanded="false" aria-controls="collapseOne2">
+                                                총 입수 금액
+                                            </button>
+                                        </h2>
+                                        <div id="collapseOne2" class="accordion-collapse collapse" aria-labelledby="headingOne2" data-bs-parent="#accordionExample">
+                                          <div class="accordion-body">
+                                              <div class="payment-detail">
+                                                  <div class="row payment-detail-item">
+                                                      <label for="" class="col-5 col-form-label payment-detail-item__label">
+                                                          100원
+                                                          <span>(111개)</span>
+                                                      </label>
+                                                      <div class="col-7">
+                                                          <span class="payment-detail-item__value">
+                                                              <span class="payment-detail-item__currency">\</span>
+                                                              4,800
+                                                          </span>
+                                                      </div>
+                                                  </div>
+                                                  <div class="row payment-detail-item">
+                                                      <label for="" class="col-5 col-form-label payment-detail-item__label">
+                                                          100원
+                                                          <span>(111개)</span>
+                                                      </label>
+                                                      <div class="col-7">
+                                                          <span class="payment-detail-item__value">
+                                                              <span class="payment-detail-item__currency">\</span>
+                                                              4,800
+                                                          </span>
+                                                      </div>
+                                                  </div>
+                                                  <div class="row payment-detail-item">
+                                                      <label for="" class="col-5 col-form-label payment-detail-item__label">
+                                                          100원
+                                                          <span>(111개)</span>
+                                                      </label>
+                                                      <div class="col-7">
+                                                          <span class="payment-detail-item__value">
+                                                              <span class="payment-detail-item__currency">\</span>
+                                                              4,800
+                                                          </span>
+                                                      </div>
+                                                  </div>
+                                                  <div class="row payment-detail-item">
+                                                      <label for="" class="col-5 col-form-label payment-detail-item__label">
+                                                          100원
+                                                          <span>(111개)</span>
+                                                      </label>
+                                                      <div class="col-7">
+                                                          <span class="payment-detail-item__value">
+                                                              <span class="payment-detail-item__currency">\</span>
+                                                              114,800
+                                                          </span>
+                                                      </div>
+                                                  </div>
+  
+                                                  <hr>
+                                                  <div class="row payment-detail-item">
+                                                      <label for="" class="col-5 col-form-label payment-detail-item__label">
+                                                          총 금액
+                                                      </label>
+                                                      <div class="col-7">
+                                                          <span class="payment-detail-item__value">
+                                                              <span class="payment-detail-item__currency">\</span>
+                                                              1,481,600
+                                                          </span>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                        </div>
+                                      </div> 
+                                </div>                                
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn-action">확인</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
     @@include('components/_main_nav.html')
@@ -239,6 +410,10 @@
             }, function(start, end, label) {
                 console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
             });
+
+            $(document).on('click', '.js-history-item', function() {
+                $("#detailPaymentModal").modal('show');
+            })
         });
     </script>
     @@include('components/foot.html')
