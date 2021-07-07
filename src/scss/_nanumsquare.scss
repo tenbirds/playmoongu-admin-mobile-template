@@ -33,8 +33,10 @@
 
 @font-face {
 font-family: 'NanumSquareExtraBold';
-// font-weight: 800;
-src: url(./../fonts/NanumSquareExtraBold.ttf) format('truetype');
+src: url(./../fonts/NanumSquareExtraBold.eot);
+src: url(./../fonts/NanumSquareExtraBold.eot?#iefix) format('embedded-opentype'),
+     url(./../fonts/NanumSquareExtraBold.woff2) format('woff2'),
+     url(./../fonts/NanumSquareExtraBold.ttf) format('truetype');
 }
 @font-face {
 font-family: 'NotoSansCJKkrBold';

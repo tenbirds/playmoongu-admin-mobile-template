@@ -13,6 +13,15 @@
                 box-shadow: none;
                 padding   : 5px 0;
                 font-size : 11px;
+                font-family: NanumSquare;
+                font-size: 11px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                text-align: left;
+                color: #111111;
                 &::after{
                     background-image: url(./../images/icons/icon_arrow_select.svg);
                     width: 10px;
@@ -92,9 +101,9 @@
                 padding: 0 12px;
                 a {
                     padding: 8px 0;
-                    font-family: NanumSquare;
+                    font-family: NanumSquareExtraBold;
                     font-size: 12px;
-                    font-weight: normal;
+                    font-weight: 800;
                     font-stretch: normal;
                     font-style: normal;
                     line-height: normal;
@@ -110,6 +119,9 @@
                 border: none;
                 &.active {
                     border-bottom: 2px solid #5815a5;
+                }
+                &:hover {
+                    background: transparent;
                 }
             }
         }
@@ -191,6 +203,7 @@
                 .status_sale {
                     color: #5815a5;
                     background-color: #eadff6;
+                    font-weight: normal;
                 }
                 .status_phrases {
                     color: #111111;
