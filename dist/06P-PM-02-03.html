@@ -179,11 +179,10 @@
                 </div>
                 <div class="main-product-form__item">
                     <label class="main-product-form__item__title">1차 분류<strong>*</strong></label>
-                    <div class="select_custom">
-                        <select class="form-control">
-                            <option>1</option>
-                            <option>2</option>
-                        </select>
+                    <div class="select_custom select_custom_form-control-common" id="event_select">
+                        <div class="control-div">
+                            <label class="">분류 선택</label>
+                        </div>
                         <img src="/images/icons/icon_arrow_select.svg" />
                     </div>
                 </div>
@@ -248,6 +247,48 @@
 <script type="text/javascript" src="/js/jquery.selectscroll.min.js"></script>
 
 <script src="/js/script.min.js?v=2021070601"></script>
+
+
+<link rel="stylesheet" href="/css/bscroll.min.css">
+<script src="https://unpkg.com/better-scroll@latest/dist/better-scroll.min.js"></script>
+<script type="text/javascript" src="/js/jquery.selectscroll.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        function init () {
+            $('#event_select').selectScroll({
+                data: [
+                      [{
+                        text: '일별',
+                        id: 1
+                      },{
+                        text: 'Script',
+                        id: 2
+                      },{
+                        text: '.Net',
+                        id: 3
+                      },{
+                        text: 'JavaScript',
+                        id: 4
+                      }]
+                ],
+                title: '조회 기간',
+                selectedIndex: [0],
+                cancelTxt: 'cancel',
+                cancelClass: '',
+                confirmTxt: '선택',
+                confirmClass: '',
+                confirm: function(e){
+                    console.log(e)
+                },
+                cancel: function () {
+                    console.log('Canceld')
+                }
+            })
+        }
+        var $doc = $(document)
+        $doc.on('click', '#event_select', init)
+    });
+</script>
 
 
 </body>
