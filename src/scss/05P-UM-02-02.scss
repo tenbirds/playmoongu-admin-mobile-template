@@ -1,0 +1,183 @@
+.detail-user-page {
+  .form-detail {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    font-family: NanumSquare;
+    &__main-title {
+      font-family: NanumSquare;
+      font-size: 20px;
+      font-weight: 800;
+      font-stretch: normal;
+      font-style: normal;
+      text-align: left;
+      color: #111111;
+      margin-bottom: 14px;
+      // text-decoration: underline;
+      // text-decoration-color: #FED400;
+      // text-underline-offset: 2px;
+      // text-underline-offset: 2px;
+      // text-decoration-thickness: 3px;
+      &.history-point {
+        margin-top: 20px;
+        margin-bottom: 20px;
+      } 
+      &.history-deposit {
+        margin-top: 20px;
+        margin-bottom: 20px;
+      } 
+      &.memo {
+        margin-top: 45px;
+        margin-bottom: 25px;
+      } 
+    }
+    .base-input {
+      font-family: NanumSquare;
+      font-size:14px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #111111;
+    }
+
+    .history-point {
+      &__number {
+        span {
+          font-size: 11px;
+          color: #111111;
+          font-family: Roboto;
+        }
+      }
+      &__name {
+        color: #111111;
+        .col-left {
+          .icon-user {
+            img {
+              width: 20px;
+            }
+          }
+          .title {
+            font-size: 20px;
+            font-weight: bold;
+            font-family: NanumSquare;
+          }
+        }
+        .col-right {
+          .title {
+            font-size: 11px;
+            font-weight: bold;
+          }
+        }
+      }
+      &__desc {
+        padding-top: 5px;
+        color: #111111;
+        font-family: NanumSquare;
+        font-size: 11px;
+        .col-left {
+          .title {
+          }
+        }
+        .col-right {
+          .title {
+          }
+        }
+      }
+      &__qty {
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: bold;
+        text-align: left;
+        color: #111111;
+        .col-left {
+          .title {
+          }
+        }
+        .col-right {
+          .title {
+          }
+        }
+      }
+    }
+
+    .history-deposit {
+      &__number {
+        span {
+          font-size: 11px;
+          color: #111111;
+          font-family: Roboto;
+        }
+      }
+      &__name {
+        font-size: 11px;
+        color: #111111;
+      }
+      &__desc {
+        font-size: 14px;
+        color: #111111;
+        font-weight: bold;
+        font-family: Roboto;
+      }
+    }
+
+    .memo {
+      &__number {
+        span {
+          font-size: 11px;
+          color: #111111;
+          font-family: Roboto;
+        }
+      }
+      &__name {
+        font-size: 11px;
+        color: #111111;
+      }
+      &__desc {
+        font-size: 14px;
+        color: #111111;
+        font-family: NanumSquare;
+        margin-top: 8px;
+      }
+      &__date {
+        img {
+          padding-left: 8px;
+          width: 17px;
+        }
+      }
+    }
+
+    &__add-more-point {
+      margin-top: 15px;
+      background-color: #f5ebf6;
+      color: #5815a5;
+      border: 1px solid #7953a5;
+      width: 52px;
+      padding: 5px 5px;
+      font-size: 12px;
+    }
+    &__add-more-memo {
+      margin-top: 40px;
+      background-color: #f5ebf6;
+      color: #5815a5;
+      border: 1px solid #7953a5;
+      width: 52px;
+      padding: 5px 5px;
+      font-size: 12px;
+    }
+  }
+
+  .modal-add-point {
+    &__label-point {
+      font-family: NanumSquare;
+      font-size: 14px;
+      font-weight: 800;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      color: #111111;
+      text-align: right;
+      padding-top: 10px;
+    }
+  }
+}

@@ -1,0 +1,232 @@
+.product-detail-scan-barcode {
+    .product-img {
+        background: #e6e6e6;
+        min-height: 360px;
+        position: relative;
+
+        .upload-img-product {
+            display: flex;
+            align-items: center;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            h2 {
+                padding-left: 10px;
+                margin: 0;
+                opacity: 0.5;
+                font-family: NanumSquare;
+                font-size: 25px;
+                font-weight: bold;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.4;
+                letter-spacing: normal;
+                text-align: left;
+                color: #111111;
+            }
+        }
+        .img-product-detail {
+            position: relative;
+            .img-detail {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            .remove-img {
+                width: 26px;
+                height: 26px;
+                padding: 7px;
+                background-color: #000000;
+                position: absolute;
+                right: 0;
+                top: 0;
+                img {
+                    display: block;
+                    margin: auto;
+                }
+            }
+        }
+    }
+    .main-product-detail {
+        
+        &__add-to-cart {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 21px 0 19px;
+            background-color: #fed400;
+            cursor: pointer;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            .text-add-cart {
+                font-family: NanumSquare;
+                font-size: 16px;
+                font-weight: 800;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                text-align: center;
+                color: #111111;
+            }
+        }
+        &__info-data {
+            padding: 20px 10px;
+            &__product {
+                padding: 10px;
+                border-bottom: 1px solid #f5f5f5;
+                &__status {
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    padding-bottom: 5px;
+                    span {
+                        font-family: NanumSquare;
+                        font-size: 11px;
+                        font-weight: bold;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: normal;
+                        letter-spacing: normal;
+                        padding: 3px 7px;
+                        border-radius: 2px;
+                        margin-right: 5px;
+                    }
+                    .status_sale {
+                        color: #5815a5;
+                        background-color: #eadff6;
+                    }
+                    .status_phrases {
+                        color: #111111;
+                        background-color: #fed400;
+                    }
+                    .status_unsold {
+                        color: #111111;
+                        background-color: #e6e6e6;
+                    }
+                    .status_sports {
+                        color: #ffffff;
+                        background-color: #56bf5c;
+                    }
+                    .status_accessory {
+                        background-color: #f981aa;
+                        color: #ffffff;
+                    }
+                }
+                &__name {
+                    font-family: NanumSquare;
+                    font-size: 18px;
+                    font-weight: bold;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    text-align: left;
+                    color: #111111;
+                    padding-bottom: 12px;
+                }
+                &__quantity-price {
+                    font-family: NanumSquare;
+                    font-size: 12px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    text-align: left;
+                    color: #111111;
+                    padding-bottom: 7px;
+                }
+                &__total_price {
+                    display: flex;
+                    align-items: center;
+                    .number_price {
+                        font-family: Roboto;
+                        font-size: 23px;
+                        font-weight: bold;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: normal;
+                        letter-spacing: normal;
+                        text-align: left;
+                        color: #c52321;
+                        display: flex;
+                        align-items: center;
+                        &::after{
+                            content: "원";
+                            font-family: NanumSquare;
+                            font-size: 14px;
+                            font-weight: bold;
+                            font-stretch: normal;
+                            font-style: normal;
+                            line-height: normal;
+                            letter-spacing: normal;
+                            text-align: left;
+                            color: #c52321;
+                            padding:0 5px;
+                        }
+                    }
+                    .text_price {
+                        font-family: NanumSquare;
+                        font-size: 12px;
+                        font-weight: normal;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: normal;
+                        letter-spacing: normal;
+                        text-align: left;
+                        color: #c52321;
+                    }
+                }
+            }
+            &__barcode {
+                padding: 10px;
+                &__no {
+                    padding-bottom: 8px;
+                }
+                &__data-quantity {
+                    display: flex;
+                    align-items: center;
+                    img {
+                        padding-right: 7px;
+                    }
+                    .data-barcode {
+                        display: flex;
+                        align-items: center;
+                        padding-right: 20px;
+                        .value-barcode {
+                            font-family: Roboto;
+                            font-size: 12px;
+                            font-weight: normal;
+                            font-stretch: normal;
+                            font-style: normal;
+                            line-height: normal;
+                            letter-spacing: normal;
+                            text-align: left;
+                            color: #111111;
+                        }
+                    }
+                    .data-box {
+                        display: flex;
+                        align-items: center;
+                        .value-box {
+                            font-family: Roboto;
+                            font-size: 12px;
+                            font-weight: normal;
+                            font-stretch: normal;
+                            font-style: normal;
+                            line-height: normal;
+                            letter-spacing: normal;
+                            text-align: left;
+                            color: #111111;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

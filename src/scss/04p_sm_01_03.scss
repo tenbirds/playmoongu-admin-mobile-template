@@ -1,0 +1,489 @@
+.detail-kiosk-page {
+    .container {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .box-detail {
+        margin: 20px 20px;
+        font-family: NanumSquare;
+
+        .box-input {
+            margin-top: 20px;
+
+            .inp-pr-0 {
+                padding-right: 0px;
+            }
+
+            .inp-pl-0 {
+                padding-left: 0px;
+            }
+
+            .select-file {
+                text-align: center;
+                width: 95px;
+                height: 36px;
+                padding: 0px;
+                border-radius: 5px;
+                background-color: #fed400;
+                font-family: NanumSquare;
+                font-size: 14px;
+                font-weight: 800;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                color: #111111;
+            }
+
+            .label-input {
+                input {
+                    font-family: Roboto;
+                    font-size: 14px;
+                    font-weight: 500;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    text-align: left;
+                    color: #111111;
+                }
+            }
+
+            &__main-check {
+                margin-top: 10px;
+
+                &__radio_box {}
+            }
+
+            .royalty {
+                color: red;
+
+                .select-inp-par {
+                    .select-inp {
+                        font-family: NanumSquare;
+                        font-size: 14px !important;
+                        font-weight: bold;
+                        padding-right: 0px;
+                        font-stretch: normal;
+                        font-style: normal;
+                        letter-spacing: normal;
+                        text-align: left;
+                        color: #111111;
+                    }
+                }
+            }
+
+            .kiosk-info {
+                background: #ffffff;
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+
+                &__data {
+                    padding: 6px 10px 6px 10px;
+                    width: 100%;
+                    margin: 10px 0px;
+
+                    &__no_like {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        .text-no {
+                            font-family: Roboto;
+                            font-size: 11px;
+                            font-weight: 300;
+                            font-stretch: normal;
+                            font-style: normal;
+                            line-height: normal;
+                            letter-spacing: normal;
+                            text-align: left;
+                            color: #111111;
+
+                            .remove-box {
+                                margin-left: 10px;
+                                width: 12px;
+                                height: 12px;
+                            }
+                        }
+                    }
+
+                    &__detail {
+                        .box-content {
+                            margin-top: 2px;
+
+                            &__text {
+                                opacity: 0.8;
+                                font-family: NanumSquare;
+                                font-size: 11px;
+                                font-weight: normal;
+                                font-stretch: normal;
+                                font-style: normal;
+                                line-height: normal;
+                                letter-spacing: normal;
+                                text-align: left;
+                                color: #111111;
+                            }
+
+                            &__number {
+                                font-family: Roboto;
+                                font-size: 20px;
+                                font-weight: bold;
+                                font-stretch: normal;
+                                font-style: normal;
+                                line-height: normal;
+                                letter-spacing: normal;
+                                text-align: left;
+                                color: #111111;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &__title_box {
+            position: relative;
+
+            &__main-title {
+                font-family: NanumSquare;
+                font-size: 20px;
+                font-weight: 800;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                text-align: left;
+                color: #000000;
+                margin-left: 2px;
+
+                &.store-owner {
+                    margin-top: 40px;
+                    margin-bottom: 20px;
+                }
+
+                &.history-deposit {
+                    margin-top: 40px;
+                    margin-bottom: 20px;
+                }
+
+                &.memo {
+                    margin-bottom: 25px;
+                }
+            }
+
+            &__border-title {
+                width: 100px;
+                height: 5px;
+                background-color: #fed400;
+                position: absolute;
+                top: 16px;
+                z-index: -1;
+
+                &__owner-information {
+                    width: 120px;
+                    height: 5px;
+                    background-color: #fed400;
+                    position: absolute;
+                    top: 16px;
+                    z-index: -1;
+                }
+
+                &__agreement-information {
+                    width: 140px;
+                    height: 5px;
+                    background-color: #fed400;
+                    position: absolute;
+                    top: 16px;
+                    z-index: -1;
+                }
+
+                &__sales {
+                    width: 205px;
+                    height: 5px;
+                    background-color: #fed400;
+                    position: absolute;
+                    top: 16px;
+                    z-index: -1;
+                }
+            }
+        }
+
+        &__owner-information {
+            margin-top: 40px;
+        }
+
+        &__sales {
+            margin-top: 0px;
+
+            .label-input {
+
+                .span-text {
+                    font-family: NanumSquare;
+                    font-size: 14px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    color: #111111;
+                }
+
+                .span-price-sales {
+                    font-family: Roboto;
+                    font-size: 14px;
+                    font-weight: bold;
+                    font-stretch: normal;
+                    font-style: normal;
+                    letter-spacing: normal;
+                    color: #111111;
+                }
+            }
+        }
+
+        .store-owner {
+            &__number {
+                span {
+                    font-size: 11px;
+                    color: #111111;
+                    font-family: Roboto;
+                }
+            }
+
+            &__name {
+                font-size: 11px;
+                color: #111111;
+            }
+
+            &__desc {
+                font-size: 14px;
+                color: #111111;
+                font-weight: bold;
+                font-family: NanumSquare;
+
+                .col-left {
+                    .title {}
+                }
+
+                .col-right {
+                    .title {}
+                }
+            }
+        }
+
+        .history-deposit {
+            &__number {
+                span {
+                    font-size: 11px;
+                    color: #111111;
+                    font-family: Roboto;
+                }
+            }
+
+            &__name {
+                font-size: 11px;
+                color: #111111;
+            }
+
+            &__desc {
+                font-size: 14px;
+                color: #111111;
+                font-weight: bold;
+                font-family: Roboto;
+            }
+        }
+
+        .memo {
+            &__number {
+                span {
+                    font-size: 11px;
+                    color: #111111;
+                    font-family: Roboto;
+                }
+            }
+
+            &__name {
+                font-size: 11px;
+                color: #111111;
+            }
+
+            &__desc {
+                font-size: 14px;
+                color: #111111;
+                font-family: NanumSquare;
+                margin-top: 8px;
+            }
+
+            &__date {
+                img {
+                    padding-left: 8px;
+                    width: 17px;
+                }
+            }
+        }
+
+        &__add-more {
+            width: 71px;
+            height: 33px;
+            padding: 0px;
+            margin: 0px;
+            opacity: 0.8;
+            border-radius: 5px;
+            border: solid 1px #5815a5;
+
+            .search-form {
+                width: 16px;
+                height: 16px;
+                margin: 0 3px 0 0;
+                object-fit: contain;
+                color: #5815a5;
+            }
+
+            span {
+                font-family: NanumSquare;
+                font-size: 12px;
+                font-weight: 800;
+                font-stretch: normal;
+                font-style: normal;
+                letter-spacing: normal;
+                text-align: left;
+                color: #5815a5;
+            }
+        }
+    }
+}
+
+.modal-register-store {
+    .modal-dialog {
+        .modal-content {
+            .modal-body {
+                p {
+                    text-align: center;
+                    font-family: NanumSquare;
+                    font-size: 14px;
+                    font-weight: bold;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.43;
+                    letter-spacing: normal;
+                    color: #111111;
+                }
+
+                padding: 0px 20px 15px 20px;
+
+                .filter_search_page {
+                    .type-filter {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        .search-text {
+                            font-family: NanumSquare;
+                            font-size: 14px;
+                            font-weight: 800;
+                            font-stretch: normal;
+                            font-style: normal;
+                            line-height: normal;
+                            letter-spacing: normal;
+                            text-align: left;
+                            color: #111111;
+                        }
+
+                        .control-search {
+                            position: relative;
+                            width: 80%;
+                            padding-left: 10px;
+
+                            img {
+                                position: absolute;
+                                right: 15px;
+                                top: 50%;
+                                transform: translateY(-50%);
+
+                            }
+                        }
+                    }
+
+                    .box-radio {
+                        border-radius: 10px;
+                        border: solid 1px #f5f5f5;
+                        margin: 15px 0px;
+                        padding: 22px 10px 10px;
+
+                        .box-input__main-check {
+                            &__radio-box {
+                                // padding-right: 0px;
+                                .label-radio {
+                                    font-family: NanumSquare;
+                                    font-size: 14px;
+                                    text-align: left;
+                                    color: #111111;
+
+                                    .title-top {
+                                        opacity: 0.8;
+                                        font-family: NanumSquare;
+                                        font-size: 11px;
+                                        font-weight: normal;
+                                        font-stretch: normal;
+                                        font-style: normal;
+                                        line-height: normal;
+                                        letter-spacing: normal;
+                                        text-align: left;
+                                        color: #111111;
+                                    }
+
+                                    .title-bottom {
+                                        font-family: Roboto;
+                                        font-size: 14px;
+                                        font-weight: 500 ;
+                                        font-stretch: normal;
+                                        font-style: normal;
+                                        line-height: normal;
+                                        letter-spacing: normal;
+                                        text-align: left;
+                                        color: #111111;
+                                    }
+                                }
+                                .label-number {
+                                    .title-top {
+                                        opacity: 0.8;
+                                        font-family: NanumSquare;
+                                        font-size: 11px;
+                                        font-stretch: normal;
+                                        font-style: normal;
+                                        line-height: normal;
+                                        letter-spacing: normal;
+                                        text-align: left;
+                                        color: #111111;
+                                    }
+    
+                                    .title-bottom {
+                                        font-family: Roboto;
+                                        font-size: 14px;
+                                        font-weight: 500 !important;
+                                        font-stretch: normal;
+                                        font-style: normal;
+                                        line-height: normal;
+                                        letter-spacing: normal;
+                                        text-align: left;
+                                        color: #111111;
+                                    }
+                                }
+                            }
+                        }
+
+                        hr.line-modal {
+                            background-color: #e0dcdc;
+                            display: block;
+                            height: 1px;
+                            margin: 5px 0 10px 0;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+
+}

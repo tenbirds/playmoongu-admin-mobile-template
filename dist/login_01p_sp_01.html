@@ -5,20 +5,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gulp</title>
+    <title>로그인</title>
     <link rel="manifest" href="/manifest.json">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css" />
-
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css" /> -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="/css/style.min.css?v=5" media="screen">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="/css/style.min.css?v=2021070601" media="screen">
+
 </head>
 <body class="login-01p-sp-01">
 
 <header>
   <div class="logo-login"> 
-    <img class="img-login" src="../images/icons/login_logo.svg" alt="">
+    <img class="img-login" src="/images/icons/login_logo.svg" alt="">
   </div>
 </header>
 <main>
@@ -30,11 +35,11 @@
       <section class="content-form ">
         <label class="label-input">
             <span class="text-username">아이디</span>
-            <input class="form-control mb-3" value=""/>
+            <input type="text" class="form-control username mb-3" value=""/>
         </label>
         <label class="label-input">
             <span>비밀번호</span>
-            <input class="form-control"  value=""/>
+            <input  type="password" class="form-control password"  value=""/>
         </label>
         <button type="button" 
                 class="btn btn-block btn-login btn__primary" 
@@ -55,7 +60,7 @@
               <p class="mb-0 text-center text-content-modal">아이디 혹은 비밀번호가 입력 되지 않았습니다.</p> 
           </div>
           <div class="modal-footer">
-              <button type="button" class="btn-action">확인</button>
+              <button type="button" class="btn-action" onclick="submitModalRequired()">확인</button>
           </div>
       </div>
     </div>
@@ -71,7 +76,7 @@
               </p> 
           </div>
           <div class="modal-footer">
-              <button type="button" class="btn-action">확인</button>
+              <button type="button" class="btn-action" onclick="submitModalUnique()">확인</button>
           </div>
       </div>
     </div>
@@ -94,17 +99,41 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js "
         integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous "></script>
+        <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script> -->
 
 <script src="/js/polyfill.js"></script>
-<script src="/js/script.min.js?v=2"></script>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+<script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+<script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
+<script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+
+<link rel="stylesheet" href="/css/bscroll.min.css">
+<script src="https://unpkg.com/better-scroll@latest/dist/better-scroll.min.js"></script>
+<script type="text/javascript" src="/js/jquery.selectscroll.min.js"></script>
+
+<script src="/js/script.min.js?v=2021070601"></script>
 
 <script type="text/javascript">
   function login() {
     $('#modalPopup1').modal('show');
-    $('#modalPopup2').modal('show');
+    $('#modalPopup2').modal('hide');
   }
+
+  function submitModalRequired() {
+    $('#modalPopup2').modal('show');
+    $('#modalPopup1').modal('hide');
+  }
+
+  function submitModalUnique(params) {
+    $('#modalPopup2').modal('hide');
+  }
+
 </script>
 
 </body>
 </html>
+
 

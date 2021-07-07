@@ -9,9 +9,22 @@ $('#main-navigation>ul>li>ul>li').click(function(){
     $(this).addClass('active')
 })
 
-function openNav(){
-    $('#main-navigation').addClass('open')
+function handleClick(value){
+    console.log(value);
+
+    if (value == 'open_nav') {
+        $(`#main-navigation`).addClass('open')
+    }
+    if (value == 'undo_modal_store' || value == 'undo_modal_kiosk') {
+        console.log(value);
+        $(`#${value}`).modal('show');
+    }
 }
+
+function openNav(){
+    $(`#main-navigation`).addClass('open')
+}
+
 function closeNav(){
     $('#main-navigation').removeClass('open')
 }
@@ -20,4 +33,10 @@ function openPopupType () {
 }
 function openPopupType2 () {
     $('#createType2').modal('toggle')
+}
+
+function openModalConfirmAddCart () {
+    $('#addCart').modal('toggle')
+    $('#confirmAddCart').modal('toggle')
+    
 }

@@ -1,0 +1,299 @@
+.detail-history-return {
+    background-color: #f5f5f5;
+    .main-detail-history-return {
+        
+        .filter_search_page {
+            background-color: #ffffff;
+            padding: 20px;
+            &__title {
+                padding-bottom: 15px;
+            }
+            &__form-search {
+
+            }
+        }
+        .main-register-form {
+            &__content-register {
+                .content-register-item {
+                    margin-bottom: 15px;
+                    &__title {
+                        font-family: NanumSquare;
+                        font-size: 14px;
+                        font-weight: 800;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: normal;
+                        letter-spacing: normal;
+                        text-align: left;
+                        color: #111111;
+                        padding-bottom: 10px;
+                    }
+                    &__form {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        input {
+                            margin-right: 10px;
+                            font-family: Roboto;
+                            font-size: 14px;
+                            font-weight: 500;
+                            font-stretch: normal;
+                            font-style: normal;
+                            line-height: normal;
+                            letter-spacing: normal;
+                            text-align: left;
+                            color: #111111;
+                        }
+                        &__button  {
+                            font-family: NanumSquare;
+                            font-size: 14px;
+                            font-weight: 800;
+                            font-stretch: normal;
+                            font-style: normal;
+                            line-height: normal;
+                            letter-spacing: normal;
+                            text-align: left;
+                            color: #111111;
+                            padding: 10px 15px;
+                            border-radius: 5px;
+                            background-color: #fed400;
+                            border:none;
+                            white-space: nowrap;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__content-center {
+            padding: 25px 15px;
+            padding-bottom: 120px;
+            &__item {
+                background-color: #ffffff;
+                margin-bottom: 10px;
+                padding: 15px;
+                position: relative;
+                &__remove {
+                    position: absolute;
+                    right: 15px;
+                    top:20px;
+                }
+                &__no {
+                    .content-center__item__no__text {
+                        opacity: 0.8;
+                        font-family: Roboto;
+                        font-size: 11px;
+                        font-weight: 300;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: normal;
+                        letter-spacing: normal;
+                        text-align: left;
+                        color: #111111;
+                    }
+                    
+                }
+                &__info-product {
+                    display: flex;
+                    // align-items: center;
+                    padding-bottom: 10px;
+                    .content-center__item__info-product__img {
+                        width: 60px;
+                        height: 60px;
+                        object-fit: cover;
+                    }
+                    .content-center__item__info-product__info-data {
+                        padding-left: 7px;
+                        width: calc(100% - 60px);
+                        label {
+                            display: block;
+                        }
+                        .info-data__name {
+                            font-family: NanumSquare;
+                            font-size: 14px;
+                            font-weight: bold;
+                            font-stretch: normal;
+                            font-style: normal;
+                            line-height: normal;
+                            letter-spacing: normal;
+                            text-align: left;
+                            color: #111111;
+                            padding-bottom: 5px;
+                        }
+                        .info-data__price{
+                            opacity: 0.8;
+                            font-family: NanumSquare;
+                            font-size: 11px;
+                            font-weight: normal;
+                            font-stretch: normal;
+                            font-style: normal;
+                            line-height: normal;
+                            letter-spacing: normal;
+                            text-align: left;
+                            color: #111111;
+                            &__number {
+                                opacity: 0.8;
+                                font-family: NanumSquare;
+                                font-size: 14px;
+                                font-weight: bold;
+                                font-stretch: normal;
+                                font-style: normal;
+                                line-height: normal;
+                                letter-spacing: normal;
+                                text-align: left;
+                                color: #111111;
+                            }
+                        }
+                        .info-data__status-reason {
+                            float: right;
+                            .status-reason__select {
+                                padding: 2px 7px 2px 7px;
+                                border-radius: 5px;
+                                border: solid 1px #e6e6e6;
+                                display: inline-flex;
+                                padding: 5px 10px;
+                                &__value {
+                                    opacity: 0.5;
+                                    font-family: NanumSquare;
+                                    font-size: 14px;
+                                    font-weight: normal;
+                                    font-stretch: normal;
+                                    font-style: normal;
+                                    line-height: normal;
+                                    letter-spacing: normal;
+                                    text-align: left;
+                                    color: #111111;
+                                    padding-right: 8px;
+                                }
+                                &__icon {
+                                    
+                                }
+                            }
+                        }
+                    }
+                }
+                
+                &__border-line {
+                    display: flex;
+                    align-items: center;
+                    padding-bottom: 10px;
+                    img {
+                        width: 100%;
+                    }
+                }
+                &__total-quantity-price {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    .total-quantity-price__quantity {
+                        display: flex;
+                        align-items: center;
+                        .quantity__text {
+                            opacity: 0.8;
+                            font-family: NanumSquare;
+                            font-size: 11px;
+                            font-weight: normal;
+                            font-stretch: normal;
+                            font-style: normal;
+                            line-height: normal;
+                            letter-spacing: normal;
+                            text-align: right;
+                            color: #111111;
+                            padding-right: 5px;
+                        }
+                        .quantity__select {
+                            display: flex;
+                            align-items: center;
+                            padding: 5px 7px 5px 23px;
+                            border-radius: 5px;
+                            border: solid 1px #e6e6e6;
+                            
+                            &__value {
+                                font-family: Roboto;
+                                font-size: 14px;
+                                font-weight: 500;
+                                font-stretch: normal;
+                                font-style: normal;
+                                line-height: normal;
+                                letter-spacing: normal;
+                                text-align: right;
+                                color: #111111;
+                                padding-right: 5px;
+                            }
+                            &__icon {
+                                
+                            }
+                        }
+                    }
+                    .total-quantity-price__price {
+                        display: flex;
+                            align-items: center;
+                        &__text {
+                            opacity: 0.8;
+                            font-family: NanumSquare;
+                            font-size: 11px;
+                            font-weight: normal;
+                            font-stretch: normal;
+                            font-style: normal;
+                            line-height: normal;
+                            letter-spacing: normal;
+                            text-align: right;
+                            color: #111111;
+                            padding-right: 5px;
+                        }
+                        &__number {
+                            font-family: Roboto;
+                            font-size: 18px;
+                            font-weight: bold;
+                            font-stretch: normal;
+                            font-style: normal;
+                            line-height: normal;
+                            letter-spacing: normal;
+                            text-align: left;
+                            color: #111111;
+                            display: flex;
+                            align-items: center;
+                            &::after {
+                                content:"원";
+                                opacity: 0.8;
+                                font-family: NanumSquare;
+                                font-size: 11px;
+                                font-weight: normal;
+                                font-stretch: normal;
+                                font-style: normal;
+                                line-height: normal;
+                                letter-spacing: normal;
+                                text-align: left;
+                                color: #111111;
+                                padding-left: 3px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &__button-submit {
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            .button-submit__item{
+                position: static;
+                width: calc(100%/2);
+            }
+        }
+        
+    }
+    &.fixed-header {
+        .filter_search_page {
+            position: fixed;
+            top: 50px;
+            width: 100%;
+            z-index: 666;
+        }
+        .main_center_content {
+            margin-top: 65px;
+        }
+    }
+}

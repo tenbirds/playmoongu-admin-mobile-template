@@ -1,0 +1,245 @@
+@@include('components/head.html', {
+    "title": "현금 입출금 내역",
+    "bodyClass": "history-deposit fixed-header"
+    })
+    
+    @@include('components/header.html', {
+        "title": "현금 입출금 내역",
+        "rightTitle": "",
+        "leftIcon": "",
+        "link": "",
+        "leftTitle": "/images/icons/m_menu.svg",
+        'param': "open_nav"
+    })
+    <main class="">
+        <section class="p-3 header-search">
+            <h3 class="header-search__name">전체 매장 <img src="/images/icons/icon_arrowBB.svg" class="header-search__icon_arrowBB"></h3>
+    
+            <div class="row">
+                <div class="col-2 d-flex align-items-center padding-right-0">
+                    <span class="header-search__glance">일별</span> <img src="/images/icons/icon_miniarrow.svg" class="header-search__icon_miniarrow"/>
+                </div>
+    
+                <div class="col-10">
+                    <input class="form-control text-center header-search__input"  value="세종한솔점" name="daterange"/>
+                </div>
+            </div>
+        </section>
+    
+        <div class="history-info">
+            <div class="row">
+                <div class="col-12 text-end">
+                    <p class="history-info__sale-piriod">Kiosk3 <img src="/images/icons/icon_miniarrow.svg" /> </p>
+                </div>
+            </div>
+
+            <div class="p-3 history-info__box">
+                <h6 class="history-info__total-sale p-0 m-0">총 매출</h6>
+                <div class="row">
+                    <div class="col-12 d-flex m-0">
+                        <span class="history-info__won-character align-middle">&#8361;</span><span class="history-info__won"> 533,578,500</span>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-6 ">
+                        <h6 class="history-info__number-pay p-0 m-0">총 입수 금액</h6>
+                        <span class="history-info__number-character-won align-middle">&#8361;</span>
+                        <span class="history-info__number">1,481,600</span>
+                    </div>
+    
+                    <div class="col-6">
+                        <h6 class="history-info__number-pay p-0 m-0">총 방출 금액</h6>
+                        <div class="row">
+                            <div class="col-12 d-flex m-0">
+                                <span class="history-info__number-character-won align-middle">&#8361;</span>
+                                <span class="history-info__number">393,800</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+
+            <div class="row history-info__see-all">
+                <div class="col-12 text-end">
+                    <button class="">모든 현금 보기</button>
+                </div>
+            </div>
+        
+            <ul class="list-group history-list" >
+                <li class="list-group-item history-item">
+                    <div class="row">
+                        <div class="col-6">
+                            <span class="history-item__no">No.11</span>
+                        </div>
+                        <div class="col-6 text-end">
+                            <span class="history-item__date">2021.05.06</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <span class="history-item__qty">50,540</span>
+                            <span class="history-item__qty-unit">원</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <span class="history-item__desc">쬬니 청포도 외 2건</span>
+                            <span class="history-item__desc-recept">
+                                ( 영수증 번호 : <span class="">89730</span> )
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <hr>
+
+                    <div class="row">
+                        <div class="col-6">
+                            <span class="history-item__price-label">입수 금액</span>
+                        </div>
+                        <div class="col-6">
+                            <span class="history-item__price-label-more">방출 금액</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <span class="history-item__price-value">
+                                <span class="">\</span>
+                                1,400
+                            </span>
+                        </div>
+                        <div class="col-6">
+                            <span class="history-item__price-value-more">
+                                <span class="">\</span>
+                               100
+                            </span>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="list-group-item history-item">
+                    <div class="row">
+                        <div class="col-6">
+                            <span class="history-item__no">No.11</span>
+                        </div>
+                        <div class="col-6 text-end">
+                            <span class="history-item__date">2021.05.06</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <span class="history-item__qty">50,540</span>
+                            <span class="history-item__qty-unit">원</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <span class="history-item__desc">쬬니 청포도 외 2건</span>
+                            <span class="history-item__desc-recept">
+                                ( 영수증 번호 : <span class="">89730</span> )
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <hr>
+
+                    <div class="row">
+                        <div class="col-6">
+                            <span class="history-item__price-label">입수 금액</span>
+                        </div>
+                        <div class="col-6">
+                            <span class="history-item__price-label-more">방출 금액</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <span class="history-item__price-value">
+                                <span class="">\</span>
+                                1,400
+                            </span>
+                        </div>
+                        <div class="col-6">
+                            <span class="history-item__price-value-more">
+                                <span class="">\</span>
+                               100
+                            </span>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="list-group-item history-item">
+                    <div class="row">
+                        <div class="col-6">
+                            <span class="history-item__no">No.11</span>
+                        </div>
+                        <div class="col-6 text-end">
+                            <span class="history-item__date">2021.05.06</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <span class="history-item__qty">50,540</span>
+                            <span class="history-item__qty-unit">원</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <span class="history-item__desc">쬬니 청포도 외 2건</span>
+                            <span class="history-item__desc-recept">
+                                ( 영수증 번호 : <span class="">89730</span> )
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <hr>
+
+                    <div class="row">
+                        <div class="col-6">
+                            <span class="history-item__price-label">입수 금액</span>
+                        </div>
+                        <div class="col-6">
+                            <span class="history-item__price-label-more">방출 금액</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <span class="history-item__price-value">
+                                <span class="">\</span>
+                                1,400
+                            </span>
+                        </div>
+                        <div class="col-6">
+                            <span class="history-item__price-value-more">
+                                <span class="">\</span>
+                               100
+                            </span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </main>
+    @@include('components/_main_nav.html')
+    @@include('components/script.html')
+    <link rel="stylesheet" href="/css/bscroll.min.css">
+    <script src="https://unpkg.com/better-scroll@latest/dist/better-scroll.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.selectscroll.min.js"></script>
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    
+    <script>
+        $(function() {
+            $('input[name="daterange"]').daterangepicker({
+                opens: 'left',
+                locale: {
+                    format: 'YYYY-MM-DD'
+                }
+            }, function(start, end, label) {
+                console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+            });
+        });
+    </script>
+    @@include('components/foot.html')
+    

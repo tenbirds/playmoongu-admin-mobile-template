@@ -1,0 +1,192 @@
+.manager-money-kiosk {
+  .content-kiosk {
+    &__status {
+      font-size: 14px;
+      font-weight: 800;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #111111;
+    }
+
+    &__box {
+      height: 106px;
+      background-color: #ffffff;
+      background-clip: content-box;
+    }
+
+    &__box-second {
+      height: 124px;
+      background-color: #ffffff;
+      background-clip: content-box;
+    }
+
+    &__no-time {
+      font-family: Roboto;
+      font-size: 11px;
+      font-weight: 300;
+      font-stretch: normal;
+      font-style: normal;
+      letter-spacing: normal;
+      color: #111111;
+    }
+
+    &__box-number {
+      //margin-left: 20px;
+      //padding : 10px;
+      border-bottom: 1px solid #f5f5f5;;
+      margin-top: 4px;
+    }
+
+    &__money-won {
+      font-size: 14px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      letter-spacing: normal;
+      color: #c52321;
+    }
+
+    &__box-number-money {
+      opacity: 0.8;
+      font-size: 11px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      letter-spacing: normal;
+      color: #111111;
+    }
+
+    &__box-number-money-one {
+      font-size: 14px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      letter-spacing: normal;
+      color: #111111;
+    }
+
+    &__around {
+      //padding: 5px 7px;
+      opacity: 0.5;
+      border-radius: 5px;
+      border: solid 1px #5815a5;
+      background-color: #f5ebf6;
+
+      font-size: 12px;
+      font-weight: 800;
+      font-stretch: normal;
+      font-style: normal;
+      letter-spacing: normal;
+      color: #5815a5;
+    }
+
+    &__money-number {
+      font-family: Roboto;
+      font-size: 20px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      //line-height: normal;
+      letter-spacing: normal;
+      //text-align: right;
+      color: #c52321;
+    }
+
+    &__money-span-red{
+      font-family: Roboto;
+      font-size: 11px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      letter-spacing: normal;
+      color: #c52321;
+    }
+
+    &__money-span-blue {
+      font-family: NanumSquare;
+      font-size: 11px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      letter-spacing: normal;
+      color: #2181ff;
+    }
+
+    &__text-money{
+      font-family: NanumSquare;
+      font-size: 12px;
+      font-weight: 800;
+      font-stretch: normal;
+      font-style: normal;
+      letter-spacing: normal;
+      color: #111111;
+    }
+
+    &__text-one {
+      font-family: NanumSquare;
+      font-size: 14px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      letter-spacing: normal;
+      color: #111111;
+    }
+
+    &__text-second {
+      font-family: NanumSquare;
+      font-size: 12px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      letter-spacing: normal;
+      color: #c52321;
+    }
+
+    &__title-h4 {
+      font-family: NanumSquare;
+      font-size: 23px;
+      font-weight: 800;
+      font-stretch: normal;
+      font-style: normal;
+      letter-spacing: normal;
+      color: #000000;
+    }
+
+    &__title-span {
+      font-family: NanumSquare;
+      font-size: 14px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      letter-spacing: normal;
+      color: #111111;
+    }
+
+    &__title-h6 {
+      font-family: NanumSquare;
+      font-size: 14px;
+      font-weight: 800;
+      font-stretch: normal;
+      font-style: normal;
+      letter-spacing: normal;
+      color: #111111;
+    }
+
+    &__box-modal {
+      height: 106px;
+      background-clip: content-box;
+      border-radius: 5px;
+      background-color: #f5f5f5;
+    }
+
+    &__box-boder{
+      border-bottom: 1px solid #ffffff;
+      margin-top: 4px;
+    }
+  }
+}
+
+
+

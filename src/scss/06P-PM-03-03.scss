@@ -1,0 +1,387 @@
+.cart-detail {
+    background-color: #f5f5f5;
+    .main-cart-detail {
+        
+        .filter_search_page {
+            background-color: #ffffff;
+            padding: 20px;
+            &__title {
+                padding-bottom: 15px;
+            }
+            &__form-search {
+
+            }
+        }
+        &__content-center {
+            padding: 25px 15px;
+            padding-bottom: 120px;
+            &__item {
+                background-color: #ffffff;
+                margin-bottom: 10px;
+                padding: 15px;
+                position: relative;
+                &__remove {
+                    position: absolute;
+                    right: 15px;
+                    top:20px;
+                }
+                &__time {
+                    .content-center__item__time__text {
+                        font-family: NanumSquare;
+                        font-size: 11px;
+                        font-weight: 300;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: normal;
+                        letter-spacing: normal;
+                        text-align: left;
+                        color: #111111;
+                    }
+                    .content-center__item__time__value {
+                        font-family: Roboto;
+                        font-size: 11px;
+                        font-weight: 300;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: normal;
+                        letter-spacing: normal;
+                        text-align: left;
+                        color: #111111;
+                    }
+                }
+                &__info-product {
+                    display: flex;
+                    align-items: center;
+                    padding-bottom: 10px;
+                    .content-center__item__info-product__img {
+                        width: 60px;
+                        height: 60px;
+                        object-fit: cover;
+                    }
+                    .content-center__item__info-product__info-data {
+                        padding-left: 7px;
+                        .info-product__info-data__status-no {
+                            // padding-bottom: 5px;
+                            .status_sale {
+                                font-family: NanumSquare;
+                                font-size: 11px;
+                                font-weight: bold;
+                                font-stretch: normal;
+                                font-style: normal;
+                                line-height: normal;
+                                letter-spacing: normal;
+                                text-align: left;
+                                color: #111111;
+                                padding: 3px 7px;
+                                border-radius: 2px;
+                                background-color: #fed400;
+                            }
+                            &__no {
+                                opacity: 0.8;
+                                font-family: Roboto;
+                                font-size: 11px;
+                                font-weight: 300;
+                                font-stretch: normal;
+                                font-style: normal;
+                                line-height: normal;
+                                letter-spacing: normal;
+                                text-align: left;
+                                color: #111111;
+                            }
+                        }
+                        &__name {
+                            font-family: NanumSquare;
+                            font-size: 14px;
+                            font-weight: bold;
+                            font-stretch: normal;
+                            font-style: normal;
+                            line-height: normal;
+                            letter-spacing: normal;
+                            text-align: left;
+                            color: #111111;
+                        }
+                        .barcode-price {
+                            display: flex;
+                            align-items: center;
+                            .info-data__barcode-price__barcode {
+                                display: flex;
+                                align-items: center;
+                                padding-right: 10PX;
+                                .barcode-price__barcode__img {
+                                    padding-right: 5px;
+                                }
+                                .barcode-price__barcode__value {
+                                    font-family: Roboto;
+                                    font-size: 11px;
+                                    font-weight: normal;
+                                    font-stretch: normal;
+                                    font-style: normal;
+                                    line-height: normal;
+                                    letter-spacing: normal;
+                                    text-align: left;
+                                    color: #111111;
+                                }
+                            }
+                            .info-data__barcode-price__price {
+                                opacity: 0.8;
+                                font-family: NanumSquare;
+                                font-size: 11px;
+                                font-weight: normal;
+                                font-stretch: normal;
+                                font-style: normal;
+                                line-height: normal;
+                                letter-spacing: normal;
+                                text-align: left;
+                                color: #111111;
+                            }
+                        }
+                    }
+                }
+                &__pack {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding-bottom: 10px;
+                    .item__pack__price {
+                        &__number {
+                            opacity: 0.8;
+                            font-family: NanumSquare;
+                            font-size: 14px;
+                            font-weight: bold;
+                            font-stretch: normal;
+                            font-style: normal;
+                            line-height: normal;
+                            letter-spacing: normal;
+                            text-align: left;
+                            color: #111111;
+                        }
+                        &__text {
+                            opacity: 0.8;
+                            font-family: NanumSquare;
+                            font-size: 11px;
+                            font-weight: normal;
+                            font-stretch: normal;
+                            font-style: normal;
+                            line-height: normal;
+                            letter-spacing: normal;
+                            text-align: left;
+                            color: #111111;
+                        }
+                    }
+                    .item__pack__quantity {
+                        display: flex;
+                        align-items: center;
+                       
+                        &__text {
+                            opacity: 0.8;
+                            font-family: NanumSquare;
+                            font-size: 11px;
+                            font-weight: normal;
+                            font-stretch: normal;
+                            font-style: normal;
+                            line-height: normal;
+                            letter-spacing: normal;
+                            text-align: left;
+                            color: #111111;
+                            padding-right: 5px;
+                        }
+                        &__value-select {
+                            padding: 2px 7px 2px 23px;
+                            border-radius: 5px;
+                            border: solid 1px #e6e6e6;
+                            &__number {
+                                font-family: Roboto;
+                                font-size: 14px;
+                                font-weight: 500;
+                                font-stretch: normal;
+                                font-style: normal;
+                                line-height: normal;
+                                letter-spacing: normal;
+                                text-align: right;
+                                color: #111111;
+                            }
+                            &__icon {
+                                
+                            }
+                        }
+                    }
+                }
+                &__border-line {
+                    display: flex;
+                    align-items: center;
+                    padding-bottom: 10px;
+                    img {
+                        width: 100%;
+                    }
+                }
+                &__total-pack-price {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    .total-pack-price__pack{
+                        display: flex;
+                        align-items: center;
+                        &__gun {
+                            opacity: 0.8;
+                            font-family: NanumSquare;
+                            font-size: 11px;
+                            font-weight: normal;
+                            font-stretch: normal;
+                            font-style: normal;
+                            line-height: normal;
+                            letter-spacing: normal;
+                            text-align: left;
+                            color: #111111;
+                            
+                        }
+                        &__number {
+                            font-family: Roboto;
+                            font-size: 18px;
+                            font-weight: bold;
+                            font-stretch: normal;
+                            font-style: normal;
+                            line-height: normal;
+                            letter-spacing: normal;
+                            text-align: left;
+                            color: #111111;
+                            padding: 0 5px;
+                        }
+                        &__dog {
+                            opacity: 0.8;
+                            font-family: NanumSquare;
+                            font-size: 11px;
+                            font-weight: normal;
+                            font-stretch: normal;
+                            font-style: normal;
+                            line-height: normal;
+                            letter-spacing: normal;
+                            text-align: left;
+                            color: #111111;
+                        }
+                    }
+                    .total-pack-price__price {
+                        display: flex;
+                        align-items: center;
+                        &__number {
+                            font-family: Roboto;
+                            font-size: 20px;
+                            font-weight: bold;
+                            font-stretch: normal;
+                            font-style: normal;
+                            line-height: normal;
+                            letter-spacing: normal;
+                            text-align: right;
+                            color: #c52321;
+                            display: flex;
+                            align-items: center;
+                            &::after {
+                                content: "원";
+                                font-family: NanumSquare;
+                                font-size: 14px;
+                                font-weight: bold;
+                                font-stretch: normal;
+                                font-style: normal;
+                                line-height: normal;
+                                letter-spacing: normal;
+                                text-align: left;
+                                color: #c52321;
+                                padding-left: 5px;
+                            }
+                        }
+                        &__text {
+                            font-family: NanumSquare;
+                            font-size: 12px;
+                            font-weight: normal;
+                            font-stretch: normal;
+                            font-style: normal;
+                            line-height: normal;
+                            letter-spacing: normal;
+                            text-align: left;
+                            color: #c52321;
+                            padding-left: 5px;
+                        }
+                    }
+                }
+            }
+        }
+        &__foot-page {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            left: 0;
+            &__total-price{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 15px 20px;
+                background-color: #ffffff;
+                &__text {
+                    font-family: NanumSquare;
+                    font-size: 14px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    text-align: left;
+                    color: #111111;
+                }
+                &__price {
+                    font-family: Roboto;
+                    font-size: 23px;
+                    font-weight: bold;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    text-align: right;
+                    color: #c52321;
+                    display: flex;
+                    align-items: center;
+                    &::before {
+                        content: "총";
+                        opacity: 0.8;
+                        font-family: NanumSquare;
+                        font-size: 11px;
+                        font-weight: normal;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: normal;
+                        letter-spacing: normal;
+                        text-align: left;
+                        color: #c52321;
+                        padding-right: 5px;
+                    }
+                    &::after {
+                        content: "원";
+                        font-family: NanumSquare;
+                        font-size: 14px;
+                        font-weight: bold;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: normal;
+                        letter-spacing: normal;
+                        text-align: left;
+                        color: #c52321;
+                        padding-left: 5px;
+                    }
+                }
+            }
+            &__button-submit {
+                cursor: pointer;
+                position: static;
+            }
+        }
+    }
+    &.fixed-header {
+        .filter_search_page {
+            position: fixed;
+            top: 50px;
+            width: 100%;
+            z-index: 666;
+        }
+        .main_center_content {
+            margin-top: 120px;
+        }
+    }
+}

@@ -127,21 +127,30 @@
         align-items: center;
         flex-wrap: wrap;
         margin-bottom: 10px;
+        
         &__img {
-            img {
+            position: relative;
+            &__product {
                 width: 120px;
                 height: 120px;
                 object-fit: cover;
             }
+            &__add-cart-owner {
+                position: absolute;
+                right: 10px;
+                bottom: 10px;
+                cursor: pointer;
+            }
         }
         &__data {
-            padding: 6px 10px 6px 10px;
+            padding: 4px 10px 3px 10px;
             width: calc(100% - 120px);
             &__no_like {
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
                 .text-no {
+                    font-family: Roboto;
                     font-size: 11px;
                     font-weight: 300;
                     font-stretch: normal;
@@ -170,7 +179,7 @@
                 span {
                     font-family: NanumSquare;
                     font-size: 9px;
-                    font-weight: normal;
+                    font-weight: bold;
                     font-stretch: normal;
                     font-style: normal;
                     line-height: normal;

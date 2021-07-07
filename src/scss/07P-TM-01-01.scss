@@ -1,0 +1,385 @@
+.management-stock {
+  .pr-0 {
+    padding-right: 0px;
+  }
+  .pl-0 {
+    padding-left: 0px;
+  }
+  .stock-search {
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    background: #ffffff;
+    padding: 15px 10px 20px;
+    .box-select {
+      &__label {
+        margin-bottom: 15px;
+      }
+      &__img {
+        padding-bottom: 15px;
+      }
+    }
+  }
+  .font-800 {
+    font-weight: 800 !important;
+  }
+  
+  .wrap-stock {
+    background-color: #F5F5F5;
+    min-height: 85vh;
+    padding-top: 135px;
+    font-size: 14px;
+    .filter_category {
+      display: flex;
+      justify-content: flex-end;
+      padding: 0px 15px 5px;
+      .dropdown {
+        button {
+          outline: none;
+          box-shadow:none;
+          padding: 5px 0;
+          font-size: 11px;
+          &::after{
+            background-image: url(./../images/icons/icon_arrow_select.svg);
+            width: 10px;
+            height: 4px;
+            background-repeat: no-repeat;
+            border: none;
+        }
+          &:focus {
+            outline: none;
+          }
+        }
+        .dropdown-menu {
+          min-width: auto;
+          a {
+            font-size: 11px;
+            padding: 4px 10px;
+          }
+        }
+      }
+    }
+  
+    .stock-items {   
+      .filter-category {
+        font-family: NanumSquare;
+        font-size: 11px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        text-align: right;
+        color: #111;
+        margin-bottom: 10px;
+        // border: none;
+        background-color: #f5f5f5;
+        padding-right: 10px;
+      }
+      .stock-item {
+        margin-bottom: 12px !important;
+        hr {
+          height: 1px;
+          background-color: #cccaca;
+        }
+        .box-number {
+          &__edit {
+            font-size: 11px;
+            color: #111111;
+            font-family: Roboto;
+            border-radius: 2px;
+            background-color: #fed400;
+            cursor: pointer;
+          }
+        }
+        .box-name {
+          color: #111111;
+          .col-left {
+            .icon-user {
+              img {
+                width: 20px;
+              }
+            }
+            .title {
+              font-size: 20px;
+              font-weight: bold;
+            }
+          }
+          .col-right {
+            .title {
+              font-size: 14px;
+              font-weight: bold;
+            }
+          }
+        }
+        .box-desc {
+          &__barcode {
+            font-family: Roboto;
+            font-size: 11px;
+            font-weight: normal;
+            color: #111111;
+          }
+          &__price {
+            opacity: 0.8;
+            font-family: NanumSquare;
+            font-size: 14px;
+            font-weight: bold;
+            color: #111111;
+          }
+          &__price-sub {
+            opacity: 0.8;
+            font-family: NanumSquare;
+            font-size: 11px;
+            font-weight: normal;
+            color: #111111;
+          }
+        }
+        .box-main-price {
+          &__sell-price-label {
+            opacity: 0.8;
+            font-family: NanumSquare;
+            font-size: 11px;
+            font-weight: normal;
+            font-style: normal;
+            letter-spacing: normal;
+            color: #111111;
+          }
+          &__stock-label {
+            opacity: 0.8;
+            font-family: NanumSquare;
+            font-size: 11px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            color: #111111;
+          }
+          .box-sell-price {
+            position: relative;
+            &__input {
+              font-family: Roboto;
+              font-size: 14px;
+              font-weight: 500;
+              font-stretch: normal;
+              font-style: normal;
+              color: #111;
+              text-align: right;
+              padding: 7px 24px 7px 0px;
+              &.negative {
+                color:#c52321 !important;
+              }
+            }
+            &__label {
+              position: absolute;
+              top: 9px;
+              right: 20px;
+              opacity: 0.8;
+              font-family: NanumSquare;
+              font-size: 11px;
+              font-weight: normal;
+              font-stretch: normal;
+              font-style: normal;
+              color: #111111;
+            }
+          }
+          .box-stock {
+            &__input {
+              font-family: Roboto;
+              font-size: 14px;
+              font-weight: 500;
+              font-stretch: normal;
+              color: #111111;
+              text-align: right;
+              padding: 7px;
+              &.negative {
+                color:#c52321 !important;
+              }
+            }
+          }
+         
+        }
+      }  
+    }
+  } 
+
+  .modal-edit-price {
+    .stock-item {
+      margin-bottom: 7px;
+      &__label {
+        opacity: 0.8;
+        font-family: NanumSquare;
+        font-size: 14px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        color: #111111;
+        padding-bottom: 0px;
+      }
+      &__label_dark {
+        font-family: NanumSquare;
+        font-size: 14px;
+        font-weight: 800;
+        font-stretch: normal;
+        font-style: normal;
+        color: #111111;
+      }
+      &__value {
+        justify-content: flex-end;
+        display: flex;
+        font-family: NanumSquare;
+        font-size: 14px;
+        font-weight: 800;
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: normal;
+        text-align: right;
+        color: #111;
+      }
+      &__old-label {
+        opacity: 0.5;
+        font-family: NanumSquare;
+        font-size: 14px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #111111;
+        padding-bottom: 0px;
+      }
+      &__old-value {
+        justify-content: flex-end;
+        display: flex;
+        opacity: 0.5;
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        color:#111111;
+      }
+      &__currency {
+        font-family: NanumSquare;
+        color: #111;
+      }
+    }
+    .description {
+      font-family: NanumSquare;
+      font-size: 14px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.43;
+      letter-spacing: normal;
+      text-align: center;
+      color: #111;
+      padding: 10px 23px 11px;
+      margin-bottom: 0px;
+    }
+  }
+
+  .modal-edit-stock {
+    .stock-item {
+      margin-bottom: 7px;
+      &__label {
+        opacity: 0.8;
+        font-family: NanumSquare;
+        font-size: 14px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        color: #111111;
+        padding-bottom: 0px;
+      }
+      &__label_dark {
+        font-family: NanumSquare;
+        font-size: 14px;
+        font-weight: 800;
+        font-stretch: normal;
+        font-style: normal;
+        color: #111111;
+      }
+      &__value {
+        justify-content: flex-end;
+        display: flex;
+        font-family: NanumSquare;
+        font-size: 14px;
+        font-weight: 800;
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: normal;
+        text-align: right;
+        color: #111;
+        &.quantity {
+          font-family: Roboto;
+          font-size: 17px;
+          font-weight: bold;
+          color: #111111;
+          padding: 5px 3px;
+        }
+        &.old-quantity {
+          font-family: Roboto;
+          padding: 7px 5px;
+        }
+        &.note {
+          width: 100%;
+          border-radius: 5px;
+          border: solid 1px #e6e6e6;
+          opacity: 0.5;
+          font-family: NanumSquare;
+          font-size: 14px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.43;
+          letter-spacing: normal;
+          text-align: left;
+          color: #111111;
+          margin-bottom: 10px;
+        }
+      }
+      &__old-label {
+        opacity: 0.5;
+        font-family: NanumSquare;
+        font-size: 14px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #111111;
+        padding-bottom: 0px;
+      }
+      &__old-value {
+        justify-content: flex-end;
+        display: flex;
+        opacity: 0.5;
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        color:#111111;
+      }
+      &__currency {
+        font-family: NanumSquare;
+        color: #111;
+      }
+    }
+    .description {
+      font-family: NanumSquare;
+      font-size: 14px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.43;
+      letter-spacing: normal;
+      text-align: center;
+      color: #111;
+      padding: 10px 23px 11px;
+      margin-bottom: 0px;
+    }
+  }
+
+}
+
+
+
+

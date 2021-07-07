@@ -30,3 +30,9 @@
       url(./../fonts/NanumSquareL.woff) format('woff'),
       url(./../fonts/NanumSquareL.ttf) format('truetype');
 }
+
+@font-face {
+      font-family: 'NanumSquareExtraBold';
+      // font-weight: 800;
+      src: url(./../fonts/NanumSquareExtraBold.ttf) format('truetype');
+     }
