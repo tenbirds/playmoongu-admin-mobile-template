@@ -1,7 +1,16 @@
 .detail-admin-page {
+  .mb-0 {
+    margin-bottom: 0px;
+  }
+  .mt-0 {
+    margin-top: 0px;
+  }
   .form-detail{
     padding: 0px 13px 30px 13px;
     font-family: NanumSquare;
+    .form-detail-box {
+      margin-bottom: 20px;
+    }
     &__main-title {
       font-family: NanumSquare;
       font-size: 20px;
@@ -10,22 +19,17 @@
       font-style: normal;
       text-align: left;
       color: #111111;
-      margin-bottom: 14px;
-      // text-decoration: underline;
-      // text-decoration-color: #FED400;
-      // text-underline-offset: 2px;
-      // text-underline-offset: 2px;
-      // text-decoration-thickness: 3px;
+      margin-bottom: 20px;
       &.store-owner {
-        margin-top: 40px;
+        margin-top: 45px;
         margin-bottom: 20px;
       } 
-      &.history-deposit {
-        margin-top: 40px;
+      &.histories-deposit {
+        margin-top: 45px;
         margin-bottom: 20px;
       } 
       &.memo {
-        margin-top: 40px;
+        margin-top: 45px;
         margin-bottom: 25px;
       } 
     }
@@ -38,6 +42,11 @@
       line-height: normal;
       letter-spacing: normal;
       color: #111111;
+      &:read-only {
+        border-radius: 5px;
+        border: solid 1px #e6e6e6;
+        background-color: rgb(230 230 230 / 50%);
+      }
     }
     .base-select {
       font-family: NanumSquare;
@@ -51,18 +60,14 @@
       color: #111111;
     }
     .dropdown-custom {
-      // padding: 10px 0 ;
-      // border-radius: 5px;
-      // border: solid 1px #e6e6e6;
-      // background-color: #ffffff;
       color: #111111;
       &__button {
         border-radius: 5px;
         border: solid 1px #e6e6e6;
         background-color: #ffffff;
         display: block;
-        width: 99%;
-        opacity: 0.8;
+        width: 100%;
+        opacity: 5;
         font-family: NanumSquare;
         font-size: 14px;
         font-weight: bold;
@@ -70,7 +75,7 @@
         font-style: normal;
         text-align: left;
         color: #111111;
-        padding: 5px 10px 5px 15px;
+        padding: 8px 10px 8px 15px;
         &::after {
           font-size: 23px;
           float: right;
@@ -101,8 +106,28 @@
     }
 
     .store-owner {
-      .card {
-        border: 1px solid #f5f5f5;
+      .list-group {
+        border-radius: 10px;
+        border: solid 1px #f5f5f5;
+        .card {
+          -moz-box-shadow: none;
+          -goog-ms-box-shadow: none;
+          -webkit-box-shadow: none;
+          box-shadow: none !important;
+          padding-top: 1.063rem;
+          .card-body {
+            margin-bottom: auto;
+            padding-top: 0px;
+            padding-bottom: 0px;
+            padding-left: 0.938rem;
+            padding-right: 0.938rem;
+          }
+        }
+        hr {
+          border-bottom: 1px solid #f1efef;
+          margin-bottom: 0px;
+          margin-top: 10px;
+        }
       }
       &__number {
         span {
@@ -112,7 +137,14 @@
         }
       }
       &__name {
+        opacity: 0.8;
+        font-family: NanumSquare;
         font-size: 11px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
         color: #111111;
       }
       &__desc {
@@ -131,7 +163,30 @@
       }
     }
 
-    .history-deposit {
+    .histories-deposit {
+      .list-group {
+        border-radius: 10px;
+        border: solid 1px #f5f5f5;
+        .card {
+          -moz-box-shadow: none;
+          -goog-ms-box-shadow: none;
+          -webkit-box-shadow: none;
+          box-shadow: none !important;
+          padding-top: 1.063rem;
+          .card-body {
+            margin-bottom: auto;
+            padding-top: 0px;
+            padding-bottom: 0px;
+            padding-left: 0.938rem;
+            padding-right: 0.938rem;
+          }
+        }
+        hr {
+          border-bottom: 1px solid #f1efef;
+          margin-bottom: 0px;
+          margin-top: 10px;
+        }
+      }
       &__number {
         span {
           font-size: 11px;
@@ -140,7 +195,14 @@
         }
       }
       &__name {
+        opacity: 0.8;
+        font-family: NanumSquare;
         font-size: 11px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
         color: #111111;
       }
       &__desc {
@@ -152,6 +214,29 @@
     }
 
     .memo {
+      .list-group {
+        border-radius: 10px;
+        border: solid 1px #f5f5f5;
+        .card {
+          -moz-box-shadow: none;
+          -goog-ms-box-shadow: none;
+          -webkit-box-shadow: none;
+          box-shadow: none !important;
+          padding-top: 1.063rem;
+          .card-body {
+            margin-bottom: auto;
+            padding-top: 0px;
+            padding-bottom: 0px;
+            padding-left: 0.938rem;
+            padding-right: 0.938rem;
+          }
+        }
+        hr {
+          border-bottom: 1px solid #f1efef;
+          margin-bottom: 0px;
+          margin-top: 10px;
+        }
+      }
       &__number {
         span {
           color: #111111;
@@ -175,7 +260,7 @@
             font-stretch: normal;
             font-style: normal;
             line-height: normal;
-            text-align: left;
+            letter-spacing: normal;
             color: #111111;
           }
         }
@@ -192,6 +277,7 @@
           text-align: left;
           color: #111111;
           margin-top: 8px;
+          margin-bottom: 0px;
         }
       }
       &__date {
@@ -203,7 +289,7 @@
     }
 
     &__add-more {
-      margin-top: 35px;
+      margin-top: 40px;
       background-color: #f5ebf6;
       color: #5815a5;
       border: 1px solid #7953a5;
@@ -211,6 +297,48 @@
       height: 33px;
       padding: 5px 5px;
       font-size: 12px;
+    }
+  }
+
+
+  .modal-add-memo {
+    .modal-body {
+      padding-top: 10px;
+      .memo-item {
+        margin-bottom: 7px;
+        &__label {
+          font-family: NanumSquare;
+          font-size: 14px;
+          font-weight: 800;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          text-align: left;
+          color: #111111;
+          margin-bottom: 4px;
+        }
+        &__value {
+          font-family: NanumSquare;
+          font-size: 14px;
+          font-weight: bold;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.43;
+          letter-spacing: normal;
+          text-align: left;
+          color: #111111;
+          width: 100%;
+          border-radius: 5px;
+          border: solid 1px #e6e6e6;
+          &.note {
+          }
+        }
+        // &__currency {
+        //   font-family: NanumSquare;
+        //   color: #111;
+        // }
+      }
     }
   }
 }
