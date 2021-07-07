@@ -1,27 +1,5 @@
 $colorViolet: #5815a5;
 
-// header  dashboard
-.header-bgr {
-  background-color: $colorViolet !important;
-
-  .header-bgr {
-    .content-header {
-      .header_title {
-        color: #ffffff;
-        font-family: NanumSquare;
-        font-size: 18px;
-        font-weight: 800;
-      }
-
-      .header-right {
-        .svg-logout {
-          color: #fff;
-        }
-      }
-    }
-  }
-}
-
 .dashboard-02p-dp-01 {
   background-color: $colorViolet;
 }
