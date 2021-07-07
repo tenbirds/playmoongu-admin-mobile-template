@@ -151,7 +151,7 @@
                                 border-radius: 5px;
                                 border: solid 1px #e6e6e6;
                                 display: inline-flex;
-                                padding: 5px 10px;
+                                padding: 6px 10px 5px;
                                 &__value {
                                     opacity: 0.5;
                                     font-family: NanumSquare;
@@ -163,7 +163,7 @@
                                     letter-spacing: normal;
                                     text-align: left;
                                     color: #111111;
-                                    padding-right: 8px;
+                                    padding-right: 10px;
                                 }
                                 &__icon {
                                     
@@ -209,7 +209,7 @@
                             border: solid 1px #e6e6e6;
                             
                             &__value {
-                                font-family: Roboto;
+                                font-family: RobotoMedium;
                                 font-size: 14px;
                                 font-weight: 500;
                                 font-stretch: normal;
@@ -239,7 +239,7 @@
                             letter-spacing: normal;
                             text-align: right;
                             color: #111111;
-                            padding-right: 5px;
+                            padding-right: 2px;
                         }
                         &__number {
                             font-family: Roboto;
@@ -265,7 +265,7 @@
                                 letter-spacing: normal;
                                 text-align: left;
                                 color: #111111;
-                                padding-left: 3px;
+                                padding-left: 1px;
                             }
                         }
                     }
