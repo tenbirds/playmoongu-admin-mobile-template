@@ -19,9 +19,14 @@
         <label class="choose-store-select-common__text">전체 매장</label>
         <img class="choose-store-select-common__icon" src="/images/icons/icon_arrow_down.svg" />
       </div>
-      <div class="cart-management-filter__input-search input-search-common">
+      <div class="cart-management-filter__input-search input-search-common" id="input-search-common">
         <input placeholder="매장 명을 검색해 주세요." class="form-control input-search-common__input-form" />
         <img class="input-search-common__icon-search" src="/images/icons/icon_search.svg" />
+        <ul class="search-auto d-none event_search-auto"" id="search-auto">
+            <li>abc</li>
+            <li>abc1</li>
+            <li>ab2</li>
+        </ul>
       </div>
     </div>
     <div class="cart-management-store main_center_content">
@@ -137,4 +142,46 @@
 
 <footer></footer>
 @@include('components/script.html')
+
+<link rel="stylesheet" href="/css/bscroll.min.css">
+<script src="https://unpkg.com/better-scroll@latest/dist/better-scroll.min.js"></script>
+<script type="text/javascript" src="/js/jquery.selectscroll.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        function init () {
+            $('.cart-management-filter__choose-store').selectScroll({
+                data: [
+                      [{
+                        text: '일별',
+                        id: 1
+                      },{
+                        text: 'Script',
+                        id: 2
+                      },{
+                        text: '.Net',
+                        id: 3
+                      },{
+                        text: 'JavaScript',
+                        id: 4
+                      }]
+                ],
+                title: '조회 기간',
+                selectedIndex: [0],
+                cancelTxt: 'cancel',
+                cancelClass: '',
+                confirmTxt: '선택',
+                confirmClass: '',
+                confirm: function(e){
+                    console.log(e)
+                },
+                cancel: function () {
+                    console.log('Canceld')
+                }
+            })
+        }
+        var $doc = $(document)
+        $doc.on('click', '.cart-management-filter__choose-store', init)
+    });
+</script>
+
 @@include('components/foot.html')
