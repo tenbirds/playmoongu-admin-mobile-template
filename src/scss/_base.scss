@@ -736,3 +736,27 @@ footer {
         color: #111111;
     } 
 }
+
+.select_custom_form-control-common {
+    .control-div {
+        padding: 10px 15px;
+        border-radius: 5px;
+        border: solid 1px #e6e6e6;
+        min-height: 39px;
+        label {
+            opacity: 0.5;
+            font-family: NanumSquare;
+            font-size: 14px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: left;
+            color: #111111;
+            &.selected {
+                opacity: 1;
+            }
+        }
+    }
+}

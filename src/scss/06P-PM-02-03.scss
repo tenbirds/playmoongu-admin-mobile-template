@@ -58,9 +58,22 @@
                 .label-radio {
                     width: calc(100%/2 - 20px);
                     span {
+                        opacity: 0.5;
                         display: flex;
                         align-items: center;
+                        font-family: NanumSquare;
+                        font-size: 14px;
+                        font-weight: bold;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: normal;
+                        letter-spacing: normal;
+                        text-align: left;
+                        color: #111111;
                     }
+                }
+                input:checked+span {
+                    opacity: 1;
                 }
             }
             &__title {
@@ -85,6 +98,29 @@
                 font-style: normal;
                 line-height: normal;
                 letter-spacing: normal;
+            }
+            .form-control {
+                font-family: Roboto;
+                font-size: 14px;
+                font-weight: 700;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                text-align: left;
+                color: #111111;
+                &::placeholder {
+                    opacity: 0.5;
+                    font-family: NanumSquare;
+                    font-size: 14px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    text-align: left;
+                    color: #111111;
+                }
             }
         }
     }
