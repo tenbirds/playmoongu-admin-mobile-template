@@ -21,8 +21,13 @@
 <header class="main-header @@dashboard-header">
     <div class="header-left">
         <a href="#">
-            <img src="@@leftTitle" class="@@leftIcon" onclick="handleClick('@@param')">
-            <h3></h3>
+            @@if (context.leftTitle) {
+                <img src="@@leftTitle" class="@@leftIcon" onclick="handleClick('@@param')">
+            }
+            @@if (!context.leftTitle) {
+                <h3></h3>
+            }
+            
         </a>
     </div>
     <h1 class="header-title @@dashboard-title">@@title</h1>

@@ -40,3 +40,26 @@ function openModalConfirmAddCart () {
     $('#confirmAddCart').modal('toggle')
     
 }
+
+//event open dropdown search auto complete
+
+/*$(document).on("click",".input-search-common",function(){
+    $(this).find(".search-auto").removeClass("d-none")
+})
+
+window.addEventListener('click', function(e){
+    if (document.getElementById('input-search-common').contains(e.target)){
+    } else{
+        if(e.target.className && (e.target.className == "input-search-common" || e.target.className == "line")) {
+            if(document.getElementById("search-auto").classList.contains("d-none")) {
+                document.getElementById("search-auto").classList.remove("d-none")
+            }else {
+                document.getElementById("search-auto").classList.add("d-none")
+            }
+        }else {
+            document.getElementById("search-auto").classList.add("d-none")
+        }
+    }
+})*/
+
+//end event open dropdown search auto complete
