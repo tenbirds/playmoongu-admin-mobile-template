@@ -1,24 +1,57 @@
 .register-admin-page {
-  .form-register{
-    padding-top: 20px;
-    padding-bottom: 30px;
-    font-family: NanumSquare;
-    &__main-title {
-      font-weight: bold;
-      font-size: 20px;
+  // min-height: 90vh;
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+    .form-register{
+      padding-top: 20px;
+      padding-bottom: 30px;
       font-family: NanumSquare;
-      &.store-owner {
-        margin-top: 40px;
-        margin-bottom: 20px;
-      } 
-      &.history-deposit {
-        margin-top: 40px;
-        margin-bottom: 20px;
-      } 
-      &.memo {
-        margin-top: 40px;
-        margin-bottom: 25px;
-      } 
+      .label-input {
+        span {
+          color: #111 !important;
+          font-family: NanumSquare;
+          font-size: 14px;
+          font-weight: 800;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+        }
+      }
+      .select-custom {
+        opacity: 0.5;
+        font-family: NanumSquare;
+        font-size: 14px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #111111;
+        padding: 10px;
+        &.chosen {
+          opacity: 1 !important;
+        }
+      }
+      &__main-title {
+        font-weight: bold;
+        font-size: 20px;
+        font-family: NanumSquare;
+        &.store-owner {
+          margin-top: 40px;
+          margin-bottom: 20px;
+        } 
+        &.history-deposit {
+          margin-top: 40px;
+          margin-bottom: 20px;
+        } 
+        &.memo {
+          margin-top: 40px;
+          margin-bottom: 25px;
+        } 
+      }
     }
   }
 }
