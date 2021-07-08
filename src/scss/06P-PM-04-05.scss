@@ -16,7 +16,51 @@
             background-color: #ffffff;
             margin:25px 15px;
             padding-top: 15px;
-            margin-bottom: 150px;
+            margin-bottom: 165px;
+            
+            .content-order-detail {
+                display: flex;
+                flex-wrap: wrap;
+                &__button {
+                    width: 100%;
+                    background: transparent;
+                    border: none;
+                    position: relative;
+                    height: 33px;
+                    &__bg {
+                        width: 100%;
+                        padding: 10px;
+                        opacity: 0.5;
+                        border-radius: 5px;
+                        border: solid 1px #5815a5;
+                        background-color: #f5ebf6;
+                        height: 33px;
+                    }
+                    &__text {
+                        opacity: 1;
+                        font-family: NanumSquare;
+                        font-size: 12px;
+                        font-weight: 800;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: normal;
+                        letter-spacing: normal;
+                        text-align: center;
+                        color: #5815a5;
+                        position: absolute;
+                        white-space: nowrap;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%,-50%);
+                    }
+                    label {
+                        
+                    }
+                }
+            }
+            .main-status-order-common {
+                margin: 0px 15px 10px;
+            }
             &__item {
                 padding: 0 15px 5px 15px;
                 
@@ -166,6 +210,7 @@
             bottom: 0;
             width: 100%;
             left: 0;
+            box-shadow: 0 -10px 15px 0 rgba(0, 0, 0, 0.1);
             .total-price-quantity-order {
                 padding: 15px 20px;
                 background: white;
@@ -212,7 +257,8 @@
                 align-items: center;
                 justify-content: space-between;
                 .foot-page__button-submit__item {
-                    width: calc(100%/2);
+                    // width: calc(100%/2);
+                    width: calc(100%);
                     position: static;
                     cursor: pointer;
                 }
