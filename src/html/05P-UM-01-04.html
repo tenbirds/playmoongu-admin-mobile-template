@@ -55,8 +55,9 @@
                 <div class="mb-2">
                     <label class="label-input">
                         <span class="required">등급</span>
-                        <select class="form-select" aria-label="" id="js_choose_role">
-                            <option value="">등급을 선택하세요.</option>
+                        <select class="form-select select-custom" aria-label="" id="js-choose-role">
+                        <!-- <select class="form-select select-custom chosen" aria-label="" id="js_choose_role"> -->
+                            <option class=""value="">등급을 선택하세요.</option>
                             <option value="1">최고 관리자</option>
                             <option value="2">일반 관리자</option>
                             <option value="3">최고 관리자</option>
@@ -80,6 +81,10 @@
         this.blur();
         window.focus();
         init()
+    })
+
+    $(document).on('change', '#js-choose-role', function() {
+        $(this).toggleClass('chosen');
     })
 </script>
 @@include('components/foot.html')
