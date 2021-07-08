@@ -230,4 +230,9 @@
             }
         }
     }
+    &.fixed-header {
+        .main-product-detail__info-data {
+            padding-bottom: 123px;
+        }
+    }
 }
