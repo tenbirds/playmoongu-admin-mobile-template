@@ -1,19 +1,22 @@
 @@include('components/head.html', {
     "title": "Gulp",
-    "bodyClass": "product-management"
+    "bodyClass": "product-management fixed-header"
 })
 
 @@include('components/header.html', {
 "title": "전체 상품 관리",
-"bodyClass": "",
-"link": "06P-PM-02-03.html"
+"link": "06P-PM-02-03.html",
+"leftIcon": "",
+"leftTitle": "/images/icons/m_menu.svg",
+"rightTitle": "등록하기",
+'param': "open_nav"
 })
 
 <main>
     <div class="main-product-management">
         
         <div class="filter_search_page">
-            <div class="type-filter">
+            <div class="switch-form-search-common">
                 <button>
                     <img src="/images/icons/icon_change.svg" />
                     <label>바코드번호</label>
@@ -67,7 +70,7 @@
                 <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                     <div class="product-info">
                         <div class="product-info__img">
-                            <img  src="/images/photos/img04.png" />
+                            <img class="product-info__img__product" src="/images/photos/img04.png" />
                         </div>
                         <div class="product-info__data">
                             <div class="product-info__data__no_like">
@@ -94,7 +97,7 @@
                     </div>
                     <div class="product-info">
                         <div class="product-info__img">
-                            <img  src="/images/photos/img_03.png" />
+                            <img class="product-info__img__product"  src="/images/photos/img_03.png" />
                         </div>
                         <div class="product-info__data">
                             <div class="product-info__data__no_like">
@@ -121,7 +124,7 @@
                     </div>
                     <div class="product-info">
                         <div class="product-info__img">
-                            <img  src="/images/photos/img_03.png" />
+                            <img  class="product-info__img__product" src="/images/photos/img_03.png" />
                         </div>
                         <div class="product-info__data">
                             <div class="product-info__data__no_like">
@@ -148,7 +151,7 @@
                     </div>
                     <div class="product-info">
                         <div class="product-info__img">
-                            <img  src="/images/photos/img_03.png" />
+                            <img class="product-info__img__product" src="/images/photos/img_03.png" />
                         </div>
                         <div class="product-info__data">
                             <div class="product-info__data__no_like">
@@ -186,6 +189,6 @@
 
 
 <footer></footer>
-@@include('components/foot.html')
-@@include('./components/script.html')
+@@include('components/script.html')
+@@include('components/foot.html') 
 

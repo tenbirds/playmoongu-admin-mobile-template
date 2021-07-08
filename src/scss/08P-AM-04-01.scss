@@ -1,0 +1,519 @@
+// .
+
+
+.history-deposit {
+  header {
+    background-color: #FFFFFF;
+ }
+  background-color: #f5f5f5;
+
+  section {
+    position: fixed;
+    width: 100%;
+    z-index: 666;
+  }
+
+  main {
+    .header-search {
+      background-color: #ffffff;
+      &__name {
+        font-size: 23px;
+        font-weight: 800;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #000000;
+      }
+      &__icon_arrowBB {
+        width: 12px;
+        height: 7px;
+        object-fit: contain;
+      }
+      &__glance {
+        font-size: 11px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #111111;
+      }
+      &__input {
+        height: 33px;
+      }
+
+      .padding-right-0 {
+        padding-right: 0;
+      }
+    }
+
+    .history-info {
+      padding: 20px;
+      margin-top: 105px;
+      &__box {
+        height: 141px;
+        border-radius: 10px;
+        background-color: #5815a5;
+        margin-bottom: 15px;
+      }
+      &__box-price {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+      }
+      &__see-all {
+        margin-top:20px;
+        margin-bottom: 6px;
+        button {
+          font-family: NanumSquare;
+          font-size: 12px;
+          font-weight: 800;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          text-align: left;
+          color: #5815a5;
+          opacity: 0.7;
+          border-radius: 5px;
+          border: solid 1px #5815a5;
+          background-color: #f5ebf6;
+          padding: 5px;
+        }
+      }
+      .history-list {
+        .history-item {
+          margin-top: 12px;
+          hr {
+            background-color: #c3c0c0;
+          }
+          &__no {
+            font-family: Roboto;
+            font-size: 11px;
+            font-weight: 300;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: left;
+            color: #111111;
+          }
+          &__date {
+            font-family: Roboto;
+            font-size: 11px;
+            font-weight: 300;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: left;
+            color: #111111;
+          }
+          &__qty {
+            font-family: Roboto;
+            font-size: 20px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: right;
+            color: #c52321;
+          }
+          &__qty-unit {
+            font-size: 14px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: left;
+            color: #c52321;
+            vertical-align: text-top;
+          }
+          &__desc {
+            opacity: 0.8;
+            font-family: NanumSquare;
+            font-size: 14px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: left;
+            color: #111111;
+          }
+          &__desc-recept {
+            opacity: 0.8;
+            font-family: NotoSansCJKKR;
+            font-size: 12px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: -0.6px;
+            text-align: left;
+            color: #111111;
+            span {
+              font-family: Roboto;
+              font-weight: bold;
+            }
+          }
+          &__price-label {
+            opacity: 0.8;
+            font-family: NanumSquare;
+            font-size: 11px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: left;
+            color: #111111;
+          }
+          &__price-label-more {
+            opacity: 0.8;
+            font-family: NanumSquare;
+            font-size: 11px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: left;
+            color: #111111;
+          }
+          &__price-value {
+            font-family: Roboto;
+            font-size: 14px;
+            font-weight: 500;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: left;
+            color: #111111;
+            span {
+              font-family: NanumSquare;
+              font-size: 14px;
+            }
+          }
+          &__price-value-more {
+            font-family: Roboto;
+            font-size: 14px;
+            font-weight: 500;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: left;
+            color: #111111;
+            span {
+              font-family: NanumSquare;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+      &__total-sale {
+        opacity: 0.8;
+        font-size: 14px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #ffffff;
+      }
+      &__won {
+        font-family: Roboto;
+        font-size: 25px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: normal;
+        color: #ffffff;
+      }
+      &__won-character {
+        font-family: NanumSquare;
+        font-size: 20px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: normal;
+        color: #ffffff;
+        line-height: 40px;
+      }
+
+      &__won-character-1 {
+        font-family: NanumSquare;
+        font-size: 16px;
+        font-weight: 800;
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: normal;
+        color: #111111;
+        padding-right: 3px;
+      }
+      &__number-pay {
+        font-size: 11px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #ffffff;
+      }
+
+      &__number {
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: normal;
+        color: #ffffff;
+      }
+
+      &__number-character-won {
+        font-family: NanumSquare;
+        font-size: 14px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: normal;
+        color: #ffffff;
+        line-height: 30px;
+      }
+
+      &__detail-sale-history {
+        font-size: 14px;
+        font-weight: 800;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #111111;
+      }
+
+      &__sale-piriod {
+        font-size: 11px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #111111;
+      }
+
+      &__border-none {
+        border: none;
+      }
+
+      &__custom-border {
+        border-bottom: 1px solid  #f5f5f5;
+      }
+    }
+  }
+
+  // .modal-payment {
+  //   .modal-body {
+  //     padding: 5px 20px;
+  //     .payment-infos {
+  //       padding: 15px;
+  //       border-radius: 5px;
+  //       background-color: #f5f5f5;
+  //       .payment-info {
+  //         margin-bottom: 4px;
+  //         &__label {
+  //           opacity: 0.8;
+  //           font-family: NanumSquare;
+  //           font-size: 14px;
+  //           font-weight: normal;
+  //           font-stretch: normal;
+  //           font-style: normal;
+  //           color: #111111;
+  //           padding-bottom: 3px;
+  //           padding-top: 0px;
+  //         }
+  //         &__label_dark {
+  //           font-family: NanumSquare;
+  //           font-size: 14px;
+  //           font-weight: 800;
+  //           font-stretch: normal;
+  //           font-style: normal;
+  //           color: #111111;
+  //         }
+  //         &__value {
+  //           justify-content: flex-end;
+  //           display: flex;
+  //           font-family: Roboto;
+  //           font-size: 14px;
+  //           font-weight: bold;
+  //           font-stretch: normal;
+  //           font-style: normal;
+  //           line-height: normal;
+  //           letter-spacing: normal;
+  //           text-align: right;
+  //           color: #111111;
+  //         }
+  //         &__old-label {
+  //           opacity: 0.5;
+  //           font-family: NanumSquare;
+  //           font-size: 14px;
+  //           font-weight: bold;
+  //           font-stretch: normal;
+  //           font-style: normal;
+  //           letter-spacing: normal;
+  //           text-align: left;
+  //           color: #111111;
+  //           padding-bottom: 0px;
+  //         }
+  //         &__old-value {
+  //           justify-content: flex-end;
+  //           display: flex;
+  //           opacity: 0.5;
+  //           font-family: Roboto;
+  //           font-size: 14px;
+  //           font-weight: 500;
+  //           font-stretch: normal;
+  //           font-style: normal;
+  //           color:#111111;
+  //         }
+  //         &__currency {
+  //           font-family: NanumSquare;
+  //           color: #111;
+  //         }
+  //       }
+  //     }
+
+  //     .payment-list {
+  //       margin-top: 20px;
+  //       margin-bottom: 23px;
+  //       &__all {
+  //         span {
+  //           font-family: NanumSquare;
+  //           font-size: 11px;
+  //           font-weight: normal;
+  //           font-stretch: normal;
+  //           font-style: normal;
+  //           line-height: normal;
+  //           letter-spacing: normal;
+  //           text-align: left;
+  //           color: #111111;
+  //           line-height: 25px;
+  //         }
+  //       }
+  //       .list-group {
+  //         border-radius: 10px;
+  //         border: solid 1px #f5f5f5;
+  //         .payment-item {
+  //           border: none;
+  //           padding-bottom: 0px;
+  //           hr {
+  //             background-color: #cac5c5;
+  //             margin-bottom: 0px;
+  //           }
+  //           &__title {
+  //             font-family: NanumSquare;
+  //             font-size: 14px;
+  //             font-weight: normal;
+  //             font-stretch: normal;
+  //             font-style: normal;
+  //             line-height: normal;
+  //             letter-spacing: normal;
+  //             text-align: left;
+  //             color: #111;
+  //             margin-bottom: 10px;
+  //             margin-top: 10px;
+  //           }
+  //           &__qty {
+  //             opacity: 0.8;
+  //             font-family: NanumSquare;
+  //             font-size: 11px;
+  //             font-weight: normal;
+  //             font-stretch: normal;
+  //             font-style: normal;
+  //             line-height: normal;
+  //             letter-spacing: normal;
+  //             text-align: left;
+  //             color: #111111;
+  //           }
+  //           &__desc{
+  //             opacity: 0.8;
+  //             font-family: NanumSquare;
+  //             font-size: 11px;
+  //             font-weight: normal;
+  //             font-stretch: normal;
+  //             font-style: normal;
+  //             line-height: normal;
+  //             letter-spacing: normal;
+  //             text-align: left;
+  //             color: #111;
+  //             text-align: right;
+  //             margin-bottom: 10px;
+  //             margin-top: 10px;
+  //           }
+  //           &__price{
+  //             span {
+  //               font-family: NanumSquare;
+  //               font-size: 14px;
+  //               font-weight: 800;
+  //             }
+  //             font-family: Roboto;
+  //             font-size: 16px;
+  //             font-weight: bold;
+  //             font-stretch: normal;
+  //             font-style: normal;
+  //             line-height: normal;
+  //             letter-spacing: -0.8px;
+  //             text-align: right;
+  //             color: #111111;
+  //           }
+  //           .box-left {
+  //             margin-left: 31px;
+  //             &.line-del {
+  //               text-decoration: line-through;
+  //             }
+  //           }
+  //           &__checkbox {
+  //             position: absolute;
+  //             top: 25px;
+  //           }
+  //         }
+  //       }
+  //       &__total-label {
+  //         font-family: NanumSquare;
+  //         font-size: 14px;
+  //         font-weight: 800;
+  //         font-stretch: normal;
+  //         font-style: normal;
+  //         line-height: normal;
+  //         letter-spacing: normal;
+  //         text-align: left;
+  //         color: #111111;
+  //         margin-top: 18px;
+  //       }
+  //       &__total-price {
+  //         span {
+  //           font-family: NanumSquare;
+  //           font-size: 16px;
+  //           font-weight: 800;
+  //           margin-left: 10px;
+  //         }
+  //         font-family: Roboto;
+  //         font-size: 20px;
+  //         font-weight: bold;
+  //         font-stretch: normal;
+  //         font-style: normal;
+  //         line-height: normal;
+  //         text-align: right;
+  //         color: #111111;
+  //       }
+  //     }
+  //   }
+  // }
+}

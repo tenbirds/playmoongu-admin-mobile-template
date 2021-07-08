@@ -1,11 +1,15 @@
 @@include('components/head.html', {
 "title": "가맹점 별 매출 현황",
-"bodyClass": "sales-by-affiliate-store"
+"bodyClass": "sales-by-affiliate-store fixed-header"
 })
 
 @@include('components/header.html', {
-"title": "가맹점 별 매출 현황",
-"bodyClass": ""
+    "title": "가맹점 별 매출 현황",
+    "rightTitle": "",
+    "leftIcon": "",
+    "link": "04-SM-01-01.html",
+    "leftTitle": "/images/icons/m_menu.svg",
+    'param': "open_nav"
 })
 <main class="">
     <section class="p-3 header-search">
@@ -22,19 +26,29 @@
         </div>
     </section>
 
-    <div class="m-3 content">
+    <div class="m-3 content content-01">
         <div class="p-3 content__box">
-            <h6 class="content__total-sale">총 매출</h6>
-            <span class="content__won">&#8361; 533,578,500</span>
-            <div class="row mt-3">
+            <h6 class="content__total-sale p-0 m-0">총 매출</h6>
+
+            <div class="row">
+                <div class="col-12 d-flex m-0">
+                    <span class="content__won-character align-middle">&#8361;</span><span class="content__won"> 533,578,500</span>
+                </div>
+            </div>
+            <div class="row mt-3 ">
                 <div class="col-6 ">
-                    <h6 class="content__number-pay">결제 건수</h6>
+                    <h6 class="content__number-pay p-0 m-0">결제 건수</h6>
                     <span class="content__number">90</span>
                 </div>
 
                 <div class="col-6">
-                    <h6 class="content__number-pay">결제 건수</h6>
-                    <span class="content__number">&#8361; 90</span>
+                    <h6 class="content__number-pay p-0 m-0">결제 건수</h6>
+                    <div class="row">
+                        <div class="col-12 d-flex m-0">
+                            <span class="content__number-character-won align-middle">&#8361;</span><span class="content__number"> 90</span>
+                        </div>
+                    </div>
+<!--                    <span class="content__number-character-won">&#8361;</span><span class="content__number"> 90</span>-->
                 </div>
             </div>
         </div>
@@ -51,7 +65,7 @@
         </div>
 
 
-        <ul class="list-group">
+        <ul class="list-group" >
             <li class="list-group-item content__border-none">
                 <div class="row justify-content-center ">
                     <div class="col-11  content__custom-border p-0 pt-2">
@@ -62,7 +76,9 @@
                             </div>
                             <div class="col-6 text-end m-0">
                                <p class="content__box-content">총 합계</p>
-                                <span class="content__box-number">&#8361; 355,222</span>
+                                <div class="content__box-price">
+                                    <span class="content__won-character-1">&#8361;</span><span class="content__box-number"> 355,222</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -79,7 +95,9 @@
                             </div>
                             <div class="col-6 text-end m-0">
                                 <p class="content__box-content">총 합계</p>
-                                <span class="content__box-number">&#8361; 355,222</span>
+                                <div class="content__box-price">
+                                    <span class="content__won-character-1">&#8361;</span><span class="content__box-number"> 355,222</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -96,15 +114,18 @@
                             </div>
                             <div class="col-6 text-end m-0">
                                 <p class="content__box-content">총 합계</p>
-                                <span class="content__box-number">&#8361; 355,222</span>
+                                <div class="content__box-price">
+                                    <span class="content__won-character-1">&#8361;</span><span class="content__box-number"> 355,222</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </li>
+
             <li class="list-group-item content__border-none">
                 <div class="row justify-content-center ">
-                    <div class="col-11 p-0 pt-2">
+                    <div class="col-11  p-0 pt-2">
                         <div class="row justify-content-between ">
                             <div class="col-6">
                                 <p class="content__box-content-time">00시</p>
@@ -112,12 +133,32 @@
                             </div>
                             <div class="col-6 text-end m-0">
                                 <p class="content__box-content">총 합계</p>
-                                <span class="content__box-number">&#8361; 355,222</span>
+                                <div class="content__box-price">
+                                    <span class="content__won-character-1">&#8361;</span><span class="content__box-number"> 355,222</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </li>
+
+
+<!--            <li class="list-group-item content__border-none">-->
+<!--                <div class="row justify-content-center ">-->
+<!--                    <div class="col-11 p-0 pt-2">-->
+<!--                        <div class="row justify-content-between ">-->
+<!--                            <div class="col-6">-->
+<!--                                <p class="content__box-content-time">00시</p>-->
+<!--                                <p class="content__box-content">(5건)</p>-->
+<!--                            </div>-->
+<!--                            <div class="col-6 text-end m-0">-->
+<!--                                <p class="content__box-content">총 합계</p>-->
+<!--                                <span class="content__box-number">&#8361; 355,222</span>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </li>-->
         </ul>
 
 
@@ -136,12 +177,18 @@
 
                         <div class="d-flex justify-content-between">
                             <p class="content__box-content p-0 m-0">(5건)</p>
-                            <p class=" p-0 m-0">총 합계</p>
+                            <p class="content__box-content-right p-0 m-0">총 합계</p>
                         </div>
 
                         <div class="d-flex justify-content-between">
                             <p class="content__box-content p-0 m-0"></p>
-                            <span class="content__box-number p-0 m-0">&#8361; 355,222</span>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="content__box-price">
+                                        <span class="content__won-character-1">&#8361;</span><span class="content__box-number"> 355,222</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -161,12 +208,18 @@
 
                         <div class="d-flex justify-content-between">
                             <p class="content__box-content p-0 m-0">(5건)</p>
-                            <p class=" p-0 m-0">총 합계</p>
+                            <p class="content__box-content-right p-0 m-0">총 합계</p>
                         </div>
 
                         <div class="d-flex justify-content-between">
                             <p class="content__box-content p-0 m-0"></p>
-                            <span class="content__box-number p-0 m-0">&#8361; 355,222</span>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="content__box-price">
+                                        <span class="content__won-character-1">&#8361;</span><span class="content__box-number"> 355,222</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -186,12 +239,18 @@
 
                         <div class="d-flex justify-content-between">
                             <p class="content__box-content p-0 m-0">(5건)</p>
-                            <p class=" p-0 m-0">총 합계</p>
+                            <p class="content__box-content-right p-0 m-0">총 합계</p>
                         </div>
 
                         <div class="d-flex justify-content-between">
                             <p class="content__box-content p-0 m-0"></p>
-                            <span class="content__box-number p-0 m-0">&#8361; 355,222</span>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="content__box-price">
+                                        <span class="content__won-character-1">&#8361;</span><span class="content__box-number"> 355,222</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

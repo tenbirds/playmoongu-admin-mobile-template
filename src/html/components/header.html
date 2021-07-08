@@ -1,18 +1,40 @@
-<header>
+<!-- <header>
     <div class="main-header">
         <div class="header">
             <div class="content-header">
-                <div class="menu-toggle" onclick="openNav()">
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                </div>
+                <img src="@@leftTitle" class="@@leftIcon" onclick="handleClick('@@param')" alt="">
                 <h3 class="header_title">@@title</h3>
+               
                 <div class="header-right">
-                    <a href="@@link" class="header-link">등록하기</a>
+                    
+                    @@if (!context.iconRight) {
+                        <a href="@@link" class="header-link">@@rightTitle</a>
+                    }
+                    @@if (context.iconRight) {
+                        <img src="@@iconRight" onclick="@@eventIconRight" alt="" >
+                    }
                 </div>
             </div>
         </div>
+    </div>
+</header> -->
+<header class="main-header @@dashboard-header">
+    <div class="header-left">
+        <a href="#">
+            <img src="@@leftTitle" class="@@leftIcon" onclick="handleClick('@@param')">
+            <h3></h3>
+        </a>
+    </div>
+    <h1 class="header-title @@dashboard-title">@@title</h1>
+    <div class="header-right">
+        <a href="@@link">
+             @@if (context.iconRight) {
+                <img src="@@iconRight" onclick="@@eventIconRight" alt="" >
+            }
+            @@if (!context.iconRight) {
+                <h3 class="header-link">@@rightTitle</h3>
+            }
+        </a>
     </div>
 </header>
 @@include('_main_nav.html')

@@ -1,12 +1,15 @@
 @@include('components/head.html', {
     "title": "Gulp",
-    "bodyClass": "register-product"
+    "bodyClass": "register-product fixed-header"
 })
 
 @@include('components/header.html', {
 "title": "상품 등록",
-"bodyClass": "",
-"link": "#"
+"link": "#",
+"leftIcon": "",
+"leftTitle": "/images/icons/icon_top_arrow_B.svg",
+"rightTitle": "수정하기",
+'param': "open_nav"
 })
 
 <main>
@@ -39,11 +42,10 @@
                 </div>
                 <div class="main-product-form__item">
                     <label class="main-product-form__item__title">1차 분류<strong>*</strong></label>
-                    <div class="select_custom">
-                        <select class="form-control">
-                            <option>1</option>
-                            <option>2</option>
-                        </select>
+                    <div class="select_custom select_custom_form-control-common" id="event_select">
+                        <div class="control-div">
+                            <label class="">분류 선택</label>
+                        </div>
                         <img src="/images/icons/icon_arrow_select.svg" />
                     </div>
                 </div>
@@ -53,7 +55,7 @@
                 </div>
                 <div class="main-product-form__item">
                     <label class="main-product-form__item__title">소비자가(\)<strong>*</strong></label>
-                    <input type="text" class="form-control" />
+                    <input type="text" placeholder="소비가를 입력해주세요." class="form-control" />
                 </div>
                 <div class="main-product-form__item">
                     <label class="main-product-form__item__title">원가(\)<strong>*</strong></label>
@@ -65,11 +67,11 @@
                 </div>
                 <div class="main-product-form__item">
                     <label class="main-product-form__item__title">바코드 번호<strong>*</strong></label>
-                    <input type="text" class="form-control" />
+                    <input type="text" value="2" class="form-control" />
                 </div>
                 <div class="main-product-form__item">
                     <label class="main-product-form__item__title">박스 및 묶음 수량<strong>*</strong></label>
-                    <input type="text" class="form-control" />
+                    <input type="text" value="2" class="form-control" />
                 </div>
             </div>
         </form>
@@ -81,6 +83,48 @@
 
 
 <footer></footer>
-@@include('components/foot.html')
-@@include('./components/script.html')
+@@include('components/script.html')
+
+<link rel="stylesheet" href="/css/bscroll.min.css">
+<script src="https://unpkg.com/better-scroll@latest/dist/better-scroll.min.js"></script>
+<script type="text/javascript" src="/js/jquery.selectscroll.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        function init () {
+            $('#event_select').selectScroll({
+                data: [
+                      [{
+                        text: '일별',
+                        id: 1
+                      },{
+                        text: 'Script',
+                        id: 2
+                      },{
+                        text: '.Net',
+                        id: 3
+                      },{
+                        text: 'JavaScript',
+                        id: 4
+                      }]
+                ],
+                title: '조회 기간',
+                selectedIndex: [0],
+                cancelTxt: 'cancel',
+                cancelClass: '',
+                confirmTxt: '선택',
+                confirmClass: '',
+                confirm: function(e){
+                    console.log(e)
+                },
+                cancel: function () {
+                    console.log('Canceld')
+                }
+            })
+        }
+        var $doc = $(document)
+        $doc.on('click', '#event_select', init)
+    });
+</script>
+
+@@include('components/foot.html') 
 

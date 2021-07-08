@@ -1,0 +1,330 @@
+
+@@include('components/head.html', {
+  "title": "대시보드",
+  "bodyClass": "dashboard-02p-dp-01 fixed-header"
+})
+@@include('components/header.html', {
+  "title": "대시보드",
+  "dashboard-header": "header-bgr",
+  "leftTitle": "/images/icons/m_menu_w.svg",
+  "iconRight": "/images/icons/icon_logout_w.svg",
+  "dashboard-title": "dashboard-title"
+})
+
+<main>
+  <div class="content-dashboard-head">
+    <div class="content-dashboard-head-row">
+      <p class="content-dashboard-head__username">
+        박정기<span>(최고관리자)</span> 
+      </p>
+    </div>
+    <div class="content-total-sales">
+      <div class="content-total-sales__text">
+        <label class="text">총 매출</label>
+      </div>
+      <p class="content-total-sales__price">
+        <label>115,000</label>
+        <label class="content-total-sales__price__currency_unit">원</label>
+      </p>
+    </div>
+    <div class="box">
+      <div class="ml-0 pl-0 mr-0 pr-0 box-child">
+        <div class="col-4 box-child__holding-deposit">
+          <label class="text-holding-deposit" for="">보유 예치금</label> <br />
+          <span class="price" for="">896,800</span>
+        </div>
+        <div class="col-4 box-child__store">
+          <label class="text-store" for="">보유 매장</label> <br />
+          <span class="price" for="">10</span>
+        </div>
+        <div class="col-4 box-child__total-merchant">
+          <label class="text-total-merchant" for="">총 가맹점</label> <br />
+          <span class="price" for="">3</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="content-dashboard">
+    <div class="content-dashboard__branches">
+      <label class="branches-title" for="">운영 현황</label>
+      <span>(2021-04-14)</span>
+    </div>
+    <div class="content-dashboard__slide">
+      <!-- Slider main container -->
+      <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+            <div class="swiper-slide slide-box">
+              <label class="slide-title-text" for="">전체 지점</label><br />
+              <div class="row">
+                <div class="col-6 slide-title-box">
+                  <div class="slide-title">
+                    <label class="slide-title__sales" for="">매출</label>
+                  </div>
+                </div>
+                <div class="col-6 slide-price-box">
+                  <div class="slide-price">
+                    <label class="slide-price__sales" for="">\ 3,461,000</label><br />
+                    <span class="price-child">21,300</span>
+                    <span class="curency">건</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide slide-box">
+              <label class="slide-title-text" for="">전체 지점</label><br />
+              <div class="row">
+                <div class="col-6 slide-title-box">
+                  <div class="slide-title">
+                    <label class="slide-title__sales" for="">매출</label>
+                  </div>
+                </div>
+                <div class="col-6 slide-price-box">
+                  <div class="slide-price">
+                    <label class="slide-price__sales" for="">\ 3,461,000</label><br />
+                    <span class="price-child">21,300</span>
+                    <span class="curency">건</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide slide-box">
+              <label class="slide-title-text" for="">전체 지점</label><br />
+              <div class="row">
+                <div class="col-6 slide-title-box">
+                  <div class="slide-title">
+                    <label class="slide-title__sales" for="">매출</label>
+                  </div>
+                </div>
+                <div class="col-6 slide-price-box">
+                  <div class="slide-price">
+                    <label class="slide-price__sales" for="">\ 3,461,000</label><br />
+                    <span class="price-child">21,300</span>
+                    <span class="curency">건</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="content-dashboard__chart-real-time">
+      <label class="chart-real-time-title" for="">실시간 매출</label>
+      <span>(2021-04-14)</span>
+      <div id="chart"></div>
+    </div>
+    <div class="content-dashboard__hot-selling-items">
+      <div class="row content-dashboard__hot-selling-items__reset">
+        <div class="col-6 hot-selling-items-left">
+          <label for="" class="title">인기 판매 상품</label>
+        </div>
+        <div class="col-6 hot-selling-items-right">
+          <div class="filter_dropdown">
+            <div class="dropdown">
+                <button class="btn" type="button" id="dropdownMenuButton1">
+                  일별
+                  <img src="../images/icons/icon_miniarrow.svg" alt="">
+                </button>
+                <!-- <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <a class="dropdown-item" href="#">일별 1</a>
+                    <a class="dropdown-item" href="#">일별 2</a>
+                </div> -->
+            </div>
+            <div class="dropdown">
+                <button class="btn" type="button" id="dropdownMenuButton2">
+                  판매 전체
+                  <img src="../images/icons/icon_miniarrow.svg" alt="">
+                </button>
+                <!-- <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                    <a class="dropdown-item" href="#">판매 전체 1</a>
+                    <a class="dropdown-item" href="#">판매 전체 2</a>
+                </div> -->
+            </div>
+        </div>
+        </div>
+      </div>
+      <div class="selling-items-box">
+        <div class="row selling-items-child selling-items-child-no-data">
+          <p class="no-data-text">아직 판매된 상품이 없습니다.</p>
+        </div>
+      </div>
+    </div>
+    <div class="product-preference-chart-parent">
+      <label for="" class="title-preference-chart">인기 판매 상품</label>
+      <div class="row selling-items-child selling-items-child-no-data">
+        <p class="no-data-text">아직 판매된 상품이 없습니다.</p>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+
+</footer>
+@@include('components/script.html')
+
+<script type="text/javascript">
+  const swiper = new Swiper('.swiper-container', {
+    slidesPerView: 2,
+    loop: true,
+    spaceBetween: 10,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+    width: 556, //set with of swiper because with html not work
+  });
+
+  var options = {
+          series: [{
+            name: "",
+            data: [10, 41, 35, 51, 49, 62]
+          }],
+          chart: {
+            height: 270,
+            type: 'line',
+            zoom: {
+              enabled: false
+            },
+            toolbar:{
+              show : false
+            }
+          },
+          dataLabels: {
+            enabled: false
+          },
+          stroke: {
+            curve: 'straight'
+          },
+          grid: {
+            row: {
+              colors: ['#f3f3f3', 'transparent'],
+              opacity: 0.5
+            }
+          },
+          xaxis: {
+            categories: ['00~09시', '12시', '15시', '18시', '21시', '00시']
+          },
+          tooltip: {
+            x: {
+              show: false
+            },
+            y: {
+              formatter: function formatter(val) {
+                return val.toLocaleString('en') + ' 원';
+              }
+            }
+          }
+        };
+        $("#chart").empty();
+        if (document.querySelector("#chart")) {
+          var chart = new ApexCharts(document.querySelector("#chart"), options);
+          chart.render();
+        }
+      
+  //chartPreference
+  var colors = [];
+  var lable = ["과자", "문구", "아이스크림", "쥬얼리", "기타"];
+  var data = [469, 106, 9, 14, 1];
+  var colors = [];
+  var rand = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f'];
+  $.each(data, function (index, value) {
+    colors.push('#' + rand[Math.ceil(Math.random() * 15)] + rand[Math.ceil(Math.random() * 15)] + rand[Math.ceil(Math.random() * 15)] + rand[Math.ceil(Math.random() * 15)] + rand[Math.ceil(Math.random() * 15)] + rand[Math.ceil(Math.random() * 15)]);
+  });
+var optionChart2s = {
+    series: data,
+    colors: colors,
+    chart: {
+      type: 'donut',
+      // height: data.length > 0 ? 275 : 0
+    },
+    legend: {
+      position: 'right'
+    },
+    labels: lable,
+    responsive: [{
+      breakpoint: 480,
+      options: {
+        chart: {
+          width: 320
+        }
+      }
+    }]
+  };
+  var chart = new ApexCharts(document.querySelector("#chartPreference"), optionChart2s);
+    chart.render();
+
+$(function () {
+    function init () {
+        $('#dropdownMenuButton1').selectScroll({
+            data: [
+                  [{
+                    text: '일별',
+                    id: 1
+                  },{
+                    text: '주별',
+                    id: 2
+                  },{
+                    text: '주별',
+                    id: 3
+                  },{
+                    text: '주별',
+                    id: 4
+                  }]
+            ],
+            title: '조회 기간',
+            selectedIndex: [0],
+            cancelTxt: 'cancel',
+            cancelClass: '',
+            confirmTxt: '선택',
+            confirmClass: '',
+            confirm: function(e){
+                console.log(e)
+            },
+            cancel: function () {
+                console.log('Canceld')
+            }
+        })
+    }
+    var $doc = $(document)
+    $doc.on('click', '#dropdownMenuButton1', init)
+});
+$(function () {
+      function init () {
+          $('#dropdownMenuButton2').selectScroll({
+              data: [
+                    [{
+                      text: '일별2',
+                      id: 1
+                    },{
+                      text: '주별2',
+                      id: 2
+                    },{
+                      text: '주별2',
+                      id: 3
+                    },{
+                      text: '주별2',
+                      id: 4
+                    }]
+              ],
+              title: '조회 기간',
+              selectedIndex: [0],
+              cancelTxt: 'cancel',
+              cancelClass: '',
+              confirmTxt: '선택',
+              confirmClass: '',
+              confirm: function(e){
+                  console.log(e)
+              },
+              cancel: function () {
+                  console.log('Canceld')
+              }
+          })
+      }
+      var $doc = $(document)
+      $doc.on('click', '#dropdownMenuButton2', init)
+
+  });
+</script>
+@@include('components/foot.html')

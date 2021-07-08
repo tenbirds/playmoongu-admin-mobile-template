@@ -5,13 +5,16 @@
   .filter_dropdown {
     display: flex;
     justify-content: flex-end;
-    padding: 15px;
+    padding: 10px 15px 15px;
+    background: #ffffff;
     .dropdown {
       button {
         outline: none;
         box-shadow:none;
         padding: 5px 0;
         font-size: 11px;
+        display: flex;
+        align-items: center;
         &::after{
           background-image: url(./../images/icons/icon_arrow_select.svg);
           width: 10px;
@@ -166,15 +169,15 @@
           }
           &__number-product {
             p {
-              font-family: NotoSansCJKKR;
+              font-family: Roboto;
               font-size: 16px;
               font-weight: bold;
               font-stretch: normal;
               font-style: normal;
               line-height: normal;
               letter-spacing: normal;
+              text-align: center;
               color: #111111;
-              white-space: nowrap;
             }
           }
           &__text-product {
@@ -206,6 +209,18 @@
       }
     }
   }
+  &.fixed-header {
+    .filter_search_page {
+        position: fixed;
+        top: 50px;
+        width: 100%;
+        z-index: 666;
+    }
+    .main_center_content {
+        margin-top: 57px;
+    }
+    
+}
 }
 .main-type {
   padding-top: 10px;

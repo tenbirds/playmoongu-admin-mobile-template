@@ -1,0 +1,286 @@
+@@include('components/head.html', {
+    "title": "Gulp",
+    "bodyClass": "detail-user-page fixed-header"
+})
+
+@@include('components/header.html', {
+    "title": "사용자 상세 관리",
+    "rightTitle": "수정완료",
+    "leftIcon": "",
+    "link": "",
+    "leftTitle": "/images/icons/icon_top_arrow_B.svg",
+    'param': "open_nav"
+})
+
+<main>
+    <div class="detail-user-page">
+        <div class="container">
+            <form class="form-detail">
+
+                <!-- INFO USER -->
+                <h3 class="form-detail__main-title form-title">
+                    <span>사용자 정보</span>
+                </h3>
+                <div class="mb-3">
+                    <label class="label-input">
+                        <span class="required">닉네임</span>
+                        <input class="form-control base-input" value="세종한솔점">
+                    </label>
+                </div>
+                <div class="mb-3">
+                    <label class="label-input">
+                        <span class="required">전화번호</span>
+                        <input class="form-control base-input" value="951114-1234567">
+                    </label>
+                </div>
+                <div class="mb-3">
+                    <label class="label-input">
+                        <span class="">보유 포인트</span>
+                        <input class="form-control base-input" value="123">
+                    </label>
+                </div>
+                <div class="mb-3">
+                    <label class="label-input">
+                        <span class="required">회원 등록일</span>
+                        <input class="form-control base-input" value="2019-12-07" name="reg_date">
+                    </label>
+                </div>
+
+
+                <!-- HISTORY POINT-->
+                <div class="row">
+                    <div class="col-6">
+                        <h3 class="form-detail__main-title form-title history-point">
+                            <span>포인트 내역</span>
+                        </h3>
+                    </div>
+                    <div class="col-6 text-end">
+                        <button type="button" class="btn form-detail__add-more-point" id="js-add-point">추가</button>
+                    </div>
+                </div>
+                <div class="history-point">
+                    <ul class="list-group">
+                        <li class="row align-items-center">
+                            <div class="col-12">
+                                <div class="card border-bottom-0">
+                                    <div class="card-body">
+                                        <div class="row history-point__number">
+                                            <div class="col-6">
+                                                <span>No.11</span>
+                                            </div>
+                                            <div class="col-6 text-end">
+                                                <span>적립일 : 2021.05.06 21:08:15</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="row history-point__name">
+                                            <div class="col-9 col-left">
+                                                <span class="icon-user">
+                                                    <img src="./../images/icons/icon_shop.svg" alt="">
+                                                </span>
+                                                <span class="title">
+                                                    중곡시장점
+                                                </span>
+                                            </div>
+                                            <div class="col-3 col-right text-end">
+                                                <span class="title badge badge__warning">현금 결제</span>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="row history-point__desc">
+                                            <div class="col-6 col-left">
+                                                <span class="title">
+                                                    사용 포인트 
+                                                </span>
+                                            </div>
+                                            <div class="col-6 col-right">
+                                                <span class="title">사용 포인트</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="row history-point__qty">
+                                            <div class="col-6 col-left">
+                                                <span class="title">
+                                                    10
+                                                </span>
+                                            </div>
+                                            <div class="col-6 col-right">
+                                                <span class="title">20</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        
+                        <li class="row align-items-center">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="row history-point__number">
+                                            <div class="col-6">
+                                                <span>No.11</span>
+                                            </div>
+                                            <div class="col-6 text-end">
+                                                <span>적립일 : 2021.05.06 21:08:15</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="row history-point__name">
+                                            <div class="col-9 col-left">
+                                                <span class="icon-user">
+                                                    <img src="./../images/icons/icon_shop.svg" alt="">
+                                                </span>
+                                                <span class="title">
+                                                    중곡시장점
+                                                </span>
+                                            </div>
+                                            <div class="col-3 col-right text-end">
+                                                <span class="title badge badge__success">카드 결제</span>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="row history-point__desc">
+                                            <div class="col-6 col-left">
+                                                <span class="title">
+                                                    사용 포인트 
+                                                </span>
+                                            </div>
+                                            <div class="col-6 col-right">
+                                                <span class="title">사용 포인트</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="row history-point__qty">
+                                            <div class="col-6 col-left">
+                                                <span class="title">
+                                                    10
+                                                </span>
+                                            </div>
+                                            <div class="col-6 col-right">
+                                                <span class="title">20</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        
+                    </ul>
+                </div>
+
+                <!-- MEMO -->
+                <div class="row">
+                    <div class="col-6">
+                        <h3 class="form-detail__main-title form-title memo">
+                            <span>메모</span>
+                        </h3>
+                    </div>
+                    <div class="col-6 text-end">
+                        <button type="button" class="btn form-detail__add-more-memo">추가</button>
+                    </div>
+                </div>
+                <div class="memo">
+                    <!-- <ul class="list-group">
+                        <li class="row align-items-center">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="row memo__number">
+                                            <div class="col-6">
+                                                <span>No.11</span>
+                                            </div>
+                                            <div class="col memo__date text-end">
+                                                <span>
+                                                    2021-03-31 14:30
+                                                    <a href="#"><img src="./../images/icons/pop_X.svg" alt=""></a>
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                        <div class="row memo__name">
+                                            <div class="col-6 col-left">
+                                                <span class="title">
+                                                    방수진 
+                                                </span>
+                                            </div>
+                                            <div class="col-6 col-right">
+                                                <span class="title"></span>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="row memo__desc">
+                                            <div class="col-12">
+                                                <p>
+                                                    메모합니다.메모합니다.메모합니다.메모합니다.메모합니다.메모합니다.메모합니다.메모합니다.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul> -->
+                </div>
+
+            </form>
+        </div>
+
+    <!-- MODAL HTML -->
+    <div class="modal popup modal-add-point" id="addPointModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">포인트 내역 선택</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-sm-3 text-center mb-3">
+                            <label class="label-radio"><input type="radio" name="ckbox"><span>증액</span></label> <br>
+                            <label class="label-radio"><input type="radio" name="ckbox"><span>다음</span></label>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="" class="col-4 col-form-label modal-add-point__label-point">포인트 금액</label>
+                        <div class="col-8">
+                            <input type="text" class="form-control" id="" placeholder="포인트를 입력하세요.">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn-dismiss" data-bs-dismiss="modal">닫기</button>
+                    <button type="button" class="btn-action">선택</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+</main>
+<footer></footer>
+@@include('./components/script.html')
+<link rel="stylesheet" href="/css/bscroll.min.css">
+<script src="https://unpkg.com/better-scroll@latest/dist/better-scroll.min.js"></script>
+<script type="text/javascript" src="/js/jquery.selectscroll.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+<script type="text/javascript">
+    $(function() {
+        $('input[name="reg_date"]').daterangepicker({
+            singleDatePicker: true,
+            opens: 'left',
+            locale: {
+                format: 'YYYY-MM-DD'
+            }
+        }, function(start, end, label) {
+            console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+        });
+    });
+
+    $(document).on('click', '#js-add-point', function(e) {
+        e.preventDefault();
+        $("#addPointModal").modal('show');
+    })
+</script>
+@@include('components/foot.html')

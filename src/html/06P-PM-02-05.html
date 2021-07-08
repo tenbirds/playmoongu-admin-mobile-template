@@ -1,0 +1,57 @@
+@@include('components/head.html', 
+{ "title": "Gulp", 
+"bodyClass":
+"product-detail-scan-barcode fixed-header" 
+}) 
+@@include('components/header.html', { 
+    "title":"상품 상세 관리", 
+    "link": "#" ,
+    "leftIcon": "",
+    "rightTitle": "",
+    "leftTitle": "/images/icons/icon_top_arrow_B.svg",
+    'param': "open_nav"
+})
+
+<main>
+  <div class="main-product-detail">
+    <div class="product-img">
+      <div class="img-product-detail">
+        <img class="img-detail" src="/images/photos/img04_1.png" />
+      </div>
+    </div>
+  </div>
+  <div class="main-product-detail__info-data">
+        <div class="main-product-detail__info-data__product">
+            <div class="main-product-detail__info-data__product__status">
+                <span class="status_sale">판매중</span>
+                <span class="status_phrases">문구</span>
+            </div>
+            <label class="main-product-detail__info-data__product__name">방탄소년단 캐릭터 지우개</label>
+            <label class="main-product-detail__info-data__product__quantity-price">1,700원(소비자가) / 1,500원(공급가)</label>
+            <div class="main-product-detail__info-data__product__total_price">
+                <span class="number_price">1,500</span>
+                <span class="text_price">(공급가)</span>
+            </div>
+        </div>
+        <div class="main-product-detail__info-data__barcode">
+            <label class="main-product-detail__info-data__barcode__no">No.10</label>
+            <div class="main-product-detail__info-data__barcode__data-quantity">
+                    <div class="data-barcode">
+                        <img class="icon-barcode" src="/images/icons/icon_bacode.svg" />
+                        <label class="value-barcode">801541354431</label>
+                    </div>
+                    <div class="data-box">
+                        <img class="icon-box" src="/images/icons/icon_box.svg" />
+                        <label class="value-box">12</label>
+                    </div>
+            </div>
+        </div>
+  </div>
+  <div class="main-product-detail__add-to-cart">
+        <span class="text-add-cart">장바구니 추가</span>
+  </div>
+</main>
+
+<footer></footer>
+@@include('components/script.html')
+@@include('components/foot.html') 

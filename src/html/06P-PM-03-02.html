@@ -1,0 +1,126 @@
+@@include('components/head.html',
+{ "title": "Gulp",
+"bodyClass":
+"shopping-cart-management fixed-header"
+})
+@@include('components/header.html', {
+"title":"장바구니 관리",
+"link": "#" ,
+"leftIcon": "",
+"rightTitle": "",
+"leftTitle": "/images/icons/m_menu.svg",
+'param': "open_nav"
+})
+
+<main>
+  <div class="main-shopping-cart-management">
+    <div class="cart-management-filter filter_search_page">
+      <div class="cart-management-filter__choose-store choose-store-select-common">
+        <label class="choose-store-select-common__text">전체 매장</label>
+        <img class="choose-store-select-common__icon" src="/images/icons/icon_arrow_down.svg" />
+      </div>
+      <div class="cart-management-filter__input-search input-search-common">
+        <input placeholder="매장 명을 검색해 주세요." class="form-control input-search-common__input-form" />
+        <img class="input-search-common__icon-search" src="/images/icons/icon_search.svg" />
+      </div>
+    </div>
+    <div class="cart-management-store main_center_content">
+      <span class="cart-management-store__message-order">매주 월 · 수 · 금 오전 8시에 상품 주문 마감입니다.</span>
+      <div class="cart-management-store__item">
+        <div class="cart-management-store__item__no-time jus justify-content-end">
+          <label class="cart-management-store__item__no-time__time">
+            2021.05.06 21:08:15
+          </label>
+        </div>
+        <div class="cart-management-store__item__store-data">
+          <img class="cart-management-store__item__store-data__icon" src="/images/icons/icon_shop.svg" />
+          <label class="cart-management-store__item__store-data__name">중곡시장점</label>
+        </div>
+        <div class="cart-management-store__item__total">
+          <label class="cart-management-store__item__total__text">총 품목(개수) :</label>
+          <strong>3</strong>
+        </div>
+        <div class="cart-management-store__item__price">
+          <label class="cart-management-store__item__price__value">111,540</label>
+        </div>
+      </div>
+      <div class="cart-management-store__item">
+        <div class="cart-management-store__item__no-time jus justify-content-end">
+          <label class="cart-management-store__item__no-time__time">
+            2021.05.06 21:08:15
+          </label>
+        </div>
+        <div class="cart-management-store__item__store-data">
+          <img class="cart-management-store__item__store-data__icon" src="/images/icons/icon_shop.svg" />
+          <label class="cart-management-store__item__store-data__name">중곡시장점</label>
+        </div>
+        <div class="cart-management-store__item__total">
+          <label class="cart-management-store__item__total__text">총 품목(개수) :</label>
+          <strong>3</strong>
+        </div>
+        <div class="cart-management-store__item__price">
+          <label class="cart-management-store__item__price__value">111,540</label>
+        </div>
+      </div>
+      <div class="cart-management-store__item">
+        <div class="cart-management-store__item__no-time jus justify-content-end">
+          <label class="cart-management-store__item__no-time__time">
+            2021.05.06 21:08:15
+          </label>
+        </div>
+        <div class="cart-management-store__item__store-data">
+          <img class="cart-management-store__item__store-data__icon" src="/images/icons/icon_shop.svg" />
+          <label class="cart-management-store__item__store-data__name">중곡시장점</label>
+        </div>
+        <div class="cart-management-store__item__total">
+          <label class="cart-management-store__item__total__text">총 품목(개수) :</label>
+          <strong>3</strong>
+        </div>
+        <div class="cart-management-store__item__price">
+          <label class="cart-management-store__item__price__value">111,540</label>
+        </div>
+      </div>
+      <div class="cart-management-store__item">
+        <div class="cart-management-store__item__no-time jus justify-content-end">
+          <label class="cart-management-store__item__no-time__time">
+            2021.05.06 21:08:15
+          </label>
+        </div>
+        <div class="cart-management-store__item__store-data">
+          <img class="cart-management-store__item__store-data__icon" src="/images/icons/icon_shop.svg" />
+          <label class="cart-management-store__item__store-data__name">중곡시장점</label>
+        </div>
+        <div class="cart-management-store__item__total">
+          <label class="cart-management-store__item__total__text">총 품목(개수) :</label>
+          <strong>3</strong>
+        </div>
+        <div class="cart-management-store__item__price">
+          <label class="cart-management-store__item__price__value">111,540</label>
+        </div>
+      </div>
+      <div class="cart-management-store__item">
+        <div class="cart-management-store__item__no-time jus justify-content-end">
+          <label class="cart-management-store__item__no-time__time">
+            2021.05.06 21:08:15
+          </label>
+        </div>
+        <div class="cart-management-store__item__store-data">
+          <img class="cart-management-store__item__store-data__icon" src="/images/icons/icon_shop.svg" />
+          <label class="cart-management-store__item__store-data__name">중곡시장점</label>
+        </div>
+        <div class="cart-management-store__item__total">
+          <label class="cart-management-store__item__total__text">총 품목(개수) :</label>
+          <strong>3</strong>
+        </div>
+        <div class="cart-management-store__item__price">
+          <label class="cart-management-store__item__price__value">111,540</label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer></footer>
+@@include('components/script.html')
+@@include('components/foot.html')

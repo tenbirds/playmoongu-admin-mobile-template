@@ -1,11 +1,15 @@
 @@include('components/head.html', {
     "title": "Gulp",
-    "bodyClass": ""
+    "bodyClass": "register-admin-page fixed-header"
 })
 
 @@include('components/header.html', {
-"title": "관리자 등록하기",
-"bodyClass": "register-admin-page"
+    "title": "관리자 등록하기",
+    "rightTitle": "등록하기",
+    "leftIcon": "",
+    "link": "",
+    "leftTitle": "/images/icons/icon_top_arrow_B.svg",
+    'param': "open_nav"
 })
 
 <main>
@@ -65,7 +69,6 @@
     </div>
 </main>
 <footer></footer>
-@@include('components/foot.html')
 @@include('./components/script.html')
 <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="/css/bscroll.min.css">
@@ -78,5 +81,5 @@
         window.focus();
         init()
     })
-  </script>
-
+</script>
+@@include('components/foot.html')

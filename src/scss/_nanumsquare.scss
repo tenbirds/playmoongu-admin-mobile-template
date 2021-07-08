@@ -30,3 +30,17 @@
       url(./../fonts/NanumSquareL.woff) format('woff'),
       url(./../fonts/NanumSquareL.ttf) format('truetype');
 }
+
+@font-face {
+font-family: 'NanumSquareExtraBold';
+src: url(./../fonts/NanumSquareExtraBold.eot);
+src: url(./../fonts/NanumSquareExtraBold.eot?#iefix) format('embedded-opentype'),
+     url(./../fonts/NanumSquareExtraBold.woff2) format('woff2'),
+     url(./../fonts/NanumSquareExtraBold.ttf) format('truetype');
+}
+@font-face {
+font-family: 'NotoSansCJKkrBold';
+// font-weight: 800;
+src: url(./../fonts/NotoSansCJKkr-Bold.woff) format('woff'),
+     url(./../fonts/NotoSansCJKkr-Bold.ttf) format('truetype');
+}

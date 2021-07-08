@@ -1,0 +1,284 @@
+@@include('components/head.html', {
+    "title": "손익 관리",
+    "bodyClass": "management-profit fixed-header"
+    })
+    
+    @@include('components/header.html', {
+        "title": "손익 관리",
+        "rightTitle": "",
+        "leftIcon": "",
+        "link": "",
+        "leftTitle": "/images/icons/m_menu.svg",
+        'param': "open_nav"
+    })
+    <main class="">
+        <section class="p-3 header-search container">
+            <div class="row align-items-center">
+                <div class="col-4 select-block">
+                    <button type="button" class="btn btn-success" id="js-switch-cond">
+                        <img src="./../images/icons/icon_change.svg" alt="">
+                        <span class="btn-label">전화번호</span>
+                    </button>
+                </div>
+                <div class="col-8">
+                    <div class="input-search-common">
+                        <input placeholder="매장 명을 검색해 주세요." class="form-control input-search-common__input-form" />
+                        <img class="input-search-common__icon-search" src="/images/icons/icon_search.svg" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="row box-date">
+                <div class="col-2 d-flex align-items-center box-date__title">
+                    <span class="box-date__glance">일별</span> 
+                    <img src="/images/icons/icon_miniarrow.svg" class="box-date__icon_miniarrow">
+                </div>
+    
+                <div class="col-10 box-date__input">
+                    <input class="form-control text-center" value="세종한솔점" name="daterange">
+                </div>
+            </div>
+        </section>
+        
+        <div class="container wrap-main-content">
+            <div class="row static-box">
+                <div class="col-12">
+                    <h6 class="static-box__total-sale">총 금액</h6>
+                    <span class="static-box__won">&#8361; 533,578,500</span>
+                    <div class="row mt-3">
+                        <div class="col-5 ">
+                            <h6 class="static-box__number-pay">결제 건수</h6>
+                            <span class="static-box__number">91</span>
+                        </div>
+        
+                        <div class="col-6">
+                            <h6 class="static-box__number-pay">손실 건수</h6>
+                            <span class="static-box__number">&#8361; 3,314</span>
+                        </div>
+                    </div>
+                </div>        
+            </div>
+
+            <div class="row profit_box">
+                <ul class="list-group">
+                    <li class="row align-items-center mb-2">
+                        <div class="col-12">
+                            <div class="profit-info">
+                                <div class="profit-info__img">
+                                    <img class="profit-info__img__profit" src="/images/photos/img04.png" />
+                                </div>
+                                <div class="profit-info__data">
+                                    <div class="profit-info__data__no-number">
+                                        <label class="text-no">No.10</label>
+                                        <div class="item_date">
+                                            <span>2021.05.06</span>
+                                        </div>
+                                    </div>
+                                    <div class="profit-info__data__name">
+                                        <span class="text-name">방탄소년단 캐릭터 지우개</span>
+                                    </div>
+                                    <div class="profit-sub-detail">
+                                        <img src="./../images/icons/icon_bacode_s.svg" alt="">
+                                        <span class="profit-sub-detail__barcode">801541354431</span>
+                                        <span class="profit-sub-detail__stock">재고 :</span>
+
+                                        <span class="profit-sub-detail__stock-bf">2</span>
+                                        <img src="./../images/icons/icon_arrow_R_S.svg" alt="">
+                                        <span class="profit-sub-detail__stock-af">200</span>
+                                    </div>
+                                    <div class="profit-info__data__midpoint">
+                                        <span class="">중곡점</span>
+                                    </div>
+                                    <div class="text-end">
+                                        <!-- <span class="profit-info__data__price negative">-1,500</span>
+                                        <span class="profit-info__data__price-unit negative">원</span> -->
+                                        <span class="profit-info__data__price positive">1,500</span>
+                                        <span class="profit-info__data__price-unit positive">원</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="row align-items-center mb-2">
+                        <div class="col-12">
+                            <div class="profit-info">
+                                <div class="profit-info__img">
+                                    <img class="profit-info__img__profit" src="/images/photos/img04.png" />
+                                </div>
+                                <div class="profit-info__data">
+                                    <div class="profit-info__data__no-number">
+                                        <label class="text-no">No.10</label>
+                                        <div class="item_date">
+                                            <span>2021.05.06</span>
+                                        </div>
+                                    </div>
+                                    <div class="profit-info__data__name">
+                                        <span class="text-name">방탄소년단 캐릭터 지우개</span>
+                                    </div>
+                                    <div class="profit-sub-detail">
+                                        <img src="./../images/icons/icon_bacode_s.svg" alt="">
+                                        <span class="profit-sub-detail__barcode">801541354431</span>
+                                        <span class="profit-sub-detail__stock">재고 :</span>
+
+                                        <span class="profit-sub-detail__stock-bf">200</span>
+                                        <img src="./../images/icons/icon_arrow_R_S.svg" alt="">
+                                        <span class="profit-sub-detail__stock-af">2</span>
+                                    </div>
+                                    <div class="profit-info__data__midpoint">
+                                        <span class="">중곡점</span>
+                                    </div>
+                                    <div class="text-end">
+                                        <span class="profit-info__data__price negative">-1,500</span>
+                                        <span class="profit-info__data__price-unit negative">원</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    
+                    <li class="row align-items-center mb-2">
+                        <div class="col-12">
+                            <div class="profit-info">
+                                <div class="profit-info__img">
+                                    <img class="profit-info__img__profit" src="/images/photos/img04.png" />
+                                </div>
+                                <div class="profit-info__data">
+                                    <div class="profit-info__data__no-number">
+                                        <label class="text-no">No.10</label>
+                                        <div class="item_date">
+                                            <span>2021.05.06</span>
+                                        </div>
+                                    </div>
+                                    <div class="profit-info__data__name">
+                                        <span class="text-name">방탄소년단 캐릭터 지우개</span>
+                                    </div>
+                                    <div class="profit-sub-detail">
+                                        <img src="./../images/icons/icon_bacode_s.svg" alt="">
+                                        <span class="profit-sub-detail__barcode">801541354431</span>
+                                        <span class="profit-sub-detail__stock">재고 :</span>
+
+                                        <span class="profit-sub-detail__stock-bf">200</span>
+                                        <img src="./../images/icons/icon_arrow_R_S.svg" alt="">
+                                        <span class="profit-sub-detail__stock-af">2</span>
+                                    </div>
+                                    <div class="profit-info__data__midpoint">
+                                        <span class="">중곡점</span>
+                                    </div>
+                                    <div class="text-end">
+                                        <span class="profit-info__data__price negative">-1,500</span>
+                                        <span class="profit-info__data__price-unit negative">원</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    
+                    <li class="row align-items-center mb-2">
+                        <div class="col-12">
+                            <div class="profit-info">
+                                <div class="profit-info__img">
+                                    <img class="profit-info__img__profit" src="/images/photos/img04.png" />
+                                </div>
+                                <div class="profit-info__data">
+                                    <div class="profit-info__data__no-number">
+                                        <label class="text-no">No.10</label>
+                                        <div class="item_date">
+                                            <span>2021.05.06</span>
+                                        </div>
+                                    </div>
+                                    <div class="profit-info__data__name">
+                                        <span class="text-name">방탄소년단 캐릭터 지우개</span>
+                                    </div>
+                                    <div class="profit-sub-detail">
+                                        <img src="./../images/icons/icon_bacode_s.svg" alt="">
+                                        <span class="profit-sub-detail__barcode">801541354431</span>
+                                        <span class="profit-sub-detail__stock">재고 :</span>
+
+                                        <span class="profit-sub-detail__stock-bf">200</span>
+                                        <img src="./../images/icons/icon_arrow_R_S.svg" alt="">
+                                        <span class="profit-sub-detail__stock-af">2</span>
+                                    </div>
+                                    <div class="profit-info__data__midpoint">
+                                        <span class="">중곡점</span>
+                                    </div>
+                                    <div class="text-end">
+                                        <span class="profit-info__data__price negative">-1,500</span>
+                                        <span class="profit-info__data__price-unit negative">원</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    
+                    <li class="row align-items-center mb-2">
+                        <div class="col-12">
+                            <div class="profit-info">
+                                <div class="profit-info__img">
+                                    <img class="profit-info__img__profit" src="/images/photos/img04.png" />
+                                </div>
+                                <div class="profit-info__data">
+                                    <div class="profit-info__data__no-number">
+                                        <label class="text-no">No.10</label>
+                                        <div class="item_date">
+                                            <span>2021.05.06</span>
+                                        </div>
+                                    </div>
+                                    <div class="profit-info__data__name">
+                                        <span class="text-name">방탄소년단 캐릭터 지우개</span>
+                                    </div>
+                                    <div class="profit-sub-detail">
+                                        <img src="./../images/icons/icon_bacode_s.svg" alt="">
+                                        <span class="profit-sub-detail__barcode">801541354431</span>
+                                        <span class="profit-sub-detail__stock">재고 :</span>
+
+                                        <span class="profit-sub-detail__stock-bf">200</span>
+                                        <img src="./../images/icons/icon_arrow_R_S.svg" alt="">
+                                        <span class="profit-sub-detail__stock-af">2</span>
+                                    </div>
+                                    <div class="profit-info__data__midpoint">
+                                        <span class="">중곡점</span>
+                                    </div>
+                                    <div class="text-end">
+                                        <span class="profit-info__data__price negative">-1,500</span>
+                                        <span class="profit-info__data__price-unit negative">원</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+  
+    
+    </main>
+    @@include('components/_main_nav.html')
+    @@include('components/script.html')
+    <link rel="stylesheet" href="/css/bscroll.min.css">
+    <script src="https://unpkg.com/better-scroll@latest/dist/better-scroll.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.selectscroll.min.js"></script>
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    
+    <script>
+        $(function() {
+            $('input[name="daterange"]').daterangepicker({
+                opens: 'left',
+                locale: {
+                    format: 'YYYY-MM-DD'
+                }
+            }, function(start, end, label) {
+                console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+            });
+        });
+    </script>
+    
+    @@include('components/foot.html')
+    

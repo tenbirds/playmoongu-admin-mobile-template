@@ -13,6 +13,15 @@
                 box-shadow: none;
                 padding   : 5px 0;
                 font-size : 11px;
+                font-family: NanumSquare;
+                font-size: 11px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                text-align: left;
+                color: #111111;
                 &::after{
                     background-image: url(./../images/icons/icon_arrow_select.svg);
                     width: 10px;
@@ -92,9 +101,9 @@
                 padding: 0 12px;
                 a {
                     padding: 8px 0;
-                    font-family: NanumSquare;
+                    font-family: NanumSquareExtraBold;
                     font-size: 12px;
-                    font-weight: normal;
+                    font-weight: 800;
                     font-stretch: normal;
                     font-style: normal;
                     line-height: normal;
@@ -110,6 +119,9 @@
                 border: none;
                 &.active {
                     border-bottom: 2px solid #5815a5;
+                }
+                &:hover {
+                    background: transparent;
                 }
             }
         }
@@ -127,21 +139,30 @@
         align-items: center;
         flex-wrap: wrap;
         margin-bottom: 10px;
+        
         &__img {
-            img {
+            position: relative;
+            &__product {
                 width: 120px;
                 height: 120px;
                 object-fit: cover;
             }
+            &__add-cart-owner {
+                position: absolute;
+                right: 10px;
+                bottom: 10px;
+                cursor: pointer;
+            }
         }
         &__data {
-            padding: 6px 10px 6px 10px;
+            padding: 4px 10px 3px 10px;
             width: calc(100% - 120px);
             &__no_like {
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
                 .text-no {
+                    font-family: Roboto;
                     font-size: 11px;
                     font-weight: 300;
                     font-stretch: normal;
@@ -170,7 +191,7 @@
                 span {
                     font-family: NanumSquare;
                     font-size: 9px;
-                    font-weight: normal;
+                    font-weight: bold;
                     font-stretch: normal;
                     font-style: normal;
                     line-height: normal;
@@ -182,6 +203,7 @@
                 .status_sale {
                     color: #5815a5;
                     background-color: #eadff6;
+                    font-weight: normal;
                 }
                 .status_phrases {
                     color: #111111;

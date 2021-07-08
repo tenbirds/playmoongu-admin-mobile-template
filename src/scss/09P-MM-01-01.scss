@@ -1,5 +1,12 @@
-.deposit-management {
 
+.deposit-management {
+  header {
+    background-color: #FFFFFF;
+  }
+  
+  main {
+    overflow-x: hidden;
+  }
   .header-search {
 
     .button-search {
@@ -8,6 +15,13 @@
       border-radius: 18px;
       background-color: #5815a5;
       border: none;
+      font-size: 12px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #ffffff;
 
       .icon_change{
         width: 11px;
@@ -17,5 +31,82 @@
       }
     }
   }
+
+  &__no-checked {
+    opacity: 0.5;
+    font-family: NanumSquare;
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    color: #111111;
+  }
+
+  &__holding-deposit {
+    opacity: 0.8;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #111111;
+  }
+
+  &__holding-money {
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #111111;
+  }
+
+  &__character-won {
+    font-family: NanumSquare;
+    font-size: 15px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #111111;
+  }
+
+  &__button-fixed-left {
+    height: 58px;
+    background-color: #e6e6e6;
+    line-height: 58px;
+    text-align: center;
+  }
+
+  &__button-fixed-right {
+    height: 58px;
+    background-color: #fed400;
+    line-height: 58px;
+    text-align: center;
+  }
+
+  &__button-p {
+    font-size: 16px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    color: #111111;
+  }
+
+  &__label {
+    font-size: 14px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    color: #111111;
+  }
+
 }
 

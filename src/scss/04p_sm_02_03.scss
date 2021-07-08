@@ -1,0 +1,87 @@
+.detail-kiosk-page {
+    .container {
+        margin: 0 0 40px;
+        padding: 0px;
+    }
+    .box-detail {
+        margin: 20px 20px;
+        font-family: NanumSquare;
+        .box-input {
+            margin-top: 20px;
+
+            .inp-pr-0 {
+                padding-right: 0px;
+            }
+
+            .inp-pl-0 {
+                padding-left: 0px;
+            }
+
+            .label-input {
+                span{
+                    font-family: NanumSquare;
+                    font-size: 14px;
+                    font-weight: 800;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    text-align: left;
+                    color: #111111;
+                }
+                input {
+                    font-family: Roboto;
+                    font-size: 14px;
+                    font-weight: 500;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    text-align: left;
+                    color: #111111;
+                }
+            }
+        }
+
+        &__title_box {
+            position: relative;
+
+            &__main-title {
+                font-family: NanumSquare;
+                font-size: 20px;
+                font-weight: 800;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                text-align: left;
+                color: #000000;
+                margin-left: 2px;
+
+                &.store-owner {
+                    margin-top: 40px;
+                    margin-bottom: 20px;
+                }
+
+                &.history-deposit {
+                    margin-top: 40px;
+                    margin-bottom: 20px;
+                }
+
+                &.memo {
+                    margin-bottom: 25px;
+                }
+            }
+
+            &__border-title {
+                width: 119px;
+                height: 5px;
+                background-color: #fed400;
+                position: absolute;
+                top: 16px;
+                z-index: -1;
+            }
+        }
+
+    }
+}
