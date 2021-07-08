@@ -35,7 +35,14 @@
                 letter-spacing: normal;
                 color: #111111;
             }
-
+            .search-address{
+                position: relative;
+                .search-img{
+                    position: absolute;
+                    bottom: 10px;
+                    right: 15px;
+                }
+            }
             .label-input {
                 input {
                     font-family: Roboto;

@@ -2,6 +2,7 @@ header {
   // background-color: #FFFFFF;
   height: 50px;
 }
+
 // .main-header{
 //   width: 100%;
 //   background-color: #eee;
@@ -69,9 +70,17 @@ header {
   position: relative;
   padding: 15px 20px;
   height: 50px;
-  .header-left {
 
+  .header-left {}
+
+  .header-left-dashboard {
+    a {
+      img {
+        background-color: #ffffff;
+      }
+    }
   }
+
   .header-title {
     font-size: 18px;
     font-family: NanumSquare;
@@ -86,7 +95,8 @@ header {
     white-space: nowrap;
     margin: 0;
   }
-  .dashboard-title{
+
+  .dashboard-title {
     font-family: NanumSquare;
     font-size: 18px;
     font-weight: 800;
@@ -97,6 +107,7 @@ header {
     text-align: center;
     color: #ffffff;
   }
+
   .header-right {
     h3 {
       font-size: 14px;
@@ -109,15 +120,10 @@ header {
       color: #5815a5;
       margin: 0;
     }
-  }  
+  }
 }
+
 //header dashboard
-.header-bgr{
+.header-bgr {
   background-color: #5815a5;
 }
-
-
-
-
-
-
