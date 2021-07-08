@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>현금 입출금 내역</title>
+    <link rel="manifest" href="/manifest.json">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css" /> -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="/css/style.min.css?v=2021070601" media="screen">
+
+</head>
+<body class="history-deposit fixed-header">
+
+    
+    <!-- <header>
+    <div class="main-header">
+        <div class="header">
+            <div class="content-header">
+                <img src="/images/icons/m_menu.svg" class="" onclick="handleClick('open_nav')" alt="">
+                <h3 class="header_title">현금 입출금 내역</h3>
+               
+                <div class="header-right">
+                    
+                    
+                        <a href="" class="header-link"></a>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</header> -->
+<header class="main-header @@dashboard-header">
+    <div class="header-left">
+        <a href="#">
+            
+                <img src="/images/icons/m_menu.svg" class="" onclick="handleClick('open_nav')">
+            
+            
+            
+        </a>
+    </div>
+    <h1 class="header-title @@dashboard-title">현금 입출금 내역</h1>
+    <div class="header-right">
+        <a href="">
+             
+            
+                <h3 class="header-link"></h3>
+            
+        </a>
+    </div>
+</header>
+<nav id="main-navigation">
+    <header class="header__title">
+    <a href="javascript:closeNav()" class="left-button">
+        <img absalign="middle" src="/images/icons/icon_top_arrow_B.svg"/>
+    </a>
+    <h1>문구야놀자</h1>
+</header>
+
+    <ul>
+        <li>
+            <a href="#">대시보드 
+                
+            </a>
+        </li>
+        <li class="open">
+            <a href="#">가맹점 관리</a>
+            <img class="icon-right-nav" src="/images/icons/icon_arrowBB.svg" alt="">
+            <ul>
+                <li><a href="#">가맹점 관리</a></li>
+                <li class="active"><a href="#">키오스크 관리</a></li>
+            </ul>
+        </li>
+        <li class="">
+            <a href="#">사용자 관리
+            </a>
+            <img class="icon-right-nav" src="/images/icons/icon_arrowBB.svg" alt="">
+        </li>
+        <li>
+            <a href="#">
+                상품 관리
+            </a>
+            <img class="icon-right-nav" src="/images/icons/icon_arrowBB.svg" alt="">
+        </li>
+        <li>
+            <a href="#">
+                재고 관리
+            </a>
+            <img class="icon-right-nav" src="/images/icons/icon_arrowBB.svg" alt="">
+        </li>
+        <li>
+            <a href="#">가맹점 관리
+            </a>
+            <img class="icon-right-nav" src="/images/icons/icon_arrowBB.svg" alt="">
+        </li>
+        <li>
+            <a href="#">매출 관리
+            </a>
+            <img class="icon-right-nav" src="/images/icons/icon_arrowBB.svg" alt="">
+        </li>
+        <li>
+            <a href="#">예치금 관리
+            </a>
+            <img class="icon-right-nav" src="/images/icons/icon_arrowBB.svg" alt="">
+        </li>
+        <li>
+            <a href="#">거래처 관리
+            </a>
+            <img class="icon-right-nav" src="/images/icons/icon_arrowBB.svg" alt="">
+        </li>
+        <li>
+            <a href="#">홈페이지 관리
+            </a>
+            <img class="icon-right-nav" src="/images/icons/icon_arrowBB.svg" alt="">
+        </li>
+        <li>
+            <a href="#">시재 관리
+            </a>
+            <img class="icon-right-nav" src="/images/icons/icon_arrowBB.svg" alt="">
+        </li>
+        <li>
+            <a href="#">라벨 출력
+            </a>
+            <img class="icon-right-nav" src="/images/icons/icon_arrowBB.svg" alt="">
+        </li>
+        <li>
+            <a href="#">라벨 출력
+            </a>
+            <img class="icon-right-nav" src="/images/icons/icon_arrowBB.svg" alt="">
+        </li>
+        <li>
+            <a href="#">라벨 출력
+            </a>
+            <img class="icon-right-nav" src="/images/icons/icon_arrowBB.svg" alt="">
+        </li>
+        <li>
+            <a href="#">라벨 출력
+            </a>
+            <img class="icon-right-nav" src="/images/icons/icon_arrowBB.svg" alt="">
+        </li>
+    </ul>
+</nav>
+
+
+
+    <main class="">
+        <section class="p-3 header-search">
+            <h3 class="header-search__name">전체 매장 <img src="/images/icons/icon_arrowBB.svg" class="header-search__icon_arrowBB"></h3>
+    
+            <div class="row">
+                <div class="col-2 d-flex align-items-center padding-right-0">
+                    <span class="header-search__glance">일별</span> <img src="/images/icons/icon_miniarrow.svg" class="header-search__icon_miniarrow"/>
+                </div>
+    
+                <div class="col-10">
+                    <input class="form-control text-center header-search__input"  value="세종한솔점" name="daterange"/>
+                </div>
+            </div>
+        </section>
+    
+        <div class="history-info">
+            <div class="row">
+                <div class="col-12 text-end">
+                    <p class="history-info__sale-piriod">Kiosk3 <img src="/images/icons/icon_miniarrow.svg" /> </p>
+                </div>
+            </div>
+
+            <div class="p-3 history-info__box">
+                <h6 class="history-info__total-sale p-0 m-0">총 매출</h6>
+                <div class="row">
+                    <div class="col-12 d-flex m-0">
+                        <span class="history-info__won-character align-middle">&#8361;</span><span class="history-info__won"> 533,578,500</span>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-6 ">
+                        <h6 class="history-info__number-pay p-0 m-0">총 입수 금액</h6>
+                        <span class="history-info__number-character-won align-middle">&#8361;</span>
+                        <span class="history-info__number">1,481,600</span>
+                    </div>
+    
+                    <div class="col-6">
+                        <h6 class="history-info__number-pay p-0 m-0">총 방출 금액</h6>
+                        <div class="row">
+                            <div class="col-12 d-flex m-0">
+                                <span class="history-info__number-character-won align-middle">&#8361;</span>
+                                <span class="history-info__number">393,800</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+
+            <div class="row history-info__see-all">
+                <div class="col-12 text-end">
+                    <button class="">모든 현금 보기</button>
+                </div>
+            </div>
+        
+            <ul class="list-group history-list" >
+                <li class="list-group-item history-item js-history-item">
+                    <div class="row">
+                        <div class="col-6">
+                            <span class="history-item__no">No.11</span>
+                        </div>
+                        <div class="col-6 text-end">
+                            <span class="history-item__date">2021.05.06</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <span class="history-item__qty">50,540</span>
+                            <span class="history-item__qty-unit">원</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <span class="history-item__desc">쬬니 청포도 외 2건</span>
+                            <span class="history-item__desc-recept">
+                                ( 영수증 번호 : <span class="">89730</span> )
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <hr>
+
+                    <div class="row">
+                        <div class="col-6">
+                            <span class="history-item__price-label">입수 금액</span>
+                        </div>
+                        <div class="col-6">
+                            <span class="history-item__price-label-more">방출 금액</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <span class="history-item__price-value">
+                                <span class="">\</span>
+                                1,400
+                            </span>
+                        </div>
+                        <div class="col-6">
+                            <span class="history-item__price-value-more">
+                                <span class="">\</span>
+                               100
+                            </span>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="list-group-item history-item">
+                    <div class="row">
+                        <div class="col-6">
+                            <span class="history-item__no">No.11</span>
+                        </div>
+                        <div class="col-6 text-end">
+                            <span class="history-item__date">2021.05.06</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <span class="history-item__qty">50,540</span>
+                            <span class="history-item__qty-unit">원</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <span class="history-item__desc">쬬니 청포도 외 2건</span>
+                            <span class="history-item__desc-recept">
+                                ( 영수증 번호 : <span class="">89730</span> )
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <hr>
+
+                    <div class="row">
+                        <div class="col-6">
+                            <span class="history-item__price-label">입수 금액</span>
+                        </div>
+                        <div class="col-6">
+                            <span class="history-item__price-label-more">방출 금액</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <span class="history-item__price-value">
+                                <span class="">\</span>
+                                1,400
+                            </span>
+                        </div>
+                        <div class="col-6">
+                            <span class="history-item__price-value-more">
+                                <span class="">\</span>
+                               100
+                            </span>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="list-group-item history-item">
+                    <div class="row">
+                        <div class="col-6">
+                            <span class="history-item__no">No.11</span>
+                        </div>
+                        <div class="col-6 text-end">
+                            <span class="history-item__date">2021.05.06</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <span class="history-item__qty">50,540</span>
+                            <span class="history-item__qty-unit">원</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <span class="history-item__desc">쬬니 청포도 외 2건</span>
+                            <span class="history-item__desc-recept">
+                                ( 영수증 번호 : <span class="">89730</span> )
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <hr>
+
+                    <div class="row">
+                        <div class="col-6">
+                            <span class="history-item__price-label">입수 금액</span>
+                        </div>
+                        <div class="col-6">
+                            <span class="history-item__price-label-more">방출 금액</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <span class="history-item__price-value">
+                                <span class="">\</span>
+                                1,400
+                            </span>
+                        </div>
+                        <div class="col-6">
+                            <span class="history-item__price-value-more">
+                                <span class="">\</span>
+                               100
+                            </span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+            
+            <!-- MODAL HTML -->
+            <!-- complete payment modal -->
+            <div class="modal popup modal-payment-detail" id="detailPaymentModal" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">결제 내역 상세(현금)</h5>
+                        </div>
+                        <div class="modal-body">
+                            <div class="payment-detail-wrap">
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="headingOne1">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne1" aria-expanded="true" aria-controls="collapseOne1">
+                                            총 입수 금액
+                                        </button>
+                                      </h2>
+                                      <div id="collapseOne1" class="accordion-collapse collapse show" aria-labelledby="headingOne1" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <div class="payment-detail">
+                                                <div class="row payment-detail-item">
+                                                    <label for="" class="col-5 col-form-label payment-detail-item__label">
+                                                        100원
+                                                        <span>(111개)</span>
+                                                    </label>
+                                                    <div class="col-7">
+                                                        <span class="payment-detail-item__value">
+                                                            <span class="payment-detail-item__currency">\</span>
+                                                            4,800
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="row payment-detail-item">
+                                                    <label for="" class="col-5 col-form-label payment-detail-item__label">
+                                                        100원
+                                                        <span>(111개)</span>
+                                                    </label>
+                                                    <div class="col-7">
+                                                        <span class="payment-detail-item__value">
+                                                            <span class="payment-detail-item__currency">\</span>
+                                                            4,800
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="row payment-detail-item">
+                                                    <label for="" class="col-5 col-form-label payment-detail-item__label">
+                                                        100원
+                                                        <span>(111개)</span>
+                                                    </label>
+                                                    <div class="col-7">
+                                                        <span class="payment-detail-item__value">
+                                                            <span class="payment-detail-item__currency">\</span>
+                                                            4,800
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="row payment-detail-item">
+                                                    <label for="" class="col-5 col-form-label payment-detail-item__label">
+                                                        100원
+                                                        <span>(111개)</span>
+                                                    </label>
+                                                    <div class="col-7">
+                                                        <span class="payment-detail-item__value">
+                                                            <span class="payment-detail-item__currency">\</span>
+                                                            114,800
+                                                        </span>
+                                                    </div>
+                                                </div>
+
+                                                <hr>
+                                                <div class="row payment-detail-item">
+                                                    <label for="" class="col-5 col-form-label payment-detail-item__label">
+                                                        총 금액
+                                                    </label>
+                                                    <div class="col-7">
+                                                        <span class="payment-detail-item__value">
+                                                            <span class="payment-detail-item__currency">\</span>
+                                                            1,481,600
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                      </div>
+                                    </div>       
+                                    
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingOne2">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne2" aria-expanded="false" aria-controls="collapseOne2">
+                                                총 입수 금액
+                                            </button>
+                                        </h2>
+                                        <div id="collapseOne2" class="accordion-collapse collapse" aria-labelledby="headingOne2" data-bs-parent="#accordionExample">
+                                          <div class="accordion-body">
+                                              <div class="payment-detail">
+                                                  <div class="row payment-detail-item">
+                                                      <label for="" class="col-5 col-form-label payment-detail-item__label">
+                                                          100원
+                                                          <span>(111개)</span>
+                                                      </label>
+                                                      <div class="col-7">
+                                                          <span class="payment-detail-item__value">
+                                                              <span class="payment-detail-item__currency">\</span>
+                                                              4,800
+                                                          </span>
+                                                      </div>
+                                                  </div>
+                                                  <div class="row payment-detail-item">
+                                                      <label for="" class="col-5 col-form-label payment-detail-item__label">
+                                                          100원
+                                                          <span>(111개)</span>
+                                                      </label>
+                                                      <div class="col-7">
+                                                          <span class="payment-detail-item__value">
+                                                              <span class="payment-detail-item__currency">\</span>
+                                                              4,800
+                                                          </span>
+                                                      </div>
+                                                  </div>
+                                                  <div class="row payment-detail-item">
+                                                      <label for="" class="col-5 col-form-label payment-detail-item__label">
+                                                          100원
+                                                          <span>(111개)</span>
+                                                      </label>
+                                                      <div class="col-7">
+                                                          <span class="payment-detail-item__value">
+                                                              <span class="payment-detail-item__currency">\</span>
+                                                              4,800
+                                                          </span>
+                                                      </div>
+                                                  </div>
+                                                  <div class="row payment-detail-item">
+                                                      <label for="" class="col-5 col-form-label payment-detail-item__label">
+                                                          100원
+                                                          <span>(111개)</span>
+                                                      </label>
+                                                      <div class="col-7">
+                                                          <span class="payment-detail-item__value">
+                                                              <span class="payment-detail-item__currency">\</span>
+                                                              114,800
+                                                          </span>
+                                                      </div>
+                                                  </div>
+  
+                                                  <hr>
+                                                  <div class="row payment-detail-item">
+                                                      <label for="" class="col-5 col-form-label payment-detail-item__label">
+                                                          총 금액
+                                                      </label>
+                                                      <div class="col-7">
+                                                          <span class="payment-detail-item__value">
+                                                              <span class="payment-detail-item__currency">\</span>
+                                                              1,481,600
+                                                          </span>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                        </div>
+                                      </div> 
+                                </div>                                
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn-action">확인</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <nav id="main-navigation">
+    <header class="header__title">
+    <a href="javascript:closeNav()" class="left-button">
+        <img absalign="middle" src="/images/icons/icon_top_arrow_B.svg"/>
+    </a>
+    <h1>문구야놀자</h1>
+</header>
+
+    <ul>
+        <li>
+            <a href="#">대시보드 
+                
+            </a>
+        </li>
+        <li class="open">
+            <a href="#">가맹점 관리</a>
+            <img class="icon-right-nav" src="/images/icons/icon_arrowBB.svg" alt="">
+            <ul>
+                <li><a href="#">가맹점 관리</a></li>
+                <li class="active"><a href="#">키오스크 관리</a></li>
+            </ul>
+        </li>
+        <li class="">
+            <a href="#">사용자 관리
+            </a>
+            <img class="icon-right-nav" src="/images/icons/icon_arrowBB.svg" alt="">
+        </li>
+        <li>
+            <a href="#">
+                상품 관리
+            </a>
+            <img class="icon-right-nav" src="/images/icons/icon_arrowBB.svg" alt="">
+        </li>
+        <li>
+            <a href="#">
+                재고 관리
+            </a>
+            <img class="icon-right-nav" src="/images/icons/icon_arrowBB.svg" alt="">
+        </li>
+        <li>
+            <a href="#">가맹점 관리
+            </a>
+            <img class="icon-right-nav" src="/images/icons/icon_arrowBB.svg" alt="">
+        </li>
+        <li>
+            <a href="#">매출 관리
+            </a>
+            <img class="icon-right-nav" src="/images/icons/icon_arrowBB.svg" alt="">
+        </li>
+        <li>
+            <a href="#">예치금 관리
+            </a>
+            <img class="icon-right-nav" src="/images/icons/icon_arrowBB.svg" alt="">
+        </li>
+        <li>
+            <a href="#">거래처 관리
+            </a>
+            <img class="icon-right-nav" src="/images/icons/icon_arrowBB.svg" alt="">
+        </li>
+        <li>
+            <a href="#">홈페이지 관리
+            </a>
+            <img class="icon-right-nav" src="/images/icons/icon_arrowBB.svg" alt="">
+        </li>
+        <li>
+            <a href="#">시재 관리
+            </a>
+            <img class="icon-right-nav" src="/images/icons/icon_arrowBB.svg" alt="">
+        </li>
+        <li>
+            <a href="#">라벨 출력
+            </a>
+            <img class="icon-right-nav" src="/images/icons/icon_arrowBB.svg" alt="">
+        </li>
+        <li>
+            <a href="#">라벨 출력
+            </a>
+            <img class="icon-right-nav" src="/images/icons/icon_arrowBB.svg" alt="">
+        </li>
+        <li>
+            <a href="#">라벨 출력
+            </a>
+            <img class="icon-right-nav" src="/images/icons/icon_arrowBB.svg" alt="">
+        </li>
+        <li>
+            <a href="#">라벨 출력
+            </a>
+            <img class="icon-right-nav" src="/images/icons/icon_arrowBB.svg" alt="">
+        </li>
+    </ul>
+</nav>
+
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>-->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/js/bootstrap.min.js" integrity="sha512-a6ctI6w1kg3J4dSjknHj3aWLEbjitAXAjLDRUxo2wyYmDFRcz2RJuQr5M3Kt8O/TtUSp8n2rAyaXYy1sjoKmrQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>-->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js "
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous "></script>
+        <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script> -->
+
+<script src="/js/polyfill.js"></script>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+<script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+<script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
+<script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+
+<link rel="stylesheet" href="/css/bscroll.min.css">
+<script src="https://unpkg.com/better-scroll@latest/dist/better-scroll.min.js"></script>
+<script type="text/javascript" src="/js/jquery.selectscroll.min.js"></script>
+
+<script src="/js/script.min.js?v=2021070601"></script>
+
+    <link rel="stylesheet" href="/css/bscroll.min.css">
+    <script src="https://unpkg.com/better-scroll@latest/dist/better-scroll.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.selectscroll.min.js"></script>
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    
+    <script>
+        $(function() {
+            $('input[name="daterange"]').daterangepicker({
+                opens: 'left',
+                locale: {
+                    format: 'YYYY-MM-DD'
+                }
+            }, function(start, end, label) {
+                console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+            });
+
+            $(document).on('click', '.js-history-item', function() {
+                $("#detailPaymentModal").modal('show');
+            })
+        });
+    </script>
+    
+</body>
+</html>
+
+    

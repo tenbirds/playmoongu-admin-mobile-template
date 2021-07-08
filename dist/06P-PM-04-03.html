@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gulp</title>
+    <link rel="manifest" href="/manifest.json">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css" /> -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="/css/style.min.css?v=2021070601" media="screen">
+
+</head>
+<body class="order-detail">
+ 
+<!-- <header>
+    <div class="main-header">
+        <div class="header">
+            <div class="content-header">
+                <img src="/images/icons/icon_top_arrow_B.svg" class="" onclick="handleClick('open_nav')" alt="">
+                <h3 class="header_title">주문 내역 상세</h3>
+               
+                <div class="header-right">
+                    
+                    
+                        <a href="#" class="header-link"></a>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</header> -->
+<header class="main-header @@dashboard-header">
+    <div class="header-left">
+        <a href="#">
+            
+                <img src="/images/icons/icon_top_arrow_B.svg" class="" onclick="handleClick('open_nav')">
+            
+            
+            
+        </a>
+    </div>
+    <h1 class="header-title @@dashboard-title">주문 내역 상세</h1>
+    <div class="header-right">
+        <a href="#">
+             
+            
+                <h3 class="header-link"></h3>
+            
+        </a>
+    </div>
+</header>
+<nav id="main-navigation">
+    <header class="header__title">
+    <a href="javascript:closeNav()" class="left-button">
+        <img absalign="middle" src="/images/icons/icon_top_arrow_B.svg"/>
+    </a>
+    <h1>문구야놀자</h1>
+</header>
+
+    <ul>
+        <li>
+            <a href="#">대시보드 
+                
+            </a>
+        </li>
+        <li class="open">
+            <a href="#">가맹점 관리</a>
+            <img class="icon-right-nav" src="/images/icons/icon_arrowBB.svg" alt="">
+            <ul>
+                <li><a href="#">가맹점 관리</a></li>
+                <li class="active"><a href="#">키오스크 관리</a></li>
+            </ul>
+        </li>
+        <li class="">
+            <a href="#">사용자 관리
+            </a>
+            <img class="icon-right-nav" src="/images/icons/icon_arrowBB.svg" alt="">
+        </li>
+        <li>
+            <a href="#">
+                상품 관리
+            </a>
+            <img class="icon-right-nav" src="/images/icons/icon_arrowBB.svg" alt="">
+        </li>
+        <li>
+            <a href="#">
+                재고 관리
+            </a>
+            <img class="icon-right-nav" src="/images/icons/icon_arrowBB.svg" alt="">
+        </li>
+        <li>
+            <a href="#">가맹점 관리
+            </a>
+            <img class="icon-right-nav" src="/images/icons/icon_arrowBB.svg" alt="">
+        </li>
+        <li>
+            <a href="#">매출 관리
+            </a>
+            <img class="icon-right-nav" src="/images/icons/icon_arrowBB.svg" alt="">
+        </li>
+        <li>
+            <a href="#">예치금 관리
+            </a>
+            <img class="icon-right-nav" src="/images/icons/icon_arrowBB.svg" alt="">
+        </li>
+        <li>
+            <a href="#">거래처 관리
+            </a>
+            <img class="icon-right-nav" src="/images/icons/icon_arrowBB.svg" alt="">
+        </li>
+        <li>
+            <a href="#">홈페이지 관리
+            </a>
+            <img class="icon-right-nav" src="/images/icons/icon_arrowBB.svg" alt="">
+        </li>
+        <li>
+            <a href="#">시재 관리
+            </a>
+            <img class="icon-right-nav" src="/images/icons/icon_arrowBB.svg" alt="">
+        </li>
+        <li>
+            <a href="#">라벨 출력
+            </a>
+            <img class="icon-right-nav" src="/images/icons/icon_arrowBB.svg" alt="">
+        </li>
+        <li>
+            <a href="#">라벨 출력
+            </a>
+            <img class="icon-right-nav" src="/images/icons/icon_arrowBB.svg" alt="">
+        </li>
+        <li>
+            <a href="#">라벨 출력
+            </a>
+            <img class="icon-right-nav" src="/images/icons/icon_arrowBB.svg" alt="">
+        </li>
+        <li>
+            <a href="#">라벨 출력
+            </a>
+            <img class="icon-right-nav" src="/images/icons/icon_arrowBB.svg" alt="">
+        </li>
+    </ul>
+</nav>
+
+
+
+
+<main>
+  <div class="main-order-detail">
+    <div class="filter_search_page">
+      <div class="choose-store-select-common filter_search_page__title">
+        <label class="choose-store-select-common__text">중곡시장점</label>
+        <div class="main-status-order-common order-reception" data-bs-toggle="modal" data-bs-target="#confirmAddProductToCart">
+          <img class="main-status-order-common__icon" src="/images/icons/icon_p01.svg">
+          <label class="main-status-order-common__text">주문접수</label>
+        </div>
+      </div>
+      <div class="input-search-common">
+        <input
+          placeholder=""
+          class="form-control input-search-common__input-form"
+        />
+        <img
+          class="input-search-common__icon-search"
+          src="/images/icons/icon_search.svg"
+        />
+      </div>
+    </div>
+    <div class="order-detail-content">
+      <div class="order-detail-content__item">
+        <div class="order-detail-content__item__info-order">
+            <img
+            class="order-detail-content__item__info-order__img"
+            src="/images/photos/img_03.png"
+            />
+            <div class="order-detail-content__item__info-order__info-data">
+                <div class="info-data__add-cart-no">
+                    <label class="info-data__add-cart-no__no">No.2</label>
+                    <button class="info-data__add-cart-no__button">장바구니 추가</button>
+                </div>
+                <label class="order-detail-content__item__info-order__info-data__name"
+                    >방탄소년단 캐릭터 지우개</label
+                >
+                <label class="info-order__info-data__quantity-price">
+                    <strong 
+                    class="info-order__info-data__quantity-price__price">
+                        1,500
+                    </strong>
+                    <strong 
+                        class="info-order__info-data__quantity-price__quantity">
+                        원(공급가)_100개(주문개수)
+                    </strong>
+                </label>
+                
+            </div>
+        </div>
+        <div class="order-detail-content__item__number-shipments-price">
+            <label class="number-shipments-price__number-shipments">
+                출고 개수 :
+                <strong class="number-shipments-price__number-shipments__number">0</strong>
+            </label>
+            <label class="number-shipments-price__number-shipments__price">150,000</label>
+        </div>
+        <div class="border-line-common">
+            <img src="/images/icons/icon_line.svg">
+        </div>
+      </div>
+      <div class="order-detail-content__item">
+        <div class="order-detail-content__item__info-order">
+            <img
+            class="order-detail-content__item__info-order__img"
+            src="/images/photos/img04_mini.png"
+            />
+            <div class="order-detail-content__item__info-order__info-data">
+                <div class="info-data__add-cart-no">
+                    <label class="info-data__add-cart-no__no">No.2</label>
+                    <button class="info-data__add-cart-no__button">장바구니 추가</button>
+                </div>
+                <label class="order-detail-content__item__info-order__info-data__name"
+                    >방탄소년단 캐릭터 지우개</label
+                >
+                <label class="info-order__info-data__quantity-price">
+                    <strong 
+                    class="info-order__info-data__quantity-price__price">
+                        1,500
+                    </strong>
+                    <strong 
+                        class="info-order__info-data__quantity-price__quantity">
+                        원(공급가)_100개(주문개수)
+                    </strong>
+                </label>
+                
+            </div>
+        </div>
+        <div class="order-detail-content__item__number-shipments-price">
+            <label class="number-shipments-price__number-shipments">
+                출고 개수 :
+                <strong class="number-shipments-price__number-shipments__number">0</strong>
+            </label>
+            <label class="number-shipments-price__number-shipments__price">150,000</label>
+        </div>
+        
+      </div>
+    </div>
+    <div class="main-order-detail__foot-page">
+      <div class="total-price-quantity-order">
+        <div class="total-price-quantity-order__order-number-date">
+          <label class="order-number-date__number-text">주문 번호 :
+            <strong class="order-number-date__number-value">65441154</strong>
+          </label>
+          <label class="order-number-date__date-text">주문 등록일 :
+            <strong class="order-number-date__date-value">2021.05.06</strong>
+          </label>
+        </div>
+        <div class="main-order-detail__foot-page__total-price item-total-price-common">
+          <label class="main-order-detail__foot-page__total-price__text item-total-price-common__text"
+            >품목 2건</label
+          >
+          <label class="main-order-detail__foot-page__total-price__price item-total-price-common__total-price"
+            >270,000</label
+          >
+        </div>
+      </div>
+      <div class="main-order-detail__foot-page__button-submit">
+        <div class="foot-page__button-submit__item button-bottom-page-common delivery-completed">
+          <label class="button-bottom-page-common__text">출고 완료</label>
+        </div>
+        <div class="foot-page__button-submit__item button-bottom-page-common button-bottom-page-common" 
+        data-bs-toggle="modal" data-bs-target="#uploadFileEx">
+          <label class="button-bottom-page-common__text">출고 리스트 등록</label>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<div class="modal popup" id="uploadFileEx" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">출고 리스트 등록</h5>
+      </div>
+      <div class="modal-body main-body-uploadEx">
+          <div class="main-body-uploadEx__content">
+              <label class="main-body-uploadEx__content__title">엑셀 파일 업로드</label>
+              <div class="main-body-uploadEx__content__upload-file">
+                  <input class="form-control" placeholder="선택된 파일 없읍니다." />
+                  <button type="button" class="">파일 선택</button>
+              </div>
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn-dismiss" data-bs-dismiss="modal">
+          취소
+        </button>
+        <button
+          type="button"
+          class="btn-action"
+        >
+        추가
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal popup" id="confirmAddProductToCart" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">출고 리스트 등록</h5>
+      </div>
+      <div class="modal-body main-confirm-modal-product-to-cart">
+        <p class="text-confirm">해당 상품을 장바구니에 추가 하시겠습니까?</p>
+        <div class="main-confirm-modal-product-to-cart__number-bundles">
+            <label class="number-bundles__title">묶음 개수</label>
+            <div class="number-bundles__select form-control" id="event_number-bundles__select">
+              <label class="number-bundles__select__value">10</label>
+              <img
+            class="number-bundles__select__img"
+            src="/images/icons/icon_miniarrow.svg"
+            />
+            </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn-dismiss" data-bs-dismiss="modal">
+          닫기
+        </button>
+        <button type="button" class="btn-action">장바구니 추가</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer></footer>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>-->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/js/bootstrap.min.js" integrity="sha512-a6ctI6w1kg3J4dSjknHj3aWLEbjitAXAjLDRUxo2wyYmDFRcz2RJuQr5M3Kt8O/TtUSp8n2rAyaXYy1sjoKmrQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>-->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js "
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous "></script>
+        <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script> -->
+
+<script src="/js/polyfill.js"></script>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+<script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+<script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
+<script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+
+<link rel="stylesheet" href="/css/bscroll.min.css">
+<script src="https://unpkg.com/better-scroll@latest/dist/better-scroll.min.js"></script>
+<script type="text/javascript" src="/js/jquery.selectscroll.min.js"></script>
+
+<script src="/js/script.min.js?v=2021070601"></script>
+ 
+
+<link rel="stylesheet" href="/css/bscroll.min.css">
+<script src="https://unpkg.com/better-scroll@latest/dist/better-scroll.min.js"></script>
+<script type="text/javascript" src="/js/jquery.selectscroll.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        function init () {
+            $('#event_number-bundles__select').selectScroll({
+                data: [
+                      [{
+                        text: '일별',
+                        id: 1
+                      },{
+                        text: 'Script',
+                        id: 2
+                      },{
+                        text: '.Net',
+                        id: 3
+                      },{
+                        text: 'JavaScript',
+                        id: 4
+                      }]
+                ],
+                title: '조회 기간',
+                selectedIndex: [0],
+                cancelTxt: 'cancel',
+                cancelClass: '',
+                confirmTxt: '선택',
+                confirmClass: '',
+                confirm: function(e){
+                    console.log(e)
+                },
+                cancel: function () {
+                    console.log('Canceld')
+                }
+            })
+        }
+        var $doc = $(document)
+        $doc.on('click', '#event_number-bundles__select', init)
+    });
+</script>
+
+
+</body>
+</html>
+
