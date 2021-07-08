@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="2" viewBox="0 0 300 2">
+    <defs>
+        <clipPath id="clip-path">
+            <path fill="none" d="M0 0H300V2H0z"/>
+        </clipPath>
+        <style>
+            .cls-3{fill:#dedede}
+        </style>
+    </defs>
+    <g id="icon_line" clip-path="url(#clip-path)">
+        <g transform="translate(-32 -365)">
+            <path id="사각형_8150" d="M0 0H5V1H0z" class="cls-3" transform="translate(32 365)"/>
+        </g>
+        <g transform="translate(-21 -365)">
+            <path id="사각형_8150-2" d="M0 0H5V1H0z" class="cls-3" transform="translate(32 365)"/>
+        </g>
+        <g transform="translate(-10 -365)">
+            <path id="사각형_8150-3" d="M0 0H5V1H0z" class="cls-3" transform="translate(32 365)"/>
+        </g>
+        <g transform="translate(1 -365)">
+            <path id="사각형_8150-4" d="M0 0H5V1H0z" class="cls-3" transform="translate(32 365)"/>
+        </g>
+        <g transform="translate(12 -365)">
+            <path id="사각형_8150-5" d="M0 0H5V1H0z" class="cls-3" transform="translate(32 365)"/>
+        </g>
+        <g transform="translate(23 -365)">
+            <path id="사각형_8150-6" d="M0 0H5V1H0z" class="cls-3" transform="translate(32 365)"/>
+        </g>
+        <g transform="translate(34 -365)">
+            <path id="사각형_8150-7" d="M0 0H5V1H0z" class="cls-3" transform="translate(32 365)"/>
+        </g>
+        <g transform="translate(45 -365)">
+            <path id="사각형_8150-8" d="M0 0H5V1H0z" class="cls-3" transform="translate(32 365)"/>
+        </g>
+        <g transform="translate(56 -365)">
+            <path id="사각형_8150-9" d="M0 0H5V1H0z" class="cls-3" transform="translate(32 365)"/>
+        </g>
+        <g transform="translate(67 -365)">
+            <path id="사각형_8150-10" d="M0 0H5V1H0z" class="cls-3" transform="translate(32 365)"/>
+        </g>
+        <g transform="translate(78 -365)">
+            <path id="사각형_8150-11" d="M0 0H5V1H0z" class="cls-3" transform="translate(32 365)"/>
+        </g>
+        <g transform="translate(89 -365)">
+            <path id="사각형_8150-12" d="M0 0H5V1H0z" class="cls-3" transform="translate(32 365)"/>
+        </g>
+        <g transform="translate(100 -365)">
+            <path id="사각형_8150-13" d="M0 0H5V1H0z" class="cls-3" transform="translate(32 365)"/>
+        </g>
+        <g transform="translate(111 -365)">
+            <path id="사각형_8150-14" d="M0 0H5V1H0z" class="cls-3" transform="translate(32 365)"/>
+        </g>
+        <g transform="translate(122 -365)">
+            <path id="사각형_8150-15" d="M0 0H5V1H0z" class="cls-3" transform="translate(32 365)"/>
+        </g>
+        <g transform="translate(133 -365)">
+            <path id="사각형_8150-16" d="M0 0H5V1H0z" class="cls-3" transform="translate(32 365)"/>
+        </g>
+        <g transform="translate(144 -365)">
+            <path id="사각형_8150-17" d="M0 0H5V1H0z" class="cls-3" transform="translate(32 365)"/>
+        </g>
+        <g transform="translate(155 -365)">
+            <path id="사각형_8150-18" d="M0 0H5V1H0z" class="cls-3" transform="translate(32 365)"/>
+        </g>
+        <g transform="translate(166 -365)">
+            <path id="사각형_8150-19" d="M0 0H5V1H0z" class="cls-3" transform="translate(32 365)"/>
+        </g>
+        <g transform="translate(177 -365)">
+            <path id="사각형_8150-20" d="M0 0H5V1H0z" class="cls-3" transform="translate(32 365)"/>
+        </g>
+        <g transform="translate(188 -365)">
+            <path id="사각형_8150-21" d="M0 0H5V1H0z" class="cls-3" transform="translate(32 365)"/>
+        </g>
+        <g transform="translate(199 -365)">
+            <path id="사각형_8150-22" d="M0 0H5V1H0z" class="cls-3" transform="translate(32 365)"/>
+        </g>
+        <g transform="translate(210 -365)">
+            <path id="사각형_8150-23" d="M0 0H5V1H0z" class="cls-3" transform="translate(32 365)"/>
+        </g>
+        <g transform="translate(221 -365)">
+            <path id="사각형_8150-24" d="M0 0H5V1H0z" class="cls-3" transform="translate(32 365)"/>
+        </g>
+        <g transform="translate(232 -365)">
+            <path id="사각형_8150-25" d="M0 0H5V1H0z" class="cls-3" transform="translate(32 365)"/>
+        </g>
+        <g transform="translate(243 -365)">
+            <path id="사각형_8150-26" d="M0 0H5V1H0z" class="cls-3" transform="translate(32 365)"/>
+        </g>
+        <g transform="translate(254 -365)">
+            <path id="사각형_8150-27" d="M0 0H5V1H0z" class="cls-3" transform="translate(32 365)"/>
+        </g>
+        <g transform="translate(265 -365)">
+            <path id="사각형_8150-28" d="M0 0H5V1H0z" class="cls-3" transform="translate(32 365)"/>
+        </g>
+    </g>
+</svg>
