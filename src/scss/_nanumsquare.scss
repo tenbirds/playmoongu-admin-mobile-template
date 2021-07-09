@@ -81,3 +81,15 @@ src: url(./../fonts/NotoSansCJKkr-Bold.woff) format('woff'),
       font-style: normal;
   
   }
+  @font-face {
+     font-family: 'NanumSquareBold';
+     src: url(./../fonts/NanumSquareBold.eot);
+     src: url(./../fonts/NanumSquareBold.eot?#iefix) format('embedded-opentype'),
+          url(./../fonts/NanumSquareBold.woff2) format('woff2'),
+          url(./../fonts/NanumSquareBold.woff) format('woff'),
+          url(./../fonts/NanumSquareBold.ttf) format('truetype'),
+          url(./../fonts/NanumSquareBold.svg#NanumSquareBold) format('svg');
+     font-weight: normal;
+     font-style: normal;
+ 
+ }
