@@ -31,6 +31,10 @@
         text-align: left;
         color: #111111;
         padding: 10px;
+        &:focus {
+          border: 1px solid #e6e6e6;
+          box-shadow: none !important;
+        }
         &.chosen {
           opacity: 1 !important;
         }

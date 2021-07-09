@@ -5,24 +5,27 @@
     z-index: 666;
     width: 100%;
     background: #ffffff;
-    padding: 20px;
+    padding: 20px 20px 20px 15px;
     .select-block {
       padding-right: 0px;
+      padding-left: 15px;
+      margin-right: -5px;
       button {
         font-size: 12px;
         padding: 10px;
-        width: 90%;
+        width: 95%;
         border-radius: 18px;
         background-color: #5815a5;
         border: none;
-        margin-left: 5px;
+        margin-left: 2px;
+        height: 36px;
         img {
           padding: 3px;
         }
       }
     }
     .input-block {
-      padding-right: 20px;
+      padding-right: 4px;
       input {
       }
       span {
@@ -34,7 +37,7 @@
 
   .account-items {
     background-color: #F5F5F5;
-    min-height: 85vh;
+    min-height: 95vh;
     padding: 95px 15px 0px 15px;
     font-size: 14px;
     .list-group {
