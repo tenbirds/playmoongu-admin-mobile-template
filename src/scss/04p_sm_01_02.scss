@@ -13,10 +13,42 @@
 
             .inp-pr-0 {
                 padding-right: 0px;
+                
             }
 
             .inp-pl-0 {
                 padding-left: 0px;
+                .custom-file-input::-webkit-file-upload-button {
+                    visibility: hidden;
+                }
+                .custom-file-input {
+                    cursor: pointer;
+                    width: 108px;
+                    overflow: hidden;
+                }
+                .custom-file-input:before {
+                    width: 97px;
+                    height: 36px;
+                    font-family: NanumSquare;
+                    font-size: 14px;
+                    font-weight: 800;
+                    font-stretch: normal;
+                    font-style: normal;
+                    letter-spacing: normal;
+                    color: #111111;
+                    line-height: 39px;
+                    content: '파일 선택';
+                    display: inline-block;
+                    border-radius: 5px;
+                    background-color: #fed400;
+                    padding: 0 10px;
+                    text-align: center;
+                    margin-left: 10px;
+                    margin-right: 20px; 
+                }
+                .custom-file-input::-webkit-file-upload-button {
+                    visibility: hidden;
+                }
             }
 
             .select-file {
@@ -104,12 +136,14 @@
                 display: flex;
                 align-items: center;
                 flex-wrap: wrap;
-                border-radius: 10px;
-                border: solid 1px #f5f5f5;
-                background-color: #ffffff;
+                
                 &__data {
+                    border-radius: 10px;
+                    border: solid 1px #f5f5f5;
+                    background-color: #ffffff;
                     width: 100%;
-                    margin: 15px;
+                    margin-bottom: 10px;
+                    padding: 15px;
                     &__no_like {
                         display: flex;
                         align-items: center;
