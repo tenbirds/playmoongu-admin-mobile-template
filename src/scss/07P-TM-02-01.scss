@@ -88,6 +88,8 @@
 
     .wrap-main-content {
       padding-top: 110px;
+      padding-left: 20px;
+      padding-right: 20px;
       .static-box {
         margin-top: 200px;
         height: 141px;
@@ -305,7 +307,6 @@
             align-items: center;
             flex-wrap: wrap;
             margin-bottom: 10px;
-            
             &__img {
                 position: relative;
                 &_.profit {
@@ -321,14 +322,15 @@
                 }
             }
             &__data {
-                padding: 4px 10px 3px 10px;
+                padding: 0px 10px 0px 10px;
                 width: calc(100% - 120px);
                 &__no-number {
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
+                    margin-top: 10px;
                     .text-no {
-                      font-family: Roboto;
+                      font-family: 'RobotoLight';
                       font-size: 11px;
                       font-weight: 300;
                       font-stretch: normal;
@@ -339,7 +341,7 @@
                       color: #111111;
                     }
                     .item_date {
-                      font-family: Roboto;
+                      font-family: 'RobotoLight';
                       font-size: 11px;
                       font-weight: 300;
                       font-stretch: normal;
@@ -350,7 +352,13 @@
                       color: #111111;
                     }
                 }
+                &__name {
+                  height: 20px;
+                }
                 .profit-sub-detail {
+                  margin-top: 0px;
+                  margin-bottom: 0px;
+                  line-height: normal;
                   &__barcode {
                     font-family: Roboto;
                     font-size: 11px;
@@ -377,7 +385,7 @@
                   }
                   &__stock-bf {
                     opacity: 0.5;
-                    font-family: Roboto;
+                    font-family: 'RobotoMedium';
                     font-size: 14px;
                     font-weight: 500;
                     font-stretch: normal;
@@ -386,6 +394,7 @@
                     letter-spacing: normal;
                     text-align: left;
                     color: #111111;
+                    text-decoration: line-through;
                   }
                   &__stock-af {
                     font-family: Roboto;
@@ -428,8 +437,12 @@
                     color: #111111;
                   }
                 }
+                &__main-price {
+                  padding-bottom: 10px;
+                  margin-top: -4px;
+                }
                 &__price {
-                    font-family: Roboto;
+                    font-family: 'RobotoBold';
                     font-size: 20px;
                     font-weight: bold;
                     font-stretch: normal;

@@ -25,10 +25,12 @@
   }
   
   .wrap-stock {
-    background-color: #F5F5F5;
+    background-color: #f5f5f5;
     min-height: 85vh;
     padding-top: 135px;
     font-size: 14px;
+    padding-left: 15px;
+    padding-right: 15px;
     .filter_category {
       display: flex;
       justify-content: flex-end;
@@ -70,12 +72,11 @@
         text-align: right;
         color: #111;
         margin-bottom: 10px;
-        // border: none;
         background-color: #f5f5f5;
         padding-right: 10px;
       }
       .stock-item {
-        margin-bottom: 12px !important;
+        margin-bottom: 10px !important;
         hr {
           height: 1px;
           background-color: #cccaca;
@@ -132,15 +133,34 @@
             color: #111111;
           }
         }
+
         .box-main-price {
           &__sell-price-label {
             opacity: 0.8;
             font-family: NanumSquare;
             font-size: 11px;
             font-weight: normal;
+            font-stretch: normal;
             font-style: normal;
+            line-height: normal;
             letter-spacing: normal;
+            text-align: left;
             color: #111111;
+          }
+          &__label-edit {
+            font-family: NanumSquare;
+            font-size: 11px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: left;
+            color: #5815a5;
+            padding-left: 10px;
+            &:active {
+              color: #5815a5;
+            }
           }
           &__stock-label {
             opacity: 0.8;
@@ -151,50 +171,69 @@
             font-style: normal;
             color: #111111;
           }
-          .box-sell-price {
-            position: relative;
-            &__input {
+          .box-sell-price { 
+            &__value {
               font-family: Roboto;
               font-size: 14px;
               font-weight: 500;
               font-stretch: normal;
               font-style: normal;
+              line-height: normal;
+              letter-spacing: normal;
               color: #111;
-              text-align: right;
-              padding: 7px 24px 7px 0px;
+              padding-right: 1px;
               &.negative {
                 color:#c52321 !important;
               }
             }
-            &__label {
-              position: absolute;
-              top: 9px;
-              right: 20px;
+            &__unit {
               opacity: 0.8;
               font-family: NanumSquare;
               font-size: 11px;
               font-weight: normal;
               font-stretch: normal;
               font-style: normal;
+              line-height: normal;
+              letter-spacing: normal;
+              text-align: left;
               color: #111111;
             }
           }
           .box-stock {
-            &__input {
+            &__value {
               font-family: Roboto;
               font-size: 14px;
               font-weight: 500;
               font-stretch: normal;
-              color: #111111;
-              text-align: right;
-              padding: 7px;
+              font-style: normal;
+              line-height: normal;
+              letter-spacing: normal;
+              color: #111;
+              padding-right: 1px;
               &.negative {
-                color:#c52321 !important;
+                font-weight: 500;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                color: #c52321;
               }
             }
+            &__unit {
+              opacity: 0.8;
+              font-family: NanumSquare;
+              font-size: 11px;
+              font-weight: normal;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: normal;
+              letter-spacing: normal;
+              text-align: left;
+              color: #111111;
+            }
           }
-         
         }
+
       }  
     }
   } 

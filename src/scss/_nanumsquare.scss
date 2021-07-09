@@ -45,16 +45,39 @@ src: url(./../fonts/NotoSansCJKkr-Bold.woff) format('woff'),
      url(./../fonts/NotoSansCJKkr-Bold.ttf) format('truetype');
 }
 
-// @font-face {
-// font-family: 'RobotoMedium';
-//       src: url(./../fonts/RobotoMedium.eot);
-//       src: url(./../fonts/RobotoMedium.eot?#iefix) format('embedded-opentype'),
-//            url(./../fonts/RobotoMedium.woff2) format('woff2');
-// }
-@font-face{font-family:'RobotoMedium';
-      font-style:normal;font-weight:400;
-      src:local('Roboto Medium'),
-      local('RobotoLt-Regular'),
-      url(http://allfont.ru/cache/fonts/roboto-medium_8e15a56cbec76ef7bdd464649d1a4878.woff) format('woff'),
-      url(http://allfont.ru/cache/fonts/roboto-medium_8e15a56cbec76ef7bdd464649d1a4878.ttf) format('truetype')
-}
+@font-face {
+      font-family: 'RobotoBold';
+      src: url(./../fonts/roboto-bold-webfont.eot);
+      src: url(./../fonts/roboto-bold-webfont.eot?#iefix) format('embedded-opentype'),
+           url(./../fonts/roboto-bold-webfont.woff2) format('woff2'),
+           url(./../fonts/roboto-bold-webfont.woff) format('woff'),
+           url(./../fonts/roboto-bold-webfont.ttf) format('truetype'),
+           url(./../fonts/roboto-bold-webfont.svg#robotobold) format('svg');
+      
+  }
+  @font-face {
+      font-family: 'RobotoMedium';
+      src: url(./../fonts/roboto-medium-webfont.eot);
+      src: url(./../fonts/roboto-medium-webfont.eot?#iefix) format('embedded-opentype'),
+           url(./../fonts/roboto-medium-webfont.woff2) format('woff2'),
+           url(./../fonts/roboto-medium-webfont.woff) format('woff'),
+           url(./../fonts/roboto-medium-webfont.ttf) format('truetype'),
+           url(./../fonts/roboto-medium-webfont.svg#robotomedium) format('svg');
+      font-weight: normal;
+      font-style: normal;
+  
+  }
+    
+
+  @font-face {
+      font-family: 'RobotoLight';
+      src: url(./../fonts/roboto-light-webfont.eot);
+      src: url(./../fonts/roboto-light-webfont.eot?#iefix) format('embedded-opentype'),
+           url(./../fonts/roboto-light-webfont.woff2) format('woff2'),
+           url(./../fonts/roboto-light-webfont.woff) format('woff'),
+           url(./../fonts/roboto-light-webfont.ttf) format('truetype'),
+           url(./../fonts/roboto-light-webfont.svg#robotolight) format('svg');
+      font-weight: normal;
+      font-style: normal;
+  
+  }
