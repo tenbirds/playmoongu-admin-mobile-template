@@ -82,24 +82,25 @@
 <script type="text/javascript" src="/js/mobileSelect.min.js"></script>
 <script type="text/javascript">
     var demo1 = new MobileSelect({
-        trigger: "#demo1",
-        title: "DEMO 1",
-        triggerDisplayData: false,
+        trigger: "#demo1", // Đối tượng trigger bật scroll
+        title: "DEMO 1", //Title
+        triggerDisplayData: false, //Thay thế đối tượng bằng value
         wheels: [{ data: [
           {id: 1, value: "Lua chon 1"},
           {id: 2, value: "Lua chon 2"},
           {id: 3, value: "Lua chon 3"}
         ] }],
-        ensureBtnText: "Chấp nhận",
+        ensureBtnText: "Chấp nhận", 
         cancelBtnText: "Huỷ bỏ",
-        position: [2], 
+        position: [2], //Index mặc định được chọn trong danh sách wheels
         transitionEnd: function (indexArr, data) {
           //console.log(data);
         },
         callback: function (indexArr, data) {
-          console.log(data);
+          console.log(data); //Hàm callback trả về kết quả
         },
       });
+
       var demo2 = new MobileSelect({
         trigger: "#demo2",
         triggerDisplayData: false,
