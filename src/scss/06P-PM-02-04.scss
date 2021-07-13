@@ -106,21 +106,7 @@
             padding-bottom: 5px;
         }
     }
-    .main-confirm-modal-add-cart {
-        padding-top: 5px;
-        .text-confirm {
-            font-family: NanumSquare;
-            font-size: 14px;
-            font-weight: bold;
-            font-stretch: normal;
-            font-style: normal;
-            line-height: 1.43;
-            letter-spacing: normal;
-            text-align: center;
-            color: #111111;
-            margin-bottom: 10px;
-        }
-    }
+    
     &.fixed-header {
         .filter_search_page {
             position: fixed;
@@ -134,6 +120,22 @@
         .tab-product  {
             padding-top: 78px;
         }
+    }
+}
+
+.main-confirm-modal-add-cart {
+    padding-top: 5px;
+    .text-confirm {
+        font-family: NanumSquare;
+        font-size: 14px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.43;
+        letter-spacing: normal;
+        text-align: center;
+        color: #111111;
+        margin-bottom: 10px;
     }
 }
 
