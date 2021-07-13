@@ -61,7 +61,17 @@
                 <div class="form-detail-box">
                     <label class="label-input">
                         <span class="required">등급1</span>
-                        <div class="dropdown dropdown-custom">
+                        <div class="select2-cus">
+                            <select class="js-example-basic-single" name="states">
+                                <option value="AsL">Alabama</option>
+                                <option value="AL">Alabama2</option>
+                                <option value="WY">cyoming</option>
+                                <option value="WY">dyoming</option>
+                                <option value="WY">eyoming</option>
+                                <option value="WY">fyoming</option>
+                              </select>
+                        </div>
+                        <!-- <div class="dropdown dropdown-custom">
                             <button class=" dropdown-toggle dropdown-custom__button no-chose" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
                                 등급을 선택하세요.
                             </button>
@@ -72,7 +82,10 @@
                               <li><button class="dropdown-item" type="button">최고 관리자</button></li>
                               <li><button class="dropdown-item" type="button">일반 관리자</button></li>
                             </ul>
-                          </div>
+                        </div> -->
+
+
+
                     </label>
                 </div>
                 <div class="form-detail-box">
@@ -357,11 +370,26 @@
 </main>
 <footer></footer>
 @@include('./components/script.html')
+
+<link href='https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css' rel='stylesheet' type='text/css'>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+
+
 <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="/css/bscroll.min.css">
 <script src="https://unpkg.com/better-scroll@latest/dist/better-scroll.min.js"></script>
 <script type="text/javascript" src="/js/jquery.selectscroll.min.js"></script>
 <script type="text/javascript">
+
+$(document).ready(function() {
+    
+    $('.js-example-basic-single').select2({
+        placeholder: 'This is my placeholder',
+        allowClear: true
+        });
+    });
+
+
     $(document).on('click', '#js_filter_select', function(e) {
         e.preventDefault();
         this.blur();
