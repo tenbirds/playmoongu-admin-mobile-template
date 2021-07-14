@@ -1,0 +1,103 @@
+.inquiry {
+  header {
+    background-color: #FFFFFF;
+  }
+  //background-color: #f5f5f5;
+
+  section {
+    position: fixed;
+    /* top: 65px; */
+    width: 100%;
+    z-index: 666;
+  }
+
+  main {
+    .header-search {
+      background-color: #ffffff;
+      &__name {
+        font-family: NanumSquareEB;
+        font-size: 23px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.17;
+        letter-spacing: normal;
+        text-align: left;
+        color: #000000;
+      }
+      &__icon_arrowBB {
+        width: 12px;
+        height: 7px;
+        //margin: 29px 234px 25px 5px;
+        object-fit: contain;
+        margin-bottom: 8px;
+      }
+    }
+  }
+
+  &__input-form {
+    height: 36px ;
+  }
+
+  &__input-form::placeholder {
+    opacity: 0.5;
+    font-family: NanumSquareR;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    color: #111111;
+  }
+
+  &__border-bottom {
+    border-bottom: 2px solid #f5f5f5;
+    border-radius: 2px;
+    margin-top: 20px;
+  }
+
+  .content-inquiry {
+    margin-top: 120px !important;
+
+    &__box-content-no {
+      font-size: 11px;
+      font-weight: 300;
+      font-stretch: normal;
+      font-style: normal;
+      letter-spacing: normal;
+      color: #111111;
+    }
+
+    &__box-content-store {
+      font-family: NanumSquareR;
+      font-size: 14px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      letter-spacing: normal;
+      color: #111111;
+    }
+
+    &__box-content-title {
+      font-family: NanumSquareB;
+      font-size: 14px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      letter-spacing: normal;
+      color: #111111;
+    }
+
+    &__count-comment {
+      font-family: Roboto;
+      font-size: 11px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      letter-spacing: normal;
+      color: #c52321;
+    }
+
+  }
+
+}
