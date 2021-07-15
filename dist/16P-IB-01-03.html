@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-    <title>상품 별 매출 현황</title>
+    <title>가맹점 별 매출 현황</title>
     <link rel="manifest" href="/manifest.json">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css" /> -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet" />
@@ -18,20 +18,20 @@
     <link rel="stylesheet" href="/css/style.min.css?v=2021070901" media="screen">
 
 </head>
-<body class="sales-by-affiliate-store fixed-header">
+<body class="inquiry-03 fixed-header">
 
-
+<!-- extend class sales-by-affiliate-store -->
 <!-- <header>
     <div class="main-header">
         <div class="header">
             <div class="content-header">
-                <img src="/images/icons/m_menu.svg" class="" onclick="handleClick('open_nav')" alt="">
-                <h3 class="header_title">상품 별 매출 현황</h3>
+                <img src="/images/icons/icon_top_arrow_B.svg" class="" onclick="handleClick('open_nav')" alt="">
+                <h3 class="header_title">문의 등록</h3>
                
                 <div class="header-right">
                     
                     
-                        <a href="04-SM-01-01.html" class="header-link"></a>
+                        <a href="#" class="header-link"></a>
                     
                     
                 </div>
@@ -43,15 +43,15 @@
     <div class="header-left">
         <a href="#">
             
-                <img src="/images/icons/m_menu.svg" class="" onclick="handleClick('open_nav')">
+                <img src="/images/icons/icon_top_arrow_B.svg" class="" onclick="handleClick('open_nav')">
             
             
             
         </a>
     </div>
-    <h1 class="header-title @@dashboard-title">상품 별 매출 현황</h1>
+    <h1 class="header-title @@dashboard-title">문의 등록</h1>
     <div class="header-right">
-        <a href="04-SM-01-01.html">
+        <a href="#">
              
             
                 <h3 class="header-link"></h3>
@@ -153,153 +153,71 @@
 
 
 
-<main class="">
-    <section class="p-3 header-search">
-        <h3 class="header-search__name">전체 매장 <img src="/images/icons/icon_arrowBB.svg" class="header-search__icon_arrowBB"></h3>
-
-        <div class="mb-3 row">
-            <div class="col-2 label-row mt-2">
-                <label class="label-search">상품명</label>
-            </div>
-            <div class="col-10 control-search-col" >
-                <div class="control-search">
-                    <input class="form-control" type="text" value="" />
-                    <img class="search-form"  src="/images/icons/icon_search.svg" />
-                </div>
-            </div>
-        </div>
-
+<main>
+    <div class="p-3 content">
         <div class="row">
-            <div class="col-10">
-                <input class="form-control text-center header-search__input"  value="세종한솔점" name="daterange"/>
+             <h6 class="content__h6">가맹점</h6>
+
+
+            <div class="col-12 mt-2">
+                <select class="form-select select-custom" aria-label="" id="js-choose-role">
+                    <!-- <select class="form-select select-custom chosen" aria-label="" id="js_choose_role"> -->
+                    <option class=""value="">등급을 선택하세요.</option>
+                    <option value="1">최고 관리자</option>
+                    <option value="2">일반 관리자</option>
+                    <option value="3">최고 관리자</option>
+                    <option value="3">일반 관리자</option>
+                </select>
             </div>
 
-            <div class="col-2 d-flex align-items-center text-end">
-                <span class="header-search__glance"> 일별 </span><img src="/images/icons/icon_miniarrow.svg" class="header-search__icon_miniarrow"/>
+
+            <div class="col-12 mt-4">
+                <input type="text" class="form-control" placeholder="제목을 입력하세요.">
             </div>
 
+
+            <div class="col-12 mt-3">
+              <textarea  class="form-control content__textarea" name="w3review" rows="6">At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.</textarea>
+            </div>
+
+            <div class="col-12 mt-3">
+                <h6 class="content__h6">파일</h6>
+            </div>
+
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-9 padding-right-0">
+                        <input type="text" class="form-control" placeholder="선택된 파일 없습니다.">
+                    </div>
+
+                    <div class="col-3">
+                        <button class="content__btn-warning">업로드</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 mt-2">
+                <button class="content__button-file mt-2">Moongu/image.gif &ensp;<img src="/images/icons/pop_miniX.svg" class="pop_miniX"></button>
+                <button class="content__button-file mt-2">Moongu/image.gif &ensp;<img src="/images/icons/pop_miniX.svg" class="pop_miniX"></button>
+                <button class="content__button-file mt-2">Moongu/image.gif &ensp;<img src="/images/icons/pop_miniX.svg" class="pop_miniX"></button>
+                <button class="content__button-file mt-2">Moongu/image.gif &ensp;<img src="/images/icons/pop_miniX.svg" class="pop_miniX"></button>
+                <button class="content__button-file mt-2">Moongu/image.gif &ensp;<img src="/images/icons/pop_miniX.svg" class="pop_miniX"></button>
+            </div>
 
         </div>
-    </section>
 
-    <div class="m-3 content content-02">
-        <div class="p-3 content__box">
-            <h6 class="content__total-sale p-0 m-0">총 매출</h6>
 
-            <div class="row">
-                <div class="col-12 d-flex m-0">
-                    <span class="content__won-character align-middle">&#8361;</span><span class="content__won"> 533,578,500</span>
-                </div>
+    </div>
+    <div class="fixed-bottom">
+        <div class="row">
+            <div class="col-6 deposit-management__button-fixed-left" id="open-modal">
+                <p class="deposit-management__button-p">수동 출금</p>
             </div>
-            <div class="row mt-3 ">
-                <div class="col-6 ">
-                    <h6 class="content__number-pay p-0 m-0">결제 건수</h6>
-                    <span class="content__number">90</span>
-                </div>
 
-                <div class="col-6">
-                    <h6 class="content__number-pay p-0 m-0">결제 건수</h6>
-                    <div class="row">
-                        <div class="col-12 d-flex m-0">
-                            <span class="content__number-character-won align-middle">&#8361;</span><span class="content__number"> 90</span>
-                        </div>
-                    </div>
-                    <!--                    <span class="content__number-character-won">&#8361;</span><span class="content__number"> 90</span>-->
-                </div>
+            <div class="col-6 deposit-management__button-fixed-right">
+                <p class="deposit-management__button-p">수동 입금</p>
             </div>
         </div>
-
-
-        <div class="row justify-content-between mt-3">
-            <div class="col-4">
-                <h5 class="content__detail-sale-history">상세 매출 내역</h5>
-
-            </div>
-            <div class="col-4 text-end">
-                <p class="content__sale-piriod">기간 별 매출 <img src="/images/icons/icon_miniarrow.svg" /> </p>
-            </div>
-        </div>
-
-
-        <ul class="list-group" >
-            <li class="list-group-item content__border-none">
-                <div class="row justify-content-center ">
-                    <div class="col-11  content__custom-border p-0 pt-2">
-                        <div class="row justify-content-between ">
-                            <div class="col-6">
-                                <p class="content__box-content-time">00시</p>
-                                <p class="content__box-content">(5건)</p>
-                            </div>
-                            <div class="col-6 text-end m-0">
-                                <p class="content__box-content">총 합계</p>
-                                <div class="content__box-price">
-                                    <span class="content__won-character-1">&#8361;</span><span class="content__box-number"> 355,222</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </li>
-
-            <li class="list-group-item content__border-none">
-                <div class="row justify-content-center ">
-                    <div class="col-11  content__custom-border p-0 pt-2">
-                        <div class="row justify-content-between ">
-                            <div class="col-6">
-                                <p class="content__box-content-time">00시</p>
-                                <p class="content__box-content">(5건)</p>
-                            </div>
-                            <div class="col-6 text-end m-0">
-                                <p class="content__box-content">총 합계</p>
-                                <div class="content__box-price">
-                                    <span class="content__won-character-1 align-middle">&#8361;</span><span class="content__box-number"> 355,222</span>
-                                </div>
-
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </li>
-
-            <li class="list-group-item content__border-none">
-                <div class="row justify-content-center ">
-                    <div class="col-11  content__custom-border p-0 pt-2">
-                        <div class="row justify-content-between ">
-                            <div class="col-6">
-                                <p class="content__box-content-time">00시</p>
-                                <p class="content__box-content">(5건)</p>
-                            </div>
-                            <div class="col-6 text-end m-0">
-                                <p class="content__box-content">총 합계</p>
-                                <div class="content__box-price">
-                                    <span class="content__won-character-1 align-middle">&#8361;</span><span class="content__box-number"> 355,222</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </li>
-
-            <li class="list-group-item content__border-none">
-                <div class="row justify-content-center ">
-                    <div class="col-11  p-0 pt-2">
-                        <div class="row justify-content-between ">
-                            <div class="col-6">
-                                <p class="content__box-content-time">00시</p>
-                                <p class="content__box-content">(5건)</p>
-                            </div>
-                            <div class="col-6 text-end m-0">
-                                <p class="content__box-content">총 합계</p>
-                                <div class="content__box-price">
-                                    <span class="content__won-character-1 align-middle">&#8361;</span><span class="content__box-number"> 355,222</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </li>
-        </ul>
 
     </div>
 
@@ -424,26 +342,11 @@
 
 <script src="/js/script.min.js?v=2021070601"></script>
 
-<link rel="stylesheet" href="/css/bscroll.min.css">
-<script src="https://unpkg.com/better-scroll@latest/dist/better-scroll.min.js"></script>
-<script type="text/javascript" src="/js/jquery.selectscroll.min.js"></script>
-
-<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
 
 <script>
-    $(function() {
-        $('input[name="daterange"]').daterangepicker({
-            opens: 'left',
-            locale: {
-                format: 'YYYY-MM-DD'
-            }
-        }, function(start, end, label) {
-            console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
-        });
-    });
+    $(document).on('change', '#js-choose-role', function() {
+        $(this).toggleClass('chosen');
+    })
 </script>
 
 
