@@ -116,5 +116,25 @@
     font-family: NanumSquareBold;
   }
 
+  .label-radio>input:checked+span::before {
+    //content: "";
+    margin-right: 5px;
+    //width: 20px;
+    //height: 20px;
+    //border-radius: 50%;
+    //border: 1px solid #dfdfdf;
+    //background-image: url(./../images/icons/icon_radio_on.svg);
+    //background-size: contain;
+  }
+
+  .label-radio>input+span::before {
+    //content: "";
+    margin-right: 5px;
+    //width: 20px;
+    //height: 20px;
+    //border-radius: 50%;
+    //border: 1px solid #dfdfdf;
+  }
+
 }
 
