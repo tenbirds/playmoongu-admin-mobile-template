@@ -205,8 +205,8 @@ $colorViolet: #5815a5;
     .line-selling {
       width: 300px;
       height: 1px;
-      margin: 10px 20px 0px 20px;
-      background-color: #f5f5f5;
+      // margin: 10px 20px 0px 20px;
+      background-color: #e4e0e0;
     }
 
     .title {
@@ -241,6 +241,8 @@ $colorViolet: #5815a5;
 
             img {
               padding: 0px 2px;
+              width: 8px;
+              height: 4px;
             }
           }
         }
