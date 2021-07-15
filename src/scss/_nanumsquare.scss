@@ -81,6 +81,7 @@ src: url(./../fonts/NotoSansCJKkr-Bold.woff) format('woff'),
       font-style: normal;
   
   }
+
   @font-face {
      font-family: 'NanumSquareBold';
      src: url(./../fonts/NanumSquareBold.eot);
@@ -91,5 +92,15 @@ src: url(./../fonts/NotoSansCJKkr-Bold.woff) format('woff'),
           url(./../fonts/NanumSquareBold.svg#NanumSquareBold) format('svg');
      font-weight: normal;
      font-style: normal;
- 
  }
+
+  @font-face {
+  font-family: 'RobotoRegular';
+  src: url(./../fonts/Roboto-Regular-webfont.eot);
+  src: url(./../fonts/Roboto-Regular-webfont.eot?#iefix) format('embedded-opentype'),
+  url(./../fonts/Roboto-Regular-webfont.woff) format('woff2'),
+  url(./../fonts/Roboto-Regular-webfont.ttf) format('truetype'),
+  url(./../fonts/Roboto-Regular-webfont.svg#robotoregular) format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

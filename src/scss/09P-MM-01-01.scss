@@ -55,7 +55,7 @@
   }
 
   &__holding-money {
-    font-family: Roboto;
+    font-family: RobotoMedium;
     font-size: 20px;
     font-weight: 500;
     font-stretch: normal;
@@ -106,6 +106,14 @@
     font-style: normal;
     letter-spacing: normal;
     color: #111111;
+  }
+
+  .margin-top-10 {
+    margin-top : 10px;
+  }
+
+  .font-malgun {
+    font-family: NanumSquareBold;
   }
 
 }

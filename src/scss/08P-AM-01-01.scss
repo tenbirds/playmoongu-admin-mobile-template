@@ -13,6 +13,9 @@
 
   main {
     //background-color: #ffffff;
+    .padding-header {
+      padding : 1.25rem ;
+    }
     .header-search {
       background-color: #ffffff;
       &__name {
@@ -39,14 +42,26 @@
         letter-spacing: normal;
         text-align: left;
         color: #111111;
+        margin-right: 5px;
       }
 
       &__input {
         height: 33px;
+        font-family: RobotoRegular;
+        font-size: 12px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: normal;
+        color: #111111;
       }
 
       .padding-right-0 {
         padding-right: 0;
+      }
+
+      .name-margin {
+        margin-bottom: 15px !important;
       }
     }
 
@@ -59,11 +74,12 @@
     }
 
     .content-03 {
-      margin-top: 120px !important;
+      margin-top: 140px !important;
     }
 
     .content-04 {
       margin-top: 180px !important;
+      margin : 15px;
     }
 
     .content-05 {
@@ -72,6 +88,37 @@
 
     .content-06 {
       margin-top: 75px !important;
+    }
+
+    .control-search {
+      position: relative;
+      //width: 70%;
+      //padding-left: 10px;
+
+      img {
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+
+      }
+    }
+
+    .label-row {
+      padding-right: 0px;
+    }
+    .label-search {
+      font-family: NanumSquare;
+      font-size: 14px;
+      font-weight: 800;
+      font-stretch: normal;
+      font-style: normal;
+      letter-spacing: normal;
+      color: #111111;
+    }
+
+    .control-search-col {
+      padding-left: 0px;
     }
 
     .content {
@@ -86,6 +133,10 @@
         height: 141px;
         border-radius: 10px;
         background-color: #5815a5;
+        //margin-top: 0px;
+        //margin-bottom: 0px;
+        margin-top: 190px;
+        margin-bottom: 30px;
       }
       &__total-sale {
         opacity: 0.8;
@@ -99,7 +150,7 @@
         color: #ffffff;
       }
       &__won {
-        font-family: Roboto;
+        font-family: RobotoMedium;
         font-size: 25px;
         font-weight: 500;
         font-stretch: normal;
@@ -199,7 +250,6 @@
       }
 
       &__box-content {
-        opacity: 0.8;
         font-family: NanumSquare;
         font-size: 11px;
         font-weight: normal;
@@ -255,6 +305,7 @@
         color: #111111;
       }
       &__box-content-no {
+        font-family: RobotoLight;
         font-size: 11px;
         font-weight: 300;
         font-stretch: normal;
@@ -268,6 +319,18 @@
       &__box-content-receipt-number {
         font-family: NanumSquare;
         font-size: 14px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #111111;
+      }
+
+      &__box-content-receipt-number-12 {
+        font-family: NanumSquare;
+        font-size: 12px;
         font-weight: bold;
         font-stretch: normal;
         font-style: normal;
@@ -316,10 +379,9 @@
       }
 
       &__box-content-number-text {
-        opacity: 0.99;
         font-family: NanumSquare;
-        font-size: 11px;
-        font-weight: bold;
+        font-size: 14px;
+        font-weight: 800;
         font-stretch: normal;
         font-style: normal;
         letter-spacing: normal;
