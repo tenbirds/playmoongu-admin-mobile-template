@@ -1,5 +1,15 @@
 .inquiry-03{
   .content {
+    input::placeholder{
+      opacity: 0.5;
+      font-family: NanumSquareR;
+      font-size: 14px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      letter-spacing: normal;
+      color: #111111;
+    }
     &__h6 {
       font-family: NanumSquareEB;
       font-size: 14px;
@@ -9,5 +19,86 @@
       letter-spacing: normal;
       color: #111111;
     }
+
+    .select-custom {
+      opacity: 0.5;
+      font-family: NanumSquare;
+      font-size: 14px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: left;
+      color: #111111;
+      padding: 10px;
+      &:focus {
+        border: 1px solid #e6e6e6;
+        box-shadow: none !important;
+      }
+      &.chosen {
+        opacity: 1 !important;
+      }
+    }
+
+    &__textarea {
+      resize : none;
+      font-family: NanumSquareR;
+      font-size: 14px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      letter-spacing: normal;
+      color: #111111;
+    }
+
+    &__btn-warning {
+      padding: 8px 12px;
+      border-radius: 5px;
+      background-color: #fed400;
+      border : none;
+      font-family: NanumSquareEB;
+      font-size: 14px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      letter-spacing: normal;
+      color: #111111;
+    }
+    .padding-right-0 {
+      padding-right: 0px;
+    }
+
+    &__button-file {
+      padding: 10px 25px;
+      border-radius: 20px;
+      background-color: #f5ebf6;
+      border: none;
+
+      font-family: NanumSquareEB;
+      font-size: 14px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.14;
+      letter-spacing: normal;
+      text-align: left;
+      color: #111111;
+    }
+
+    &__button-fixed-left {
+      height: 58px;
+      background-color: #e6e6e6;
+      line-height: 58px;
+      text-align: center;
+    }
+
+    &__button-fixed-right {
+      height: 58px;
+      background-color: #fed400;
+      line-height: 58px;
+      text-align: center;
+    }
+
   }
 }
