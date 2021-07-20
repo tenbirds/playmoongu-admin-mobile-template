@@ -97,6 +97,8 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+            flex-wrap: nowrap;
+            overflow-x: scroll;
             li {
                 padding: 0 12px;
                 a {
@@ -110,6 +112,10 @@
                     letter-spacing: normal;
                     text-align: left;
                     color: #111111;
+                    white-space: nowrap;
+                    &.active {
+                        color: #111111;
+                    }
                 }
             }
         }
