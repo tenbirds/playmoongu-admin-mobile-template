@@ -166,7 +166,17 @@
                 <div class="content-register-item">
                     <label class="content-register-item__title">상품명</label>
                     <div class="content-register-item__form">
-                        <input class="form-control value-product-name" value="문구야러버" />
+                        <input class="form-control value-product-name d-none" value="문구야러버" />
+                        <div class="select2-cus">
+                            <select class="js-example-basic-single" name="states">
+                                <option value="AsL">문구야러버</option>
+                                <option value="AL">Alabama2</option>
+                                <option value="WY">cyoming</option>
+                                <option value="WY">dyoming</option>
+                                <option value="WY">eyoming</option>
+                                <option value="WY">fyoming</option>
+                              </select>
+                        </div>
                         <button class="content-register-item__form__button">상품 추가</button>
                     </div>
                 </div>
@@ -505,10 +515,22 @@
 <script src="/js/script.min.js?v=2021070601"></script>
 
 
+<link href='https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css' rel='stylesheet' type='text/css'>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+
 <link rel="stylesheet" href="/css/bscroll.min.css">
 <script src="https://unpkg.com/better-scroll@latest/dist/better-scroll.min.js"></script>
 <script type="text/javascript" src="/js/jquery.selectscroll.min.js"></script>
 <script type="text/javascript">
+
+$(document).ready(function() {
+    
+    $('.js-example-basic-single').select2({
+        placeholder: 'This is my placeholder',
+        allowClear: true
+    });
+});
+
     $(function () {
         function init () {
             $('.event__select').selectScroll({
