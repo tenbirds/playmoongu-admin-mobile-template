@@ -19,18 +19,35 @@
           letter-spacing: normal;
         }
       }
+      .select2-cus {
+        &.no-choose {
+          opacity: 0.5 !important;
+        }
+        .select2-selection__rendered {
+          font-family: NanumSquare;
+          font-size: 14px;
+          font-weight: bold;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          text-align: left;
+          color: #111111;
+          &:focus {
+            border: 1px solid #e6e6e6;
+            box-shadow: none !important;
+          }
+          &.chosen {
+            opacity: 1 !important;
+          }
+        }
+      }
       .select-custom {
         opacity: 0.5;
-        font-family: NanumSquare;
+        font-family: RobotoRegular;
         font-size: 14px;
-        font-weight: normal;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: normal;
-        letter-spacing: normal;
         text-align: left;
         color: #111111;
-        padding: 10px;
         &:focus {
           border: 1px solid #e6e6e6;
           box-shadow: none !important;
