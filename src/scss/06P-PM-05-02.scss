@@ -44,6 +44,42 @@
                             text-align: left;
                             color: #111111;
                         }
+                        select {
+                            margin-right: 10px;
+                            font-family: RobotoMedium;
+                            font-size: 14px;
+                            font-weight: 500;
+                            font-stretch: normal;
+                            font-style: normal;
+                            line-height: normal;
+                            letter-spacing: normal;
+                            text-align: left;
+                            color: #111111;
+                        }
+                        .select2-cus {
+                            margin-right: 10px;
+                            width: 100%;
+                            .selection {
+                                .select2-selection__rendered {
+                                    height: 100%;
+                                    display: flex;
+                                    align-items: center;
+                                    font-family: RobotoMedium;
+                                    font-size: 14px;
+                                    font-weight: 500;
+                                    font-stretch: normal;
+                                    font-style: normal;
+                                    line-height: normal;
+                                    letter-spacing: normal;
+                                    text-align: left;
+                                    color: #111111;
+                                    padding-left: 15px;
+                                }
+                                .select2-selection__arrow {
+                                    top: 5px;
+                                }
+                            }
+                        }
                         .value-product-name {
                             font-family: NanumSquareBold;
                         }
@@ -286,6 +322,15 @@
         }
         .main_center_content {
             margin-top: 235px;
+        }
+    }
+    .select2-container--open {
+        .select2-dropdown--below {
+            .select2-search--dropdown {
+                .select2-search__field {
+                    padding: 4px 10px;
+                }
+            }
         }
     }
 }
