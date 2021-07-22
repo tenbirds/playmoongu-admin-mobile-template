@@ -159,6 +159,10 @@
                 bottom: 10px;
                 cursor: pointer;
             }
+            &__img-new{
+                position: absolute;
+                left: 0;
+            }
         }
         &__data {
             padding: 4px 10px 3px 10px;
