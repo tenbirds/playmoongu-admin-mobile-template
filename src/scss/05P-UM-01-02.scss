@@ -5,71 +5,59 @@
   .mt-0 {
     margin-top: 0px;
   }
-  .form-detail{
-    padding: 0px 8px 30px 8px;
-    font-family: NanumSquare;
-    .form-detail-box {
-      margin-bottom: 20px;
-      .label-input {
-          color: #111;
-         .required {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+    .form-detail{
+      padding: 0px 0px 30px 0px;
+      font-family: NanumSquare;
+      .form-detail-box {
+        margin-bottom: 20px;
+        .label-input {
             color: #111;
-         }
+           .required {
+              color: #111;
+           }
+        }
       }
-    }
-    &__main-title {
-      font-family: NanumSquare;
-      font-size: 20px;
-      font-weight: 800;
-      font-stretch: normal;
-      font-style: normal;
-      text-align: left;
-      color: #111111;
-      margin-bottom: 20px;
-      &.store-owner {
-        margin-top: 45px;
+      &__main-title {
+        font-family: NanumSquare;
+        font-size: 20px;
+        font-weight: 800;
+        font-stretch: normal;
+        font-style: normal;
+        text-align: left;
+        color: #111111;
         margin-bottom: 20px;
-      } 
-      &.histories-deposit {
-        margin-top: 45px;
-        margin-bottom: 20px;
-      } 
-      &.memo {
-        margin-top: 45px;
-        margin-bottom: 25px;
-      } 
-    }
-    .base-input {
-      font-family: 'Roboto';
-      font-size:14px;
-      font-weight: bold;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: normal;
-      letter-spacing: normal;
-      color: #111111;
-      &:read-only {
-        border-radius: 5px;
-        border: solid 1px #e6e6e6;
-        background-color: rgb(230 230 230 / 50%);
+        &.store-owner {
+          margin-top: 45px;
+          margin-bottom: 20px;
+        } 
+        &.histories-deposit {
+          margin-top: 45px;
+          margin-bottom: 20px;
+        } 
+        &.memo {
+          margin-top: 45px;
+          margin-bottom: 25px;
+        } 
       }
-    }
-    .base-select {
-      font-family: NanumSquare;
-      font-size: 14px;
-      font-weight: bold;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: normal;
-      letter-spacing: normal;
-      text-align: left;
-      color: #111111;
-    }
-    .select2-cus {
-      &.no-choose {
-        opacity: 0.5 !important;
+      .base-input {
+        font-family: 'Roboto';
+        font-size:14px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #111111;
+        &:read-only {
+          border-radius: 5px;
+          border: solid 1px #e6e6e6;
+          background-color: rgb(230 230 230 / 50%);
+        }
       }
-      .select2-selection__rendered {
+      .base-select {
         font-family: NanumSquare;
         font-size: 14px;
         font-weight: bold;
@@ -79,304 +67,319 @@
         letter-spacing: normal;
         text-align: left;
         color: #111111;
-        &:focus {
-          border: 1px solid #e6e6e6;
-          box-shadow: none !important;
-        }
-        &.chosen {
-          opacity: 1 !important;
-        }
       }
-    }
-    .dropdown-custom {
-      color: #111111;
-      &__button {
-        border-radius: 5px;
-        border: solid 1px #e6e6e6;
-        background-color: #ffffff;
-        display: block;
-        width: 100%;
-        opacity: 5;
-        font-family: NanumSquare;
-        font-size: 14px;
-        font-weight: bold;
-        font-stretch: normal;
-        font-style: normal;
-        text-align: left;
-        color: #111111;
-        padding: 8px 10px 8px 15px;
-        &.no-chose {
+      .select2-cus {
+        &.no-choose {
           opacity: 0.5 !important;
         }
-        &::after {
-          font-size: 23px;
-          float: right;
-          background-image: url('./../images/icons/icon_miniarrow_up.svg');
-          width: 10px;
-          height: 4px;
-          background-repeat: no-repeat;
-          border: none;
-          margin-top: 5px;
+        .select2-selection__rendered {
+          font-family: NanumSquare;
+          font-size: 14px;
+          font-weight: bold;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          text-align: left;
+          color: #111111;
+          &:focus {
+            border: 1px solid #e6e6e6;
+            box-shadow: none !important;
+          }
+          &.chosen {
+            opacity: 1 !important;
+          }
         }
       }
-      ul {
-        width: 100%;
-        box-shadow: none;
-        border: 1px solid #e6e6e6;
-        border-top: none;
-        margin-top: -6px !important;
-        hr {
-          background: #e6e6e6;
-          width: 90%;
-          margin: 2px auto;
-          height: 0.5
+      .dropdown-custom {
+        color: #111111;
+        &__button {
+          border-radius: 5px;
+          border: solid 1px #e6e6e6;
+          background-color: #ffffff;
+          display: block;
+          width: 100%;
+          opacity: 5;
+          font-family: NanumSquare;
+          font-size: 14px;
+          font-weight: bold;
+          font-stretch: normal;
+          font-style: normal;
+          text-align: left;
+          color: #111111;
+          padding: 8px 10px 8px 15px;
+          &.no-chose {
+            opacity: 0.5 !important;
+          }
+          &::after {
+            font-size: 23px;
+            float: right;
+            background-image: url('./../images/icons/icon_miniarrow_up.svg');
+            width: 10px;
+            height: 4px;
+            background-repeat: no-repeat;
+            border: none;
+            margin-top: 5px;
+          }
         }
-        li {
-          button {
+        ul {
+          width: 100%;
+          box-shadow: none;
+          border: 1px solid #e6e6e6;
+          border-top: none;
+          margin-top: -6px !important;
+          hr {
+            background: #e6e6e6;
+            width: 90%;
+            margin: 2px auto;
+            height: 0.5
+          }
+          li {
+            button {
+              font-family: NanumSquare;
+              font-size: 14px;
+              font-weight: bold;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: normal;
+              letter-spacing: normal;
+              text-align: left;
+              color: #111111;
+            }
+          }
+        }
+      }
+  
+      .store-owner {
+        .list-group {
+          border-radius: 10px;
+          border: solid 1px #f5f5f5;
+          .card {
+            -moz-box-shadow: none;
+            -goog-ms-box-shadow: none;
+            -webkit-box-shadow: none;
+            box-shadow: none !important;
+            .card-body {
+              padding-top: 0px;
+              padding-bottom: 1.063rem;
+              padding-left: 0.938rem;
+              padding-right: 0.938rem;
+              &.top-card {
+                padding-top: 1.063rem !important;
+              }
+            }
+          }
+          hr {
+            border-bottom: 1px solid #f5f5f5;
+            margin-bottom: 1px;
+            margin-top: 17px;
+          }
+        }
+        &__number {
+          span {
+            font-size: 11px;
+            color: #111111;
+            font-family: RobotoLight;
+          }
+        }
+        &__name {
+          opacity: 0.8;
+          font-family: NanumSquare;
+          font-size: 11px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          color: #111111;
+          .col-left {
+            .title {
+              opacity: 0.8;
+            }
+          }
+          .col-right {
+            .title {
+              opacity: 0.8;
+            }
+          }
+        }
+        &__desc {
+          font-size: 14px;
+          color: #111111;
+          font-weight: bold;
+          font-family: NanumSquare;
+          .col-left {
+            .title {
+            }
+          }
+          .col-right {
+            .title {
+            }
+          }
+        }
+      }
+  
+      .histories-deposit {
+        .list-group {
+          border-radius: 10px;
+          border: solid 1px #f5f5f5;
+          .card {
+            -moz-box-shadow: none;
+            -goog-ms-box-shadow: none;
+            -webkit-box-shadow: none;
+            box-shadow: none !important;
+            .card-body {
+              padding-top: 0px;
+              padding-bottom: 1.063rem;
+              padding-left: 0.938rem;
+              padding-right: 0.938rem;
+              &.top-card {
+                padding-top: 1.063rem !important;
+              }
+            }
+          }
+          hr {
+            border-bottom: 1px solid #f5f5f5;
+            margin-bottom: 1px;
+            margin-top: 17px;
+          }
+        }
+        &__number {
+          span {
+            font-size: 11px;
+            color: #111111;
+            font-family: RobotoLight;
+          }
+        }
+        &__name {
+          opacity: 0.8;
+          font-family: NanumSquare;
+          font-size: 11px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          color: #111111;
+          .col-left {
+            .title {
+              opacity: 0.8;
+            }
+          }
+          .col-right {
+            .title {
+              opacity: 0.8;
+            }
+          }
+        }
+        &__desc {
+          font-size: 14px;
+          color: #111111;
+          font-weight: bold;
+          font-family: Roboto;
+        }
+      }
+  
+      .memo {
+        .list-group {
+          border-radius: 0.625rem;
+          border: solid 1px #f5f5f5;
+          .card {
+            -moz-box-shadow: none;
+            -goog-ms-box-shadow: none;
+            -webkit-box-shadow: none;
+            box-shadow: none !important;      
+            .card-body {
+              padding-top: 0px;
+              padding-bottom: 1.063rem;
+              padding-left: 0.938rem;
+              padding-right: 0.938rem;
+              &.top-card {
+                padding-top: 1.063rem !important;
+              }
+            }
+          }
+          hr {
+            border-bottom: 1px solid #f5f5f5;
+            margin-bottom: 1px;
+            margin-top: 17px;
+          }
+        }
+        &__number {
+          height: 20px;
+          span {
+            color: #111111;
+            font-family: RobotoLight;
+            font-size: 11px;
+            font-weight: 300;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: left;
+          }
+        }
+        &__name {
+          height: 25px;;
+          .col-left {
+            .title {
+              opacity: 0.8;
+              font-family: NanumSquare;
+              font-size: 11px;
+              font-weight: normal;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: normal;
+              letter-spacing: normal;
+              color: #111111;
+            }
+          }
+          .col-right {
+            .title {
+              opacity: 0.8;
+            }
+          }
+        }
+        &__desc {
+          p {
             font-family: NanumSquare;
             font-size: 14px;
-            font-weight: bold;
+            font-weight: normal;
             font-stretch: normal;
             font-style: normal;
             line-height: normal;
             letter-spacing: normal;
             text-align: left;
             color: #111111;
+            margin-top: 8px;
+            margin-bottom: 0px;
+          }
+        }
+        &__date {
+          img {
+            width: 12px;
+            height: 12px;
+            line-height: 12px;
+            margin-left: 15px;
+            margin-bottom: 1px;
           }
         }
       }
-    }
-
-    .store-owner {
-      .list-group {
-        border-radius: 10px;
-        border: solid 1px #f5f5f5;
-        .card {
-          -moz-box-shadow: none;
-          -goog-ms-box-shadow: none;
-          -webkit-box-shadow: none;
-          box-shadow: none !important;
-          .card-body {
-            padding-top: 0px;
-            padding-bottom: 1.063rem;
-            padding-left: 0.938rem;
-            padding-right: 0.938rem;
-            &.top-card {
-              padding-top: 1.063rem !important;
-            }
-          }
-        }
-        hr {
-          border-bottom: 1px solid #f5f5f5;
-          margin-bottom: 1px;
-          margin-top: 17px;
-        }
+  
+      &__add-more {
+        margin-top: 40px;
+        background-color: rgb(245 235 246 / 50%);
+        color: #5815a5;
+        border: 1px solid #5815a5;
+        width: 52px;
+        height: 33px;
+        padding: 5px 5px;
+        font-size: 12px;
+        border-radius: 5px;
+        font-weight: 800;
       }
-      &__number {
-        span {
-          font-size: 11px;
-          color: #111111;
-          font-family: RobotoLight;
-        }
-      }
-      &__name {
-        opacity: 0.8;
-        font-family: NanumSquare;
-        font-size: 11px;
-        font-weight: normal;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: normal;
-        letter-spacing: normal;
-        color: #111111;
-        .col-left {
-          .title {
-            opacity: 0.8;
-          }
-        }
-        .col-right {
-          .title {
-            opacity: 0.8;
-          }
-        }
-      }
-      &__desc {
-        font-size: 14px;
-        color: #111111;
-        font-weight: bold;
-        font-family: NanumSquare;
-        .col-left {
-          .title {
-          }
-        }
-        .col-right {
-          .title {
-          }
-        }
-      }
-    }
-
-    .histories-deposit {
-      .list-group {
-        border-radius: 10px;
-        border: solid 1px #f5f5f5;
-        .card {
-          -moz-box-shadow: none;
-          -goog-ms-box-shadow: none;
-          -webkit-box-shadow: none;
-          box-shadow: none !important;
-          .card-body {
-            padding-top: 0px;
-            padding-bottom: 1.063rem;
-            padding-left: 0.938rem;
-            padding-right: 0.938rem;
-            &.top-card {
-              padding-top: 1.063rem !important;
-            }
-          }
-        }
-        hr {
-          border-bottom: 1px solid #f5f5f5;
-          margin-bottom: 1px;
-          margin-top: 17px;
-        }
-      }
-      &__number {
-        span {
-          font-size: 11px;
-          color: #111111;
-          font-family: RobotoLight;
-        }
-      }
-      &__name {
-        opacity: 0.8;
-        font-family: NanumSquare;
-        font-size: 11px;
-        font-weight: normal;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: normal;
-        letter-spacing: normal;
-        color: #111111;
-        .col-left {
-          .title {
-            opacity: 0.8;
-          }
-        }
-        .col-right {
-          .title {
-            opacity: 0.8;
-          }
-        }
-      }
-      &__desc {
-        font-size: 14px;
-        color: #111111;
-        font-weight: bold;
-        font-family: Roboto;
-      }
-    }
-
-    .memo {
-      .list-group {
-        border-radius: 0.625rem;
-        border: solid 1px #f5f5f5;
-        .card {
-          -moz-box-shadow: none;
-          -goog-ms-box-shadow: none;
-          -webkit-box-shadow: none;
-          box-shadow: none !important;      
-          .card-body {
-            padding-top: 0px;
-            padding-bottom: 1.063rem;
-            padding-left: 0.938rem;
-            padding-right: 0.938rem;
-            &.top-card {
-              padding-top: 1.063rem !important;
-            }
-          }
-        }
-        hr {
-          border-bottom: 1px solid #f5f5f5;
-          margin-bottom: 1px;
-          margin-top: 17px;
-        }
-      }
-      &__number {
-        height: 20px;
-        span {
-          color: #111111;
-          font-family: RobotoLight;
-          font-size: 11px;
-          font-weight: 300;
-          font-stretch: normal;
-          font-style: normal;
-          line-height: normal;
-          letter-spacing: normal;
-          text-align: left;
-        }
-      }
-      &__name {
-        height: 25px;;
-        .col-left {
-          .title {
-            opacity: 0.8;
-            font-family: NanumSquare;
-            font-size: 11px;
-            font-weight: normal;
-            font-stretch: normal;
-            font-style: normal;
-            line-height: normal;
-            letter-spacing: normal;
-            color: #111111;
-          }
-        }
-        .col-right {
-          .title {
-            opacity: 0.8;
-          }
-        }
-      }
-      &__desc {
-        p {
-          font-family: NanumSquare;
-          font-size: 14px;
-          font-weight: normal;
-          font-stretch: normal;
-          font-style: normal;
-          line-height: normal;
-          letter-spacing: normal;
-          text-align: left;
-          color: #111111;
-          margin-top: 8px;
-          margin-bottom: 0px;
-        }
-      }
-      &__date {
-        img {
-          width: 12px;
-          height: 12px;
-          line-height: 12px;
-          margin-left: 15px;
-          margin-bottom: 1px;
-        }
-      }
-    }
-
-    &__add-more {
-      margin-top: 40px;
-      background-color: rgb(245 235 246 / 50%);
-      color: #5815a5;
-      border: 1px solid #5815a5;
-      width: 52px;
-      height: 33px;
-      padding: 5px 5px;
-      font-size: 12px;
-      border-radius: 5px;
-      font-weight: 800;
     }
   }
-
 
   .modal-add-memo {
     .modal-body {

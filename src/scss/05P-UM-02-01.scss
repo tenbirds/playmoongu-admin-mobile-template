@@ -28,7 +28,7 @@
       .input-search-common__input-form::placeholder {
         color:#111;
         opacity: 0.5;
-        font-family: NanumRegular;
+        font-family: NanumSquare;
       }
       padding-right: 4px;
       input {
@@ -43,7 +43,7 @@
   .account-items {
     background-color: #F5F5F5;
     min-height: 95vh;
-    padding: 95px 15px 0px 15px;
+    padding: 95px 20px 0px 20px;
     font-size: 14px;
     .list-group {
       // border-radius: 10px;
@@ -118,8 +118,14 @@
     }
     &__desc {
       span {
-        font-size: 11px;
-        color: #111111
+        font-family: NanumSquareBold;
+        font-size: 12px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #111111;
       }
     }
   }

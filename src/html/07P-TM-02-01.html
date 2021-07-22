@@ -12,7 +12,9 @@
         'param': "open_nav"
     })
     <main class="">
-        <section class="p-3 header-search container">
+        <section class="header-search container">
+            <h3 class="header-search__name">전체 매장 <img src="/images/icons/icon_arrowBB.svg" class="header-search__icon_arrowBB"></h3>
+
             <div class="row align-items-center">
                 <div class="col-4 select-block">
                     <button type="button" class="btn btn-success" id="js-switch-cond">
@@ -20,9 +22,9 @@
                         <span class="btn-label">전화번호</span>
                     </button>
                 </div>
-                <div class="col-8">
+                <div class="col-8 search-block">
                     <div class="input-search-common">
-                        <input placeholder="매장 명을 검색해 주세요." class="form-control input-search-common__input-form" />
+                        <input placeholder="" class="form-control input-search-common__input-form" />
                         <img class="input-search-common__icon-search" src="/images/icons/icon_search.svg" />
                     </div>
                 </div>
@@ -44,7 +46,10 @@
             <div class="row static-box">
                 <div class="col-12">
                     <h6 class="static-box__total-sale">총 금액</h6>
-                    <span class="static-box__won">&#8361; 533,578,500</span>
+                    <span class="static-box__won">
+                        <span class="currency">\</span>
+                        533,578,500
+                    </span>
                     <div class="row mt-3">
                         <div class="col-5 ">
                             <h6 class="static-box__number-pay">결제 건수</h6>
@@ -53,7 +58,9 @@
         
                         <div class="col-6">
                             <h6 class="static-box__number-pay">손실 건수</h6>
-                            <span class="static-box__number">&#8361; 3,314</span>
+                            <span class="static-box__number">
+                                3,314
+                            </span>
                         </div>
                     </div>
                 </div>        
