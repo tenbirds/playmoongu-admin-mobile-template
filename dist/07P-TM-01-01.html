@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-    <title>관리자 관리</title>
+    <title>재고 관리</title>
     <link rel="manifest" href="/manifest.json">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css" /> -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet" />
@@ -26,7 +26,7 @@
         <div class="header">
             <div class="content-header">
                 <img src="/images/icons/m_menu.svg" class="" onclick="handleClick('open_nav')" alt="">
-                <h3 class="header_title">관리자 관리</h3>
+                <h3 class="header_title">재고 관리</h3>
                
                 <div class="header-right">
                     
@@ -49,7 +49,7 @@
             
         </a>
     </div>
-    <h1 class="header-title @@dashboard-title">관리자 관리</h1>
+    <h1 class="header-title @@dashboard-title">재고 관리</h1>
     <div class="header-right">
         <a href="">
              
@@ -436,13 +436,13 @@
                         <div class="row stock-item">
                             <label for="" class="col-4 col-form-label stock-item__label">상품명</label>
                             <div class="col-8">
-                                <span class="stock-item__value">어몽어스 열쇠고리 1</span>
+                                <span class="stock-item__value product_name">어몽어스 열쇠고리 1</span>
                             </div>
                         </div>
                         <div class="row stock-item">
                             <label for="" class="col-4 col-form-label stock-item__label">바코드 번호</label>
                             <div class="col-8">
-                                <span class="stock-item__value">812454412448</span>
+                                <span class="stock-item__value product_barcode">812454412448</span>
                             </div>
                         </div>
                         <div class="row stock-item">
@@ -493,13 +493,13 @@
                         <div class="row stock-item">
                             <label for="" class="col-4 col-form-label stock-item__label">상품명</label>
                             <div class="col-8">
-                                <span class="stock-item__value">어몽어스 열쇠고리 1</span>
+                                <span class="stock-item__value product_name">어몽어스 열쇠고리 1</span>
                             </div>
                         </div>
                         <div class="row stock-item">
                             <label for="" class="col-4 col-form-label stock-item__label">바코드 번호</label>
                             <div class="col-8">
-                                <span class="stock-item__value">812454412448</span>
+                                <span class="stock-item__value product_barcode">812454412448</span>
                             </div>
                         </div>
                         <div class="row stock-item">
@@ -507,7 +507,7 @@
                             <div class="col-8">
                                 <span class="stock-item__value">
                                     <span class="stock-item__currency">\</span>
-                                    1.400
+                                    <span class="sell-price">1.400</span>
                                 </span>
                             </div>
                         </div>
@@ -523,7 +523,7 @@
                         <div class="row stock-item">
                             <label for="" class="col-4 col-form-label stock-item__label_dark">변경 재고</label>
                             <div class="col-4 offset-4">
-                                <input type="text" class="form-control stock-item__value old-quantity" id="" value="4,000" readonly>
+                                <input type="text" class="form-control stock-item__value old-quantity" id="" value="1,000" readonly>
                             </div>
                         </div>
                         <div class="row stock-item">
@@ -534,10 +534,10 @@
                         </div>
                         <div class="row stock-item">
                             <div class="col-6">
-                                <label class="label-radio stock-item__value float-start"><input checked type="radio" name="ckbox"><span>재고 증가</span></label>
+                                <label class="label-radio stock-item__value float-start "><input class=" check-radio" checked type="radio" name="ckbox"><span>재고 증가</span></label>
                             </div>
                             <div class="col-6">
-                                <label class="label-radio stock-item__value float-start"><input type="radio" name="ckbox"><span>재고 감소</span></label>
+                                <label class="label-radio stock-item__value float-start"><input check-radio type="radio" name="ckbox"><span class="un-checked">재고 감소</span></label>
                             </div>
                         </div>
                         <div class="row stock-item">
