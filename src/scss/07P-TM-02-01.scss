@@ -17,7 +17,7 @@
       z-index: 666;
       width: 100%;
       background: #fff;
-      padding: 15px 10px 20px;
+      padding: 15px 20px 20px;
       .select-block {
         padding-right: 0px;
         button {
@@ -32,11 +32,13 @@
           border-radius: 18px;
           background-color: #5815a5;
           border: none;
-          margin-left: 5px;
           img {
             padding: 3px;
           }
         }
+      }
+      .search-block {
+        padding-left: 0px;
       }
 
       &__name {
@@ -91,12 +93,11 @@
       padding-left: 20px;
       padding-right: 20px;
       .static-box {
-        margin-top: 200px;
-        height: 141px;
+        // height: 141px;
         border-radius: 10px;
-        background-color: #5815a5;
+        background-color: #5815a5; 
         width: 97%;
-        margin: 25px auto 10px;
+        margin: 63px auto 0px;
         padding: 15px 10px;
         &__total-sale {
           opacity: 0.8;
@@ -111,13 +112,23 @@
           color: #ffffff;
         }
         &__won {
-          font-size: 20px;
-          font-weight: bold;
-          font-stretch: normal;
-          font-style: normal;
-          line-height: normal;
-          letter-spacing: normal;
+          font-family: RobotoMedium;
+          font-size: 25px;
+          font-weight: 500;
           color: #ffffff;
+          .currency {
+            font-family: NanumSquareBold;
+            font-size: 20px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.15;
+            letter-spacing: normal;
+            text-align: left;
+            color: #ffffff;
+            vertical-align: middle;
+            margin-bottom: 10px;
+          }
         }
         &__number-pay {
           opacity: 0.8;
@@ -130,16 +141,17 @@
           letter-spacing: normal;
           text-align: left;
           color: #ffffff;
+          margin-bottom: 0px;
         }
   
         &__number {
+          font-family: RobotoMedium;
           font-size: 18px;
           font-weight: 500;
           font-stretch: normal;
           font-style: normal;
-          line-height: normal;
-          letter-spacing: normal;
           color: #ffffff;
+
         }
   
         &__detail-sale-history {
@@ -298,7 +310,7 @@
         border-radius: 10px;
         width: 98%;
         margin: 0 auto;
-        padding: 15px 0px;
+        padding: 20px 0px;
         ul {
           padding-right: 0px;
           .profit-info {
@@ -412,14 +424,11 @@
                   span {
                     margin-top: 5px;
                     margin-right: 20px;
-                    font-family: NanumSquare;
+                    font-family: NanumSquareBold;
                     font-size: 14px;
-                    font-weight: bold;
+                    font-weight: normal;
                     font-stretch: normal;
                     font-style: normal;
-                    line-height: normal;
-                    letter-spacing: normal;
-                    text-align: left;
                     color: #111111;
                   }
                 }
@@ -439,7 +448,7 @@
                 }
                 &__main-price {
                   padding-bottom: 10px;
-                  margin-top: -4px;
+                  margin-top: -8px;
                 }
                 &__price {
                     font-family: 'RobotoBold';

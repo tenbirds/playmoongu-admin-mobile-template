@@ -36,14 +36,27 @@
         }
         &__value {
           span {
-            font-family: NanumSquare;
+            font-family: RobotoBold;
             font-size: 14px;
-            font-weight: 800;
+            font-weight: bold;
             font-stretch: normal;
             font-style: normal;
             line-height: normal;
             letter-spacing: normal;
+            text-align: right;
             color: #111111;
+          }
+          &.product_name {
+            span {
+              font-family: NanumSquare;
+              font-size: 14px;
+              font-weight: 800;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: normal;
+              letter-spacing: normal;
+              color: #111111;
+            }
           }
         }
       }

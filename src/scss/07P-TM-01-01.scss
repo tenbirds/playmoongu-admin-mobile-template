@@ -9,8 +9,8 @@
     position: fixed;
     z-index: 666;
     width: 100%;
-    background: #ffffff;
-    padding: 15px 10px 20px;
+    background: #fff;
+    padding: 22px 20px 20px;
     .box-select {
       &__label {
         margin-bottom: 15px;
@@ -173,7 +173,7 @@
           }
           .box-sell-price { 
             &__value {
-              font-family: Roboto;
+              font-family: RobotoMedium;
               font-size: 14px;
               font-weight: 500;
               font-stretch: normal;
@@ -201,7 +201,7 @@
           }
           .box-stock {
             &__value {
-              font-family: Roboto;
+              font-family: RobotoMedium;
               font-size: 14px;
               font-weight: 500;
               font-stretch: normal;
@@ -270,6 +270,27 @@
         letter-spacing: normal;
         text-align: right;
         color: #111;
+        &.product_name {
+          font-family: NanumSquareExtraBold;
+          font-size: 14px;
+          font-weight: 800;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          color: #111111;
+        }
+        &.product_barcode {
+          font-family: RobotoBold;
+          font-size: 14px;
+          font-weight: bold;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          text-align: right;
+          color: #111111;
+        }
       }
       &__old-label {
         opacity: 0.5;
@@ -346,6 +367,27 @@
         letter-spacing: normal;
         text-align: right;
         color: #111;
+        &.product_name {
+          font-family: NanumSquareExtraBold;
+          font-size: 14px;
+          font-weight: 800;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          color: #111111;
+        }
+        &.product_barcode {
+          font-family: RobotoBold;
+          font-size: 14px;
+          font-weight: bold;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          text-align: right;
+          color: #111111;
+        }
         &.quantity {
           font-family: Roboto;
           font-size: 17px;
@@ -354,8 +396,15 @@
           padding: 5px 3px;
         }
         &.old-quantity {
-          font-family: Roboto;
+          font-family: RobotoMedium;
           padding: 7px 5px;
+          font-size: 14px;
+          font-weight: 500;
+          text-align: right;
+          color: #111111;
+          &:read-only {
+            background-color: #ebebeb;
+          }
         }
         &.note {
           width: 100%;
@@ -372,6 +421,34 @@
           text-align: left;
           color: #111111;
           margin-bottom: 10px;
+        }
+        .sell-price {
+          font-family: RobotoBold;
+          font-size: 14px;
+          font-weight: bold;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          text-align: right;
+          color: #111111;
+        }
+        .in-stock {
+          font-family: RobotoBold;
+          font-size: 14px;
+          font-weight: 500;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          color: #111111;
+        }
+        .un-checked {
+          font-size: 14px;
+          font-weight: bold;
+          font-stretch: normal;
+          font-style: normal;
+          color: #111;
+          opacity: 0.5;
         }
       }
       &__old-label {
@@ -418,7 +495,3 @@
   }
 
 }
-
-
-
-

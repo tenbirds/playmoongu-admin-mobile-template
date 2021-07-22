@@ -34,6 +34,20 @@
         letter-spacing: normal;
         color: #111111;
       }
+      .label-input {
+        span {
+          &.required {
+            color: #111111;
+          }
+          font-size: 14px;
+          font-weight: 800;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          color: #111111;
+        }
+      }
   
       .history-point {
         .list-group {
@@ -46,18 +60,23 @@
             box-shadow: none !important;
             .card-body {
               padding-top: 0px;
-              padding-bottom: 1.063rem;
-              padding-left: 0.938rem;
-              padding-right: 0.938rem;
+              padding-left: .938rem;
+              padding-right: .938rem;
+              padding-bottom: 0px;
+              margin-bottom: .938rem;
+              padding-top: 1.063rem;
               &.top-card {
-                padding-top: 1.063rem !important;
+                // padding-top: 1.063rem !important;
               }
             }
           }
           hr {
-            border-bottom: 1px solid #f1efef;
-            margin-bottom: 1px;
-             margin-top: 15px
+            background: #f5f5f5;
+            margin-bottom: 0px;
+            margin-top: 0px;
+            height: 1px;
+            width: 90%;
+            margin: 0 auto;
           }
         }
         &__number {
@@ -144,14 +163,17 @@
               padding-left: 0.938rem;
               padding-right: 0.938rem;
               &.top-card {
-                padding-top: 1.063rem !important;
+                padding-top: 1.063rem;
               }
             }
           }
           hr {
-            border-bottom: 1px solid #f1efef;
-            margin-bottom: 1px;
-             margin-top: 15px
+            background: #f5f5f5;
+            margin-bottom: 0px;
+            margin-top: 0px;
+            height: 1px;
+            width: 90%;
+            margin: 0 auto;
           }
         }
         &__number {
@@ -211,7 +233,7 @@
           }
         }
       }
-    
+
       .box-search {
         display: flex;
         &__label {
