@@ -1,10 +1,10 @@
 @@include('components/head.html', {
-    "title": "관리자 관리",
+    "title": "재고 관리",
     "bodyClass": "management-stock fixed-header"
 })
 
 @@include('components/header.html', { 
-    "title": "관리자 관리",
+    "title": "재고 관리", 
     "rightTitle": "",
     "leftIcon": "",
     "link": "",
@@ -294,13 +294,13 @@
                         <div class="row stock-item">
                             <label for="" class="col-4 col-form-label stock-item__label">상품명</label>
                             <div class="col-8">
-                                <span class="stock-item__value">어몽어스 열쇠고리 1</span>
+                                <span class="stock-item__value product_name">어몽어스 열쇠고리 1</span>
                             </div>
                         </div>
                         <div class="row stock-item">
                             <label for="" class="col-4 col-form-label stock-item__label">바코드 번호</label>
                             <div class="col-8">
-                                <span class="stock-item__value">812454412448</span>
+                                <span class="stock-item__value product_barcode">812454412448</span>
                             </div>
                         </div>
                         <div class="row stock-item">
@@ -351,13 +351,13 @@
                         <div class="row stock-item">
                             <label for="" class="col-4 col-form-label stock-item__label">상품명</label>
                             <div class="col-8">
-                                <span class="stock-item__value">어몽어스 열쇠고리 1</span>
+                                <span class="stock-item__value product_name">어몽어스 열쇠고리 1</span>
                             </div>
                         </div>
                         <div class="row stock-item">
                             <label for="" class="col-4 col-form-label stock-item__label">바코드 번호</label>
                             <div class="col-8">
-                                <span class="stock-item__value">812454412448</span>
+                                <span class="stock-item__value product_barcode">812454412448</span>
                             </div>
                         </div>
                         <div class="row stock-item">
@@ -365,7 +365,7 @@
                             <div class="col-8">
                                 <span class="stock-item__value">
                                     <span class="stock-item__currency">\</span>
-                                    1.400
+                                    <span class="sell-price">1.400</span>
                                 </span>
                             </div>
                         </div>
@@ -381,7 +381,7 @@
                         <div class="row stock-item">
                             <label for="" class="col-4 col-form-label stock-item__label_dark">변경 재고</label>
                             <div class="col-4 offset-4">
-                                <input type="text" class="form-control stock-item__value old-quantity" id="" value="4,000" readonly>
+                                <input type="text" class="form-control stock-item__value old-quantity" id="" value="1,000" readonly>
                             </div>
                         </div>
                         <div class="row stock-item">
@@ -392,10 +392,10 @@
                         </div>
                         <div class="row stock-item">
                             <div class="col-6">
-                                <label class="label-radio stock-item__value float-start"><input checked type="radio" name="ckbox"><span>재고 증가</span></label>
+                                <label class="label-radio stock-item__value float-start "><input class=" check-radio" checked type="radio" name="ckbox"><span>재고 증가</span></label>
                             </div>
                             <div class="col-6">
-                                <label class="label-radio stock-item__value float-start"><input type="radio" name="ckbox"><span>재고 감소</span></label>
+                                <label class="label-radio stock-item__value float-start"><input check-radio type="radio" name="ckbox"><span class="un-checked">재고 감소</span></label>
                             </div>
                         </div>
                         <div class="row stock-item">
