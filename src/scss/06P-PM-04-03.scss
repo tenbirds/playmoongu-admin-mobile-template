@@ -1,3 +1,296 @@
+.history-order-list {
+    background-color: #f5f5f5;
+    .main-order-detail {
+        .filter_search_page {
+            padding: 20px;
+            background-color: #ffffff;
+            
+            &__title {
+                padding-bottom: 15px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+        }
+        .order-detail-content {
+            background-color: #ffffff;
+            margin:25px 15px;
+            padding-top: 15px;
+            margin-bottom: 165px;
+            
+            .content-order-detail {
+                display: flex;
+                flex-wrap: wrap;
+
+                &__button {
+                    width: 100%;
+                    background: transparent;
+                    border: none;
+                    position: relative;
+                    height: 33px;
+                    &__bg {
+                        width: 100%;
+                        padding: 10px;
+                        opacity: 0.5;
+                        border-radius: 5px;
+                        border: solid 1px #5815a5;
+                        background-color: #f5ebf6;
+                        height: 33px;
+                    }
+                    &__text {
+                        opacity: 1;
+                        font-family: NanumSquare;
+                        font-size: 12px;
+                        font-weight: 800;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: normal;
+                        letter-spacing: normal;
+                        text-align: center;
+                        color: #5815a5;
+                        position: absolute;
+                        white-space: nowrap;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%,-50%);
+                    }
+                    label {
+                        
+                    }
+                }
+            }
+            .main-status-order-common {
+                margin: 0px 15px 10px;
+            }
+            &__item {
+                padding: 0 15px 5px 15px;
+                
+                
+                &__info-order {
+                    display: flex;
+                    // align-items: center;
+                    &__img {
+                        width: 60px;
+                        height: 60px;
+                        object-fit: cover;
+                    }
+                    &__info-data {
+                        padding-left: 7px;
+                        width: calc(100% - 60px);
+                        .info-data__add-cart-no {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            // padding-bottom: 7px;
+                            &__no {
+                                font-family: Roboto;
+                                font-size: 11px;
+                                font-weight: 300;
+                                font-stretch: normal;
+                                font-style: normal;
+                                line-height: normal;
+                                letter-spacing: normal;
+                                text-align: left;
+                                color: #111111;
+                            }
+                            &__button {
+                                font-family: NanumSquare;
+                                font-size: 11px;
+                                font-weight: normal;
+                                font-stretch: normal;
+                                font-style: normal;
+                                line-height: normal;
+                                letter-spacing: normal;
+                                text-align: left;
+                                color: #5815a5;
+                                border: none;
+                                background-color: transparent;
+                                padding: 0;
+                            }
+                        }
+                        &__name {
+                            font-family: NanumSquare;
+                            font-size: 14px;
+                            font-weight: bold;
+                            font-stretch: normal;
+                            font-style: normal;
+                            line-height: normal;
+                            letter-spacing: normal;
+                            text-align: left;
+                            color: #111111;
+                        }
+                        .info-order__info-data__quantity-price {
+                            &__quantity {
+                                opacity: 0.8;
+                                font-family: NanumSquare;
+                                font-size: 11px;
+                                font-weight: normal;
+                                font-stretch: normal;
+                                font-style: normal;
+                                line-height: normal;
+                                letter-spacing: normal;
+                                text-align: left;
+                                color: #111111;
+                            }
+                            &__price {
+                                opacity: 0.8;
+                                font-family: NanumSquare;
+                                font-size: 14px;
+                                font-weight: bold;
+                                font-stretch: normal;
+                                font-style: normal;
+                                line-height: normal;
+                                letter-spacing: normal;
+                                text-align: left;
+                                color: #111111;
+                            }
+                        }
+                    }
+                }
+                
+                &__number-shipments-price {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 12px 0 10px 0;
+                    .number-shipments-price__number-shipments {
+                        font-family: NanumSquare;
+                        font-size: 11px;
+                        font-weight: 300;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: normal;
+                        letter-spacing: normal;
+                        text-align: left;
+                        color: #111111;
+                        display: flex;
+                        align-items: center;
+                        &__number {
+                            font-family: RobotoMedium;
+                            font-size: 18px;
+                            font-weight: 500;
+                            font-stretch: normal;
+                            font-style: normal;
+                            line-height: normal;
+                            letter-spacing: normal;
+                            text-align: left;
+                            color: #111111;
+                        }
+                        &__text {
+                            opacity: 0.8;
+                            font-family: NanumSquare;
+                            font-size: 11px;
+                            font-weight: normal;
+                            font-stretch: normal;
+                            font-style: normal;
+                            line-height: normal;
+                            letter-spacing: normal;
+                            text-align: left;
+                            color: #c52321;
+                            padding-left: 1px
+                        }
+                        &__price {
+                            font-family: Roboto;
+                            font-size: 20px;
+                            font-weight: bold;
+                            font-stretch: normal;
+                            font-style: normal;
+                            line-height: normal;
+                            letter-spacing: normal;
+                            text-align: right;
+                            color: #c52321;
+                            display: flex;
+                            align-items: center;
+                            &::after {
+                                content: "원";
+                                font-family: NanumSquare;
+                                font-size: 14px;
+                                font-weight: bold;
+                                font-stretch: normal;
+                                font-style: normal;
+                                line-height: normal;
+                                letter-spacing: normal;
+                                text-align: left;
+                                color: #c52321;
+                                padding-left: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &__foot-page {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            left: 0;
+            box-shadow: 0 -10px 15px 0 rgba(0, 0, 0, 0.1);
+            .total-price-quantity-order {
+                padding: 15px 20px;
+                background: white;
+                &__order-number-date {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    border-bottom: 1px solid #f5f5f5;
+                    padding: 0 3px 5px 3px;
+                    margin-bottom: 7px;
+                    .order-number-date__number-text {
+                        font-family: NanumSquare;
+                        font-size: 11px;
+                        font-weight: 300;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: normal;
+                        letter-spacing: normal;
+                        text-align: left;
+                        color: #111111;
+                        .order-number-date__number-value {
+                            font-family: Roboto;
+                        }
+                    }
+                    .order-number-date__date-text {
+                        font-family: NanumSquare;
+                        font-size: 11px;
+                        font-weight: 300;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: normal;
+                        letter-spacing: normal;
+                        text-align: left;
+                        color: #111111;
+                        .order-number-date__date-value {
+                            font-family: Roboto;
+                        }
+                    }
+                }
+            }
+            
+            &__button-submit{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .foot-page__button-submit__item {
+                    // width: calc(100%/2);
+                    width: calc(100%);
+                    position: static;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    &.fixed-header {
+        .filter_search_page {
+            position: fixed;
+            top: 50px;
+            width: 100%;
+            z-index: 666;
+        }
+        .main_center_content {
+            margin-top: 140px;
+        }
+    }
+}
 .main-body-uploadEx {
     padding: 10px 20px 30px;
     &__content {
