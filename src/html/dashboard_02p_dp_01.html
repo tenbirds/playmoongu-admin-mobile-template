@@ -354,10 +354,18 @@ var optionChart2s = {
       type: 'donut',
       // height: data.length > 0 ? 275 : 0
     },
+    // legend: {
+    //   position: 'right',
+    // },
     legend: {
-      position: 'right',
+      formatter: function(val, opts) {
+        return val + " " + data[opts.seriesIndex] + '%'
+      }
     },
     labels: lable,
+    dataLabels: {
+      enabled: false
+    },
     responsive: [{
       breakpoint: 480,
       options: {
