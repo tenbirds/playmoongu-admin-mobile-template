@@ -40,7 +40,7 @@
                     <input type="checkbox" name="ckbox"/>
                     <span>전체 선택</span>
                 </label>
-                <div class="remove-item">
+                <div class="remove-item" data-toggle="modal" data-target="#changeCateOneToProduct" >
                     <img src="/images/icons/icon_remove.svg">
                     <label>삭제</label>
                 </div>
@@ -489,6 +489,41 @@
                         </div>
                         <div class="control-type">
                             <input class="form-control"  value="분류 명을 입력하세요."/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn-dismiss" data-bs-dismiss="modal">닫기</button>
+                <button type="button" class="btn-action">다음</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal popup" id="changeCateOneToProduct" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">알림</h5>
+            </div>
+            <div class="modal-body main-type2 main-change-cate">
+                <div class="title-body-modal">
+                    <label class="">삭제하려는 분류에 상품이 포함되어 있습니다.<br>
+                        포함된 상품을 다른 분류에 설정해야 합니다.</label>
+                </div>
+                <div class="main-create-type2">
+                    <div class="row_type mb-3">
+                        <div class=" title-type">
+                            <label class="m-0">1차 분류 명</label>
+                        </div>
+                        <div class=" control-type">
+                            <div class="select_custom">
+                                <select class="form-control">
+                                    <option>1</option>
+                                    <option>2</option>
+                                </select>
+                                <img src="/images/icons/icon_arrow_select.svg" />
+                            </div>
                         </div>
                     </div>
                 </div>

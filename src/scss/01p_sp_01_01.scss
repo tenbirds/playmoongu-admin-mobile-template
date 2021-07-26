@@ -61,6 +61,10 @@ $colorText: #111111;
       }
     }
   }
+  .text-footer{
+    background-color: #fff;
+    height: 45px;
+}
 }
 
 .logo-login {
@@ -86,4 +90,7 @@ $colorText: #111111;
   font-size: 14px;
   font-weight: bold;
   color: $colorText;
+}
+.modal-login-text{
+    padding: 50px 28px !important;
 }

@@ -240,6 +240,24 @@
 }
 .main-type2 {
   padding: 10px 20px 30px 20px;
+  &.main-change-cate {
+    padding-top: 5px;
+  }
+  .title-body-modal {
+    text-align: center;
+    margin-bottom: 20px;
+    label {
+      font-family: NanumSquare;
+    font-size: 14px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #111;
+    }
+  }
   .main-create-type2 {
     .row_type {
       display: flex;

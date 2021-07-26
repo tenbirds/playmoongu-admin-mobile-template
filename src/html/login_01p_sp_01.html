@@ -32,13 +32,18 @@
       </section>
     </form>
   </div>
+  <div class="text-footer">
+    <p class="text-bottom">
+        계정에 대한 사항은 최고 관리자에게 문의해주세요.
+    </p>
+  </div>
 </main>
 
   <!-- modal  validated required -->
   <div class="modal popup" id="modalPopup1" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
       <div class="modal-content">
-          <div class="modal-body modal-body-without-title">
+          <div class="modal-body modal-body-without-title modal-login-text">
               <p class="mb-0 text-center text-content-modal">아이디 혹은 비밀번호가 입력 되지 않았습니다.</p> 
           </div>
           <div class="modal-footer">
@@ -51,7 +56,7 @@
   <div class="modal popup" id="modalPopup2" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
       <div class="modal-content">
-          <div class="modal-body modal-body-without-title">
+          <div class="modal-body modal-body-without-title modal-login-text">
               <p class="mb-0 text-center text-content-modal">
                 아이디 혹은 비밀번호가 일치 하지 않습니다.
                 다시 확인해주세요.
@@ -64,11 +69,7 @@
     </div>
   </div>
 <footer>
-  <div class="row">
-    <p class="text-bottom">
-      계정에 대한 사항은 최고 관리자에게 문의해주세요.
-    </p>
-  </div>  
+  
 </footer>
 @@include('components/script.html')
 <script type="text/javascript">

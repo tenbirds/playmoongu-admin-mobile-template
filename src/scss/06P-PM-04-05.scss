@@ -13,7 +13,7 @@
             }
         }
         .order-detail-content {
-            background-color: #ffffff;
+            // background-color: #ffffff;
             margin:25px 15px;
             padding-top: 15px;
             margin-bottom: 165px;
@@ -21,6 +21,9 @@
             .content-order-detail {
                 display: flex;
                 flex-wrap: wrap;
+                background: #fff;
+                padding: 15px 0;
+                margin-bottom: 15px;
                 &__button {
                     width: 100%;
                     background: transparent;
@@ -58,6 +61,7 @@
                     }
                 }
             }
+
             .main-status-order-common {
                 margin: 0px 15px 10px;
             }
