@@ -118,16 +118,30 @@
             transition: -webkit-transform 0.18s ease-out;
             transition: transform 0.18s ease-out;
             transition: transform 0.18s ease-out, -webkit-transform 0.18s ease-out;
-  
+            height: 100%;
             li {
-              font-size: 15px;
-              display: block;
-              height: 40px;
-              line-height: 40px;
-              cursor: pointer;
-              overflow: hidden;
-              white-space: nowrap;
-              text-overflow: ellipsis;
+              opacity: 0.3;
+              font-family: NanumSquare;
+              font-size: 18px;
+              font-weight: bold;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: normal;
+              letter-spacing: normal;
+              text-align: center;
+              color: #111111;
+              &.active {
+                font-family: NanumSquare;
+                font-size: 20px;
+                font-weight: 800;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                text-align: center;
+                color: #5815a5;
+                opacity: 1;
+              }
             }
           }
         }
@@ -142,6 +156,7 @@
           box-sizing: border-box;
           border-top: 1px solid #dcdcdc;
           border-bottom: 1px solid #dcdcdc;
+          background-color: #f5ebf6;
         }
   
         .shadowMask {
@@ -262,6 +277,10 @@
                                   letter-spacing: normal;
                                   text-align: center;
                                   color: #5815a5;
+                                  background-color: #f5ebf68a;
+                                  width: 80%;
+                                  margin: auto;
+                                  border-radius: 10px;
                                 }
                             }
                         }
@@ -277,7 +296,8 @@
                     width: calc(100% - 60px);
                     left: 50%;
                     transform: translateX(-50%);
-                    background-color: #b696b926;
+                    background-color: #f5ebf6;
+                    visibility: hidden;
                 }
                 .shadowMask {
                     height: 300px !important;
