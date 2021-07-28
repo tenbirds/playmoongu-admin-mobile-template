@@ -269,6 +269,7 @@
                                 letter-spacing: normal;
                                 text-align: center;
                                 color: #111111;
+                                list-style: none;
 
                                 &.active{
                                   font-family: NanumSquare;
@@ -281,9 +282,11 @@
                                   text-align: center;
                                   color: #5815a5;
                                   // background-color: #f5ebf68a;
+                                  background-color: #f5ebf6;
                                   width: 80%;
                                   margin: auto;
                                   border-radius: 10px;
+                                  list-style: none;
                                 }
                             }
                         }
@@ -302,6 +305,7 @@
                     background-color: #f5ebf66e;
                     border: none;
                     // visibility: hidden;
+                    background: transparent;
                 }
                 .shadowMask {
                     height: 300px !important;
