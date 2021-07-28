@@ -221,6 +221,7 @@
 <script type="text/javascript" src="/js/mobileSelect.min.js"></script>
 <script type="text/javascript">
     var demo1 = new MobileSelect({
+      iden: 'demo1',
         trigger: "#demo1", // Đối tượng trigger bật scroll
         title: "DEMO 1", //Title
         triggerDisplayData: false, //Thay thế đối tượng bằng value
@@ -228,10 +229,15 @@
           {id: 1, value: "Lua chon 1"},
           {id: 2, value: "Lua chon 2"},
           {id: 3, value: "Lua chon 3"}
-        ] }],
+        ]},
+        { data: [
+          {id: 1, value: "Lua chon 1"},
+          {id: 2, value: "Lua chon 2"},
+          {id: 3, value: "Lua chon 3"}
+        ]}],
         ensureBtnText: "Chấp nhận", 
         cancelBtnText: "",
-        position: [2], //Index mặc định được chọn trong danh sách wheels
+        position: [0], //Index mặc định được chọn trong danh sách wheels
         transitionEnd: function (indexArr, data) {
           //console.log(data);
         },
@@ -240,23 +246,24 @@
         },
       });
 
-      var demo2 = new MobileSelect({
-        trigger: "#demo2",
-        triggerDisplayData: false,
-        title: "DEMO 2",
+      var demo1 = new MobileSelect({
+        iden: 'demo2',
+        trigger: "#demo2", // Đối tượng trigger bật scroll
+        title: "DEMO 2", //Title
+        triggerDisplayData: false, //Thay thế đối tượng bằng value
         wheels: [{ data: [
-          {id: 1, value: "Lua chon 1a"},
-          {id: 2, value: "Lua chon 2a"},
-          {id: 3, value: "Lua chon 3a"}
-        ] }],
-        ensureBtnText: "Chấp nhận",
-        cancelBtnText: "Huỷ bỏ",
-        position: [2], 
+          {id: 1, value: "Lua chon 1"},
+          {id: 2, value: "Lua chon 2"},
+          {id: 3, value: "Lua chon 3"}
+        ]}],
+        ensureBtnText: "Chấp nhận", 
+        cancelBtnText: "",
+        position: [2], //Index mặc định được chọn trong danh sách wheels
         transitionEnd: function (indexArr, data) {
           //console.log(data);
         },
         callback: function (indexArr, data) {
-          console.log(data);
+          console.log(data); //Hàm callback trả về kết quả
         },
       });
 </script>
