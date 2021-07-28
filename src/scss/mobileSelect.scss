@@ -278,7 +278,7 @@
                                   letter-spacing: normal;
                                   text-align: center;
                                   color: #5815a5;
-                                  background-color: #f5ebf68a;
+                                  // background-color: #f5ebf68a;
                                   width: 80%;
                                   margin: auto;
                                   border-radius: 10px;
@@ -291,14 +291,15 @@
                 .selectLine {
                     padding: 10px 123px;
                     border-radius: 10px;
-                    height: 42px;
+                    height: 45px;
                     top: 138px;
                     // border: 1px solid #c79bcc;
                     width: calc(100% - 60px);
                     left: 50%;
                     transform: translateX(-50%);
-                    background-color: #f5ebf6;
-                    visibility: hidden;
+                    background-color: #f5ebf66e;
+                    border: none;
+                    // visibility: hidden;
                 }
                 .shadowMask {
                     height: 300px !important;
