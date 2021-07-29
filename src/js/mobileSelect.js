@@ -460,12 +460,12 @@
 	    	}
 	    	else if(_this.jsonType){
 				for(var j=0; j<data.length; j++){
-					tempHTML += '<li class="wheelItem" id="wheelItem-'+_this.iden+'-'+i+'-'+j+'" data-id="'+data[j][_this.keyMap.id]+'">'+data[j][_this.keyMap.value]+'</li>';
+					tempHTML += '<li class="wheelItem" id="wheelItem-'+_this.iden+'-'+j+'" data-id="'+data[j][_this.keyMap.id]+'">'+data[j][_this.keyMap.value]+'</li>';
 				}
 				_this.wheelsData[sliderIndex] = {data: data};
 	    	}else{
 				for(var j=0; j<data.length; j++){
-					tempHTML += '<li class="wheelItem" id="wheelItem-'+_this.iden+'-'+i+'-'+j+'">'+data[j]+'</li>';
+					tempHTML += '<li class="wheelItem" id="wheelItem-'+_this.iden+'-'+j+'">'+data[j]+'</li>';
 				}
 				_this.wheelsData[sliderIndex] = data;
 	    	}
