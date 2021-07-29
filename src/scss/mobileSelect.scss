@@ -287,6 +287,7 @@
                                   margin: auto;
                                   border-radius: 10px;
                                   list-style: none;
+                                  z-index: 9999;
                                 }
                             }
                         }
@@ -302,8 +303,9 @@
                     width: calc(100% - 60px);
                     left: 50%;
                     transform: translateX(-50%);
-                    background-color: #f5ebf66e;
+                    background-color: #f5ebf6;
                     border: none;
+                    z-index: -1;
                     // visibility: hidden;
                     // background: #f5ebf66e;
                 }
