@@ -393,15 +393,17 @@ $colorViolet: #5815a5;
 
   &__slide {
     margin: 0px 0px 0px 20px;
-
+    .swiper-slide-active {
+      background-color: rgb(234 223 246 / 66%) !important;
+    }
     .slide-box {
       // width: 273px !important;
       height: 104px;
       margin: 15px 10px 20px 0;
       padding: 20px 15px;
       border-radius: 10px;
-      background-color: rgb(234 223 246 / 66%);
-
+      // background-color: rgb(234 223 246 / 66%);
+      background-color: #dedede;
       .slide-title-text {
         // margin: 0 70px 10px 0;
         font-family: NanumSquare;

@@ -204,6 +204,8 @@
                     width: 13px;
                     height: 13px;
                     background-repeat: no-repeat;
+                    text-indent: -9999px;
+                    white-space: nowrap;
                 }
                 .title {
                     position: absolute ;
@@ -267,6 +269,7 @@
                                 letter-spacing: normal;
                                 text-align: center;
                                 color: #111111;
+                                list-style: none;
 
                                 &.active{
                                   font-family: NanumSquare;
@@ -279,9 +282,12 @@
                                   text-align: center;
                                   color: #5815a5;
                                   // background-color: #f5ebf68a;
+                                  // background-color: #f5ebf6;
                                   width: 80%;
                                   margin: auto;
                                   border-radius: 10px;
+                                  list-style: none;
+                                  z-index: 9999;
                                 }
                             }
                         }
@@ -297,9 +303,11 @@
                     width: calc(100% - 60px);
                     left: 50%;
                     transform: translateX(-50%);
-                    background-color: #f5ebf66e;
+                    background-color: #f5ebf6;
                     border: none;
+                    z-index: -1;
                     // visibility: hidden;
+                    // background: #f5ebf66e;
                 }
                 .shadowMask {
                     height: 300px !important;
