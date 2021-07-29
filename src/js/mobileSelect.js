@@ -224,12 +224,12 @@
 				if(_this.jsonType){
 					for(var j=0; j<wheelsData[i].data.length; j++){
 					//行
-						tempHTML += '<li class="wheelItem" id="wheelItem-'+_this.iden+'-'+i+'-'+j+'" data-id="'+wheelsData[i].data[j][_this.keyMap.id]+'">'+wheelsData[i].data[j][_this.keyMap.value]+'</li>';
+						tempHTML += '<li class="wheelItem wheelitem-'+_this.iden+'" id="wheelItem-'+_this.iden+'-'+i+'-'+j+'" data-id="'+wheelsData[i].data[j][_this.keyMap.id]+'">'+wheelsData[i].data[j][_this.keyMap.value]+'</li>';
 					}
 				}else{
 					for(var j=0; j<wheelsData[i].data.length; j++){
 					//行
-						tempHTML += '<li class="wheelItem" id="wheelItem-'+_this.iden+'-'+i+'-'+j+'">'+wheelsData[i].data[j]+'</li>';
+						tempHTML += '<li class="wheelItem wheelitem-'+_this.iden+'" id="wheelItem-'+_this.iden+'-'+i+'-'+j+'">'+wheelsData[i].data[j]+'</li>';
 					}
 				}
 				tempHTML += '</ul></div>';
@@ -411,7 +411,7 @@
 						//console.log('插入Li');
 						for(var j=0; j<_this.displayJson[i].length; j++){
 						//行
-							tempHTML += '<li class="wheelItem" id="wheelItem-'+_this.iden+'-'+i+'-'+j+'" data-id="'+_this.displayJson[i][j][_this.keyMap.id]+'">'+_this.displayJson[i][j][_this.keyMap.value]+'</li>';
+							tempHTML += '<li class="wheelItem wheelitem-'+_this.iden+'" id="wheelItem-'+_this.iden+'-'+i+'-'+j+'" data-id="'+_this.displayJson[i][j][_this.keyMap.id]+'">'+_this.displayJson[i][j][_this.keyMap.value]+'</li>';
 						}
 						_this.slider[i].innerHTML = tempHTML;
 
@@ -421,7 +421,7 @@
 						tempHTML = '<ul class="selectContainer">';
 						for(var j=0; j<_this.displayJson[i].length; j++){
 						//行
-							tempHTML += '<li class="wheelItem" id="wheelItem-'+_this.iden+'-'+i+'-'+j+'" data-id="'+_this.displayJson[i][j][_this.keyMap.id]+'">'+_this.displayJson[i][j][_this.keyMap.value]+'</li>';
+							tempHTML += '<li class="wheelItem wheelitem-'+_this.iden+'" id="wheelItem-'+_this.iden+'-'+i+'-'+j+'" data-id="'+_this.displayJson[i][j][_this.keyMap.id]+'">'+_this.displayJson[i][j][_this.keyMap.value]+'</li>';
 						}
 						tempHTML += '</ul>';
 						tempWheel.innerHTML = tempHTML;
@@ -460,12 +460,12 @@
 	    	}
 	    	else if(_this.jsonType){
 				for(var j=0; j<data.length; j++){
-					tempHTML += '<li class="wheelItem" id="wheelItem-'+_this.iden+'-'+j+'" data-id="'+data[j][_this.keyMap.id]+'">'+data[j][_this.keyMap.value]+'</li>';
+					tempHTML += '<li class="wheelItem wheelitem-'+_this.iden+'" id="wheelItem-'+_this.iden+'-'+j+'" data-id="'+data[j][_this.keyMap.id]+'">'+data[j][_this.keyMap.value]+'</li>';
 				}
 				_this.wheelsData[sliderIndex] = {data: data};
 	    	}else{
 				for(var j=0; j<data.length; j++){
-					tempHTML += '<li class="wheelItem" id="wheelItem-'+_this.iden+'-'+j+'">'+data[j]+'</li>';
+					tempHTML += '<li class="wheelItem wheelitem-'+_this.iden+'" id="wheelItem-'+_this.iden+'-'+j+'">'+data[j]+'</li>';
 				}
 				_this.wheelsData[sliderIndex] = data;
 	    	}
@@ -655,9 +655,8 @@
 		activeItem: function(obj){
 			//Active
 			console.log(obj)
-			$('.wheelItem').removeClass('active')
+			$('.wheelitem-'+this.iden).removeClass('active')
 			obj.forEach((j, i)=>{
-				console.log(i, j, this.iden)
 				$('#wheelItem-'+this.iden+'-'+i+'-'+j).addClass('active')
 			})
 
