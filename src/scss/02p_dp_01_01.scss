@@ -393,9 +393,11 @@ $colorViolet: #5815a5;
 
   &__slide {
     margin: 0px 0px 0px 20px;
-    .swiper-slide-active {
+    .swiper-slide.active{
       background-color: rgb(234 223 246 / 66%) !important;
     }
+    // .swiper-slide-active {
+    // }
     .slide-box {
       // width: 273px !important;
       height: 104px;
