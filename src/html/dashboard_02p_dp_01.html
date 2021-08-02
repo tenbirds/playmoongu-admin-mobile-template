@@ -280,6 +280,12 @@
 @@include('components/script.html')
 
 <script type="text/javascript">
+  // active slide
+  $(document).on('click', '.swiper-slide', function(){
+    $('.swiper-slide').removeClass('active');
+    $(this).addClass('active');
+  })
+  
   const swiper = new Swiper('.swiper-container', {
     slidesPerView: 2,
     loop: true,
