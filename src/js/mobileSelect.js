@@ -546,8 +546,9 @@
   	    	this.curDistance[index] = this.calcDistance(posIndex);
   	    	this.movePosition(this.slider[index],this.curDistance[index]);
 	        if(_this.cascade){
-		    	_this.checkRange(index, _this.getIndexArr());
+		    	_this.checkRange(index, );
 			}
+			_this.activeItem(_this.getIndexArr())
 	    },
 
 	    updateCurDistance: function(theSlider, index){
@@ -659,7 +660,7 @@
 			obj.forEach((j, i)=>{
 				$('#wheelItem-'+this.iden+'-'+i+'-'+j).addClass('active')
 			})
-
+			console.log(obj)
 			//Active
 		},
 
