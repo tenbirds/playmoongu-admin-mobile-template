@@ -786,6 +786,19 @@ footer {
         }
     }
 }
+.select_custom_common {
+    position: relative;
+    .ing_arrow_down {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        pointer-events: none;
+        width: 10px;
+        height: 8px;
+    }
+}
 .select2-cus {
     span {
         width: 100% !important;
@@ -810,6 +823,17 @@ footer {
         width: auto !important;
         top: -5px;
         right: 15px;
+    }
+}
+.select_custom_common_modal{
+    .select2-container--default .select2-selection--single .select2-selection__rendered{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding-left: 15px;
+    }
+    .select2-cus .select2-container--default .select2-selection--single .select2-selection__arrow {
+        display: none;
     }
 }
 .select2-dropdown {
@@ -840,7 +864,7 @@ footer {
 }
 .error-message-common {
     font-family: NanumSquare;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
@@ -849,4 +873,6 @@ footer {
     text-align: left;
     color: #c52321;
 }
-
+.pl-15px {
+    padding-left: 15px;
+}

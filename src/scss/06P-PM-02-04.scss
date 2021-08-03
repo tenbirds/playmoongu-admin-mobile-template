@@ -105,6 +105,34 @@
         .main-form-popup_common {
             padding-bottom: 5px;
         }
+        .cus-add-quantity-order {
+            display: flex;
+            align-items: center;
+            button {
+                height: 36px;
+                min-width: 36px;
+                background: transparent;
+                border: 1px solid #e6e6e6;
+                border-radius: 5px;
+                img {
+                    width: 14px;
+                    height: 14px;
+                }
+            }
+            .input_quantity_order {
+                margin: 0 15px;
+                text-align: center;
+                font-family: Roboto;
+                font-size: 14px;
+                font-weight: bold;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.21;
+                letter-spacing: normal;
+                text-align: center;
+                color: #111111;
+            }
+        }
     }
     
     &.fixed-header {
