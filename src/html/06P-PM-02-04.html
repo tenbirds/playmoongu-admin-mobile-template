@@ -297,12 +297,10 @@
                                 <label class="m-0">주문 수량</label>
                             </div>
                             <div class=" control-type">
-                                <div class="select_custom">
-                                    <select class="form-control">
-                                        <option>1</option>
-                                        <option>2</option>
-                                    </select>
-                                    <img src="/images/icons/icon_arrow_select.svg">
+                                <div class="cus-add-quantity-order">
+                                    <button><img class="" src="/images/icons/icon_minus.svg"></button>
+                                    <input type="text" class="form-control input_quantity_order" />
+                                    <button><img class="" src="/images/icons/icon_plus.svg"></button>
                                 </div>
                             </div>
                         </div>
@@ -311,7 +309,21 @@
                                 <label class="m-0">가맹점</label>
                             </div>
                             <div class="control-type">
-                                <input class="form-control" value="분류 명을 입력하세요.">
+                                <div class="select_custom_common select_custom_common_modal">
+                                    <div class="select2-cus no-choose">
+                                        <select class="js-example-basic-single" name="states">
+                                            <option value="AsL">Alabama</option>
+                                            <option value="AL">Alabama2</option>
+                                            <option value="WY">cyoming</option>
+                                            <option value="WY">dyoming</option>
+                                            <option value="WY">eyoming</option>
+                                            <option value="WY">fyoming</option>
+                                          </select>
+                                    </div>
+                                    <img class="ing_arrow_down" src="/images/icons/icon_arrow_select.svg">
+                                </div>
+                                <label class="error-message-common pl-15px">가맹점을 선택해주세요.</label>
+                                
                             </div>
                         </div>
                         <div class="row-group-form mb-3">
@@ -363,5 +375,21 @@
 
 <footer></footer>
 @@include('components/script.html')
+
+<link href='https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css' rel='stylesheet' type='text/css'>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+<script>
+
+$(document).ready(function() {
+    
+    $('.js-example-basic-single').select2({
+        placeholder: 'This is my placeholder',
+        allowClear: true,
+        dropdownParent: $(".main-body-add-cart"),
+    });
+});
+
+</script>
+
 @@include('components/foot.html') 
 
