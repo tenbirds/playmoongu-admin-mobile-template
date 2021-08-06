@@ -107,16 +107,17 @@
         },
       });
 
+      var dataDemo2=[]
+      for(var i=1;i<=50;i++){
+        dataDemo2.push({id:i,value:'lua chon '+i})
+      }
+
       var demo2 = new MobileSelect({
         iden: 'demo2',
         trigger: "#demo2", // Đối tượng trigger bật scroll
         title: "DEMO 2", //Title
         triggerDisplayData: false, //Thay thế đối tượng bằng value
-        wheels: [{ data: [
-          {id: 1, value: "Lua chon 1"},
-          {id: 2, value: "Lua chon 2"},
-          {id: 3, value: "Lua chon 3"}
-        ]}],
+        wheels: [{ data: dataDemo2}],
         ensureBtnText: "Chấp nhận", 
         cancelBtnText: "Hủy bỏ",
         position: [2], //Index mặc định được chọn trong danh sách wheels
