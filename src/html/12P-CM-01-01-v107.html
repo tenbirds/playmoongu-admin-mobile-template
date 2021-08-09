@@ -1,0 +1,377 @@
+@@include('components/head.html', {
+"title": "가맹점 별 매출 현황",
+"bodyClass": "manager-money-kiosk sales-by-affiliate-store fixed-header"
+})
+<!-- extend class sales-by-affiliate-store -->
+@@include('components/header.html', {
+"title": "시재 관리",
+"rightTitle": "",
+"leftIcon": "",
+"link": "04-SM-01-01.html",
+"leftTitle": "/images/icons/m_menu.svg",
+'param': "open_nav"
+})
+<main>
+
+    <section class="p-3 header-search">
+        <h3 class="header-search__name">중곡점 <img src="/images/icons/icon_arrowBB.svg" class="header-search__icon_arrowBB"></h3>
+    </section>
+
+    <div class="content-kiosk p-3 content-06">
+
+        <div class="row">
+            <div class="col-12">
+                <div class="d-flex justify-content-between">
+                    <p class="content-kiosk__status"></p>
+                    <p class="content-kiosk__choose-kiosk">
+                        키오스크 Kiosk 38
+                        <img src="/images/icons/icon_miniarrow.svg" class="header-search__icon_miniarrow"/>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="row">
+            <div class="col-12">
+                <div class="d-flex justify-content-between">
+                    <p class="content-kiosk__status">실시간 시재 현황</p>
+                    <p class="content-kiosk__status">
+                        <!--                        <i class="fas fa-sync" style="font-size: 10px"></i> -->
+                        <img src="/images/icons/icon-reset.svg" class="header-search__icon_miniarrow"/>
+                        시재 초기화
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="content-kiosk__box">
+            <div class="col-12  p-3 ">
+                <span class="content-kiosk__money-number">50,540</span> <span class="content-kiosk__money-won">원</span>
+
+                <div class="content-kiosk__box-number"></div>
+
+                <div class="row mt-2">
+                    <div class="col-4">
+                        <p class="p-0 m-0 content-kiosk__box-number-money">0.8원</p>
+                        <p class="p-0 m-0 content-kiosk__box-number-money-one">50개</p>
+                    </div>
+
+                    <div class="col-4">
+                        <p class="p-0 m-0 content-kiosk__box-number-money">0.8원</p>
+                        <p class="p-0 m-0 content-kiosk__box-number-money-one">50개</p>
+                    </div>
+
+                    <div class="col-4">
+                        <p class="p-0 m-0 content-kiosk__box-number-money">0.8원</p>
+                        <p class="p-0 m-0 content-kiosk__box-number-money-one">50개</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-12 text-end">
+                <button class="content-kiosk__around" id="modal-ex1">현재 입수 시재</button>
+
+                <button class="content-kiosk__around" id="modal-ex">모든 현금 보기</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="content-nav">
+        <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <button class="nav-link active content-nav__nav-link-tab" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">시재 변경 사항 내역</button>
+                <button class="nav-link content-nav__nav-link-tab" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">입수 시재 초기화 내역</button>
+            </div>
+        </nav>
+        <div class="tab-content p-3" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+
+                <div class="content-kiosk__box-second">
+                    <div class="col-12  p-3 ">
+                        <div class="row ">
+                            <div class="d-flex justify-content-between">
+                                <p class="p-0 m-0 content-kiosk__no-time ">No.11</p>
+                                <p class="p-0 m-0 content-kiosk__no-time">2021.05.06</p>
+                            </div>
+                        </div>
+
+                        <div class="row ">
+                            <div class="d-flex justify-content-between">
+                                <span class="content-kiosk__money-number">50,540 <span class="content-kiosk__money-won">원</span></span>
+<!--                                <p class="p-0 m-0 content-kiosk__text-money mt-auto bd-highlight"><img src="/images/icons/icon-reset.svg" class="header-search__icon_miniarrow"/> 관리자변경</p>-->
+                            </div>
+                        </div>
+
+
+
+                        <div class="content-kiosk__box-number"></div>
+
+                        <div class="row mt-2">
+                            <div class="col-4">
+                                <p class="p-0 m-0 content-kiosk__box-number-money">0.8원</p>
+                                <p class="p-0 m-0 content-kiosk__box-number-money-one">50개 <span class="content-kiosk__money-span-red">-2</span></p>
+                            </div>
+
+                            <div class="col-4">
+                                <p class="p-0 m-0 content-kiosk__box-number-money">0.8원</p>
+                                <p class="p-0 m-0 content-kiosk__box-number-money-one">50개<span class="content-kiosk__money-span-blue">+2</span></p>
+                            </div>
+
+                            <div class="col-4">
+                                <p class="p-0 m-0 content-kiosk__box-number-money">0.8원</p>
+                                <p class="p-0 m-0 content-kiosk__box-number-money-one">50개</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-kiosk__box-second mt-2">
+                    <div class="col-12  p-3 ">
+                        <div class="row ">
+                            <div class="d-flex justify-content-between">
+                                <p class="p-0 m-0 content-kiosk__no-time ">No.11</p>
+                                <p class="p-0 m-0 content-kiosk__no-time">2021.05.06</p>
+                            </div>
+                        </div>
+
+                        <div class="row ">
+                            <div class="d-flex justify-content-between">
+                                <span class="content-kiosk__money-number">50,540 <span class="content-kiosk__money-won">원</span></span>
+<!--                                <p class="p-0 m-0 content-kiosk__text-money mt-auto bd-highlight"><img src="/images/icons/icon-reset.svg" class="header-search__icon_miniarrow"/> 관리자변경</p>-->
+                            </div>
+                        </div>
+
+
+
+                        <div class="content-kiosk__box-number"></div>
+
+                        <div class="row mt-2">
+                            <div class="col-4">
+                                <p class="p-0 m-0 content-kiosk__box-number-money">0.8원</p>
+                                <p class="p-0 m-0 content-kiosk__box-number-money-one">50개 <span class="content-kiosk__money-span-red">-2</span></p>
+                            </div>
+
+                            <div class="col-4">
+                                <p class="p-0 m-0 content-kiosk__box-number-money">0.8원</p>
+                                <p class="p-0 m-0 content-kiosk__box-number-money-one">50개<span class="content-kiosk__money-span-blue">+2</span></p>
+                            </div>
+
+                            <div class="col-4">
+                                <p class="p-0 m-0 content-kiosk__box-number-money">0.8원</p>
+                                <p class="p-0 m-0 content-kiosk__box-number-money-one">50개</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                <div class="content-kiosk__box-second">
+                    <div class="col-12  p-3 ">
+                        <div class="row ">
+                            <div class="d-flex justify-content-between">
+                                <p class="p-0 m-0 content-kiosk__no-time ">No.11</p>
+                                <p class="p-0 m-0 content-kiosk__no-time">2021.05.06</p>
+                            </div>
+                        </div>
+
+                        <div class="row ">
+                            <div class="d-flex justify-content-between">
+                                <span class="content-kiosk__money-number">50,540 <span class="content-kiosk__money-won">원</span></span>
+                                <!--                                <p class="p-0 m-0 content-kiosk__text-money mt-auto bd-highlight"><img src="/images/icons/icon-reset.svg" class="header-search__icon_miniarrow"/> 관리자변경</p>-->
+                            </div>
+                        </div>
+
+
+
+                        <div class="content-kiosk__box-number"></div>
+
+                        <div class="d-flex  justify-content-center align-content-between bd-highlight mt-2">
+                            <div class="flex-fill">
+                                <p class="p-0 m-0 content-kiosk__box-number-money">1008원</p>
+                                <p class="p-0 m-0 content-kiosk__box-number-money-one">50개</p>
+                            </div>
+
+                            <div class="flex-fill">
+                                <p class="p-0 m-0 content-kiosk__box-number-money">1000원</p>
+                                <p class="p-0 m-0 content-kiosk__box-number-money-one">50개 </p>
+                            </div>
+
+                            <div class="flex-fill">
+                                <p class="p-0 m-0 content-kiosk__box-number-money">0.8원</p>
+                                <p class="p-0 m-0 content-kiosk__box-number-money-one">50개</p>
+                            </div>
+
+                            <div class="flex-fill">
+                                <p class="p-0 m-0 content-kiosk__box-number-money">0.8원</p>
+                                <p class="p-0 m-0 content-kiosk__box-number-money-one">50개</p>
+                            </div>
+
+                            <div class="flex-fill">
+                                <p class="p-0 m-0 content-kiosk__box-number-money">0.8원</p>
+                                <p class="p-0 m-0 content-kiosk__box-number-money-one">50개 </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="modal popup" id="modalPopup1" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">알림</h5>
+                </div>
+                <div class="modal-body pt-0">
+                    <p class="text-center p-0 m-0 content-kiosk__text-one">입수 시재를 초기화 하시겠습니까?</p>
+                    <p class="text-center p-0 m-0 content-kiosk__text-second">※ 100원 500원 1000원이 0개로 변경 됩니다.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn-dismiss" data-bs-dismiss="modal">취소</button>
+                    <button type="button" class="btn-action">선택</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal popup" id="modalPopup2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">결제 내역 상세(현금)</h5>
+                </div>
+                <div class="modal-body pt-0">
+                    <h4 class="text-center content-kiosk__title-h4">중곡점 <span class="content-kiosk__title-span">(Kiosk3)</span></h4>
+
+                    <div class="row p-2">
+                        <div class="col-6">
+                            <h6 class="content-kiosk__title-h6">현재 시재</h6>
+                        </div>
+                        <div class="col-6 text-end">
+                            <img src="/images/icons/icon_arrowBB_up.svg" class="header-search__icon_miniarrow"/>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="content-kiosk__box-modal-show">
+                                <div class="col-12 p-2  ">
+
+
+                                    <div class="row mt-2">
+                                        <div class="col-12">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <p class="content-kiosk__modal-money p-0 m-0">100원</p>
+                                                    <p class="content-kiosk__modal-money-won p-0 m-0">(111개)</p>
+                                                </div>
+
+                                                <div class="col-6 text-end mt-1">
+                                                    <p class="content-kiosk__modal-total-money p-0 m-0">₩11,100</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="row mt-3">
+                                                <div class="col-6">
+                                                    <p class="content-kiosk__modal-money p-0 m-0">100원</p>
+                                                    <p class="content-kiosk__modal-money-won p-0 m-0">(111개)</p>
+                                                </div>
+
+                                                <div class="col-6 text-end mt-1">
+                                                    <p class="content-kiosk__modal-total-money p-0 m-0">₩11,100</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="row mt-3">
+                                                <div class="col-6">
+                                                    <p class="content-kiosk__modal-money p-0 m-0">100원</p>
+                                                    <p class="content-kiosk__modal-money-won p-0 m-0">(111개)</p>
+                                                </div>
+
+                                                <div class="col-6 text-end mt-1">
+                                                    <p class="content-kiosk__modal-total-money p-0 m-0">₩11,100</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="row mt-3">
+                                                <div class="col-6">
+                                                    <p class="content-kiosk__modal-money p-0 m-0">100원</p>
+                                                    <p class="content-kiosk__modal-money-won p-0 m-0">(111개)</p>
+                                                </div>
+
+                                                <div class="col-6 text-end mt-1">
+                                                    <p class="content-kiosk__modal-total-money p-0 m-0">₩11,100</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="row mt-3">
+                                                <div class="col-6">
+                                                    <p class="content-kiosk__modal-money p-0 m-0">100원</p>
+                                                    <p class="content-kiosk__modal-money-won p-0 m-0">(111개)</p>
+                                                </div>
+
+                                                <div class="col-6 text-end mt-1">
+                                                    <p class="content-kiosk__modal-total-money p-0 m-0">₩11,100</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+
+                                    <div class="content-kiosk__box-boder mt-2"></div>
+                                    <div class="row mt-2">
+                                        <div class="col-6">
+                                            <p class="content-kiosk__modal-money p-0 m-0 mt-1">총 금액</p>
+                                        </div>
+
+                                        <div class="col-6 text-end mt-1">
+                                            <p class="content-kiosk__modal-total-money p-0 m-0">₩11,100</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="modal-footer m-0 p-0">
+                    <button type="button" class="btn-action">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</main>
+@@include('components/_main_nav.html')
+@@include('components/script.html')
+<link rel="stylesheet" href="/css/bscroll.min.css">
+<script src="https://unpkg.com/better-scroll@latest/dist/better-scroll.min.js"></script>
+<script type="text/javascript" src="/js/jquery.selectscroll.min.js"></script>
+
+<script>
+    $(document).ready(function (){
+        $('#modal-ex').on('click',function (){
+            $("#modalPopup1").modal('show')
+        })
+
+        $("#modal-ex1").on('click',function (){
+            $("#modalPopup2").modal('show')
+        })
+    })
+</script>
+
+@@include('components/foot.html')
