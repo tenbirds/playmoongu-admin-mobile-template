@@ -252,7 +252,7 @@
                 height: 100%;
                 .wheels {
                     height: 308px !important;
-                    // padding-top: 60px;
+                    padding-top: 60px;
                     .wheel {
                         height: 300px !important;
                         ul {
@@ -270,6 +270,7 @@
                                 text-align: center;
                                 color: #111111;
                                 list-style: none;
+                                height: 41px;
 
                                 &.active{
                                   font-family: NanumSquare;
@@ -297,8 +298,8 @@
                 .selectLine {
                     padding: 10px 123px;
                     border-radius: 10px;
-                    height: 45px;
-                    top: 81px;
+                    height: 41px;
+                    top: 141px;
                     // border: 1px solid #c79bcc;
                     width: calc(100% - 60px);
                     left: 50%;

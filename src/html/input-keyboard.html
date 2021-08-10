@@ -1,0 +1,56 @@
+@@include('components/head.html', {
+    "title": "가맹점 정보",
+    "bodyClass": "detail-store-page fixed-header",
+})
+
+@@include('components/header.html', {
+    "title": "가맹점 상세 관리",
+    "bodyClass": "",
+    "rightTitle": "수정하기",
+    "leftTitle": "/images/icons/icon_top_arrow_B.svg",
+    "param": "undo_modal_store",
+    "value": "register_modal_store",
+    "link": "#",
+})
+
+<main>
+    <div class="detail-store-page">
+        <div class="container">
+            <div class="box-detail">
+                <!-- INFO store -->
+                <div class="box-detail__title_box">
+                    <h3 class="box-detail__title_box__main-title">Test Keyboard</h3>
+                    <label class="box-detail__title_box__border-title"></label>
+                </div>
+                <div class="mb-0 box-input">
+                    <label class="label-input ">
+                        <span class="required">String Keyboard</span>
+                        <input type="text" class="form-control mb-3 text-font" value="" >
+                    </label>
+                </div>
+                <div class="mb-0 box-input">
+                    <label class="label-input">
+                        <span class="">number Keyboard</span>
+                        <input type="number" class="form-control mb-3" value="" >
+                    </label>
+                </div>
+                <div class="mb-0 box-input">
+                    <label class="label-input search-address">
+                        <span class="">numeric Keyboard</span>
+                        <input type="number"  
+                                pattern="[0-9]*" 
+                                inputmode="numeric"
+                                class="form-control mb-3" 
+                                value="">
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer></footer>
+@@include('components/foot.html')
+@@include('components/script.html')
+<script type="text/javascript">
+  </script>
+
