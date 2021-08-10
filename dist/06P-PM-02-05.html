@@ -15,10 +15,10 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
-    <link rel="stylesheet" href="/css/style.min.css?v=2021080301" media="screen">
+    <link rel="stylesheet" href="/css/style.min.css?v=2021081001" media="screen">
 
 </head>
-<body class="product-detail-scan-barcode fixed-header">
+<body class="product-detail-scan-barcode product-management fixed-header">
  
 <!-- <header>
     <div class="main-header">
@@ -159,6 +159,7 @@
       <div class="img-product-detail">
         <img class="img-detail" src="/images/photos/img04_1.png" />
       </div>
+      <img class="img-new" src="/images/icons/icon_new.svg" />
     </div>
   </div>
   <div class="main-product-detail__info-data">
@@ -166,6 +167,7 @@
             <div class="main-product-detail__info-data__product__status">
                 <span class="status_sale">판매중</span>
                 <span class="status_phrases">문구</span>
+                <span class="status_other">기타</span>
             </div>
             <label class="main-product-detail__info-data__product__name">방탄소년단 캐릭터 지우개</label>
             <label class="main-product-detail__info-data__product__quantity-price">1,700원(소비자가) / 1,500원(공급가)</label>
@@ -189,9 +191,73 @@
         </div>
   </div>
   <div class="main-product-detail__add-to-cart">
-        <span class="text-add-cart">장바구니 추가</span>
+        <div class="main-submit-add-cart">
+          <label class="item_button_detail text-change-price" data-toggle="modal" data-target="#addCart">판매가 변경</label>
+          <label class="item_button_detail text-add-cart">장바구니 추가</label>
+        </div>
   </div>
 </main>
+
+<div class="modal popup" id="addCart" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title">장바구니 추가</h5>
+          </div>
+          <div class="modal-body main-body-change-price">
+              
+              <div class="cart-name">
+                  <label class="cart-name__text-name">더블클립특소형(100개입)</label>
+              </div>
+              <div class="cart-quantity-price">
+                  <label class="cart-quantity-price__price">공급가: 1,200원</label>
+                  <label class="cart-quantity-price__quantity">박스 및 묶음 수량: 2</label>
+              </div>
+              <div class="main-form-popup_common">
+                  <div class="main-form-popup">
+                    <div class="row-group-form mb-3">
+                        <div class="row-group-form__title">
+                            <label class="m-0"><strong>판매가</strong>(원)</label>
+                        </div>
+                        <div class="control-type">
+                            <input class="form-control " value="4,800">
+                        </div>
+                    </div>
+                      <div class="row-group-form row-group-form-store">
+                          <div class="row-group-form__title">
+                              <label class="m-0">가맹점</label>
+                          </div>
+                          <div class="control-type">
+                              <div class="select_custom_common select_custom_common_modal">
+                                  <div class="select2-cus no-choose">
+                                      <select class="js-example-basic-single" name="states">
+                                          <option value="AsL">Alabama</option>
+                                          <option value="AL">Alabama2</option>
+                                          <option value="WY">cyoming</option>
+                                          <option value="WY">dyoming</option>
+                                          <option value="WY">eyoming</option>
+                                          <option value="WY">fyoming</option>
+                                        </select>
+                                  </div>
+                                  <img class="ing_arrow_down" src="/images/icons/icon_arrow_select.svg">
+                              </div>
+                              <label class="error-message-common pl-15px">가맹점을 선택해주세요.</label>
+                              
+                          </div>
+                      </div>
+                      
+
+                  </div>
+              </div>
+              
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn-dismiss" data-bs-dismiss="modal">취소</button>
+              <button type="button" class="btn-action" onclick="openModalConfirmAddCart()">추가</button>
+          </div>
+      </div>
+  </div>
+</div>
 
 <footer></footer>
 <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>-->
@@ -221,6 +287,22 @@
 <script type="text/javascript" src="/js/jquery.selectscroll.min.js"></script>
 
 <script src="/js/script.min.js?v=2021070601"></script>
+
+
+<link href='https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css' rel='stylesheet' type='text/css'>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+<script>
+
+$(document).ready(function() {
+    
+    $('.js-example-basic-single').select2({
+        placeholder: 'This is my placeholder',
+        allowClear: true,
+        dropdownParent: $(".main-body-change-price"),
+    });
+});
+
+</script>
 
 
 </body>
