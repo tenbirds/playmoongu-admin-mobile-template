@@ -207,7 +207,9 @@ header {
                 font-size  : 14px;
                 font-weight: bold;
 
-                &.btn-dismiss {}
+                &.btn-dismiss {
+                    background: #e6e6e6;
+                }
 
                 &.btn-action {
                     background-color: $colorYellow;
