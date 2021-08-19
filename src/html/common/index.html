@@ -104,6 +104,7 @@
         },
         callback: function (indexArr, data) {
           console.log(data); //Hàm callback trả về kết quả
+
         },
       });
 
@@ -114,8 +115,6 @@
         triggerDisplayData: false, //Thay thế đối tượng bằng value
         wheels: [{ data: [
           {id: 1, value: "Lua chon 1"},
-          {id: 2, value: "Lua chon 2"},
-          {id: 3, value: "Lua chon 3"}
         ]}],
         ensureBtnText: "Chấp nhận", 
         cancelBtnText: "Hủy bỏ",
@@ -127,5 +126,15 @@
           console.log(data); //Hàm callback trả về kết quả
         },
       });
+
+      function testUpdate(){
+        let data = [
+          {id: 1, value: "Lua chon 1"},
+          {id: 2, value: "Lua chon 2"},
+          {id: 3, value: "Lua chon 3"}
+        ]
+        demo2.updateWheel(0, data)
+        demo2.locatePosition(0, 2);
+      }
 </script>
 @@include('../components/foot.html')

@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
-    <link rel="stylesheet" href="/css/style.min.css?v=2021081201" media="screen">
+    <link rel="stylesheet" href="/css/style.min.css?v=2021081901" media="screen">
 
 </head>
 <body class="">
@@ -243,6 +243,7 @@
         },
         callback: function (indexArr, data) {
           console.log(data); //Hàm callback trả về kết quả
+
         },
       });
 
@@ -253,8 +254,6 @@
         triggerDisplayData: false, //Thay thế đối tượng bằng value
         wheels: [{ data: [
           {id: 1, value: "Lua chon 1"},
-          {id: 2, value: "Lua chon 2"},
-          {id: 3, value: "Lua chon 3"}
         ]}],
         ensureBtnText: "Chấp nhận", 
         cancelBtnText: "Hủy bỏ",
@@ -266,6 +265,16 @@
           console.log(data); //Hàm callback trả về kết quả
         },
       });
+
+      function testUpdate(){
+        let data = [
+          {id: 1, value: "Lua chon 1"},
+          {id: 2, value: "Lua chon 2"},
+          {id: 3, value: "Lua chon 3"}
+        ]
+        demo2.updateWheel(0, data)
+        demo2.locatePosition(0, 2);
+      }
 </script>
 
 </body>
