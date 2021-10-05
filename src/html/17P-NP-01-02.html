@@ -1,0 +1,69 @@
+@@include('components/head.html', {
+    "title": "Gulp",
+    "bodyClass": "form-announcement-management fixed-header"
+})
+
+@@include('components/header.html', {
+"title": "운영 공지 상세",
+"link": "javascript:openPopupType()",
+"leftIcon": "",
+"rightTitle": "수정완료",
+"leftTitle": "/images/icons/icon_top_arrow_B.svg",
+'param': "open_nav"
+})
+
+<main>
+    <div class="main-announcement-management">
+        <div class="main-management">
+            <div class="time-content">
+                <label class="text-title">등록일</label>
+                <label class="text-time">2021-02-05 19:40:30</label>
+            </div>
+            <div class="item-input">
+                <input type="text" class="form-control" placeholder="안녕하세요" />
+            </div>
+            <div class="item-input">
+                <textarea class="form-control" rows="5">
+                    
+                </textarea>
+            </div>
+            <div class="item-radio">
+                <label>상단 고정</label>
+                <div>
+                    <label class="label-radio"><input type="radio" name="ckbox"/><span>고정</span></label>
+                    <label class="label-radio"><input type="radio" name="ckbox"/><span>해제</span></label>
+                </div>
+            </div>
+            <div class="item-upload-image">
+                <label>파일</label>
+                <div>
+                    
+                </div>
+            </div>
+            <div class="item-file">
+                
+            </div>
+        </div>
+        <div class="main-upload-file-mobile">
+            <div class="item-btn-mobile">
+                <button type="button" class="item-btn">
+                    <img src="/images/icons/icon_edit01.svg" />
+                </button>
+                <button type="button" class="item-btn">
+                    <img src="/images/icons/icon_edit02.svg" />
+                </button>
+                <button type="button" class="item-btn">
+                    <img src="/images/icons/icon_edit03.svg" />
+                </button>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+
+
+<footer></footer>
+@@include('components/script.html')
+@@include('components/foot.html') 
+
