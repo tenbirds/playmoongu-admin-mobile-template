@@ -1,0 +1,29 @@
+
+.form-announcement-management {
+	.main-management {
+		padding: 20px;
+		.time-content {
+			margin-bottom: 15px;
+		}
+		.item-input{
+			margin-bottom: 10px;
+		}
+	}
+	.main-upload-file-mobile{
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+		background: #e6e6e6;
+		height: 50px;
+		.item-btn-mobile {
+			display: flex;
+			align-items:center;
+			justify-content: left;
+			height: 100%;
+		}
+		.item-btn {
+			border: none;
+			margin-right: 15px;
+		}
+	}
+}
