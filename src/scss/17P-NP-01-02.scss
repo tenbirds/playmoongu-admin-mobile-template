@@ -1,13 +1,114 @@
 
 .form-announcement-management {
+	margin-bottom: 50px;
+	.item-text-title {
+		font-family: NanumSquareEB;
+		font-size: 14px;
+		font-weight: normal;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 1.14;
+		letter-spacing: normal;
+		text-align: left;
+		color: #111;
+	}
 	.main-management {
 		padding: 20px;
 		.time-content {
 			margin-bottom: 15px;
+			.text-time {
+				font-family: Roboto;
+				  font-size: 14px;
+				  font-weight: 300;
+				  font-stretch: normal;
+				  font-style: normal;
+				  line-height: 1.36;
+				  letter-spacing: normal;
+				  text-align: left;
+				  color: #111;
+			}
 		}
 		.item-input{
 			margin-bottom: 10px;
 		}
+		.item-area {
+			margin-bottom: 20px;
+		}
+		.item-radio{
+			.item-text-title {
+				margin-bottom: 10px;
+			}
+			.label-radio-first{
+				margin-right: 80px;
+			}
+			.label-radio {
+				span{
+					// font-family: NanumSquareB;
+					//   font-size: 14px;
+					//   font-weight: normal;
+					//   font-stretch: normal;
+					//   font-style: normal;
+					//   line-height: 1.14;
+					//   letter-spacing: normal;
+					//   text-align: left;
+					//   color: #111;
+				}
+			}
+		}
+		.item-upload-image {
+			.item-text-title {
+				margin-bottom: 10px;
+			}
+			.main-item-img {
+				display: flex;
+				align-items:center;
+				flex-wrap:wrap;
+				.item-img {
+					position: relative;
+					margin-right: 10px;
+					margin-bottom: 10px;
+					.btn-remove {
+						position: absolute;
+					    right: 0;
+					    background: #000;
+					    padding: 5px;
+					}
+					&:nth-child(3n){
+						margin-right: 0px;
+					}
+				}
+			}
+		}
+		.item-upload-file {
+			margin-top: 15px;
+			.item-file {
+				margin-bottom: 20px;
+				.text-file {
+					width: 100%;
+						padding: 10px 25px;
+					  border-radius: 20px;
+					  background-color: #f5ebf6;
+					  font-family: NanumSquareEB;
+					  font-size: 14px;
+					  font-weight: normal;
+					  font-stretch: normal;
+					  font-style: normal;
+					  line-height: 1.14;
+					  letter-spacing: normal;
+					  text-align: left;
+					  color: #111;
+					img {
+						width: 10px;
+						height: 10px;
+					}
+				}
+			}
+		}
+		.item-cancel {
+			display: flex;
+			justify-content: end;
+		}
+		
 	}
 	.main-upload-file-mobile{
 		position: fixed;
