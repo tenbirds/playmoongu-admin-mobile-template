@@ -1,0 +1,218 @@
+@@include('components/head.html', {
+"title": "가맹점 별 매출 현황",
+"bodyClass": " list-inquiry-board fixed-header"
+})
+<!-- extend class sales-by-affiliate-store -->
+@@include('components/header.html', {
+"title": "시재 관리",
+"rightTitle": "등록하기",
+"leftIcon": "",
+"link": "04-SM-01-01.html",
+"leftTitle": "/images/icons/m_menu.svg",
+'param': "open_nav"
+})
+<main>
+    
+    <div class="main-inquiry-board">
+        <div class="main-header-top">
+            <div class="main-filter-status">
+                <button class="btn btn-default btn-item active">
+                    전체
+                </button>
+                <button class="btn btn-default btn-item ">
+                    대기
+                </button>
+                <button class="btn btn-default btn-item ">
+                    처리 중
+                </button>
+                <button class="btn btn-default btn-item ">
+                    처리 완료
+                </button>
+                <button class="btn btn-default btn-item ">
+                    보류
+                </button>
+            </div>
+            <div class="main-header-filter">
+                <h3 class="main-header-filter__name">전체 매장 <img src="/images/icons/icon_arrowBB.svg" class="header-search__icon_arrowBB"></h3>
+
+                <div class="main-filter-text">
+                    <div class="item-filter">
+                        <label class="item-title">매장명</label>
+                        <div class="input-search-common">
+                            <input placeholder="" class="form-control inquiry__input-form"/>
+                            <img class="input-search-common__icon-search" src="/images/icons/icon_search.svg"/>
+                        </div>
+                    </div>
+                    <div class="item-filter">
+                        <label class="item-title">처리자</label>
+                        <div class="input-search-common">
+                            <input placeholder="" class="form-control inquiry__input-form"/>
+                            <img class="input-search-common__icon-search" src="/images/icons/icon_search.svg"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-submit">
+                    <button class="btn btn-default">처리자 통계</button>
+                </div>
+                <div class="border-line"></div>
+            </div>
+        </div>
+
+        <div class="content-inquiry-board">
+
+
+            <div class="item-inquiry-board ">
+                <div class="row justify-content-center mb-6px">
+                    <div class="d-flex justify-content-between">
+                        <p class="box-content-no m-0">No.10</p>
+                        <p class="box-content-time m-0">2021.05.06 21:08:15</p>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center mb-8px">
+                    <div class="d-flex justify-content-between">
+                        <p class="box-content-title m-0">아현점</p>
+                        <button class="box-content-status">대기</button>
+                    </div>
+                </div>
+
+                <div class="row mb-7px">
+                    <div class="col-11">
+                        <p class="box-content-des"> 
+                            AR로 각 매장의 상품들을 확인 가능한 기능을 추가되었습니다!
+                        </p>
+                    </div>
+                    <div class="col-1 text-end d-flex align-items-center">
+                        <img src="/images/icons/icon_arrow_R.svg"
+                             class="icon_arrow_R">
+                    </div>
+                </div>
+                <div class="row justify-content-center ">
+                    <div class="d-flex">
+                        <p class="box-content-user m-0">처리자: Sue</p>
+                        <label class="box-content-user-time">(2021-02-05 19:40:30)</label>
+                    </div>
+                </div>
+
+                <div class="border-bottom"></div>
+            </div>
+            <div class="item-inquiry-board ">
+                <div class="row justify-content-center mb-6px">
+                    <div class="d-flex justify-content-between">
+                        <p class="box-content-no m-0">No.10</p>
+                        <p class="box-content-time m-0">2021.05.06 21:08:15</p>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center mb-8px">
+                    <div class="d-flex justify-content-between">
+                        <p class="box-content-title m-0">아현점</p>
+                        <button class="box-content-status status-processing-done">처리 완료</button>
+                    </div>
+                </div>
+
+                <div class="row mb-7px">
+                    <div class="col-11">
+                        <p class="box-content-des"> 
+                            AR로 각 매장의 상품들을 확인 가능한 기능을 추가되었습니다!
+                        </p>
+                    </div>
+                    <div class="col-1 text-end d-flex align-items-center">
+                        <img src="/images/icons/icon_arrow_R.svg"
+                             class="icon_arrow_R">
+                    </div>
+                </div>
+                <div class="row justify-content-center ">
+                    <div class="d-flex">
+                        <p class="box-content-user m-0">처리자: Sue</p>
+                        <label class="box-content-user-time">(2021-02-05 19:40:30)</label>
+                    </div>
+                </div>
+
+                <div class="border-bottom"></div>
+            </div>
+            <div class="item-inquiry-board ">
+                <div class="row justify-content-center mb-6px">
+                    <div class="d-flex justify-content-between">
+                        <p class="box-content-no m-0">No.10</p>
+                        <p class="box-content-time m-0">2021.05.06 21:08:15</p>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center mb-8px">
+                    <div class="d-flex justify-content-between">
+                        <p class="box-content-title m-0">아현점</p>
+                        <button class="box-content-status status-in-progress">처리 중</button>
+                    </div>
+                </div>
+
+                <div class="row mb-7px">
+                    <div class="col-11">
+                        <p class="box-content-des"> 
+                            AR로 각 매장의 상품들을 확인 가능한 기능을 추가되었습니다!
+                        </p>
+                    </div>
+                    <div class="col-1 text-end d-flex align-items-center">
+                        <img src="/images/icons/icon_arrow_R.svg"
+                             class="icon_arrow_R">
+                    </div>
+                </div>
+                <div class="row justify-content-center ">
+                    <div class="d-flex">
+                        <p class="box-content-user m-0">처리자: Sue</p>
+                        <label class="box-content-user-time">(2021-02-05 19:40:30)</label>
+                    </div>
+                </div>
+
+                <div class="border-bottom"></div>
+            </div>
+            <div class="item-inquiry-board ">
+                <div class="row justify-content-center mb-6px">
+                    <div class="d-flex justify-content-between">
+                        <p class="box-content-no m-0">No.10</p>
+                        <p class="box-content-time m-0">2021.05.06 21:08:15</p>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center mb-8px">
+                    <div class="d-flex justify-content-between">
+                        <p class="box-content-title m-0">아현점</p>
+                        <button class="box-content-status status-hold">보류</button>
+                    </div>
+                </div>
+
+                <div class="row mb-7px">
+                    <div class="col-11">
+                        <p class="box-content-des"> 
+                            AR로 각 매장의 상품들을 확인 가능한 기능을 추가되었습니다!
+                        </p>
+                    </div>
+                    <div class="col-1 text-end d-flex align-items-center">
+                        <img src="/images/icons/icon_arrow_R.svg"
+                             class="icon_arrow_R">
+                    </div>
+                </div>
+                <div class="row justify-content-center ">
+                    <div class="d-flex">
+                        <p class="box-content-user m-0">처리자: Sue</p>
+                        <label class="box-content-user-time">(2021-02-05 19:40:30)</label>
+                    </div>
+                </div>
+
+                <div class="border-bottom"></div>
+            </div>
+            
+        </div>
+
+    </div>
+
+
+</main>
+@@include('components/_main_nav.html')
+@@include('components/script.html')
+
+<script>
+
+</script>
+
+@@include('components/foot.html')

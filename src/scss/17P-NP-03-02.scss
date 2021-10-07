@@ -1,5 +1,5 @@
-.detail-announcement-management {
-	.main-detail-announcement {
+.detail-inquiry-board {
+	.main-detail-inquiry-board {
 		padding: 20px;
 		.item-title {
 			padding-bottom: 20px;
@@ -69,7 +69,7 @@
 				height: 120px;
 				object-fit: cover;
 				&:nth-child(3n){
-					padding-right: 0px;
+					// padding-right: 0px;
 				}
 			}
 		}
@@ -100,6 +100,34 @@
 				  text-align: left;
 				  color: #111;
 				}
+			}
+		}
+		.item-btn-status {
+			justify-content: space-between;
+    		display: flex;
+			.btn {
+			width: 72px;
+			  height: 27px;
+			  margin: 30px 2px 0;
+			  padding: 7px 0px;
+			  border-radius: 5px;
+			  background-color: #e6e6e6;
+			  opacity: 0.5;
+			  font-family: NanumSquareB;
+			  font-size: 12px;
+			  font-weight: normal;
+			  font-stretch: normal;
+			  font-style: normal;
+			  line-height: 1.08;
+			  letter-spacing: normal;
+			  text-align: center;
+			  color: #111;
+			  white-space: nowrap;
+			  &.active {
+			  	  background-color: #ff8534;
+			  	  color: #fff;
+			  	  opacity: 1;
+			  }
 			}
 		}
 	}
