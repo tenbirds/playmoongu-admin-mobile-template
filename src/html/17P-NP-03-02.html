@@ -1,19 +1,19 @@
 @@include('components/head.html', {
     "title": "Gulp",
-    "bodyClass": "detail-announcement-management fixed-header"
+    "bodyClass": "detail-inquiry-board fixed-header"
 })
 
 @@include('components/header.html', {
-"title": "운영 공지 상세",
+"title": "하남풍산점 문의",
 "link": "javascript:openPopupType()",
 "leftIcon": "",
-"rightTitle": "수정완료",
+"rightTitle": "",
 "leftTitle": "/images/icons/icon_top_arrow_B.svg",
 'param': "open_nav"
 })
 
 <main>
-    <div class="main-detail-announcement">
+    <div class="main-detail-inquiry-board">
         <div class="item-title">
             <label class="text-time">2021-02-05 19:40:30</label>
             <label class="text-title">운영 공지 제목</label>
@@ -42,6 +42,20 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="item-btn-status">
+            <button class="btn btn-default active">
+                대기
+            </button>
+            <button class="btn btn-default">
+                처리 중
+            </button>
+            <button class="btn btn-default">
+                처리 완료
+            </button>
+            <button class="btn btn-default">
+                보류
+            </button>
         </div>
     </div>
 </main>
