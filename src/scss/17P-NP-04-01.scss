@@ -72,6 +72,8 @@
         span{
           font-family: NanumSquareR;
           font-size: 11px;
+          display: flex;
+          align-items: center;
         }
       }
       .remove-item {
@@ -240,7 +242,7 @@
               letter-spacing: normal;
               text-align: left;
               color: #111;
-              white-space: nowrap;
+              white-space: break-spaces;
               padding-right: 5px;
             }
             strong {
