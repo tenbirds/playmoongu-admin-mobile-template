@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>Gulp</title>
+    <link rel="manifest" href="/manifest.json">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css" /> -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="/css/style.min.css?v=2021082601" media="screen">
+
+</head>
+<body class="detail-inquiry-board fixed-header">
+
+
+<!-- <header>
+    <div class="main-header">
+        <div class="header">
+            <div class="content-header">
+                <img src="/images/icons/icon_top_arrow_B.svg" class="" onclick="handleClick('open_nav')" alt="">
+                <h3 class="header_title">하남풍산점 문의</h3>
+               
+                <div class="header-right">
+                    
+                    
+                        <a href="javascript:openPopupType()" class="header-link"></a>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</header> -->
+<header class="main-header @@dashboard-header">
+    <div class="header-left">
+        <a href="#">
+            
+                <img src="/images/icons/icon_top_arrow_B.svg" class="" onclick="handleClick('open_nav')">
+            
+            
+            
+        </a>
+    </div>
+    <h1 class="header-title @@dashboard-title">하남풍산점 문의</h1>
+    <div class="header-right">
+        <a href="javascript:openPopupType()">
+             
+            
+                <h3 class="header-link"></h3>
+            
+        </a>
+    </div>
+</header>
+<nav id="main-navigation">
+    <header class="header__title">
+    <a href="javascript:closeNav()" class="left-button">
+        <img absalign="middle" src="/images/icons/icon_top_arrow_B.svg"/>
+    </a>
+    <h1>문구야놀자</h1>
+</header>
+
+    <ul>
+        <li>
+            <a href="#">대시보드 
+                
+            </a>
+        </li>
+        <li class="open">
+            <a href="#">가맹점 관리</a>
+            <img class="icon-right-nav" src="/images/icons/icon_arrowBB.svg" alt="">
+            <ul>
+                <li><a href="#">가맹점 관리</a></li>
+                <li class="active"><a href="#">키오스크 관리</a></li>
+            </ul>
+        </li>
+        <li class="">
+            <a href="#">사용자 관리
+            </a>
+            <img class="icon-right-nav" src="/images/icons/icon_arrowBB.svg" alt="">
+        </li>
+        <li>
+            <a href="#">
+                상품 관리
+            </a>
+            <img class="icon-right-nav" src="/images/icons/icon_arrowBB.svg" alt="">
+        </li>
+        <li>
+            <a href="#">
+                재고 관리
+            </a>
+            <img class="icon-right-nav" src="/images/icons/icon_arrowBB.svg" alt="">
+        </li>
+        <li>
+            <a href="#">가맹점 관리
+            </a>
+            <img class="icon-right-nav" src="/images/icons/icon_arrowBB.svg" alt="">
+        </li>
+        <li>
+            <a href="#">매출 관리
+            </a>
+            <img class="icon-right-nav" src="/images/icons/icon_arrowBB.svg" alt="">
+        </li>
+        <li>
+            <a href="#">예치금 관리
+            </a>
+            <img class="icon-right-nav" src="/images/icons/icon_arrowBB.svg" alt="">
+        </li>
+        <li>
+            <a href="#">거래처 관리
+            </a>
+            <img class="icon-right-nav" src="/images/icons/icon_arrowBB.svg" alt="">
+        </li>
+        <li>
+            <a href="#">홈페이지 관리
+            </a>
+            <img class="icon-right-nav" src="/images/icons/icon_arrowBB.svg" alt="">
+        </li>
+        <li>
+            <a href="#">시재 관리
+            </a>
+            <img class="icon-right-nav" src="/images/icons/icon_arrowBB.svg" alt="">
+        </li>
+        <li>
+            <a href="#">라벨 출력
+            </a>
+            <img class="icon-right-nav" src="/images/icons/icon_arrowBB.svg" alt="">
+        </li>
+        <li>
+            <a href="#">라벨 출력
+            </a>
+            <img class="icon-right-nav" src="/images/icons/icon_arrowBB.svg" alt="">
+        </li>
+        <li>
+            <a href="#">라벨 출력
+            </a>
+            <img class="icon-right-nav" src="/images/icons/icon_arrowBB.svg" alt="">
+        </li>
+        <li>
+            <a href="#">라벨 출력
+            </a>
+            <img class="icon-right-nav" src="/images/icons/icon_arrowBB.svg" alt="">
+        </li>
+    </ul>
+</nav>
+
+
+
+
+<main>
+    <div class="main-detail-inquiry-board">
+        <div class="item-title">
+            <label class="text-time">2021-02-05 19:40:30</label>
+            <label class="text-title">운영 공지 제목</label>
+        </div>
+        <div class="item-content">
+            <label>안녕하세요. 문구야놀자입니다.안녕하세요 해당 게시글은 운영 고지 상세 페이지 에서 확인할 수 있는 페이지입니다. 처리 방안 및 방법 처리 방안 및 방법 처리 방안 및 방법 처리 방안 및 방법 처리 방안 및 방법처리 방안 및 방법
+            </label>
+        </div>
+        <div class="item-img">
+            <!--            -->
+            <img src="/images/photos/img04.png" class="click-modal-image" data-id="0" /> <!-- data-bs-toggle="modal" data-bs-target="#exampleModal"  -->
+            <img src="/images/photos/img04.png" class="click-modal-image" data-id="1" />
+            <img src="/images/photos/img04.png" class="click-modal-image" data-id="2" />
+            <img src="/images/photos/img04.png" class="click-modal-image" data-id="3" />
+            <img src="/images/photos/img04.png" class="click-modal-image" data-id="4" />
+        </div>
+        <div class="item-file">
+            <div class="text-file">
+                <label class="item-label">파일:</label>
+                <div>
+                    <div>
+                        <label class="item-name-file"> 제품 사진 요청.XLS</label>
+                        <img class="btn-remove-file" src="/images/icons/icon_download.svg" />
+                    </div>
+                    <div>
+                        <label class="item-name-file"> 제품 사진 요청.XLS</label>
+                        <img class="btn-remove-file" src="/images/icons/icon_download.svg" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item-btn-status">
+            <button class="btn btn-default active">
+                대기
+            </button>
+            <button class="btn btn-default">
+                처리 중
+            </button>
+            <button class="btn btn-default">
+                처리 완료
+            </button>
+            <button class="btn btn-default">
+                보류
+            </button>
+        </div>
+    </div>
+
+
+    <div class="detail-inquiry-board__background-comment">
+
+
+        <div class="p-3">
+            <div class="row">
+                <div class="d-flex justify-content-between p-0 m-0">
+                    <p class="title_wait p-0 m-0">처리 방안 및 방법</p>
+                    <p class="detail-inquiry-board__background-comment-box-me p-0 m-0">Sue <span class="box-date">(2021-02-05)</span></p>
+                </div>
+                <div class="detail-inquiry-board__background-comment-box pt-2 pb-2 mt-1">
+                    <div class="col-12">
+                        <h4 class="detail-inquiry-board__background-comment-box-h4">나는 가맹점주! 댓글을 작성했다.</h4>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-8">  </div>
+                            <div class="col-4 text-end">
+                                <span class="detail-inquiry-board__background-comment-box-span">수정</span>&ensp;|&ensp;<span class="detail-inquiry-board__background-comment-box-span">삭제</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="p-3">
+            <div class="row">
+                <p class="title_wait p-0 m-0">처리 방안 및 방법</p>
+            </div>
+            <div class="row detail-inquiry-board__background-comment-content">
+                <div class="col-10 d-flex justify-content-center align-self-center">
+                    <textarea
+                            class="detail-inquiry-board__text-area"
+                            rows="1"
+                            placeholder="답변을 입력하세요."
+                            id="message-box"
+                    ></textarea>
+                </div>
+                <div class="col-2 text-end mt-1">
+                    <span class="detail-inquiry-board__register">등록</span>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</main>
+
+<div class="modal popup modal-show-image" id="exampleModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="total-item-img js-total-item-img">1/5</span>
+                    <img class="btn-close-file" src="/images/icons/pop_X.svg" onclick="hideModal('exampleModal')" />
+                </div>
+                <div class="modal-body">
+                    <div class="swiper mySwiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide" data-id="1">
+                            <img class="btn-remove-file" src="/images/photos/img04_1.png" />
+                        </div>
+                        <div class="swiper-slide" data-id="2">
+                            <img class="btn-remove-file" src="/images/photos/img04_1.png" />
+                        </div>
+                        <div class="swiper-slide" data-id="3">
+                            <img class="btn-remove-file" src="/images/photos/img04_1.png" />
+                        </div>
+                        <div class="swiper-slide" data-id="4">
+                            <img class="btn-remove-file" src="/images/photos/img04_1.png" />
+                        </div>
+                        <div class="swiper-slide" data-id="5">
+                            <img class="btn-remove-file" src="/images/photos/img04_1.png" />
+                        </div>
+                      </div>
+
+                      <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+</div>
+
+
+
+
+<footer></footer>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>-->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/js/bootstrap.min.js" integrity="sha512-a6ctI6w1kg3J4dSjknHj3aWLEbjitAXAjLDRUxo2wyYmDFRcz2RJuQr5M3Kt8O/TtUSp8n2rAyaXYy1sjoKmrQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>-->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js "
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous "></script>
+        <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script> -->
+
+<script src="/js/polyfill.js"></script>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+<script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+<script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
+<script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+
+<link rel="stylesheet" href="/css/bscroll.min.css">
+<script src="https://unpkg.com/better-scroll@latest/dist/better-scroll.min.js"></script>
+<script type="text/javascript" src="/js/jquery.selectscroll.min.js"></script>
+
+<script src="/js/script.min.js?v=2021070601"></script>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+
+        var swiper = new Swiper(".mySwiper", {
+            pagination: {
+                el: ".swiper-pagination",
+                // clickable: true,
+                clickable: true,
+            },
+        });
+
+        swiper.on('transitionEnd', function() {
+            let realIndex = parseInt(swiper.realIndex + 1) + '/' + $('.swiper-slide').length
+            $('.js-total-item-img').html(realIndex)
+        });
+
+        // $(".modal").on('show.bs.modal', function() {
+        //     setTimeout(function() {
+        //         // var swiper = new Swiper(".mySwiper", {
+        //         //     pagination: {
+        //         //       el: ".swiper-pagination",
+        //         //       // clickable: true,
+        //         //         clickable: true,
+        //         //     },
+        //         //   });
+        //         //
+        //         // swiper.on('transitionEnd', function() {
+        //         //   let realIndex = parseInt(swiper.realIndex + 1) + '/' + $('.swiper-slide').length
+        //         //   $('.js-total-item-img').html(realIndex)
+        //         // });
+        //     }, 500);
+        // });
+
+
+        $('.click-modal-image').on('click',function (){
+
+            var data_id = $(this).data('id');
+            console.log(data_id,'data_id')
+            // swiper.update();
+            swiper.slideTo(data_id);
+            let realIndex = parseInt(data_id + 1) + '/' + $('.swiper-slide').length
+            $('.js-total-item-img').html(realIndex)
+            // swiper.update();
+            $("#exampleModal").modal('show')
+        })
+        
+    });
+
+    function hideModal(idModal) {
+
+       $('#'+idModal).modal('hide')
+    }
+
+    const textarea = document.querySelector("textarea");
+
+    function autosize(){
+        var el = this;
+        setTimeout(function(){
+            el.style.cssText = 'height:auto; padding:5';
+            el.style.cssText = 'height:' + el.scrollHeight + 'px';
+        },0);
+    }
+    textarea.addEventListener('keydown', autosize);
+
+
+
+
+</script>
+
+</body>
+</html>
+ 
+

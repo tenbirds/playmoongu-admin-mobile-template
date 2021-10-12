@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>Gulp</title>
+    <link rel="manifest" href="/manifest.json">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css" /> -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="/css/style.min.css?v=2021082601" media="screen">
+
+</head>
+<body class="form-document-detail-management fixed-header">
+
+
+<!-- <header>
+    <div class="main-header">
+        <div class="header">
+            <div class="content-header">
+                <img src="/images/icons/icon_top_arrow_B.svg" class="" onclick="handleClick('open_nav')" alt="">
+                <h3 class="header_title">교육자료 등록</h3>
+               
+                <div class="header-right">
+                    
+                    
+                        <a href="javascript:openPopupType()" class="header-link">수정완료</a>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</header> -->
+<header class="main-header @@dashboard-header">
+    <div class="header-left">
+        <a href="#">
+            
+                <img src="/images/icons/icon_top_arrow_B.svg" class="" onclick="handleClick('open_nav')">
+            
+            
+            
+        </a>
+    </div>
+    <h1 class="header-title @@dashboard-title">교육자료 등록</h1>
+    <div class="header-right">
+        <a href="javascript:openPopupType()">
+             
+            
+                <h3 class="header-link">수정완료</h3>
+            
+        </a>
+    </div>
+</header>
+<nav id="main-navigation">
+    <header class="header__title">
+    <a href="javascript:closeNav()" class="left-button">
+        <img absalign="middle" src="/images/icons/icon_top_arrow_B.svg"/>
+    </a>
+    <h1>문구야놀자</h1>
+</header>
+
+    <ul>
+        <li>
+            <a href="#">대시보드 
+                
+            </a>
+        </li>
+        <li class="open">
+            <a href="#">가맹점 관리</a>
+            <img class="icon-right-nav" src="/images/icons/icon_arrowBB.svg" alt="">
+            <ul>
+                <li><a href="#">가맹점 관리</a></li>
+                <li class="active"><a href="#">키오스크 관리</a></li>
+            </ul>
+        </li>
+        <li class="">
+            <a href="#">사용자 관리
+            </a>
+            <img class="icon-right-nav" src="/images/icons/icon_arrowBB.svg" alt="">
+        </li>
+        <li>
+            <a href="#">
+                상품 관리
+            </a>
+            <img class="icon-right-nav" src="/images/icons/icon_arrowBB.svg" alt="">
+        </li>
+        <li>
+            <a href="#">
+                재고 관리
+            </a>
+            <img class="icon-right-nav" src="/images/icons/icon_arrowBB.svg" alt="">
+        </li>
+        <li>
+            <a href="#">가맹점 관리
+            </a>
+            <img class="icon-right-nav" src="/images/icons/icon_arrowBB.svg" alt="">
+        </li>
+        <li>
+            <a href="#">매출 관리
+            </a>
+            <img class="icon-right-nav" src="/images/icons/icon_arrowBB.svg" alt="">
+        </li>
+        <li>
+            <a href="#">예치금 관리
+            </a>
+            <img class="icon-right-nav" src="/images/icons/icon_arrowBB.svg" alt="">
+        </li>
+        <li>
+            <a href="#">거래처 관리
+            </a>
+            <img class="icon-right-nav" src="/images/icons/icon_arrowBB.svg" alt="">
+        </li>
+        <li>
+            <a href="#">홈페이지 관리
+            </a>
+            <img class="icon-right-nav" src="/images/icons/icon_arrowBB.svg" alt="">
+        </li>
+        <li>
+            <a href="#">시재 관리
+            </a>
+            <img class="icon-right-nav" src="/images/icons/icon_arrowBB.svg" alt="">
+        </li>
+        <li>
+            <a href="#">라벨 출력
+            </a>
+            <img class="icon-right-nav" src="/images/icons/icon_arrowBB.svg" alt="">
+        </li>
+        <li>
+            <a href="#">라벨 출력
+            </a>
+            <img class="icon-right-nav" src="/images/icons/icon_arrowBB.svg" alt="">
+        </li>
+        <li>
+            <a href="#">라벨 출력
+            </a>
+            <img class="icon-right-nav" src="/images/icons/icon_arrowBB.svg" alt="">
+        </li>
+        <li>
+            <a href="#">라벨 출력
+            </a>
+            <img class="icon-right-nav" src="/images/icons/icon_arrowBB.svg" alt="">
+        </li>
+    </ul>
+</nav>
+
+
+
+
+<main>
+    <div class="main-announcement-management">
+        <div class="main-management">
+            <div class="time-content">
+                <label class="item-text-title">등록일</label>
+                <label class="text-time">2021-02-05 19:40:30</label>
+            </div>
+            <div class="item-input">
+                <input type="text" class="form-control" placeholder="안녕하세요" />
+            </div>
+            <div class="item-input item-area">
+                <textarea class="form-control" rows="10">
+                    
+                </textarea>
+            </div>
+            <!-- <div class="item-radio">
+                <label class="item-text-title">상단 고정</label>
+                <div>
+                    <label class="label-radio label-radio-first"><input type="radio" name="ckbox"/><span>고정</span></label>
+                    <label class="label-radio"><input type="radio" name="ckbox"/><span>해제</span></label>
+                </div>
+            </div> -->
+            <div class="item-upload-image">
+                <label class="item-text-title">파일</label>
+                <div class="main-item-img">
+                    <div class="item-img">
+                        <img class="img-content" src="/images/photos/img04.png" />
+                        <img class="btn-remove" src="/images/icons/pop_XW.svg" />
+                    </div>
+                    <div class="item-img">
+                        <img class="img-content" src="/images/photos/img04.png" />
+                        <img class="btn-remove" src="/images/icons/pop_XW.svg" />
+                    </div>
+                    <div class="item-img">
+                        <img class="img-content" src="/images/photos/img04.png" />
+                        <img class="btn-remove" src="/images/icons/pop_XW.svg" />
+                    </div>
+                    <div class="item-img">
+                        <img class="img-content" src="/images/photos/img04.png" />
+                        <img class="btn-remove" src="/images/icons/pop_XW.svg" />
+                    </div>
+                </div>
+            </div>
+            <div class="item-upload-file">
+                <div class="item-file">
+                    <span class="text-file">
+                        <label class="">Moongu/image.gif</label>
+                        <img class="btn-remove-file" src="/images/icons/pop_miniX.svg" />
+                    </span>
+                </div>
+                <div class="item-file">
+                    <span class="text-file">
+                        <label class="">Moongu/image.gif</label>
+                        <img class="btn-remove-file" src="/images/icons/pop_miniX.svg" />
+                    </span>
+                </div>
+            </div>
+            
+        </div>
+        <div class="btn-action">
+                <button class="btn btn-cancel">
+                    <span>취소</span>
+                </button>
+                <button class="btn btn-create">
+                <span>등록</span>   
+                </button>
+        </div>
+        <div class="main-upload-file-mobile">
+            <div class="item-btn-mobile">
+                <button type="button" class="item-btn">
+                    <img src="/images/icons/icon_edit01.svg" />
+                </button>
+                <button type="button" class="item-btn">
+                    <img src="/images/icons/icon_edit02.svg" />
+                </button>
+                <button type="button" class="item-btn">
+                    <img src="/images/icons/icon_edit03.svg" />
+                </button>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+
+
+<footer></footer>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>-->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/js/bootstrap.min.js" integrity="sha512-a6ctI6w1kg3J4dSjknHj3aWLEbjitAXAjLDRUxo2wyYmDFRcz2RJuQr5M3Kt8O/TtUSp8n2rAyaXYy1sjoKmrQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>-->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js "
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous "></script>
+        <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script> -->
+
+<script src="/js/polyfill.js"></script>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+<script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+<script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
+<script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+
+<link rel="stylesheet" href="/css/bscroll.min.css">
+<script src="https://unpkg.com/better-scroll@latest/dist/better-scroll.min.js"></script>
+<script type="text/javascript" src="/js/jquery.selectscroll.min.js"></script>
+
+<script src="/js/script.min.js?v=2021070601"></script>
+
+
+</body>
+</html>
+ 
+
