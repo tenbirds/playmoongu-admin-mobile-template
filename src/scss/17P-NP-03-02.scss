@@ -1,0 +1,327 @@
+.detail-inquiry-board {
+	.main-detail-inquiry-board {
+		padding: 20px;
+		.item-title {
+			padding-bottom: 20px;
+    		border-bottom: 1px solid #f5f5f5;
+    		margin-bottom: 20px;
+			label {
+				display: block;
+			}
+			.text-title{
+				font-family: NanumSquareB;
+				  font-size: 16px;
+				  font-weight: normal;
+				  font-stretch: normal;
+				  font-style: normal;
+				  line-height: 1.13;
+				  letter-spacing: normal;
+				  text-align: left;
+				  color: #111;
+			}
+			.text-time{
+				opacity: 0.5;
+			  font-family: Roboto;
+			  font-size: 11px;
+			  font-weight: 300;
+			  font-stretch: normal;
+			  font-style: normal;
+			  line-height: 1.36;
+			  letter-spacing: normal;
+			  text-align: left;
+			  color: #111;
+			  margin-bottom: 5px;
+			}
+		}
+		.item-content {
+			margin-bottom: 15px;
+			p{
+				font-family: NanumSquareR;
+			  font-size: 14px;
+			  font-weight: normal;
+			  font-stretch: normal;
+			  font-style: normal;
+			  line-height: 1.43;
+			  letter-spacing: normal;
+			  text-align: left;
+			  color: #111;
+			}
+			label {
+				font-family: NanumSquareR;
+				  font-size: 14px;
+				  font-weight: normal;
+				  font-stretch: normal;
+				  font-style: normal;
+				  line-height: 1.43;
+				  letter-spacing: normal;
+				  text-align: left;
+				  color: #111;
+			}
+		}
+		.item-img {
+			margin-bottom: 15px;
+			display: flex;
+			overflow: scroll;
+			img {
+				padding-bottom: 10px;
+				padding-right: 10px;
+				width: 120px;
+				height: 120px;
+				object-fit: cover;
+				&:nth-child(3n){
+					// padding-right: 0px;
+				}
+			}
+		}
+		.item-file{
+			.text-file{
+				display: flex;
+				align-items: baseline;
+				.item-label {
+					padding-right: 5px;
+					font-family: NanumSquareB;
+				  font-size: 12px;
+				  font-weight: normal;
+				  font-stretch: normal;
+				  font-style: normal;
+				  line-height: 1.08;
+				  letter-spacing: normal;
+				  text-align: left;
+				  color: #111;
+				}
+				.item-name-file {
+					font-family: NanumSquareB;
+				  font-size: 12px;
+				  font-weight: normal;
+				  font-stretch: normal;
+				  font-style: normal;
+				  line-height: 1.08;
+				  letter-spacing: normal;
+				  text-align: left;
+				  color: #111;
+				}
+			}
+		}
+		.item-btn-status {
+			justify-content: space-between;
+    		display: flex;
+			.btn {
+			width: 72px;
+			  height: 27px;
+			  margin: 30px 2px 0;
+			  padding: 7px 0px;
+			  border-radius: 5px;
+			  background-color: #e6e6e6;
+			  opacity: 0.5;
+			  font-family: NanumSquareB;
+			  font-size: 12px;
+			  font-weight: normal;
+			  font-stretch: normal;
+			  font-style: normal;
+			  line-height: 1.08;
+			  letter-spacing: normal;
+			  text-align: center;
+			  color: #111;
+			  white-space: nowrap;
+			  &.active {
+			  	  background-color: #ff8534;
+			  	  color: #fff;
+			  	  opacity: 1;
+			  }
+			}
+		}
+	}
+
+
+	.title_wait {
+		font-family: NanumSquareEB;
+		font-size: 14px;
+		font-weight: normal;
+		font-stretch: normal;
+		font-style: normal;
+		letter-spacing: normal;
+		text-align: left;
+		color: #111;
+	}
+
+
+	&__background-comment {
+		background-color: #f5f5f5;
+		padding:5px 20px 5px 20px;
+	}
+
+	&__comment-h5 {
+		font-family: NanumSquareR;
+		font-size: 14px;
+		font-weight: normal;
+		font-stretch: normal;
+		font-style: normal;
+		letter-spacing: normal;
+		color: #111111;
+	}
+
+	// text area
+	&__text-area {
+		width: 400px;
+		//min-height: 15px;
+		padding: 5px;
+		overflow: hidden;
+		box-sizing: border-box;
+		outline-width: 0;
+		border: none;
+
+
+
+		vertical-align: middle;
+		font-family: NanumSquareR;
+		font-size: 14px;
+		font-weight: normal;
+		font-stretch: normal;
+		font-style: normal;
+		letter-spacing: normal;
+		color: #111111;
+	}
+
+	&__text-area::placeholder{
+		opacity: 0.5;
+		font-family: NanumSquareR;
+		font-size: 14px;
+		font-weight: normal;
+		font-stretch: normal;
+		font-style: normal;
+		letter-spacing: normal;
+		color: #111111;
+	}
+
+	&__background-comment-content {
+		background-color: #ffffff;
+		border: solid 1px #e6e6e6;
+		border-radius: 5px;
+		padding-bottom: 2px;
+		padding-top: 2px;
+	}
+
+	&__register {
+		font-family: NanumSquareEB;
+		font-size: 14px;
+		font-weight: normal;
+		font-stretch: normal;
+		font-style: normal;
+		letter-spacing: normal;
+		color: #5815a5;
+	}
+
+	&__background-comment-box {
+		background-color: #ffffff;
+	}
+
+	&__background-comment-box-datetime {
+		opacity: 0.5;
+		font-family: Roboto;
+		font-size: 11px;
+		font-weight: 300;
+		font-stretch: normal;
+		font-style: normal;
+		letter-spacing: normal;
+		color: #111111;
+	}
+
+	&__background-comment-box-me {
+		font-family: NanumSquareR;
+		font-size: 11px;
+		font-weight: normal;
+		font-stretch: normal;
+		font-style: normal;
+		//line-height: 1.09;
+		letter-spacing: normal;
+		text-align: left;
+		color: #111;
+	}
+
+	&__background-comment-box-h4 {
+		font-family: NanumSquareB;
+		font-size: 14px;
+		font-weight: normal;
+		font-stretch: normal;
+		font-style: normal;
+		letter-spacing: normal;
+		color: #111111;
+	}
+
+	&__background-comment-box-span {
+		font-family: NanumSquareEB;
+		font-size: 12px;
+		font-weight: normal;
+		font-stretch: normal;
+		font-style: normal;
+		letter-spacing: normal;
+		color: #5815a5;
+	}
+	.box-date {
+		opacity: 0.5;
+		font-family: Roboto;
+		font-size: 11px;
+		font-weight: 300;
+		font-stretch: normal;
+		font-style: normal;
+		//line-height: 1.36;
+		letter-spacing: normal;
+		text-align: right;
+		color: #111;
+	}
+
+}
+
+.modal-show-image {
+	.swiper-wrapper {
+		.swiper-slide{
+			min-height: 320px;
+			max-height: 320px;
+		}
+		margin-bottom: 50px;
+	}
+	.modal-header {
+		padding-right: 20px !important;
+		height: 55px;
+		.total-item-img {
+			font-family: NanumSquareEB;
+			  font-size: 18px;
+			  font-weight: normal;
+			  font-stretch: normal;
+			  font-style: normal;
+			  line-height: 1.17;
+			  letter-spacing: normal;
+			  text-align: center;
+			  color: #111;
+			      position: absolute;
+		    left: 50%;
+		    top: 50%; 
+    		transform: translate(-50%, 0);
+		}
+		.btn-close-file {
+			margin-top: 5px;
+			width: 15px;
+			height: 15px;
+			position: absolute;
+    		right: 15px;
+		}
+	}
+	.modal-body{
+		.swiper {
+			padding-bottom: 40px;
+		}
+		.swiper-pagination {
+			bottom: 15px;
+			.swiper-pagination-bullet {
+				width: 10px;
+			  height: 4px;
+			  border-radius: 3px;
+			  background-color: #8f8f8f;
+			  &.swiper-pagination-bullet-active{
+			  	width: 30px;
+  				background-color: #ffce0a;
+			  }
+			}
+		}
+	}
+}

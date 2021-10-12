@@ -85,10 +85,13 @@ $colorText: #111111;
 }
 
 .text-content-modal {
-  font-family: NanumSquare;
+  font-family: NanumSquare-Bold;
   font-size: 14px;
   font-weight: bold;
   color: $colorText;
+}
+.btn-confirm{
+  font-family: NanumSquare-Bold !important;
 }
 .modal-login-text{
     padding: 50px 28px !important;

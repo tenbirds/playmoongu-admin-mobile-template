@@ -1,0 +1,161 @@
+.detail-announcement-management {
+	.main-detail-announcement {
+		padding: 20px;
+		.item-title {
+			padding-bottom: 20px;
+    		border-bottom: 1px solid #f5f5f5;
+    		margin-bottom: 20px;
+			label {
+				display: block;
+			}
+			.text-title{
+				font-family: NanumSquareB;
+				  font-size: 16px;
+				  font-weight: normal;
+				  font-stretch: normal;
+				  font-style: normal;
+				  line-height: 1.13;
+				  letter-spacing: normal;
+				  text-align: left;
+				  color: #111;
+			}
+			.text-time{
+				opacity: 0.5;
+			  font-family: Roboto;
+			  font-size: 11px;
+			  font-weight: 300;
+			  font-stretch: normal;
+			  font-style: normal;
+			  line-height: 1.36;
+			  letter-spacing: normal;
+			  text-align: left;
+			  color: #111;
+			  margin-bottom: 5px;
+			}
+		}
+		.item-content {
+			margin-bottom: 15px;
+			p{
+				font-family: NanumSquareR;
+			  font-size: 14px;
+			  font-weight: normal;
+			  font-stretch: normal;
+			  font-style: normal;
+			  line-height: 1.43;
+			  letter-spacing: normal;
+			  text-align: left;
+			  color: #111;
+			}
+			label {
+				font-family: NanumSquareR;
+				  font-size: 14px;
+				  font-weight: normal;
+				  font-stretch: normal;
+				  font-style: normal;
+				  line-height: 1.43;
+				  letter-spacing: normal;
+				  text-align: left;
+				  color: #111;
+			}
+		}
+		.item-img {
+			margin-bottom: 15px;
+			display: flex;
+			overflow: scroll;
+			img {
+				padding-bottom: 10px;
+				padding-right: 10px;
+				width: 120px;
+				height: 120px;
+				object-fit: cover;
+				&:nth-child(3n){
+					padding-right: 0px;
+				}
+			}
+		}
+		.item-file{
+			.text-file{
+				display: flex;
+				align-items: baseline;
+				.item-label {
+					padding-right: 5px;
+					font-family: NanumSquareB;
+				  font-size: 12px;
+				  font-weight: normal;
+				  font-stretch: normal;
+				  font-style: normal;
+				  line-height: 1.08;
+				  letter-spacing: normal;
+				  text-align: left;
+				  color: #111;
+				}
+				.item-name-file {
+					font-family: NanumSquareB;
+				  font-size: 12px;
+				  font-weight: normal;
+				  font-stretch: normal;
+				  font-style: normal;
+				  line-height: 1.08;
+				  letter-spacing: normal;
+				  text-align: left;
+				  color: #111;
+				}
+			}
+		}
+	}
+
+}
+
+.modal-show-image {
+	.swiper-wrapper {
+		.swiper-slide{
+			min-height: 320px;
+			max-height: 320px;
+		}
+		margin-bottom: 50px;
+	}
+	.modal-header {
+		padding-right: 20px !important;
+		height: 55px;
+		.total-item-img {
+			font-family: NanumSquareEB;
+			  font-size: 18px;
+			  font-weight: normal;
+			  font-stretch: normal;
+			  font-style: normal;
+			  line-height: 1.17;
+			  letter-spacing: normal;
+			  text-align: center;
+			  color: #111;
+			      position: absolute;
+		    left: 50%;
+		    top: 50%; 
+    		transform: translate(-50%, 0);
+		}
+		.btn-close-file {
+			margin-top: 5px;
+			width: 15px;
+			height: 15px;
+			position: absolute;
+    		right: 15px;
+		}
+	}
+	.modal-body{
+		.swiper {
+			padding-bottom: 40px;
+		}
+		.swiper-pagination {
+			bottom: 15px;
+			.swiper-pagination-bullet {
+				width: 10px;
+			  height: 4px;
+			  border-radius: 3px;
+			  background-color: #8f8f8f;
+			  &.swiper-pagination-bullet-active{
+			  	width: 30px;
+  				background-color: #ffce0a;
+			  }
+			}
+		}
+	}
+}

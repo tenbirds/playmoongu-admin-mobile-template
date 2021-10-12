@@ -1,0 +1,99 @@
+@@include('components/head.html', {
+    "title": "Gulp",
+    "bodyClass": "list-announcement-management fixed-header"
+})
+
+@@include('components/header.html', {
+"title": "운영 공지 관리",
+"link": "javascript:openPopupType()",
+"leftIcon": "",
+"rightTitle": "등록하기",
+"leftTitle": "/images/icons/m_menu.svg",
+'param': "open_nav"
+})
+
+<main>
+    <div class="main-classification-management">
+
+        <div class="main-page-classification-management ">
+            
+            <div class="main-item">
+                <div class="product-item">
+                    <div class="row">
+                            <div class="col-6 ">
+                                <div class="product-item__colum">
+                                    <div class="product-item-info">
+                                        <div class="product-item-info__item product-item-info__important">
+                                            <p>중요</p>
+                                        </div>
+
+                                        <div class="product-item-info__item product-item-info__title-text center-flex">
+                                            <p>포인트 충전하면 5%를 더 드려요!</p><strong class="">(2)</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-6 ">
+                                <div class="product-item__colum colum-right">
+                                    <div class="product-item-info__item product-item-info__datetime">
+                                        <p class="m-0">2021-03-09</p>
+                                    </div>
+
+                                    <div class="product-item-info__item product-item-info__number-product text-right">
+                                        <img src="/images/icons/icon_arrow_R.svg" />
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="row">
+                            <div class="col-6 ">
+                                <div class="product-item__colum">
+                                    <div class="product-item-info">
+                                        <div class="product-item-info__item product-item-info__no">
+                                            <p>No.10</p>
+                                        </div>
+
+                                        <div class="product-item-info__item product-item-info__title-text center-flex">
+                                            <p>포인트 충전하면 5%를 더 드려요!</p><strong class="">(2)</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-6 ">
+                                <div class="product-item__colum colum-right">
+                                    <div class="product-item-info__item product-item-info__datetime">
+                                        <p class="m-0">2021-03-09</p>
+                                    </div>
+
+                                    <div class="product-item-info__item product-item-info__number-product text-right">
+                                        <img src="/images/icons/icon_arrow_R.svg" />
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="main-paginate">
+                <ul>
+                    <li><img src="/images/icons/icon_arrow_L.svg" /></li>
+                    <li class="active"><span>1</span></li>
+                    <li><span>2</span></li>
+                    <li><img src="/images/icons/icon_arrow_R.svg" /></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+
+
+<footer></footer>
+@@include('components/script.html')
+@@include('components/foot.html') 
+
