@@ -1,0 +1,159 @@
+@@include('components/head.html',{
+    "title": "Gulp",
+    "bodyClass":"shopping-cart-management self-sale-management fixed-header"
+})
+@@include('components/header.html', {
+    "title":"자점매입 등록 관리",
+    "link": "#" ,
+    "leftIcon": "",
+    "rightTitle": "",
+    "leftTitle": "/images/icons/m_menu.svg",
+    'param': "open_nav",
+    'iconRight':'/images/icons/icon_calender.svg',
+    'eventIconRight':'openCaledar()'
+})
+
+<main>
+  <div class="">
+    <div class="filter_search_page">
+        <div class="content-top-input">
+            <label class="item-title">자료명</label>
+            <div class="input-search-common">
+                <input placeholder="" class="form-control inquiry__input-form"/>
+                <img class="input-search-common__icon-search" src="/images/icons/icon_search.svg"/>
+            </div>
+        </div>
+    </div>
+
+    <div class="container wrapper-self-sale admin-role">
+        <ul class="list-group product-items">
+            <li class="row align-items-center product-item">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-12">
+                                    <span class="product-item__store">중곡점(허주희)</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-8 col-left">
+                                    <p class="product-item__name">
+                                        반짝반짝 슬라임
+                                    </p>
+                                </div>
+                                <div class="col-4 col-right text-end">
+                                    <button type="button" class="btn btn_approve">추가</button>
+                                </div>
+                            </div>
+                            <hr>
+
+                            <div class="row box-detail">
+                                <div class="col-4">
+                                    <span class="title">판매가</span> <br>
+                                    <span class="desc">11111</span> 
+                                </div>
+                                <div class="col-4">
+                                    <span class="title">판매가</span> <br>
+                                    <span class="desc">2021-01-01</span> 
+                                </div>
+                                <div class="col-4">
+                                    <span class="title">판매가</span> <br>
+                                    <span class="desc">222</span> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="row align-items-center product-item">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-12">
+                                    <span class="product-item__store">중곡점(허주희)</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-8 col-left">
+                                    <p class="product-item__name">
+                                        반짝반짝 슬라임
+                                    </p>
+                                </div>
+                                <div class="col-4 col-right text-end">
+                                    <button type="button" class="btn btn_complete">추가</button>
+                                </div>
+                            </div>
+                            <hr>
+
+                            <div class="row box-detail">
+                                <div class="col-4">
+                                    <span class="title">판매가</span> <br>
+                                    <span class="desc">11111</span> 
+                                </div>
+                                <div class="col-4">
+                                    <span class="title">판매가</span> <br>
+                                    <span class="desc">2021-01-01</span> 
+                                </div>
+                                <div class="col-4">
+                                    <span class="title">판매가</span> <br>
+                                    <span class="desc">222</span> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+  </div>
+</main>
+
+<footer></footer>
+@@include('components/script.html')
+
+<link rel="stylesheet" href="/css/bscroll.min.css">
+<script src="https://unpkg.com/better-scroll@latest/dist/better-scroll.min.js"></script>
+<script type="text/javascript" src="/js/jquery.selectscroll.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        function init () {
+            $('.cart-management-filter__choose-store').selectScroll({
+                data: [
+                      [{
+                        text: '일별',
+                        id: 1
+                      },{
+                        text: 'Script',
+                        id: 2
+                      },{
+                        text: '.Net',
+                        id: 3
+                      },{
+                        text: 'JavaScript',
+                        id: 4
+                      }]
+                ],
+                title: '조회 기간',
+                selectedIndex: [0],
+                cancelTxt: 'cancel',
+                cancelClass: '',
+                confirmTxt: '선택',
+                confirmClass: '',
+                confirm: function(e){
+                    console.log(e)
+                },
+                cancel: function () {
+                    console.log('Canceld')
+                }
+            })
+        }
+        var $doc = $(document)
+        $doc.on('click', '.cart-management-filter__choose-store', init)
+    });
+</script>
+
+@@include('components/foot.html')
