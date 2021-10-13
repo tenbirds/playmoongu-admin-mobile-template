@@ -1,0 +1,144 @@
+@@include('components/head.html', {
+    "title": "Gulp",
+    "bodyClass": "list-history-use-point fixed-header"
+})
+
+@@include('components/header.html', {
+"title": "운영 공지 관리",
+"link": "javascript:openPopupType()",
+"leftIcon": "",
+"rightTitle": "등록하기",
+"leftTitle": "/images/icons/m_menu.svg",
+'param': "open_nav"
+})
+
+<main>
+    <div class="">
+        <div class="filter_search_page">
+            <div class="content-top-input">
+                <label class="item-title">자료명</label>
+                <div class="input-search-common">
+                    <input placeholder="" class="form-control inquiry__input-form"/>
+                    <img class="input-search-common__icon-search" src="/images/icons/icon_search.svg"/>
+                </div>
+            </div>
+
+            <div class="content-top-input">
+                <label class="item-title">자료명</label>
+                <div class="input-search-common">
+                    <input placeholder="" class="form-control inquiry__input-form"/>
+                    <img class="input-search-common__icon-search" src="/images/icons/icon_search.svg"/>
+                </div>
+            </div>
+
+            <div class="content-top-input">
+                <label class="item-title">자료명</label>
+                <div class="input-search-common">
+                    <input placeholder="" class="form-control inquiry__input-form"/>
+                    <img class="input-search-common__icon-search" src="/images/icons/icon_search.svg"/>
+                </div>
+            </div>
+
+            <div class="content-top-input box-range-date">
+                <label class="item-title">자료명</label>
+                <div class="range-date">
+                    <input type="text" name="start_date" autocomplete="off" class="form-control js_start_date js-no_show_keyboard">
+                    <span class="px-1"> ~ </span>
+                    <input type="text" name="end_date" autocomplete="off" class="form-control js_end_date js-no_show_keyboard">
+                </div>
+            </div>
+        </div>
+
+        <div class="row box-statistic main_center_content">
+            <div class="table-responsive col-8">
+                <table class="table table-bordered mb-0">
+                    <thead>
+                      <tr>
+                        <th scope="col">적립 포인트 총합</th>
+                        <th scope="col">사용 포인트 총합</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>100000</td>
+                        <td>20000</td>
+                      </tr>
+                    </tbody>
+                  </table>
+              </div>
+              <div class="col-4">
+                <select class="form-select form-select-sm slt-type">
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+              </div>
+        </div>
+        
+
+        <div class="main-page-history-use-point">
+            <ul class="main-item">
+                <li class="point-item">
+                    <div class="row">
+                        <div class="col-12">
+                            <span>No. 14 / 2021-04-08 20:11:53
+                            </span>
+                            <label class="label-used">1232</label>
+                        </div>
+
+                        <div class="col-12">
+                            <span>010-1234-5678(닉네임)               
+                            </span>
+                            <span class="point-item__value">
+                                100P
+                            </span>
+                        </div>
+
+                        <div class="col-12">
+                            <span class="point-item__store">중곡시장점
+                            </span>
+                        </div>
+                    </div>
+                </li>
+                <li class="point-item">
+                    <div class="row">
+                        <div class="col-12">
+                            <span>No. 14 / 2021-04-08 20:11:53
+                            </span>
+                            <label class="label-used">1232</label>
+                        </div>
+
+                        <div class="col-12">
+                            <span>010-1234-5678(닉네임)               
+                            </span>
+                            <span class="point-item__value">
+                                100P
+                            </span>
+                        </div>
+
+                        <div class="col-12">
+                            <span class="point-item__store">중곡시장점
+                            </span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="main-paginate">
+                <ul>
+                    <li><img src="/images/icons/icon_arrow_L.svg" /></li>
+                    <li class="active"><span>1</span></li>
+                    <li><span>2</span></li>
+                    <li><img src="/images/icons/icon_arrow_R.svg" /></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+
+
+<footer></footer>
+@@include('components/script.html')
+@@include('components/foot.html') 
+

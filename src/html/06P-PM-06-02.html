@@ -1,0 +1,219 @@
+@@include('components/head.html',{
+    "title": "Gulp",
+    "bodyClass":"shopping-cart-management fixed-header self-sale-management"
+})
+@@include('components/header.html', {
+    "title":"자점매입 등록 관리",
+    "link": "#" ,
+    "leftIcon": "",
+    "rightTitle": "",
+    "leftTitle": "/images/icons/m_menu.svg",
+    'param': "open_nav",
+    'iconRight':'/images/icons/icon_calender.svg',
+    'eventIconRight':'openCaledar()'
+})
+
+<main>
+  <div class="">
+    <div class="wrapper-conds">
+        <form class="form-detail">
+            <h3 class="form-detail__main-title form-title">
+                <span>자점 매입 상품 등록</span>
+            </h3>
+            <div class="box-conditon">
+                <label class="label-input">
+                    <span class="required">닉네임</span>
+                    <input class="form-control base-input input-custom" value="">
+                    <button type="button" class="btn bnt-checker">중복 검사</button>
+                </label>
+            </div>
+            <div class="box-conditon">
+                <label class="label-input">
+                    <span class="required">바코드 번호</span>
+                    <input class="form-control base-input input-custom" value="">
+                    <button type="button" class="btn bnt-checker">중복 검사</button>
+                </label>
+            </div>
+            <div class="box-conditon">
+                <label class="label-input">
+                    <span class="required">바코드 번호</span>
+                    <input class="form-control base-input" value="">
+                </label>
+            </div>
+
+            <button type="button" class="btn btn-request">승인 요청</button>
+        </form>
+    </div>
+
+    <div class="wrapper-self-sale shop-role">
+        <ul class="list-group product-items">
+            <li class="row align-items-center product-item">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-12">
+                                    <span class="product-item__store">중곡점(허주희)</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-8 col-left">
+                                    <p class="product-item__name">
+                                        반짝반짝 슬라임
+                                    </p>
+                                </div>
+                                <div class="col-4 col-right text-end">
+                                    <button type="button" class="btn btn_sub_request">추가</button>
+                                </div>
+                            </div>
+                            <hr>
+
+                            <div class="row box-detail">
+                                <div class="col-4">
+                                    <span class="title">판매가</span> <br>
+                                    <span class="desc">11111</span> 
+                                </div>
+                                <div class="col-4">
+                                    <span class="title">판매가</span> <br>
+                                    <span class="desc">2021-01-01</span> 
+                                </div>
+                                <div class="col-4">
+                                    <span class="title">판매가</span> <br>
+                                    <span class="desc">222</span> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="row align-items-center product-item">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-12">
+                                    <span class="product-item__store">중곡점(허주희)</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-8 col-left">
+                                    <p class="product-item__name">
+                                        반짝반짝 슬라임
+                                    </p>
+                                </div>
+                                <div class="col-4 col-right text-end">
+                                    <button type="button" class="btn btn_complete">추가</button>
+                                </div>
+                            </div>
+                            <hr>
+
+                            <div class="row box-detail">
+                                <div class="col-4">
+                                    <span class="title">판매가</span> <br>
+                                    <span class="desc">11111</span> 
+                                </div>
+                                <div class="col-4">
+                                    <span class="title">판매가</span> <br>
+                                    <span class="desc">2021-01-01</span> 
+                                </div>
+                                <div class="col-4">
+                                    <span class="title">판매가</span> <br>
+                                    <span class="desc">222</span> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="row align-items-center product-item">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-12">
+                                    <span class="product-item__store">중곡점(허주희)</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-8 col-left">
+                                    <p class="product-item__name">
+                                        반짝반짝 슬라임
+                                    </p>
+                                </div>
+                                <div class="col-4 col-right text-end">
+                                    <button type="button" class="btn btn_complete">추가</button>
+                                </div>
+                            </div>
+                            <hr>
+
+                            <div class="row box-detail">
+                                <div class="col-4">
+                                    <span class="title">판매가</span> <br>
+                                    <span class="desc">11111</span> 
+                                </div>
+                                <div class="col-4">
+                                    <span class="title">판매가</span> <br>
+                                    <span class="desc">2021-01-01</span> 
+                                </div>
+                                <div class="col-4">
+                                    <span class="title">판매가</span> <br>
+                                    <span class="desc">222</span> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+  </div>
+</main>
+
+<footer></footer>
+@@include('components/script.html')
+
+<link rel="stylesheet" href="/css/bscroll.min.css">
+<script src="https://unpkg.com/better-scroll@latest/dist/better-scroll.min.js"></script>
+<script type="text/javascript" src="/js/jquery.selectscroll.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        function init () {
+            $('.cart-management-filter__choose-store').selectScroll({
+                data: [
+                      [{
+                        text: '일별',
+                        id: 1
+                      },{
+                        text: 'Script',
+                        id: 2
+                      },{
+                        text: '.Net',
+                        id: 3
+                      },{
+                        text: 'JavaScript',
+                        id: 4
+                      }]
+                ],
+                title: '조회 기간',
+                selectedIndex: [0],
+                cancelTxt: 'cancel',
+                cancelClass: '',
+                confirmTxt: '선택',
+                confirmClass: '',
+                confirm: function(e){
+                    console.log(e)
+                },
+                cancel: function () {
+                    console.log('Canceld')
+                }
+            })
+        }
+        var $doc = $(document)
+        $doc.on('click', '.cart-management-filter__choose-store', init)
+    });
+</script>
+
+@@include('components/foot.html')
