@@ -33,17 +33,6 @@
 		}
 		.item-area {
 			margin-bottom: 20px;
-			textarea{
-				font-family: NanumSquareR;
-				font-size: 14px;
-				font-weight: normal;
-				font-stretch: normal;
-				font-style: normal;
-				line-height: 1.43;
-				letter-spacing: normal;
-				text-align: left;
-				color: #111;
-			}
 			.resizeable{
 				resize: vertical;
 			}
@@ -173,7 +162,7 @@
 		}
 	}
 	.box-delete{
-		margin-right: 20px;
+		padding-right: 20px;
 		&__right{
 			text-align: right;
 			margin-bottom: 40px;
