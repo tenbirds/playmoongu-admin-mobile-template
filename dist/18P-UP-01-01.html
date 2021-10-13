@@ -18,20 +18,20 @@
     <link rel="stylesheet" href="/css/style.min.css?v=2021101301" media="screen">
 
 </head>
-<body class="form-document-detail-management fixed-header">
+<body class="list-history-use-point fixed-header">
 
 
 <!-- <header>
     <div class="main-header">
         <div class="header">
             <div class="content-header">
-                <img src="/images/icons/icon_top_arrow_B.svg" class="" onclick="handleClick('open_nav')" alt="">
-                <h3 class="header_title">교육자료 등록</h3>
+                <img src="/images/icons/m_menu.svg" class="" onclick="handleClick('open_nav')" alt="">
+                <h3 class="header_title">운영 공지 관리</h3>
                
                 <div class="header-right">
                     
                     
-                        <a href="javascript:openPopupType()" class="header-link">수정완료</a>
+                        <a href="javascript:openPopupType()" class="header-link">등록하기</a>
                     
                     
                 </div>
@@ -43,18 +43,18 @@
     <div class="header-left">
         <a href="#">
             
-                <img src="/images/icons/icon_top_arrow_B.svg" class="" onclick="handleClick('open_nav')">
+                <img src="/images/icons/m_menu.svg" class="" onclick="handleClick('open_nav')">
             
             
             
         </a>
     </div>
-    <h1 class="header-title @@dashboard-title">교육자료 등록</h1>
+    <h1 class="header-title @@dashboard-title">운영 공지 관리</h1>
     <div class="header-right">
         <a href="javascript:openPopupType()">
              
             
-                <h3 class="header-link">수정완료</h3>
+                <h3 class="header-link">등록하기</h3>
             
         </a>
     </div>
@@ -155,83 +155,123 @@
 
 
 <main>
-    <div class="main-announcement-management">
-        <div class="main-management">
-            <div class="time-content">
-                <label class="item-text-title">등록일</label>
-                <label class="text-time">2021-02-05 19:40:30</label>
-            </div>
-            <div class="item-input">
-                <input type="text" class="form-control" placeholder="안녕하세요" />
-            </div>
-            <div class="item-input item-area">
-                <textarea class="form-control" rows="10">
-                    
-                </textarea>
-            </div>
-            <!-- <div class="item-radio">
-                <label class="item-text-title">상단 고정</label>
-                <div>
-                    <label class="label-radio label-radio-first"><input type="radio" name="ckbox"/><span>고정</span></label>
-                    <label class="label-radio"><input type="radio" name="ckbox"/><span>해제</span></label>
-                </div>
-            </div> -->
-            <div class="item-upload-image">
-                <label class="item-text-title">파일</label>
-                <div class="main-item-img">
-                    <div class="item-img">
-                        <img class="img-content" src="/images/photos/img04.png" />
-                        <img class="btn-remove" src="/images/icons/pop_XW.svg" />
-                    </div>
-                    <div class="item-img">
-                        <img class="img-content" src="/images/photos/img04.png" />
-                        <img class="btn-remove" src="/images/icons/pop_XW.svg" />
-                    </div>
-                    <div class="item-img">
-                        <img class="img-content" src="/images/photos/img04.png" />
-                        <img class="btn-remove" src="/images/icons/pop_XW.svg" />
-                    </div>
-                    <div class="item-img">
-                        <img class="img-content" src="/images/photos/img04.png" />
-                        <img class="btn-remove" src="/images/icons/pop_XW.svg" />
-                    </div>
+    <div class="">
+        <div class="filter_search_page">
+            <div class="content-top-input">
+                <label class="item-title">자료명</label>
+                <div class="input-search-common">
+                    <input placeholder="" class="form-control inquiry__input-form"/>
+                    <img class="input-search-common__icon-search" src="/images/icons/icon_search.svg"/>
                 </div>
             </div>
-            <div class="item-upload-file">
-                <div class="item-file">
-                    <span class="text-file">
-                        <label class="">Moongu/image.gif</label>
-                        <img class="btn-remove-file" src="/images/icons/pop_miniX.svg" />
-                    </span>
-                </div>
-                <div class="item-file">
-                    <span class="text-file">
-                        <label class="">Moongu/image.gif</label>
-                        <img class="btn-remove-file" src="/images/icons/pop_miniX.svg" />
-                    </span>
+
+            <div class="content-top-input">
+                <label class="item-title">자료명</label>
+                <div class="input-search-common">
+                    <input placeholder="" class="form-control inquiry__input-form"/>
+                    <img class="input-search-common__icon-search" src="/images/icons/icon_search.svg"/>
                 </div>
             </div>
-            
+
+            <div class="content-top-input">
+                <label class="item-title">자료명</label>
+                <div class="input-search-common">
+                    <input placeholder="" class="form-control inquiry__input-form"/>
+                    <img class="input-search-common__icon-search" src="/images/icons/icon_search.svg"/>
+                </div>
+            </div>
+
+            <div class="content-top-input box-range-date">
+                <label class="item-title">자료명</label>
+                <div class="range-date">
+                    <input type="text" name="start_date" autocomplete="off" class="form-control js_start_date js-no_show_keyboard">
+                    <span class="px-1"> ~ </span>
+                    <input type="text" name="end_date" autocomplete="off" class="form-control js_end_date js-no_show_keyboard">
+                </div>
+            </div>
         </div>
-        <div class="btn-action">
-                <button class="btn btn-cancel">
-                    <span>취소</span>
-                </button>
-                <button class="btn btn-create">
-                <span>등록</span>   
-                </button>
+
+        <div class="row box-statistic main_center_content">
+            <div class="table-responsive col-8">
+                <table class="table table-bordered mb-0">
+                    <thead>
+                      <tr>
+                        <th scope="col">적립 포인트 총합</th>
+                        <th scope="col">사용 포인트 총합</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>100000</td>
+                        <td>20000</td>
+                      </tr>
+                    </tbody>
+                  </table>
+              </div>
+              <div class="col-4">
+                <select class="form-select form-select-sm slt-type">
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+              </div>
         </div>
-        <div class="main-upload-file-mobile">
-            <div class="item-btn-mobile">
-                <button type="button" class="item-btn">
-                    <img src="/images/icons/icon_edit01.svg" />
-                </button>
-                <button type="button" class="item-btn">
-                    <img src="/images/icons/icon_edit02.svg" />
-                </button>
-                <button type="button" class="item-btn">
-                    <img src="/images/icons/icon_edit03.svg" />
-                </button>
+        
+
+        <div class="main-page-history-use-point">
+            <ul class="main-item">
+                <li class="point-item">
+                    <div class="row">
+                        <div class="col-12">
+                            <span>No. 14 / 2021-04-08 20:11:53
+                            </span>
+                            <label class="label-used">1232</label>
+                        </div>
+
+                        <div class="col-12">
+                            <span>010-1234-5678(닉네임)               
+                            </span>
+                            <span class="point-item__value">
+                                100P
+                            </span>
+                        </div>
+
+                        <div class="col-12">
+                            <span class="point-item__store">중곡시장점
+                            </span>
+                        </div>
+                    </div>
+                </li>
+                <li class="point-item">
+                    <div class="row">
+                        <div class="col-12">
+                            <span>No. 14 / 2021-04-08 20:11:53
+                            </span>
+                            <label class="label-used">1232</label>
+                        </div>
+
+                        <div class="col-12">
+                            <span>010-1234-5678(닉네임)               
+                            </span>
+                            <span class="point-item__value">
+                                100P
+                            </span>
+                        </div>
+
+                        <div class="col-12">
+                            <span class="point-item__store">중곡시장점
+                            </span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="main-paginate">
+                <ul>
+                    <li><img src="/images/icons/icon_arrow_L.svg" /></li>
+                    <li class="active"><span>1</span></li>
+                    <li><span>2</span></li>
+                    <li><img src="/images/icons/icon_arrow_R.svg" /></li>
+                </ul>
             </div>
         </div>
     </div>

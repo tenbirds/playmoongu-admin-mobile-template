@@ -18,20 +18,20 @@
     <link rel="stylesheet" href="/css/style.min.css?v=2021101301" media="screen">
 
 </head>
-<body class="shopping-cart-management fixed-header">
+<body class="shopping-cart-management fixed-header self-sale-management">
 
 <!-- <header>
     <div class="main-header">
         <div class="header">
             <div class="content-header">
                 <img src="/images/icons/m_menu.svg" class="" onclick="handleClick('open_nav')" alt="">
-                <h3 class="header_title">장바구니 관리</h3>
+                <h3 class="header_title">자점매입 등록 관리</h3>
                
                 <div class="header-right">
                     
                     
-                        <a href="#" class="header-link"></a>
                     
+                        <img src="/images/icons/icon_calender.svg" onclick="openCaledar()" alt="" >
                     
                 </div>
             </div>
@@ -48,12 +48,12 @@
             
         </a>
     </div>
-    <h1 class="header-title @@dashboard-title">장바구니 관리</h1>
+    <h1 class="header-title @@dashboard-title">자점매입 등록 관리</h1>
     <div class="header-right">
         <a href="#">
              
+                <img src="/images/icons/icon_calender.svg" onclick="openCaledar()" alt="" >
             
-                <h3 class="header-link"></h3>
             
         </a>
     </div>
@@ -154,131 +154,162 @@
 
 
 <main>
-  <div class="main-shopping-cart-management">
-    <div class="cart-management-filter filter_search_page">
-      <div class="cart-management-filter__choose-store choose-store-select-common">
-        <label class="choose-store-select-common__text">전체 매장</label>
-        <img class="choose-store-select-common__icon" src="/images/icons/icon_arrow_down.svg" />
-      </div>
-      <div class="cart-management-filter__input-search input-search-common" id="input-search-common">
-        <input placeholder="매장 명을 검색해 주세요." class="form-control input-search-common__input-form" />
-        <img class="input-search-common__icon-search" src="/images/icons/icon_search.svg" />
-        <ul class="search-auto d-none event_search-auto"" id="search-auto">
-            <li>abc</li>
-            <li>abc1</li>
-            <li>ab2</li>
-        </ul>
-      </div>
-    </div>
-    <div class="cart-management-store main_center_content">
-      <div class="cart-management-store__item">
-        <div class="cart-management-store__item__no-time">
-          <label class="cart-management-store__item__no-time__no">
-            No.11
-          </label>
-          <label class="cart-management-store__item__no-time__time">
-            2021.05.06 21:08:15
-          </label>
-        </div>
-        <div class="cart-management-store__item__store-data">
-          <img class="cart-management-store__item__store-data__icon" src="/images/icons/icon_shop.svg" />
-          <label class="cart-management-store__item__store-data__name">중곡시장점</label>
-        </div>
-        <div class="cart-management-store__item__total">
-          <label class="cart-management-store__item__total__text">총 품목(개수) :</label>
-          <strong>3</strong>
-        </div>
-        <div class="cart-management-store__item__price">
-          <label class="cart-management-store__item__price__value">111,540</label>
-        </div>
-      </div>
-      <div class="cart-management-store__item">
-        <div class="cart-management-store__item__no-time">
-          <label class="cart-management-store__item__no-time__no">
-            No.11
-          </label>
-          <label class="cart-management-store__item__no-time__time">
-            2021.05.06 21:08:15
-          </label>
-        </div>
-        <div class="cart-management-store__item__store-data">
-          <img class="cart-management-store__item__store-data__icon" src="/images/icons/icon_shop.svg" />
-          <label class="cart-management-store__item__store-data__name">중곡시장점</label>
-        </div>
-        <div class="cart-management-store__item__total">
-          <label class="cart-management-store__item__total__text">총 품목(개수) :</label>
-          <strong>3</strong>
-        </div>
-        <div class="cart-management-store__item__price">
-          <label class="cart-management-store__item__price__value">111,540</label>
-        </div>
-      </div>
-      <div class="cart-management-store__item">
-        <div class="cart-management-store__item__no-time">
-          <label class="cart-management-store__item__no-time__no">
-            No.11
-          </label>
-          <label class="cart-management-store__item__no-time__time">
-            2021.05.06 21:08:15
-          </label>
-        </div>
-        <div class="cart-management-store__item__store-data">
-          <img class="cart-management-store__item__store-data__icon" src="/images/icons/icon_shop.svg" />
-          <label class="cart-management-store__item__store-data__name">중곡시장점</label>
-        </div>
-        <div class="cart-management-store__item__total">
-          <label class="cart-management-store__item__total__text">총 품목(개수) :</label>
-          <strong>3</strong>
-        </div>
-        <div class="cart-management-store__item__price">
-          <label class="cart-management-store__item__price__value">111,540</label>
-        </div>
-      </div>
-      <div class="cart-management-store__item">
-        <div class="cart-management-store__item__no-time">
-          <label class="cart-management-store__item__no-time__no">
-            No.11
-          </label>
-          <label class="cart-management-store__item__no-time__time">
-            2021.05.06 21:08:15
-          </label>
-        </div>
-        <div class="cart-management-store__item__store-data">
-          <img class="cart-management-store__item__store-data__icon" src="/images/icons/icon_shop.svg" />
-          <label class="cart-management-store__item__store-data__name">중곡시장점</label>
-        </div>
-        <div class="cart-management-store__item__total">
-          <label class="cart-management-store__item__total__text">총 품목(개수) :</label>
-          <strong>3</strong>
-        </div>
-        <div class="cart-management-store__item__price">
-          <label class="cart-management-store__item__price__value">111,540</label>
-        </div>
-      </div>
-      <div class="cart-management-store__item">
-        <div class="cart-management-store__item__no-time">
-          <label class="cart-management-store__item__no-time__no">
-            No.11
-          </label>
-          <label class="cart-management-store__item__no-time__time">
-            2021.05.06 21:08:15
-          </label>
-        </div>
-        <div class="cart-management-store__item__store-data">
-          <img class="cart-management-store__item__store-data__icon" src="/images/icons/icon_shop.svg" />
-          <label class="cart-management-store__item__store-data__name">중곡시장점</label>
-        </div>
-        <div class="cart-management-store__item__total">
-          <label class="cart-management-store__item__total__text">총 품목(개수) :</label>
-          <strong>3</strong>
-        </div>
-        <div class="cart-management-store__item__price">
-          <label class="cart-management-store__item__price__value">111,540</label>
-        </div>
-      </div>
-    </div>
-  </div>
+  <div class="">
+    <div class="wrapper-conds">
+        <form class="form-detail">
+            <h3 class="form-detail__main-title form-title">
+                <span>자점 매입 상품 등록</span>
+            </h3>
+            <div class="box-conditon">
+                <label class="label-input">
+                    <span class="required">닉네임</span>
+                    <input class="form-control base-input input-custom" value="">
+                    <button type="button" class="btn bnt-checker">중복 검사</button>
+                </label>
+            </div>
+            <div class="box-conditon">
+                <label class="label-input">
+                    <span class="required">바코드 번호</span>
+                    <input class="form-control base-input input-custom" value="">
+                    <button type="button" class="btn bnt-checker">중복 검사</button>
+                </label>
+            </div>
+            <div class="box-conditon">
+                <label class="label-input">
+                    <span class="required">바코드 번호</span>
+                    <input class="form-control base-input" value="">
+                </label>
+            </div>
 
+            <button type="button" class="btn btn-request">승인 요청</button>
+        </form>
+    </div>
+
+    <div class="wrapper-self-sale shop-role">
+        <ul class="list-group product-items">
+            <li class="row align-items-center product-item">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-12">
+                                    <span class="product-item__store">중곡점(허주희)</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-8 col-left">
+                                    <p class="product-item__name">
+                                        반짝반짝 슬라임
+                                    </p>
+                                </div>
+                                <div class="col-4 col-right text-end">
+                                    <button type="button" class="btn btn_sub_request">추가</button>
+                                </div>
+                            </div>
+                            <hr>
+
+                            <div class="row box-detail">
+                                <div class="col-4">
+                                    <span class="title">판매가</span> <br>
+                                    <span class="desc">11111</span> 
+                                </div>
+                                <div class="col-4">
+                                    <span class="title">판매가</span> <br>
+                                    <span class="desc">2021-01-01</span> 
+                                </div>
+                                <div class="col-4">
+                                    <span class="title">판매가</span> <br>
+                                    <span class="desc">222</span> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="row align-items-center product-item">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-12">
+                                    <span class="product-item__store">중곡점(허주희)</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-8 col-left">
+                                    <p class="product-item__name">
+                                        반짝반짝 슬라임
+                                    </p>
+                                </div>
+                                <div class="col-4 col-right text-end">
+                                    <button type="button" class="btn btn_complete">추가</button>
+                                </div>
+                            </div>
+                            <hr>
+
+                            <div class="row box-detail">
+                                <div class="col-4">
+                                    <span class="title">판매가</span> <br>
+                                    <span class="desc">11111</span> 
+                                </div>
+                                <div class="col-4">
+                                    <span class="title">판매가</span> <br>
+                                    <span class="desc">2021-01-01</span> 
+                                </div>
+                                <div class="col-4">
+                                    <span class="title">판매가</span> <br>
+                                    <span class="desc">222</span> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="row align-items-center product-item">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-12">
+                                    <span class="product-item__store">중곡점(허주희)</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-8 col-left">
+                                    <p class="product-item__name">
+                                        반짝반짝 슬라임
+                                    </p>
+                                </div>
+                                <div class="col-4 col-right text-end">
+                                    <button type="button" class="btn btn_complete">추가</button>
+                                </div>
+                            </div>
+                            <hr>
+
+                            <div class="row box-detail">
+                                <div class="col-4">
+                                    <span class="title">판매가</span> <br>
+                                    <span class="desc">11111</span> 
+                                </div>
+                                <div class="col-4">
+                                    <span class="title">판매가</span> <br>
+                                    <span class="desc">2021-01-01</span> 
+                                </div>
+                                <div class="col-4">
+                                    <span class="title">판매가</span> <br>
+                                    <span class="desc">222</span> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+  </div>
 </main>
 
 <footer></footer>

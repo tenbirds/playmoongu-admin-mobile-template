@@ -18,21 +18,20 @@
     <link rel="stylesheet" href="/css/style.min.css?v=2021101301" media="screen">
 
 </head>
-<body class="form-document-detail-management fixed-header">
-
+<body class="shopping-cart-management self-sale-management fixed-header">
 
 <!-- <header>
     <div class="main-header">
         <div class="header">
             <div class="content-header">
-                <img src="/images/icons/icon_top_arrow_B.svg" class="" onclick="handleClick('open_nav')" alt="">
-                <h3 class="header_title">교육자료 등록</h3>
+                <img src="/images/icons/m_menu.svg" class="" onclick="handleClick('open_nav')" alt="">
+                <h3 class="header_title">자점매입 등록 관리</h3>
                
                 <div class="header-right">
                     
                     
-                        <a href="javascript:openPopupType()" class="header-link">수정완료</a>
                     
+                        <img src="/images/icons/icon_calender.svg" onclick="openCaledar()" alt="" >
                     
                 </div>
             </div>
@@ -43,18 +42,18 @@
     <div class="header-left">
         <a href="#">
             
-                <img src="/images/icons/icon_top_arrow_B.svg" class="" onclick="handleClick('open_nav')">
+                <img src="/images/icons/m_menu.svg" class="" onclick="handleClick('open_nav')">
             
             
             
         </a>
     </div>
-    <h1 class="header-title @@dashboard-title">교육자료 등록</h1>
+    <h1 class="header-title @@dashboard-title">자점매입 등록 관리</h1>
     <div class="header-right">
-        <a href="javascript:openPopupType()">
+        <a href="#">
              
+                <img src="/images/icons/icon_calender.svg" onclick="openCaledar()" alt="" >
             
-                <h3 class="header-link">수정완료</h3>
             
         </a>
     </div>
@@ -155,90 +154,103 @@
 
 
 <main>
-    <div class="main-announcement-management">
-        <div class="main-management">
-            <div class="time-content">
-                <label class="item-text-title">등록일</label>
-                <label class="text-time">2021-02-05 19:40:30</label>
-            </div>
-            <div class="item-input">
-                <input type="text" class="form-control" placeholder="안녕하세요" />
-            </div>
-            <div class="item-input item-area">
-                <textarea class="form-control" rows="10">
-                    
-                </textarea>
-            </div>
-            <!-- <div class="item-radio">
-                <label class="item-text-title">상단 고정</label>
-                <div>
-                    <label class="label-radio label-radio-first"><input type="radio" name="ckbox"/><span>고정</span></label>
-                    <label class="label-radio"><input type="radio" name="ckbox"/><span>해제</span></label>
-                </div>
-            </div> -->
-            <div class="item-upload-image">
-                <label class="item-text-title">파일</label>
-                <div class="main-item-img">
-                    <div class="item-img">
-                        <img class="img-content" src="/images/photos/img04.png" />
-                        <img class="btn-remove" src="/images/icons/pop_XW.svg" />
-                    </div>
-                    <div class="item-img">
-                        <img class="img-content" src="/images/photos/img04.png" />
-                        <img class="btn-remove" src="/images/icons/pop_XW.svg" />
-                    </div>
-                    <div class="item-img">
-                        <img class="img-content" src="/images/photos/img04.png" />
-                        <img class="btn-remove" src="/images/icons/pop_XW.svg" />
-                    </div>
-                    <div class="item-img">
-                        <img class="img-content" src="/images/photos/img04.png" />
-                        <img class="btn-remove" src="/images/icons/pop_XW.svg" />
-                    </div>
-                </div>
-            </div>
-            <div class="item-upload-file">
-                <div class="item-file">
-                    <span class="text-file">
-                        <label class="">Moongu/image.gif</label>
-                        <img class="btn-remove-file" src="/images/icons/pop_miniX.svg" />
-                    </span>
-                </div>
-                <div class="item-file">
-                    <span class="text-file">
-                        <label class="">Moongu/image.gif</label>
-                        <img class="btn-remove-file" src="/images/icons/pop_miniX.svg" />
-                    </span>
-                </div>
-            </div>
-            
-        </div>
-        <div class="btn-action">
-                <button class="btn btn-cancel">
-                    <span>취소</span>
-                </button>
-                <button class="btn btn-create">
-                <span>등록</span>   
-                </button>
-        </div>
-        <div class="main-upload-file-mobile">
-            <div class="item-btn-mobile">
-                <button type="button" class="item-btn">
-                    <img src="/images/icons/icon_edit01.svg" />
-                </button>
-                <button type="button" class="item-btn">
-                    <img src="/images/icons/icon_edit02.svg" />
-                </button>
-                <button type="button" class="item-btn">
-                    <img src="/images/icons/icon_edit03.svg" />
-                </button>
+  <div class="">
+    <div class="filter_search_page">
+        <div class="content-top-input">
+            <label class="item-title">자료명</label>
+            <div class="input-search-common">
+                <input placeholder="" class="form-control inquiry__input-form"/>
+                <img class="input-search-common__icon-search" src="/images/icons/icon_search.svg"/>
             </div>
         </div>
     </div>
+
+    <div class="container wrapper-self-sale admin-role">
+        <ul class="list-group product-items">
+            <li class="row align-items-center product-item">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-12">
+                                    <span class="product-item__store">중곡점(허주희)</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-8 col-left">
+                                    <p class="product-item__name">
+                                        반짝반짝 슬라임
+                                    </p>
+                                </div>
+                                <div class="col-4 col-right text-end">
+                                    <button type="button" class="btn btn_approve">추가</button>
+                                </div>
+                            </div>
+                            <hr>
+
+                            <div class="row box-detail">
+                                <div class="col-4">
+                                    <span class="title">판매가</span> <br>
+                                    <span class="desc">11111</span> 
+                                </div>
+                                <div class="col-4">
+                                    <span class="title">판매가</span> <br>
+                                    <span class="desc">2021-01-01</span> 
+                                </div>
+                                <div class="col-4">
+                                    <span class="title">판매가</span> <br>
+                                    <span class="desc">222</span> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="row align-items-center product-item">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-12">
+                                    <span class="product-item__store">중곡점(허주희)</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-8 col-left">
+                                    <p class="product-item__name">
+                                        반짝반짝 슬라임
+                                    </p>
+                                </div>
+                                <div class="col-4 col-right text-end">
+                                    <button type="button" class="btn btn_complete">추가</button>
+                                </div>
+                            </div>
+                            <hr>
+
+                            <div class="row box-detail">
+                                <div class="col-4">
+                                    <span class="title">판매가</span> <br>
+                                    <span class="desc">11111</span> 
+                                </div>
+                                <div class="col-4">
+                                    <span class="title">판매가</span> <br>
+                                    <span class="desc">2021-01-01</span> 
+                                </div>
+                                <div class="col-4">
+                                    <span class="title">판매가</span> <br>
+                                    <span class="desc">222</span> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+  </div>
 </main>
-
-
-
 
 <footer></footer>
 <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>-->
@@ -270,7 +282,47 @@
 <script src="/js/script.min.js?v=2021070601"></script>
 
 
+<link rel="stylesheet" href="/css/bscroll.min.css">
+<script src="https://unpkg.com/better-scroll@latest/dist/better-scroll.min.js"></script>
+<script type="text/javascript" src="/js/jquery.selectscroll.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        function init () {
+            $('.cart-management-filter__choose-store').selectScroll({
+                data: [
+                      [{
+                        text: '일별',
+                        id: 1
+                      },{
+                        text: 'Script',
+                        id: 2
+                      },{
+                        text: '.Net',
+                        id: 3
+                      },{
+                        text: 'JavaScript',
+                        id: 4
+                      }]
+                ],
+                title: '조회 기간',
+                selectedIndex: [0],
+                cancelTxt: 'cancel',
+                cancelClass: '',
+                confirmTxt: '선택',
+                confirmClass: '',
+                confirm: function(e){
+                    console.log(e)
+                },
+                cancel: function () {
+                    console.log('Canceld')
+                }
+            })
+        }
+        var $doc = $(document)
+        $doc.on('click', '.cart-management-filter__choose-store', init)
+    });
+</script>
+
+
 </body>
 </html>
- 
-

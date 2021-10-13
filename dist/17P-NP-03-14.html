@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="/css/style.min.css?v=2021101301" media="screen">
 
 </head>
-<body class="list-guide-management fixed-header">
+<body class="statistics-user fixed-header">
 
 
 <!-- <header>
@@ -26,7 +26,7 @@
         <div class="header">
             <div class="content-header">
                 <img src="/images/icons/m_menu.svg" class="" onclick="handleClick('open_nav')" alt="">
-                <h3 class="header_title">운영 공지 관리</h3>
+                <h3 class="header_title">처리자 통계</h3>
                
                 <div class="header-right">
                     
@@ -49,7 +49,7 @@
             
         </a>
     </div>
-    <h1 class="header-title @@dashboard-title">운영 공지 관리</h1>
+    <h1 class="header-title @@dashboard-title">처리자 통계</h1>
     <div class="header-right">
         <a href="javascript:openPopupType()">
              
@@ -155,106 +155,173 @@
 
 
 <main>
-    <div class="main-classification-management">
+    <div class="main-inquiry-board">
+        <div class="main-header-top">
+            <div class="main-filter-status d-flex justify-content-between">
+                <label class="label-checkbox">
+                    <input type="checkbox" name="ckbox">
+                    <span>전체</span>
+                </label>
+                <label class="label-checkbox">
+                    <input type="checkbox" name="ckbox">
+                    <span>CS</span>
+                </label>
 
-        <div class="main-page-classification-management ">
-            
-            <div class="main-item">
-                <div class="product-item">
-                    <div class="row">
-                            <div class="col-6 ">
-                                <div class="product-item__colum">
-                                    <div class="product-item-info">
-                                        <div class="product-item-info__item product-item-info__important">
-                                            <p>No.11</p>
-                                        </div>
+                <label class="label-checkbox">
+                    <input type="checkbox" name="ckbox">
+                    <span>일반</span>
+                </label>
 
-                                        <div class="product-item-info__item product-item-info__title-text center-flex">
-                                            <p>운영 공지 제목
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="col-6 ">
-                                <div class="product-item__colum colum-right">
-                                    <div class="product-item-info__item product-item-info__datetime">
-                                        <p class="m-0">2021-03-09</p>
-                                    </div>
+                <label class="label-checkbox">
+                    <input type="checkbox" name="ckbox">
+                    <span>최고</span>
+                </label>
+            </div>
+            <div class="main-header-filter">
 
-                                    <div class="product-item-info__item product-item-info__number-product text-right">
-                                        <img src="/images/icons/icon_arrow_R.svg" />
-                                    </div>
-                                </div>
-                            </div>
+                <div class="main-filter-text">
+                    <div class="item-filter">
+                        <label class="item-title">매장명</label>
+                        <div class="input-search-common">
+                            <input placeholder="" class="form-control inquiry__input-form"/>
+                            <img class="input-search-common__icon-search" src="/images/icons/icon_search.svg"/>
+                        </div>
+                    </div>
+                    <div class="item-filter">
+                        <label class="item-title">처리자</label>
+                        <div class="input-search-common">
+                            <input placeholder="" class="form-control inquiry__input-form"/>
+                            <img class="input-search-common__icon-search" src="/images/icons/icon_search.svg"/>
+                        </div>
                     </div>
                 </div>
-                <div class="product-item">
-                    <div class="row">
-                            <div class="col-6 ">
-                                <div class="product-item__colum">
-                                    <div class="product-item-info">
-                                        <div class="product-item-info__item product-item-info__no">
-                                            <p>No.10</p>
-                                        </div>
 
-                                        <div class="product-item-info__item product-item-info__title-text center-flex">
-                                            <p>포인트 충전하면 5%를 더 드려요!</p><strong class="">(2)</strong>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="col-6 ">
-                                <div class="product-item__colum colum-right">
-                                    <div class="product-item-info__item product-item-info__datetime">
-                                        <p class="m-0">2021-03-09</p>
-                                    </div>
+            </div>
+        </div>
 
-                                    <div class="product-item-info__item product-item-info__number-product text-right">
-                                        <img src="/images/icons/icon_arrow_R.svg" />
-                                    </div>
-                                </div>
-                            </div>
+        <div class="content">
+            <div class="box-total">
+                <div class="row">
+                    <div class="col-4">
+                        <h6 class="title-box-total m-0 p-0">전체 처리 완료</h6>
+                        <span class="number-box-total">55</span>
                     </div>
-                </div>
-                <div class="product-item">
-                    <div class="row">
-                            <div class="col-6 ">
-                                <div class="product-item__colum">
-                                    <div class="product-item-info">
-                                        <div class="product-item-info__item product-item-info__no">
-                                            <p>No.09</p>
-                                        </div>
 
-                                        <div class="product-item-info__item product-item-info__title-text center-flex">
-                                            <p>200호점 달성 이벤트</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="col-6 ">
-                                <div class="product-item__colum colum-right">
-                                    <div class="product-item-info__item product-item-info__datetime">
-                                        <p class="m-0">2021-03-09</p>
-                                    </div>
+                    <div class="col-4">
+                        <h6  class="title-box-total m-0 p-0">전체 보류</h6>
+                        <span class="number-box-total">55</span>
+                    </div>
 
-                                    <div class="product-item-info__item product-item-info__number-product text-right">
-                                        <img src="/images/icons/icon_arrow_R.svg" />
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="col-4">
+                        <h6  class="title-box-total m-0 p-0">전체 처리 중</h6>
+                        <span class="number-box-total">55</span>
                     </div>
                 </div>
             </div>
-            <div class="main-paginate">
-                <ul>
-                    <li><img src="/images/icons/icon_arrow_L.svg" /></li>
-                    <li class="active"><span>1</span></li>
-                    <li><span>2</span></li>
-                    <li><img src="/images/icons/icon_arrow_R.svg" /></li>
-                </ul>
+
+
+            <div class="box-child mt-3">
+                <div class="d-flex justify-content-between">
+                    <p class="p-0 m-0 box-child-first">순위 1</p>
+                    <p class="p-0 m-0 box-child-first">총 완료 :24</p>
+                </div>
+                <h6 class="box-child-name">Su-Jin</h6>
+
+                <div class="box-child-border mt-2"></div>
+
+                <div class="row mt-3">
+                    <div class="col-4">
+                        <h6  class="title-box-total m-0 p-0">전체 보류</h6>
+                        <span class="number-box-total">55</span>
+                    </div>
+                    <div class="col-4">
+                        <h6  class="title-box-total m-0 p-0">전체 보류</h6>
+                        <span class="number-box-total">55</span>
+                    </div>
+                    <div class="col-4">
+                        <h6  class="title-box-total m-0 p-0">전체 보류</h6>
+                        <span class="number-box-total">55</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="box-child mt-3">
+                <div class="d-flex justify-content-between">
+                    <p class="p-0 m-0 box-child-first">순위 1</p>
+                    <p class="p-0 m-0 box-child-first">총 완료 :24</p>
+                </div>
+                <h6 class="box-child-name">Su-Jin</h6>
+
+                <div class="box-child-border mt-2"></div>
+
+                <div class="row mt-3">
+                    <div class="col-4">
+                        <h6  class="title-box-total m-0 p-0">전체 보류</h6>
+                        <span class="number-box-total">55</span>
+                    </div>
+                    <div class="col-4">
+                        <h6  class="title-box-total m-0 p-0">전체 보류</h6>
+                        <span class="number-box-total">55</span>
+                    </div>
+                    <div class="col-4">
+                        <h6  class="title-box-total m-0 p-0">전체 보류</h6>
+                        <span class="number-box-total">55</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="box-child mt-3">
+                <div class="d-flex justify-content-between">
+                    <p class="p-0 m-0 box-child-first">순위 1</p>
+                    <p class="p-0 m-0 box-child-first">총 완료 :24</p>
+                </div>
+                <h6 class="box-child-name">Su-Jin</h6>
+
+                <div class="box-child-border mt-2"></div>
+
+                <div class="row mt-3">
+                    <div class="col-4">
+                        <h6  class="title-box-total m-0 p-0">전체 보류</h6>
+                        <span class="number-box-total">55</span>
+                    </div>
+                    <div class="col-4">
+                        <h6  class="title-box-total m-0 p-0">전체 보류</h6>
+                        <span class="number-box-total">55</span>
+                    </div>
+                    <div class="col-4">
+                        <h6  class="title-box-total m-0 p-0">전체 보류</h6>
+                        <span class="number-box-total">55</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="box-child mt-3">
+                <div class="d-flex justify-content-between">
+                    <p class="p-0 m-0 box-child-first">순위 1</p>
+                    <p class="p-0 m-0 box-child-first">총 완료 :24</p>
+                </div>
+                <h6 class="box-child-name">Su-Jin</h6>
+
+                <div class="box-child-border mt-2"></div>
+
+                <div class="row mt-3">
+                    <div class="col-4">
+                        <h6  class="title-box-total m-0 p-0">전체 보류</h6>
+                        <span class="number-box-total">55</span>
+                    </div>
+                    <div class="col-4">
+                        <h6  class="title-box-total m-0 p-0">전체 보류</h6>
+                        <span class="number-box-total">55</span>
+                    </div>
+                    <div class="col-4">
+                        <h6  class="title-box-total m-0 p-0">전체 보류</h6>
+                        <span class="number-box-total">55</span>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
@@ -295,5 +362,5 @@
 
 </body>
 </html>
- 
+
 
