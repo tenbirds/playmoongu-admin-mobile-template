@@ -1,5 +1,8 @@
 .self-sale-management {
     background-color: #f5f5f5;
+    .header-title {
+        font-family: 'NanumSquareEB';
+    }
     .filter_search_page {
         .content-top-input {
             display: flex;
@@ -33,7 +36,7 @@
         padding-right: 20px;
 
         .form-detail {
-            padding-top: 20px;
+            padding-top: 2px;
             padding-bottom: 20px;
             font-family: NanumSquare;
             .box-conditon {
@@ -172,7 +175,7 @@
                 }
 
                 &__name {
-                    margin: 2px 5px 0px 0;
+                    margin: 3px 5px 0px 0;
                     font-family: NanumSquareEB;
                     font-size: 20px;
                     font-weight: normal;
@@ -183,67 +186,76 @@
                     color: #111;
                 }
 
-                .btn_approve {
-                    height: 36px;
-                    margin: 0px 0 0px 5px;
-                    padding: 10px 15px;
-                    border-radius: 5px;
-                    background-color: #fed400;
-                    text-align: center;
-                    font-family: NanumSquareEB;
-                    font-size: 14px;
-                    font-weight: normal;
-                    font-stretch: normal;
-                    letter-spacing: normal;
-                    text-align: left;
-                    color: #111;
-                    border-radius: 5px;
-                    -webkit-box-shadow: none;
-                    -moz-box-shadow: none;
-                    box-shadow: none;
+                .box-action {
+                    display: flex;
+                    align-items: flex-end;
+                    justify-content: flex-end;
+                    padding-bottom: 3px;
+
+                    .btn_approve {
+                        height: 36px;
+                        margin: 0px 0 0px 5px;
+                        padding: 10px 15px;
+                        border-radius: 5px;
+                        background-color: #fed400;
+                        text-align: center;
+                        font-family: NanumSquareEB;
+                        font-size: 14px;
+                        font-weight: normal;
+                        font-stretch: normal;
+                        letter-spacing: normal;
+                        text-align: left;
+                        color: #111;
+                        border-radius: 5px;
+                        -webkit-box-shadow: none;
+                        -moz-box-shadow: none;
+                        box-shadow: none;
+                    }
+    
+                    .btn_sub_request {
+                        height: 36px;
+                        margin: 0px 0 0px 5px;
+                        padding: 10px 15px;
+                        border-radius: 5px;
+                        background: #f5ebf6;
+                        text-align: center;
+                        font-family: NanumSquareEB;
+                        font-size: 14px;
+                        font-weight: normal;
+                        font-stretch: normal;
+                        letter-spacing: normal;
+                        text-align: left;
+                        color: #5815a5;
+                        border-radius: 5px;
+                        -webkit-box-shadow: none;
+                        -moz-box-shadow: none;
+                        box-shadow: none;
+                    }
+    
+                    .btn_complete {
+                        height: 36px;
+                        margin: 0px 0 0px 5px;
+                        padding: 10px 15px;
+                        border-radius: 5px;
+                        background-color: #ebebeb;
+                        text-align: center;
+                        font-family: NanumSquareEB;
+                        font-size: 14px;
+                        font-weight: normal;
+                        font-stretch: normal;
+                        letter-spacing: normal;
+                        text-align: left;
+                        color: #111;
+                        opacity: 0.5;
+                        border-radius: 5px;
+                        -webkit-box-shadow: none;
+                        -moz-box-shadow: none;
+                        box-shadow: none;
+                    }
+    
                 }
 
-                .btn_sub_request {
-                    height: 36px;
-                    margin: 0px 0 0px 5px;
-                    padding: 10px 15px;
-                    border-radius: 5px;
-                    background: #f5ebf6;
-                    text-align: center;
-                    font-family: NanumSquareEB;
-                    font-size: 14px;
-                    font-weight: normal;
-                    font-stretch: normal;
-                    letter-spacing: normal;
-                    text-align: left;
-                    color: #5815a5;
-                    border-radius: 5px;
-                    -webkit-box-shadow: none;
-                    -moz-box-shadow: none;
-                    box-shadow: none;
-                }
-
-                .btn_complete {
-                    height: 36px;
-                    margin: 0px 0 0px 5px;
-                    padding: 10px 15px;
-                    border-radius: 5px;
-                    background-color: #ebebeb;
-                    text-align: center;
-                    font-family: NanumSquareEB;
-                    font-size: 14px;
-                    font-weight: normal;
-                    font-stretch: normal;
-                    letter-spacing: normal;
-                    text-align: left;
-                    color: #111;
-                    opacity: 0.5;
-                    border-radius: 5px;
-                    -webkit-box-shadow: none;
-                    -moz-box-shadow: none;
-                    box-shadow: none;
-                }
-
+          
                 hr {
                     height: 1px;
                     background-color: #cccaca;
