@@ -30,9 +30,31 @@
 		}
 		.item-input{
 			margin-bottom: 10px;
+			input{
+				font-family: NanumSquareB;
+				font-size: 14px;
+				font-weight: normal;
+				font-stretch: normal;
+				font-style: normal;
+				line-height: 1.14;
+				letter-spacing: normal;
+				text-align: left;
+				color: #111;
+			}
 		}
 		.item-area {
 			margin-bottom: 20px;
+			textarea{
+				font-family: NanumSquareR;
+				font-size: 14px;
+				font-weight: normal;
+				font-stretch: normal;
+				font-style: normal;
+				line-height: 1.43;
+				letter-spacing: normal;
+				text-align: left;
+				color: #111;
+			}
 		}
 		.item-radio{
 			.item-text-title {
@@ -154,6 +176,28 @@
 				line-height: 1.13;
 				letter-spacing: normal;
 				text-align: center;
+				color: #111;
+			}
+		}
+	}
+	.box-delete{
+		margin-right: 20px;
+		&__right{
+			text-align: right;
+			margin-bottom: 40px;
+			img{
+				width: 15px;
+				height: 16px;
+				object-fit: contain;
+			}
+			label{
+				font-family: NanumSquareEB;
+				font-size: 12px;
+				font-weight: normal;
+				font-stretch: normal;
+				font-style: normal;
+				line-height: 1.08;
+				letter-spacing: normal;
 				color: #111;
 			}
 		}
