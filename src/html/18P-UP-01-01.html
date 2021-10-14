@@ -16,7 +16,7 @@
     <div class="">
         <div class="filter_search_page">
             <div class="content-top-input">
-                <label class="item-title">자료명</label>
+                <label class="item-title">가맹점주</label>
                 <div class="input-search-common">
                     <input placeholder="" class="form-control inquiry__input-form"/>
                     <img class="input-search-common__icon-search" src="/images/icons/icon_search.svg"/>
@@ -24,7 +24,7 @@
             </div>
 
             <div class="content-top-input">
-                <label class="item-title">자료명</label>
+                <label class="item-title">가맹점 명</label>
                 <div class="input-search-common">
                     <input placeholder="" class="form-control inquiry__input-form"/>
                     <img class="input-search-common__icon-search" src="/images/icons/icon_search.svg"/>
@@ -32,7 +32,7 @@
             </div>
 
             <div class="content-top-input">
-                <label class="item-title">자료명</label>
+                <label class="item-title">사용자 ID</label>
                 <div class="input-search-common">
                     <input placeholder="" class="form-control inquiry__input-form"/>
                     <img class="input-search-common__icon-search" src="/images/icons/icon_search.svg"/>
@@ -40,62 +40,75 @@
             </div>
 
             <div class="content-top-input box-range-date">
-                <label class="item-title">자료명</label>
+                <label class="item-title">조회 기간</label>
                 <div class="range-date">
-                    <input type="text" name="start_date" autocomplete="off" class="form-control js_start_date js-no_show_keyboard">
+                    <input class="form-control text-center header-search__input" value="" name="daterange">
+
+                    <!-- <input type="text" name="start_date" autocomplete="off" class="form-control js_start_date js-no_show_keyboard">
                     <span class="px-1"> ~ </span>
-                    <input type="text" name="end_date" autocomplete="off" class="form-control js_end_date js-no_show_keyboard">
+                    <input type="text" name="end_date" autocomplete="off" class="form-control js_end_date js-no_show_keyboard"> -->
                 </div>
             </div>
         </div>
 
         <div class="row box-statistic main_center_content">
-            <div class="table-responsive col-8">
-                <table class="table table-bordered mb-0">
-                    <thead>
-                      <tr>
-                        <th scope="col">적립 포인트 총합</th>
-                        <th scope="col">사용 포인트 총합</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>100000</td>
-                        <td>20000</td>
-                      </tr>
-                    </tbody>
-                  </table>
-              </div>
-              <div class="col-4">
-                <select class="form-select form-select-sm slt-type">
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-              </div>
+            <div class="col-6">
+                <span class="box-statistic__title">적립 포인트 총합</span> <br>
+                <span class="">
+                    <span class="box-statistic__currency">\</span>
+                    <label class="box-statistic__amount">10,000</label>
+                </span>
+            </div>
+            <div class="col-6">
+                <span class="box-statistic__title">사용 포인트 총합</span> <br>
+                <span class="">
+                    <span class="box-statistic__currency">\</span>
+                    <label class="box-statistic__amount">10,000</label>
+                </span>
+            </div>
+        </div>
+
+        <div class="filter_dropdown">
+            <div class="dropdown pr-15px">
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    1차 분류
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <a class="dropdown-item" href="#">1차 분류 1</a>
+                    <a class="dropdown-item" href="#">1차 분류 2</a>
+                </div>
+            </div>
         </div>
         
+      
+
 
         <div class="main-page-history-use-point">
             <ul class="main-item">
                 <li class="point-item">
                     <div class="row">
                         <div class="col-12">
-                            <span>No. 14 / 2021-04-08 20:11:53
+                            <span class="label-no">No. 14
                             </span>
-                            <label class="label-used">1232</label>
+                            <label class="label-date">2021-04-08 20:11:53</label>
                         </div>
 
                         <div class="col-12">
-                            <span>010-1234-5678(닉네임)               
+                            <span class="label-phone" >010-1234-5678       
                             </span>
-                            <span class="point-item__value">
+                            <span class="label-desc">
+                                (닉네임)        
+                            </span>
+                        </div>
+
+                        <div class="col-12">
+                            <span class="label-store" >중곡시장점            
+                            </span>
+                            <span class="label-state accumulate">
+                                사용
+                            </span>
+                            <span class="label-point">
                                 100P
-                            </span>
-                        </div>
-
-                        <div class="col-12">
-                            <span class="point-item__store">중곡시장점
                             </span>
                         </div>
                     </div>
@@ -103,34 +116,33 @@
                 <li class="point-item">
                     <div class="row">
                         <div class="col-12">
-                            <span>No. 14 / 2021-04-08 20:11:53
+                            <span class="label-no">No. 14
                             </span>
-                            <label class="label-used">1232</label>
+                            <label class="label-date">2021-04-08 20:11:53</label>
                         </div>
 
                         <div class="col-12">
-                            <span>010-1234-5678(닉네임)               
+                            <span class="label-phone" >010-1234-5678       
                             </span>
-                            <span class="point-item__value">
+                            <span class="label-desc">
+                                (닉네임)        
+                            </span>
+                        </div>
+
+                        <div class="col-12">
+                            <span class="label-store" >중곡시장점            
+                            </span>
+                            <span class="label-state used">
+                                사용
+                            </span>
+                            <span class="label-point">
                                 100P
-                            </span>
-                        </div>
-
-                        <div class="col-12">
-                            <span class="point-item__store">중곡시장점
                             </span>
                         </div>
                     </div>
                 </li>
             </ul>
-            <div class="main-paginate">
-                <ul>
-                    <li><img src="/images/icons/icon_arrow_L.svg" /></li>
-                    <li class="active"><span>1</span></li>
-                    <li><span>2</span></li>
-                    <li><img src="/images/icons/icon_arrow_R.svg" /></li>
-                </ul>
-            </div>
+       
         </div>
     </div>
 </main>
