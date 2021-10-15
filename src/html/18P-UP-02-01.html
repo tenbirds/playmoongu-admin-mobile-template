@@ -1,13 +1,13 @@
 @@include('components/head.html', {
     "title": "Gulp",
-    "bodyClass": "list-history-use-point fixed-header"
+    "bodyClass": "list-grant-point fixed-header"
 })
 
 @@include('components/header.html', {
-"title": "운영 공지 관리",
+"title": "포인트 지급 내역",
 "link": "javascript:openPopupType()",
 "leftIcon": "",
-"rightTitle": "등록하기",
+"rightTitle": "",
 "leftTitle": "/images/icons/m_menu.svg",
 'param': "open_nav"
 })
@@ -16,7 +16,7 @@
     <div class="">
         <div class="filter_search_page">
             <div class="content-top-input">
-                <label class="item-title">가맹점주</label>
+                <label class="item-title">지급자</label>
                 <div class="input-search-common">
                     <input placeholder="" class="form-control inquiry__input-form"/>
                     <img class="input-search-common__icon-search" src="/images/icons/icon_search.svg"/>
@@ -24,15 +24,7 @@
             </div>
 
             <div class="content-top-input">
-                <label class="item-title">가맹점 명</label>
-                <div class="input-search-common">
-                    <input placeholder="" class="form-control inquiry__input-form"/>
-                    <img class="input-search-common__icon-search" src="/images/icons/icon_search.svg"/>
-                </div>
-            </div>
-
-            <div class="content-top-input">
-                <label class="item-title">사용자 ID</label>
+                <label class="item-title">지급 대상자</label>
                 <div class="input-search-common">
                     <input placeholder="" class="form-control inquiry__input-form"/>
                     <img class="input-search-common__icon-search" src="/images/icons/icon_search.svg"/>
@@ -43,44 +35,15 @@
                 <label class="item-title">조회 기간</label>
                 <div class="range-date">
                     <input class="form-control text-center header-search__input" value="" name="daterange">
-
-                    <!-- <input type="text" name="start_date" autocomplete="off" class="form-control js_start_date js-no_show_keyboard">
-                    <span class="px-1"> ~ </span>
-                    <input type="text" name="end_date" autocomplete="off" class="form-control js_end_date js-no_show_keyboard"> -->
                 </div>
             </div>
         </div>
 
-        <div class="row box-statistic main_center_content_admin">
-            <div class="col-6">
-                <span class="box-statistic__title">적립 포인트 총합</span> <br>
-                <span class="">
-                    <span class="box-statistic__currency">\</span>
-                    <label class="box-statistic__amount">10,000</label>
-                </span>
-            </div>
-            <div class="col-6">
-                <span class="box-statistic__title">사용 포인트 총합</span> <br>
-                <span class="">
-                    <span class="box-statistic__currency">\</span>
-                    <label class="box-statistic__amount">10,000</label>
-                </span>
+        <div class="row box-statistic main_center_content">
+            <div class="col-12">
+                <button class="btn btn-add-point" id="js_grant_point">포인트 지급1</button>
             </div>
         </div>
-
-        <div class="filter_dropdown">
-            <div class="dropdown pr-15px">
-                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    1차 분류
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                    <a class="dropdown-item" href="#">1차 분류 1</a>
-                    <a class="dropdown-item" href="#">1차 분류 2</a>
-                </div>
-            </div>
-        </div>
-        
-      
 
 
         <div class="main-page-history-use-point">
@@ -104,8 +67,8 @@
                         <div class="col-12">
                             <span class="label-store" >중곡시장점            
                             </span>
-                            <span class="label-state accumulate">
-                                사용
+                            <span class="label-state grant">
+                                지급
                             </span>
                             <span class="label-point">
                                 100P
@@ -132,8 +95,8 @@
                         <div class="col-12">
                             <span class="label-store" >중곡시장점            
                             </span>
-                            <span class="label-state used">
-                                사용
+                            <span class="label-state minus">
+                                차감
                             </span>
                             <span class="label-point">
                                 100P
@@ -144,6 +107,10 @@
             </ul>
        
         </div>
+
+
+        <!-- grant poin modal -->
+      
     </div>
 </main>
 
@@ -152,5 +119,13 @@
 
 <footer></footer>
 @@include('components/script.html')
+<script type="text/javascript">
+    $(document).ready(function() {
+        $(document).on('click', '#js_grant_point', function(e) {
+            e.preventDefault();
+            // $("#grantPointModal").modal('show');
+        })
+    });
+</script>
 @@include('components/foot.html') 
 
