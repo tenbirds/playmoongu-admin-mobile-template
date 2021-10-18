@@ -1,0 +1,353 @@
+.list-guide-management-store-owner {
+  .main-page-classification-management {
+    min-height: 86vh;
+    .main-owner-management{
+      
+    }
+    .main-paginate {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      margin-top: 15px;
+      ul {
+        display: flex;
+        align-items:center;
+
+        li {
+            padding: 0 10px;
+            cursor: pointer;
+            span {
+              font-family: NanumSquareOTFR;
+              font-size: 14px;
+              font-weight: normal;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: 1.14;
+              letter-spacing: normal;
+              text-align: left;
+              color: #aaa;
+            }
+            &.active {
+              background: #fed400;
+              border-radius: 50%;
+              span {
+                color:#111111;
+
+              }
+
+            }
+        }
+      }
+    }
+  }
+  .main-classification-management{
+    .content-top-input {
+      display: flex;
+      padding: 15px;
+      align-items: center;
+      .item-title{
+        padding-right: 10px;
+        font-family: NanumSquareEB;
+        font-size: 14px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.14;
+        letter-spacing: normal;
+        text-align: left;
+        color: #111;
+        white-space: nowrap;
+      }
+      .input-search-common {
+        width: calc(100% - 48px);
+      }
+    }
+    .content-top {
+      display: flex;
+      justify-content: space-between;
+      padding: 15px;
+      .label-checkbox{
+        display: flex;
+        align-items: center;
+        span{
+          font-family: NanumSquareR;
+          font-size: 11px;
+          display: flex;
+          align-items: center;
+        }
+      }
+      .remove-item {
+        label{
+          font-family: NanumSquareEB;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  .filter_dropdown {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 15px 15px;
+    background: #ffffff;
+    .dropdown {
+      button {
+        outline: none;
+        box-shadow:none;
+        padding: 5px 0;
+        font-size: 11px;
+        display: flex;
+        align-items: center;
+        &::after{
+          background-image: url(./../images/icons/icon_arrow_select.svg);
+          width: 10px;
+          height: 4px;
+          background-repeat: no-repeat;
+          border: none;
+      }
+        &:focus {
+          outline: none;
+        }
+      }
+      .dropdown-menu {
+        min-width: auto;
+        a {
+          font-size: 11px;
+          padding: 4px 10px;
+        }
+      }
+    }
+  }
+  .main-page-classification-management {
+    background: #fff;
+    //padding: 30px 15px;
+    padding: 20px;
+    .content-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .label-checkbox {
+        span {
+          font-family: NanumSquare;
+          font-size: 11px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          text-align: left;
+          color: #111111;
+          align-items: center;
+        }
+      }
+      .remove-item {
+        label {
+          font-family: NanumSquare;
+          font-size: 12px;
+          font-weight: 800;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          text-align: left;
+          color: #111111;
+        }
+      }
+    }
+    .main-item {
+      margin-top: 15px;
+      .line-box{
+        padding: 0px !important;
+        height: 2px;
+        border-radius: 2px;
+        background-color: #f5f5f5;
+        opacity: unset;
+      }
+      .product-item{
+        background-color: #ffffff;
+        padding: 0px;
+        margin: 20px 0px;
+        &__colum{
+            display: flex;
+            align-items: center;
+            padding: 0;
+            &.colum-right{
+              justify-content: end;
+              flex-wrap: wrap;
+            }
+        }
+        .product-item-info {
+          p {
+            margin-bottom: 0px;
+            text-align: center;
+          }
+          &__item {
+            margin-bottom: 7px;
+            text-align: right;
+            width: 100%;
+            &.text-right {
+              text-align: right;
+            }
+            img {
+              // width: 15px;
+              // height: 13px;
+              margin-left:auto;
+              display: block;
+            }
+            &:last-child {
+              margin-bottom: 0px;
+            }
+          }
+          &__important{
+            p {
+              font-family: NanumSquareB;
+              font-size: 11px;
+              font-weight: normal;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: 1.09;
+              letter-spacing: normal;
+              text-align: left;
+            }
+          }
+          &__no {
+            p {
+              font-family: Roboto;
+              font-size: 11px;
+              font-weight: 300;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: 1.36;
+              letter-spacing: normal;
+              text-align: left;
+              color: #111;
+            }
+          }
+          &__primary-classification {
+            margin-bottom: 3px;
+            p {
+              font-family: NanumSquare;
+              font-size: 11px;
+              font-weight: normal;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: normal;
+              letter-spacing: normal;
+              text-align: left;
+              color: #111111;
+            }
+          }
+          &__title-text {
+            p {
+              font-family: NanumSquareB;
+              font-size: 14px;
+              font-weight: normal;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: 1.14;
+              letter-spacing: normal;
+              text-align: left;
+              color: #111;
+              white-space: break-spaces;
+              word-break: break-word;
+              padding-right: 5px;
+            }
+            strong {
+              font-family: Roboto;
+              font-size: 11px;
+              font-weight: normal;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: 1.36;
+              letter-spacing: normal;
+              text-align: left;
+              color: #c52321;
+
+            }
+          }
+          &__secondary_classification {
+            margin-bottom: 3px;
+            p {
+              font-family: NanumSquare;
+              font-size: 11px;
+              font-weight: normal;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: normal;
+              letter-spacing: normal;
+              text-align: left;
+              color: #111111;
+            }
+          }
+          &__phrases {
+            p {
+              font-family: NotoSansCJKKR;
+              font-size: 16px;
+              font-weight: bold;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: normal;
+              letter-spacing: normal;
+              text-align: left;
+              color: #111111;
+              white-space: nowrap;
+            }
+          }
+          &__number-product {
+            p {
+              font-family: RobotoBold;
+              font-size: 16px;
+              font-weight: bold;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: normal;
+              letter-spacing: normal;
+              text-align: center;
+              color: #111111;
+            }
+          }
+          &__text-product {
+            margin-bottom: 3px;
+            p {
+              font-family: NanumSquare;
+              font-size: 11px;
+              font-weight: normal;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: normal;
+              letter-spacing: normal;
+              color: #111111;
+            }
+          }
+          &__datetime {
+            p {
+              opacity: 0.5;
+              font-family: Roboto;
+              font-size: 11px;
+              font-weight: 300;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: 1.36;
+              letter-spacing: normal;
+              text-align: right;
+              color: #111;
+            }
+          }
+        }
+      }
+    }
+  }
+  &.fixed-header {
+    .filter_search_page {
+        position: fixed;
+        top: 50px;
+        width: 100%;
+        z-index: 1000;
+        background: white;
+    }
+    .main_center_content {
+    }
+    
+  }
+}
+
+

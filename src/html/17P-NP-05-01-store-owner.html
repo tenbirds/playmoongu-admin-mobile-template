@@ -1,0 +1,100 @@
+@@include('components/head.html', {
+    "title": "Gulp",
+    "bodyClass": "list-guide-management-store-owner fixed-header"
+})
+
+@@include('components/header.html', {
+"title": "운영 공지 관리",
+"link": "javascript:openPopupType()",
+"leftIcon": "",
+"rightTitle": "등록하기",
+"leftTitle": "/images/icons/m_menu.svg",
+'param': "open_nav"
+})
+
+<main>
+    <div class="main-classification-management">
+        <div class="main-page-classification-management main_center_content">
+            <div class="main-item">
+                <hr class="line-box" />
+                <div class="product-item">
+                    <div class="row">
+                            <div class="col-9">
+                                <div class="product-item__colum">
+                                    <label class="label-checkbox">
+                                        <input type="checkbox" name="ckbox"/>
+                                        <span></span>
+                                    </label>
+                                    <div class="product-item-info">
+                                        <div class="product-item-info__item product-item-info__important">
+                                            <p>No.11</p>
+                                        </div>
+
+                                        <div class="product-item-info__item product-item-info__title-text center-flex">
+                                            <p>교육자료</p>
+                                            <!-- <strong class="">(2)</strong> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-3">
+                                <div class="product-item__colum colum-right">
+                                    <div class="product-item-info__item product-item-info__datetime">
+                                        <p class="m-0">2021-03-09</p>
+                                    </div>
+
+                                    <div class="product-item-info__item product-item-info__number-product text-right">
+                                        <img src="/images/icons/icon_arrow_R.svg" />
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <hr class="line-box"/>
+                <div class="product-item">
+                    <div class="row">
+                            <div class="col-6 ">
+                                <div class="product-item__colum">
+                                    <label class="label-checkbox">
+                                        <input type="checkbox" name="ckbox"/>
+                                        <span></span>
+                                    </label>
+                                    <div class="product-item-info">
+                                        <div class="product-item-info__item product-item-info__no">
+                                            <p>No.10</p>
+                                        </div>
+
+                                        <div class="product-item-info__item product-item-info__title-text center-flex">
+                                            <p>키오스크 설명</p><strong class="">(2)</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-6 ">
+                                <div class="product-item__colum colum-right">
+                                    <div class="product-item-info__item product-item-info__datetime">
+                                        <p class="m-0">2021-03-09</p>
+                                    </div>
+
+                                    <div class="product-item-info__item product-item-info__number-product text-right">
+                                        <img src="/images/icons/icon_arrow_R.svg" />
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <hr class="line-box"/>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+
+
+<footer></footer>
+@@include('components/script.html')
+@@include('components/foot.html') 
+
