@@ -25,6 +25,9 @@
     
             .input-search-common {
                 width: calc(100% - 48px);
+                .input-search-common__icon-search {
+                    padding-left: 15px;
+                }
             }       
         }
         .box-range-date {
@@ -158,7 +161,7 @@
                 }
 
                 .label-desc {
-                    font-family: NanumSquareR;
+                    font-family: NanumSquare;
                     font-size: 11px;
                     font-weight: normal;
                     font-stretch: normal;
@@ -171,7 +174,7 @@
 
                 .label-store {
                     opacity: 0.8;
-                    font-family: NanumSquareR;
+                    font-family: NanumSquare;
                     font-size: 11px;
                     font-weight: normal;
                     font-stretch: normal;
@@ -229,6 +232,42 @@
     }
 
     .modal-grant-point {
+        .modal-body {
+            padding-top: 10px;
+            .point-item {
+                margin-bottom: 7px;
+                &__label {
+                    letter-spacing: normal;
+                    text-align: left;
+                    color: #111111;
+                    margin-bottom: 4px;
+                    font-family: NanumSquareEB;
+                    font-size: 14px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.14;
+                    padding-right: 0px;
+                }
+                &__value {
+                    font-family: NanumSquare;
+                    font-size: 14px;
+                    font-weight: bold;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.43;
+                    letter-spacing: normal;
+                    text-align: left;
+                    color: #111111;
+                    width: 100%;
+                    border-radius: 5px;
+                    border: solid 1px #e6e6e6;
+                }
+                .pt-12 {
+                    padding-top: 12px;
+                }
+            }
+        }
        
     }
 

@@ -110,6 +110,42 @@
 
 
         <!-- grant poin modal -->
+        <div class="modal popup modal-grant-point" id="grantPointModal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">메모</h5>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row point-item">
+                            <label for="" class="col-3 col-form-label point-item__label">
+                                지급 대상 <br>
+                                (사용자 ID)
+                            </label>
+                            <div class="col-9">
+                                <input name="name" class="form-control base-input" value="">
+                            </div>
+                        </div>
+                        <div class="row point-item">
+                            <label for="" class="col-3 col-form-label point-item__label pt-12">지급 포인트</label>
+                            <div class="col-9">
+                                <input name="name" class="form-control base-input" value="">
+                            </div>
+                        </div>
+                        <div class="row point-item">
+                            <label for="" class="col-4 col-form-label point-item__label">지급 사유</label>
+                            <div class="col-12">
+                                <textarea class=" point-item__value note" name="" id="" rows="2">키오스크 에러 차액.</textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn-dismiss" data-bs-dismiss="modal">취소</button>
+                        <button type="button" class="btn-action">지급</button>
+                    </div>
+                </div>
+            </div>
+        </div>
       
     </div>
 </main>
