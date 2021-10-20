@@ -26,7 +26,7 @@
             .input-search-common {
                 width: calc(100% - 48px);
                 .input-search-common__icon-search {
-                    padding-left: 15px;
+                    padding-left: 20px;
                 }
             }       
         }
@@ -170,6 +170,7 @@
                     letter-spacing: normal;
                     text-align: left;
                     color: #111;
+                    vertical-align: middle;
                 }
 
                 .label-store {
