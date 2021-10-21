@@ -89,7 +89,8 @@
             }
 
             .input-custom {
-                width: 70%;
+                // width: 70%;
+                width: calc(100% - 93px);
                 float: left;
             }
             .bnt-checker {
