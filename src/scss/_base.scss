@@ -895,18 +895,27 @@ button {
         .item-text-title {
             margin-bottom: 10px;
         }
+        .box-img-upload{
+
+        }
         .main-item-img {
-            display: flex;
-            align-items:center;
-            flex-wrap:wrap;
+            
             .item-img {
+                .image-add-box{
+                    width: 100px;
+                    height: 100px;
+                    margin: 20px 10px 20px 0px;
+                    padding: 35px 30px 34px 30px;
+                    border: solid 1px #e6e6e6;
+                    background-color: #e6e6e6;
+                }
                 position: relative;
                 padding-right: 5px;
                 margin-bottom: 10px;
                 // width: calc(100%/3 - 0px);
                 .img-content {
-                    width: 100%;
-                    height: 106px;
+                    width: 100px;
+                    height: 100px;
                     object-fit: cover;
                 }
                 .btn-remove {
