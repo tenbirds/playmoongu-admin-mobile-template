@@ -951,11 +951,11 @@ button {
 				height: 24px;
 				font-family: NanumSquareEB;
 				font-size: 12px;
-				font-weight: 800;
+				font-weight: normal;
 				font-stretch: normal;
 				font-style: normal;
 				letter-spacing: normal;
-				color: #111111;
+				color: #5815a5;
 				line-height: 25px;
 				content: '파일 업로드';
 				display: inline-block;
@@ -965,6 +965,7 @@ button {
 				text-align: center;
 				margin-left: 10px;
 				margin-right: 20px; 
+                background-color: #f5ebf6;
 		}
 		.custom-file-input::-webkit-file-upload-button {
 				visibility: hidden;
