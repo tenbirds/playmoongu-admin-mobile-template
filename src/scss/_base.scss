@@ -938,6 +938,37 @@ button {
         .text-right{
             text-align: right;
         }
+        .custom-file-input::-webkit-file-upload-button {
+			visibility: hidden;
+		}
+		.custom-file-input {
+				cursor: pointer;
+				width: 108px;
+				overflow: hidden;
+		}
+		.custom-file-input:before {
+				width: 97px;
+				height: 24px;
+				font-family: NanumSquareEB;
+				font-size: 12px;
+				font-weight: 800;
+				font-stretch: normal;
+				font-style: normal;
+				letter-spacing: normal;
+				color: #111111;
+				line-height: 25px;
+				content: '파일 업로드';
+				display: inline-block;
+				border-radius: 5px;
+				border: 1px solid #5815a5;
+				padding: 0 10px;
+				text-align: center;
+				margin-left: 10px;
+				margin-right: 20px; 
+		}
+		.custom-file-input::-webkit-file-upload-button {
+				visibility: hidden;
+		}
     }
     .item-upload-file {
         margin-top: 15px;
