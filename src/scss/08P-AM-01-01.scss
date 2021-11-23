@@ -437,6 +437,55 @@
         height: 18px;
         line-height: 18px;
       }
+      &__box-title-cash {
+        background-color:  #ff8534;
+        padding: 1px 7px !important;
+        font-size: 11px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: normal;
+        color: #ffffff;
+        height: 18px;
+        line-height: 18px;
+      }
+      &__box-title-card {
+        background-color: #56bf5c;
+        padding: 1px 7px !important;
+        font-size: 11px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #ffffff;
+        height: 18px;
+        line-height: 18px;
+      }
+      &__box-title-point {
+        background-color:  #5815a5;
+        padding: 1px 7px !important;
+        font-size: 11px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: normal;
+        color: #ffffff;
+        height: 18px;
+        line-height: 18px;
+      }
+      &__box-title-kakao {
+        background-color:  #874300;
+        padding: 1px 7px !important;
+        font-size: 11px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: normal;
+        color: #ffffff;
+        height: 18px;
+        line-height: 18px;
+      }
 
       &__box-content-receipt-number-border-red {
         background-color:  #c52321;;
@@ -600,7 +649,7 @@
         .list-group {
           border-radius: 10px;
           border: solid 1px #f5f5f5;
-          max-height: 270px;
+          max-height: 220px;
           overflow: scroll;
           .payment-item {
             border: none;
