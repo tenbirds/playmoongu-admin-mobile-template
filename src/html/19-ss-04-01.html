@@ -1,0 +1,291 @@
+@@include('components/head.html', {
+"title": "Gulp",
+"bodyClass": "product-hot-sell fixed-header"
+})
+
+@@include('components/header.html', {
+"title": "상품 선호도",
+"link": "#",
+"leftIcon": "",
+"leftTitle": "/images/icons/icon_top_arrow_B.svg",
+"rightTitle": "",
+'param': "open_nav"
+})
+
+<main>
+    <div class="main-product-hot-sell">
+        <div class="filter-search-page">
+            <h3 class="content-search-name">
+                전체 매장
+                <img src="/images/icons/icon_arrowBB.svg" class="header-search__icon_arrowBB">
+            </h3>
+            <div class="input-search-common">
+                <div class="range_date d-flex justify-content-between align-items-center">
+                    <input type="text" name="start_date" id="js_start_date" autocomplete="off" class="form-control js_start_date no_show_keyboard"/>
+                    <span>-</span>
+                    <input type="text" name="end_date" id="js_end_date" autocomplete="off" class="form-control js_end_date no_show_keyboard"/>
+                </div>
+            </div>
+
+            <div class="row mt-2">
+                <div class="col-6">
+                    <div class="select-custom ">
+                        <div class="d-flex justify-content-between">
+                            <p class="text-select">전체 가맹점</p>
+                            <img src="/images/icons/icon_miniarrow.svg" class="image-select-arrow" >
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="select-custom ">
+                        <div class="d-flex justify-content-between">
+                            <p class="text-select">전체 가맹점</p>
+                            <img src="/images/icons/icon_miniarrow.svg" class="image-select-arrow" >
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div>
+            <ul class="nav nav-pills row m-0 p-0 nav-custom" id="pills-tab" role="tablist">
+                <li class="nav-item col-4 m-0 p-0">
+                    <a class="nav-link active text-nav" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">성별 선호도</a>
+                </li>
+                <li class="nav-item col-4 m-0 p-0 text-nav">
+                    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">연령 선호도</a>
+                </li>
+                <li class="nav-item col-4 m-0 p-0 text-nav">
+                    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">금액대 선호도</a>
+                </li>
+            </ul>
+
+            <div class="content">
+                <h6 class="h6-title">상품 선호도</h6>
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                        <div class="js-swiper-container-gender">
+                            <div class="swiper mySwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="slide-chart">
+                                            <div id="js_chart_donut"></div>
+                                            <div class="title-chart text-center p-3"><span>분류 선호도 차트 </span><strong>여성</strong></div>
+                                            <ul class="ul_revenue__data "></ul>
+                                            <p class="note_chart d-flex flex-row-reverse">
+                                                * 모든 금액의 기준은 원(\) 입니다.
+                                            </p>
+                                        </div>
+
+                                        <div class="slide-table mt-4">
+                                            <ul class="list-group">
+                                                <li class="list-group-item border-bottom-custom">
+                                                    <div class="top-rank">
+                                                        <p class="p-0 m-0 title-no">1</p>
+                                                        <img src="/images/icons/icon_ranking01.svg">
+                                                    </div>
+                                                    <div class="d-flex justify-content-between mt-2">
+                                                        <span class="product-name">피츄짱 복숭아맛</span>
+                                                        <span class="category-name">본사</span>
+                                                    </div>
+                                                </li>
+
+                                                <li class="list-group-item border-bottom-custom">
+                                                    <div class="top-rank">
+                                                        <p class="p-0 m-0 title-no">2</p>
+                                                        <img src="/images/icons/icon_ranking02.svg">
+                                                    </div>
+                                                    <div class="d-flex justify-content-between mt-2">
+                                                        <span class="product-name">피츄짱 복숭아맛</span>
+                                                        <span class="category-name">본사</span>
+                                                    </div>
+                                                </li>
+
+                                                <li class="list-group-item border-bottom-custom">
+                                                    <div class="top-rank">
+                                                        <p class="p-0 m-0 title-no">3</p>
+                                                        <img src="/images/icons/icon_ranking03.svg">
+                                                    </div>
+                                                    <div class="d-flex justify-content-between mt-2">
+                                                        <span class="product-name">피츄짱 복숭아맛</span>
+                                                        <span class="category-name">본사</span>
+                                                    </div>
+                                                </li>
+
+
+
+                                                <li class="list-group-item border-bottom-custom">
+                                                    <p class="p-0 m-0 title-no">No.5</p>
+                                                    <div class="d-flex justify-content-between mt-2">
+                                                        <span class="product-name">피츄짱 복숭아맛</span>
+                                                        <span class="category-name">본사</span>
+                                                    </div>
+                                                </li>
+
+                                                <li class="list-group-item ">
+                                                    <p class="p-0 m-0 title-no">No.5</p>
+                                                    <div class="d-flex justify-content-between mt-2">
+                                                        <span class="product-name">피츄짱 복숭아맛</span>
+                                                        <span class="category-name">본사</span>
+                                                    </div>
+                                                </li>
+
+
+                                            </ul>
+
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        Theo báo cáo nhanh của Cục Quản lý thị trường tỉnh An Giang, một số cây "không còn xăng để bán, phải ngừng hoạt động". Phần lớn, theo ông Huỳnh Ngọc Hồ, Cục trưởng Cục Quản lý thị trường An Giang, đều đã làm thủ tục xin tạm ngưng bán với Sở Công Thương.
+
+                                        Thống kê đến chiều 7/2 cho thấy, hơn 20 cửa hàng xăng dầu ngưng bán do hụt nguồn cung, không có nhân viên phục vụ, thua lỗ... Một số xin ngưng bán đến hết 12/2 để cắt lỗ khi giá nhập xăng bằng với giá bán.
+
+                                        "Sáng nay đã có một số cửa hàng mở lại. Quản lý thị trường đang kiểm tra, nếu có hiện tượng găm hàng, chờ giá sẽ xử phạt", ông Hồ cho biết.
+
+                                        Tại huyện Phú Tân tỉnh này, doanh nghiệp tư nhân Nguyễn Văn Việt (thị trấn chợ Vàm) xin nghỉ bán xăng tới hết ngày 12/2 do "lỗ chi phí".
+                                    </div>
+                                </div>
+
+
+                                <div class="swiper-pagination"></div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">2</div>
+                    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">3</div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+</main>
+
+
+@@include('components/script.html')
+
+<script type="text/javascript">
+
+    const DATA_CHART = [
+        {label: "자점매입", value: "1"},
+        {label: "문구", value: "1"},
+        {label: "문구1", value: "1"},
+        {label: "문구2", value: "1"},
+        {label: "문구3", value: "1"},
+        {label: "문구4", value: "1"},
+        {label: "문구5", value: "1"},
+    ];
+
+    const colors = ["#ff8534", "#fed400", "#40d1a9", "#f981aa", "#63b1ff", "#874300", "#5815a5", "#56bf5c","#3366cc","#dc3912","#109618","#990099","#0099c6","#dd4477","#66aa00","#b82e2e","#316395","#3366cc","#994499","#22aa99","#aaaa11","#6633cc","#e67300","#8b0707","#651067","#329262","#5574a6","#3b3eac","#b77322","#16d620","#b91383","#f4359e","#a9c413","#2a778d","#668d1c","#bea413","#0c5922","#743411", '#058DC7', '#50B432', '#ED561B', '#DDDF00', '#24CBE5', '#64E572', '#FF9655', '#FFF263', '#6AF9C4'];
+
+
+    function initChart (data,label,js_id) {
+        // if(data.length === 0 && label.length === 0){
+        //     return $(`#${js_id}`).html(`<p class="text-center p-3">데이터가 없습니다.</p>`)
+        // }
+
+        $(`#${js_id}`).html('')
+
+        // var colors = ["#ff8534", "#fed400", "#40d1a9", "#f981aa", "#63b1ff", "#874300", "#5815a5", "#56bf5c","#3366cc","#dc3912","#109618","#990099","#0099c6","#dd4477","#66aa00","#b82e2e","#316395","#3366cc","#994499","#22aa99","#aaaa11","#6633cc","#e67300","#8b0707","#651067","#329262","#5574a6","#3b3eac","#b77322","#16d620","#b91383","#f4359e","#a9c413","#2a778d","#668d1c","#bea413","#0c5922","#743411", '#058DC7', '#50B432', '#ED561B', '#DDDF00', '#24CBE5', '#64E572', '#FF9655', '#FFF263', '#6AF9C4'];
+        var optionChart2s = {
+            series: data,
+            colors: colors,
+            chart: {
+                type: 'donut',
+                height: (data.length > 0 ? 275 : 0)
+            },
+            stroke: {
+                width: 0
+            },
+            legend: {
+                position: 'bottom'
+            },
+            dataLabels: {
+                enabled: false
+            },
+
+            // labels: label,
+            tooltip: {
+                custom: function({ series, seriesIndex, dataPointIndex, w }) {
+                    let sum = data.reduce((a, b) => a + b, 0);
+                    return `<div class="p-1" style="background-color: ${ seriesIndex <= colors.length ? colors[seriesIndex] : 'rgba(0, 0, 0, 0.6)' }">
+                                    ${label[seriesIndex]}: ${((label[seriesIndex]/sum)*100).toFixed(3)}%
+                                </div>`;
+                }
+            },
+
+            responsive: [{
+                breakpoint: 480,
+                options: {
+                    legend: {
+                        show: false,
+                        position: 'bottom'
+                    },
+                    plotOptions: {
+                        pie: {
+                            expandOnClick: false
+                        },
+                    }
+                }
+            }],
+        };
+
+
+        $(`#${js_id}`).empty();
+        if(document.querySelector(`#${js_id}`)) {
+            console.log('do day')
+            var chart = new ApexCharts(document.querySelector(`#${js_id}`), optionChart2s);
+            console.log(chart,'chart')
+            chart.render();
+
+            if(label.length > 0) {
+                let sum = data.reduce((a, b) => a + b, 0)
+                let html = label?.map(function(item, k) {
+                    return `<li> <span class="icon-around" style="background: ${colors[k]}"></span>
+                                    <span class="category">${item}</span> <p>&#8361; ${data[k].toLocaleString('en')}</p>
+                                </li>`;
+                });
+                $('.ul_revenue__data').html(html.join(''));
+            }
+        }
+
+    }
+
+
+    $(document).ready(function (){
+        new Swiper('.mySwiper', {
+            slidesPerView: 1,
+            spaceBetween: 100,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        }).on('slideChange', function (e) {
+            var indexSwiper = e.realIndex; //0 : famale, 1 male
+        });
+
+        console.log(DATA_CHART,'21312')
+
+        var dataChart = [];
+        var labelChart = [];
+        DATA_CHART.map(item => {
+            console.log(item,'item')
+            dataChart.push(item.value ? parseInt(item.value) : 0);
+            labelChart.push(item.label);
+        })
+
+        initChart(dataChart,labelChart,'js_chart_donut')
+    });
+
+</script>
+
+
+@@include('components/foot.html')
+
