@@ -145,7 +145,11 @@ header {
                         }
 
                         &.active {
-                            background-color: $colorYellow;
+                            background-color: #3ebdff;
+
+                            a {
+                                color: #ffffff;
+                            }
                         }
                     }
                 }
@@ -213,7 +217,8 @@ header {
                 }
 
                 &.btn-action {
-                    background-color: $colorYellow;
+                    background-color: #3ebdff;
+                    color: #fff;
                 }
             }
         }
@@ -395,12 +400,12 @@ input.form-control {
     }
 
     &__primary {
-        background-color: $colorYellow;
+        background-color: #3ebdff;
         font-family     : NanumSquare;
         font-size       : 16px;
         line-height     : 16px;
         font-weight     : 800;
-        color           : #111111;
+        color           : #ffffff;
     }
 }
 

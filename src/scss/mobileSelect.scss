@@ -228,10 +228,10 @@
                 }
                .ensure {
                     width: 100% !important;
-                    background: #fed400;
+                    background: #3ebdff;
                     height: 100% !important;
                     z-index: 9999;
-                    color: #111111 !important;
+                    color: #fff !important;
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -281,7 +281,7 @@
                                   line-height: normal;
                                   letter-spacing: normal;
                                   text-align: center;
-                                  color: #5815a5;
+                                  color: #3e85ff;
                                   // background-color: #f5ebf68a;
                                   // background-color: #f5ebf6;
                                   width: 80%;
@@ -304,7 +304,7 @@
                     width: calc(100% - 60px);
                     left: 50%;
                     transform: translateX(-50%);
-                    background-color: #f5ebf6;
+                    background-color: #e4eeff;
                     border: none;
                     z-index: -1;
                     // visibility: hidden;

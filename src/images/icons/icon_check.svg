@@ -1,19 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
     <defs>
-        <clipPath id="clip-path">
-            <path id="SVGID" d="M0 0H15V11H0z" class="cls-1"/>
+        <clipPath id="jbn6hw4fpa">
+            <path style="fill:#fff" d="M0 0h15v11H0z"/>
         </clipPath>
-        <style>
-            .cls-1{fill:#fff}
-        </style>
     </defs>
-    <g id="icon_check" transform="translate(-20 -544)">
-        <path id="사각형_3544" fill="#5815a5" d="M0 0H20V20H0z" transform="translate(20 544)"/>
-        <g id="그룹_9294" transform="translate(-244 150.11)">
-            <g id="그룹_9293" transform="translate(266 397.89)">
-                <g id="그룹_9292" clip-path="url(#clip-path)" transform="translate(0)">
-                    <path id="패스_33047" d="M280.895 399.388l-9.273 9.325a.207.207 0 0 1-.3 0l-5.265-5.3a.209.209 0 0 1 0-.3l1.279-1.287a.207.207 0 0 1 .3 0l3.838 3.86 7.846-7.891a.207.207 0 0 1 .3 0l1.279 1.287a.211.211 0 0 1 0 .3zm0 0" class="cls-1" transform="translate(-266 -397.777)"/>
-                </g>
+    <path data-name="사각형 3544" style="fill:#3e85ff" d="M0 0h20v20H0z"/>
+    <g data-name="그룹 9294">
+        <g data-name="그룹 9293">
+            <g data-name="그룹 9292" transform="translate(2 4)" style="clip-path:url(#jbn6hw4fpa)">
+                <path data-name="패스 33047" d="m280.895 399.388-9.273 9.325a.207.207 0 0 1-.3 0l-5.265-5.3a.209.209 0 0 1 0-.3l1.279-1.287a.207.207 0 0 1 .3 0l3.838 3.86 7.846-7.891a.207.207 0 0 1 .3 0l1.279 1.287a.211.211 0 0 1 0 .3zm0 0" transform="translate(-266 -397.777)" style="fill:#fff"/>
             </g>
         </g>
     </g>
